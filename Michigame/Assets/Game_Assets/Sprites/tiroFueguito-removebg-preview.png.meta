@@ -1,0 +1,421 @@
+fileFormatVersion: 2
+guid: 1631a1311534f704bbe58e702b81d702
+TextureImporter:
+  internalIDToNameTable: []
+  externalObjects: {}
+  serializedVersion: 12
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+    flipGreenChannel: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  vTOnly: 0
+  ignoreMipmapLimit: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: 1
+    aniso: 1
+    mipBias: 0
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 100
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  flipbookRows: 1
+  flipbookColumns: 1
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  ignorePngGamma: 0
+  applyGammaDecoding: 0
+  swizzle: 50462976
+  cookieLightType: 0
+  platformSettings:
+  - serializedVersion: 3
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: WebGL
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Android
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Server
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: tiroFueguito-removebg-preview_0
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 297
+        width: 6
+        height: 12
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 9cd515ba9f0237b4d9ba87552091ff8c
+      internalID: -439376945
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: tiroFueguito-removebg-preview_1
+      rect:
+        serializedVersion: 2
+        x: 87
+        y: 295
+        width: 12
+        height: 15
+      alignment: 9
+      pivot: {x: 0.6312523, y: 0.55250245}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 3e6d068dc7135de488adc9f92e9e243f
+      internalID: -338879063
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: tiroFueguito-removebg-preview_2
+      rect:
+        serializedVersion: 2
+        x: 174
+        y: 295
+        width: 19
+        height: 16
+      alignment: 9
+      pivot: {x: 0.74868697, y: 0.5246105}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: dbc63f76695718d4fb3dd690cefbab87
+      internalID: -1263454816
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: tiroFueguito-removebg-preview_3
+      rect:
+        serializedVersion: 2
+        x: 1
+        y: 210
+        width: 31
+        height: 14
+      alignment: 9
+      pivot: {x: 0.81754375, y: 0.47187588}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d863f38010800bf4bbb6ec40ba10b704
+      internalID: -495451204
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: tiroFueguito-removebg-preview_5
+      rect:
+        serializedVersion: 2
+        x: 92
+        y: 209
+        width: 32
+        height: 16
+      alignment: 9
+      pivot: {x: 0.8199253, y: 0.45078182}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 33370d8af2fdac94bad7b56a6925ef22
+      internalID: 1922486977
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: tiroFueguito-removebg-preview_6
+      rect:
+        serializedVersion: 2
+        x: 176
+        y: 209
+        width: 43
+        height: 16
+      alignment: 9
+      pivot: {x: 0.8479689, y: 0.4753914}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 2072906459c5bdb4699a4a92bb050119
+      internalID: 434633066
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: tiroFueguito-removebg-preview_8
+      rect:
+        serializedVersion: 2
+        x: 261
+        y: 210
+        width: 51
+        height: 13
+      alignment: 9
+      pivot: {x: 0.87831324, y: 0.43942377}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ff65fa77db572914da03385db8add2f8
+      internalID: 1409673236
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: tiroFueguito-removebg-preview_10
+      rect:
+        serializedVersion: 2
+        x: 10
+        y: 122
+        width: 45
+        height: 15
+      alignment: 9
+      pivot: {x: 0.9168727, y: 0.500001}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 27794be9aade4944c8f092c562dc9b99
+      internalID: 1231695194
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: tiroFueguito-removebg-preview_12
+      rect:
+        serializedVersion: 2
+        x: 99
+        y: 122
+        width: 51
+        height: 16
+      alignment: 9
+      pivot: {x: 0.8713343, y: 0.47539043}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 46d33d55f72410a46a532aa571b8aae8
+      internalID: -729578462
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: tiroFueguito-removebg-preview_13
+      rect:
+        serializedVersion: 2
+        x: 195
+        y: 121
+        width: 50
+        height: 17
+      alignment: 9
+      pivot: {x: 0.8465036, y: 0.453677}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: cbafa9fdf6e3d53479cfe11c63b60000
+      internalID: 1330224486
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: tiroFueguito-removebg-preview_14
+      rect:
+        serializedVersion: 2
+        x: 284
+        y: 122
+        width: 52
+        height: 16
+      alignment: 9
+      pivot: {x: 0.8710374, y: 0.45078087}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 93a4652d8273ddb49ad681796a31ed21
+      internalID: 304537958
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: tiroFueguito-removebg-preview_15
+      rect:
+        serializedVersion: 2
+        x: 31
+        y: 35
+        width: 50
+        height: 16
+      alignment: 9
+      pivot: {x: 0.85437864, y: 0.4753909}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 9a71162410756a842a1c7958b3884570
+      internalID: 46077269
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    physicsShape: []
+    bones: []
+    spriteID: 5e97eb03825dee720800000000000000
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+    nameFileIdTable:
+      tiroFueguito-removebg-preview_0: -439376945
+      tiroFueguito-removebg-preview_1: -338879063
+      tiroFueguito-removebg-preview_10: 1231695194
+      tiroFueguito-removebg-preview_11: -1778104274
+      tiroFueguito-removebg-preview_12: -729578462
+      tiroFueguito-removebg-preview_13: 1330224486
+      tiroFueguito-removebg-preview_14: 304537958
+      tiroFueguito-removebg-preview_15: 46077269
+      tiroFueguito-removebg-preview_2: -1263454816
+      tiroFueguito-removebg-preview_3: -495451204
+      tiroFueguito-removebg-preview_4: -1692244230
+      tiroFueguito-removebg-preview_5: 1922486977
+      tiroFueguito-removebg-preview_6: 434633066
+      tiroFueguito-removebg-preview_7: 672159427
+      tiroFueguito-removebg-preview_8: 1409673236
+      tiroFueguito-removebg-preview_9: -1525773890
+  mipmapLimitGroupName: 
+  pSDRemoveMatte: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

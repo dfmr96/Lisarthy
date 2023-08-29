@@ -3,19 +3,23 @@
 --- !u!78 &1
 TagManager:
   serializedVersion: 2
-  tags: []
+  tags:
+  - piso
+  - Suelo
+  - Gato
+  - Fueguit
   layers:
   - Default
   - TransparentFX
   - Ignore Raycast
-  - 
+  - Pared Invisible
   - Water
   - UI
-  - 
-  - 
-  - 
-  - 
-  - 
+  - Gato
+  - Pared Invisible de verdad xd
+  - Enemy
+  - Player
+  - garra
   - 
   - 
   - 

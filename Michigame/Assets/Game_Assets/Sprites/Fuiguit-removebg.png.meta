@@ -1,0 +1,578 @@
+fileFormatVersion: 2
+guid: b76c44dcef6f7c9468c76183ec6d9cdc
+TextureImporter:
+  internalIDToNameTable: []
+  externalObjects: {}
+  serializedVersion: 12
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+    flipGreenChannel: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  vTOnly: 0
+  ignoreMipmapLimit: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: 1
+    aniso: 1
+    mipBias: 0
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 100
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  flipbookRows: 1
+  flipbookColumns: 1
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  ignorePngGamma: 0
+  applyGammaDecoding: 0
+  swizzle: 50462976
+  cookieLightType: 0
+  platformSettings:
+  - serializedVersion: 3
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: WebGL
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Android
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Server
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: Fuiguit-removebg_0
+      rect:
+        serializedVersion: 2
+        x: 582
+        y: 1603
+        width: 193
+        height: 286
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 61f6315a666fe264bb28dd2ea672b02b
+      internalID: 633935021
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Fuiguit-removebg_6
+      rect:
+        serializedVersion: 2
+        x: 956
+        y: 1581
+        width: 295
+        height: 363
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 25196316040137f4dbddb810dbb25e89
+      internalID: -78399122
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Fuiguit-removebg_7
+      rect:
+        serializedVersion: 2
+        x: 1431
+        y: 1512
+        width: 432
+        height: 410
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0768b9aac00f7b14dbf5d6c64affaa8f
+      internalID: -1016976551
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Fuiguit-removebg_10
+      rect:
+        serializedVersion: 2
+        x: 230
+        y: 1648
+        width: 77
+        height: 136
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 3ccbb0b243da83548a4976dd2e130e1c
+      internalID: 2056016625
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Fuiguit-removebg_15
+      rect:
+        serializedVersion: 2
+        x: 98
+        y: 1046
+        width: 434
+        height: 457
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b72de2ceaf8f1a941a578284484a72d4
+      internalID: 1886898852
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Fuiguit-removebg_19
+      rect:
+        serializedVersion: 2
+        x: 634
+        y: 1084
+        width: 446
+        height: 439
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 426a2242c12e9e349a6c3a4cdb63e55f
+      internalID: 1854064048
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Fuiguit-removebg_27
+      rect:
+        serializedVersion: 2
+        x: 1191
+        y: 1107
+        width: 315
+        height: 353
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: aada5448dfc4a8a4ca6e5accd55b291c
+      internalID: -154606290
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Fuiguit-removebg_28
+      rect:
+        serializedVersion: 2
+        x: 1622
+        y: 1170
+        width: 218
+        height: 256
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 39cd37932b588044db20c79fbee93621
+      internalID: 505403495
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Fuiguit-removebg_38
+      rect:
+        serializedVersion: 2
+        x: 1476
+        y: 650
+        width: 369
+        height: 389
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 39d6dc7b7a85d354f9cda0d5728a539d
+      internalID: -230391324
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Fuiguit-removebg_42
+      rect:
+        serializedVersion: 2
+        x: 926
+        y: 630
+        width: 360
+        height: 330
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e80d163928e202541b74743b20664af7
+      internalID: 304136979
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Fuiguit-removebg_45
+      rect:
+        serializedVersion: 2
+        x: 499
+        y: 644
+        width: 298
+        height: 282
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e9a9b7bb783740d4aa355a269de18327
+      internalID: 934095650
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Fuiguit-removebg_49
+      rect:
+        serializedVersion: 2
+        x: 144
+        y: 643
+        width: 214
+        height: 207
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a4cbb422e4900b9468d034261ff04ba3
+      internalID: 1963478051
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Fuiguit-removebg_67
+      rect:
+        serializedVersion: 2
+        x: 75
+        y: 109
+        width: 507
+        height: 398
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 15cd418c6cdb25f43b496530bc5db55f
+      internalID: -1468326281
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Fuiguit-removebg_75
+      rect:
+        serializedVersion: 2
+        x: 1383
+        y: 80
+        width: 503
+        height: 454
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f62c234ad808a844fa538402160047c2
+      internalID: -2056367676
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Fuiguit-removebg_100
+      rect:
+        serializedVersion: 2
+        x: 743
+        y: 95
+        width: 441
+        height: 419
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 02bb6c84ae9b48745ac5139b0f301cc8
+      internalID: -1223254709
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    physicsShape: []
+    bones: []
+    spriteID: 5e97eb03825dee720800000000000000
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+    nameFileIdTable:
+      Fuiguit-removebg_0: 633935021
+      Fuiguit-removebg_1: -475849301
+      Fuiguit-removebg_10: 2056016625
+      Fuiguit-removebg_100: -1223254709
+      Fuiguit-removebg_101: -1058043491
+      Fuiguit-removebg_102: 2078049320
+      Fuiguit-removebg_103: -1870698986
+      Fuiguit-removebg_104: 2039519601
+      Fuiguit-removebg_105: 1073454756
+      Fuiguit-removebg_106: -859246749
+      Fuiguit-removebg_107: 1008732639
+      Fuiguit-removebg_108: -1304509440
+      Fuiguit-removebg_109: 1413149323
+      Fuiguit-removebg_11: -1809031003
+      Fuiguit-removebg_12: -30729198
+      Fuiguit-removebg_13: -1079185562
+      Fuiguit-removebg_14: -317431423
+      Fuiguit-removebg_15: 1886898852
+      Fuiguit-removebg_16: 744366355
+      Fuiguit-removebg_17: -1247201848
+      Fuiguit-removebg_18: -1180831110
+      Fuiguit-removebg_19: 1854064048
+      Fuiguit-removebg_2: -532652175
+      Fuiguit-removebg_20: 1642124962
+      Fuiguit-removebg_21: -569854945
+      Fuiguit-removebg_22: -999896537
+      Fuiguit-removebg_23: -1068406540
+      Fuiguit-removebg_24: 1388415512
+      Fuiguit-removebg_25: -735878554
+      Fuiguit-removebg_26: -541253050
+      Fuiguit-removebg_27: -154606290
+      Fuiguit-removebg_28: 505403495
+      Fuiguit-removebg_29: -924782595
+      Fuiguit-removebg_3: -2125162814
+      Fuiguit-removebg_30: 1931094956
+      Fuiguit-removebg_31: -1643935196
+      Fuiguit-removebg_32: -1357483643
+      Fuiguit-removebg_33: 2025133834
+      Fuiguit-removebg_34: 152892789
+      Fuiguit-removebg_35: -1735764013
+      Fuiguit-removebg_36: -1773758543
+      Fuiguit-removebg_37: -1036217669
+      Fuiguit-removebg_38: -230391324
+      Fuiguit-removebg_39: -927673623
+      Fuiguit-removebg_4: 1980782286
+      Fuiguit-removebg_40: 627275306
+      Fuiguit-removebg_41: -2102836473
+      Fuiguit-removebg_42: 304136979
+      Fuiguit-removebg_43: 211676795
+      Fuiguit-removebg_44: 127783737
+      Fuiguit-removebg_45: 934095650
+      Fuiguit-removebg_46: 1270649988
+      Fuiguit-removebg_47: -1576583215
+      Fuiguit-removebg_48: -1142437467
+      Fuiguit-removebg_49: 1963478051
+      Fuiguit-removebg_5: -501419225
+      Fuiguit-removebg_50: -1690572866
+      Fuiguit-removebg_51: 1411954053
+      Fuiguit-removebg_52: 1322997048
+      Fuiguit-removebg_53: 927997218
+      Fuiguit-removebg_54: 1960839068
+      Fuiguit-removebg_55: 1613397519
+      Fuiguit-removebg_56: -558028071
+      Fuiguit-removebg_57: -1460662477
+      Fuiguit-removebg_58: 224515629
+      Fuiguit-removebg_59: -368749275
+      Fuiguit-removebg_6: -78399122
+      Fuiguit-removebg_60: 1019231436
+      Fuiguit-removebg_61: 1112099223
+      Fuiguit-removebg_62: -76707047
+      Fuiguit-removebg_63: 1293956605
+      Fuiguit-removebg_64: 1679400712
+      Fuiguit-removebg_65: 1627526256
+      Fuiguit-removebg_66: 361213716
+      Fuiguit-removebg_67: -1468326281
+      Fuiguit-removebg_68: 1565152442
+      Fuiguit-removebg_69: 1822224947
+      Fuiguit-removebg_7: -1016976551
+      Fuiguit-removebg_70: -536305910
+      Fuiguit-removebg_71: 64106362
+      Fuiguit-removebg_72: 1592316388
+      Fuiguit-removebg_73: 1049778412
+      Fuiguit-removebg_74: -1512590487
+      Fuiguit-removebg_75: -2056367676
+      Fuiguit-removebg_76: -235010898
+      Fuiguit-removebg_77: 793629293
+      Fuiguit-removebg_78: -797052317
+      Fuiguit-removebg_79: 2079504236
+      Fuiguit-removebg_8: -1589352796
+      Fuiguit-removebg_80: -1212690284
+      Fuiguit-removebg_81: -1269959067
+      Fuiguit-removebg_82: -1134953806
+      Fuiguit-removebg_83: 1613144518
+      Fuiguit-removebg_84: -926913300
+      Fuiguit-removebg_85: 1900630691
+      Fuiguit-removebg_86: -2098615255
+      Fuiguit-removebg_87: 1367096370
+      Fuiguit-removebg_88: -354592286
+      Fuiguit-removebg_89: -316890568
+      Fuiguit-removebg_9: -1561148584
+      Fuiguit-removebg_90: 1379206103
+      Fuiguit-removebg_91: -1935200059
+      Fuiguit-removebg_92: -1040983492
+      Fuiguit-removebg_93: -45483292
+      Fuiguit-removebg_94: 934182873
+      Fuiguit-removebg_95: 6500781
+      Fuiguit-removebg_96: 1315109990
+      Fuiguit-removebg_97: 57237251
+      Fuiguit-removebg_98: -1248117039
+      Fuiguit-removebg_99: 2122935485
+  mipmapLimitGroupName: 
+  pSDRemoveMatte: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

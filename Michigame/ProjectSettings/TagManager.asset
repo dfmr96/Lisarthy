@@ -10,6 +10,7 @@ TagManager:
   - Fueguit
   - Ground
   - ClimbableWall
+  - HealthBG
   layers:
   - Default
   - TransparentFX

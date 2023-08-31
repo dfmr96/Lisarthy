@@ -17,6 +17,7 @@ public class Gato : MonoBehaviour , Idamagable
     public bool isJumping = false;
     public bool doubleJumpUsed = false;
 
+    public bool graspsTaken = false;
     public bool canClimb = false;
     public bool isClimbing = false;
     
@@ -85,7 +86,7 @@ public class Gato : MonoBehaviour , Idamagable
         {
             Debug.Log("DoubleJump");
             ReiniciarVelocidadY();
-            rb.AddForce(new Vector3(0, 10, 0), ForceMode2D.Impulse);
+            rb.AddForce(new Vector3(0, 14, 0), ForceMode2D.Impulse);
             doubleJumpUsed = true;
         }
     }
@@ -117,7 +118,7 @@ public class Gato : MonoBehaviour , Idamagable
             doubleJumpUsed = false;
         }
 
-        if (collision.gameObject.CompareTag("ClimbableWall"))
+        if (collision.gameObject.CompareTag("ClimbableWall") && graspsTaken) 
         {
             Debug.Log("Puede trepar");
             canClimb = true;

@@ -11,6 +11,8 @@ public class fueguito : MonoBehaviour
     private Transform player;
     private bool a = false;
     public static Action OnDeath;
+    private int damage = 1;
+
     void Start()
     {
         rb = GetComponent<Rigidbody2D>();
@@ -41,4 +43,6 @@ public class fueguito : MonoBehaviour
             OnDeath?.Invoke();
         }
     }
+
+    
 }

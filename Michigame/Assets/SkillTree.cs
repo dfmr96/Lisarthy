@@ -5,7 +5,7 @@ using UnityEngine;
 public class SkillTree : MonoBehaviour
 {
     [SerializeField] Gato playerController;
-
+    
     public void EnableDoubleJump()
     {
         playerController.doubleJumpTaken = true;
@@ -18,6 +18,6 @@ public class SkillTree : MonoBehaviour
 
     public void EnableGrasps()
     {
-        
+        playerController.graspsTaken = true;
     }
 }

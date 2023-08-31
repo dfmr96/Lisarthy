@@ -36,6 +36,7 @@ public class Gato : MonoBehaviour , Idamagable
     Quaternion a = default;
     [SerializeField] private Renderer garra;
     [SerializeField] private GameObject garras;
+    [SerializeField] private PawAttack meleeAttack;
     [SerializeField] private GameObject tiroFuego;
     [SerializeField] private Transform garraPoint;
 
@@ -197,12 +198,14 @@ public class Gato : MonoBehaviour , Idamagable
         {
             var x =Instantiate(garras, garraPoint.position ,transform.rotation ,transform.parent);
             x.transform.SetParent(transform);
+            meleeAttack.gameObject.SetActive(true);
             Destroy(x,(float)0.2);
             pegando = true;
             timer2 = 0;
         }
         else if (timer2 > 0.15)
         {
+            meleeAttack.gameObject.SetActive(false);
             pegando = false;
         }
     }

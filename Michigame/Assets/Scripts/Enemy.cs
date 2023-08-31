@@ -4,14 +4,15 @@ using UnityEngine;
 
 public class Enemy : MonoBehaviour
 {
-    [SerializeField] int health = 3;
+    [SerializeField] private int health = 3;
     [SerializeField] private float fireRate = 1;
     [SerializeField] private float fireCounter = 0;
     [SerializeField] private GameObject bulletPrefab;
+    [SerializeField] private bool canShoot = false;
 
     void Update()
     {
-        Shoot();
+        if (canShoot) Shoot();
     }
 
     private void Shoot()
@@ -22,6 +23,16 @@ public class Enemy : MonoBehaviour
         {
             GameObject newBullet = Instantiate(bulletPrefab, transform);
             fireCounter = 0;
+        }
+    }
+
+    public void TakeDamage(int damage)
+    {
+        health -= damage;
+
+        if (health <= 0)
+        {
+            Destroy(gameObject);
         }
     }
 }

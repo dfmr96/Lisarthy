@@ -9,6 +9,7 @@ TagManager:
   - Gato
   - Fueguit
   - Ground
+  - ClimbableWall
   layers:
   - Default
   - TransparentFX
@@ -21,7 +22,7 @@ TagManager:
   - Enemy
   - Player
   - garra
-  - 
+  - ClimbableWall
   - 
   - 
   - 

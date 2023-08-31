@@ -13,6 +13,12 @@ public class Gato : MonoBehaviour , Idamagable
     public int speed = 100;
     public int jumpStrenght = 100;
 
+    public bool doubleJumpTaken = false;
+    public bool isJumping = false;
+    public bool doubleJumpUsed = false;
+
+    public bool canClimb = false;
+    public bool isClimbing = false;
     
     public bool TocandoPiso = false;
     public bool SeguirSaltando = false;
@@ -57,19 +63,46 @@ public class Gato : MonoBehaviour , Idamagable
         //Coyotes();
         Atack();
         MaxSpeed();
+        
+        
+        DoubleJump();
+
+        if (canClimb)
+        {
+            if (Input.GetKey(KeyCode.W))
+            {
+                
+                Debug.Log("Subiendo");
+                transform.Translate(transform.up * (12 * Time.deltaTime));
+            }
+        }
     }
+
+    private void DoubleJump()
+    {
+        if (!TocandoPiso && Input.GetKeyDown(KeyCode.Space) && !doubleJumpUsed && doubleJumpTaken)
+        {
+            Debug.Log("DoubleJump");
+            ReiniciarVelocidadY();
+            rb.AddForce(new Vector3(0, 10, 0), ForceMode2D.Impulse);
+            doubleJumpUsed = true;
+        }
+    }
+
     private void FixedUpdate()
     {
         if (dir.x != 0)
         {
             rb.AddForce(dir * speed, ForceMode2D.Force);
         }
-        else
+        /*else
         {
             Vector3 decelerationForce = new Vector3(-rb.velocity.x * deceleration, 0.0f, 0.0f);
             rb.AddForce(decelerationForce * Time.deltaTime);
-        }
+        }*/
         Jump(1);
+        
+        
     }
 
 
@@ -80,7 +113,16 @@ public class Gato : MonoBehaviour , Idamagable
         {
             jumpCount = 0;
             TocandoPiso = true;
-        }       
+            doubleJumpUsed = false;
+        }
+
+        if (collision.gameObject.CompareTag("ClimbableWall"))
+        {
+            Debug.Log("Puede trepar");
+            canClimb = true;
+            rb.velocity = Vector3.zero;
+            rb.gravityScale = 0;
+        }
     }
 
     private void OnTriggerExit2D(Collider2D collision)
@@ -88,6 +130,12 @@ public class Gato : MonoBehaviour , Idamagable
         if (collision.gameObject.layer == 3)
         {
             TocandoPiso = false;
+        }
+        
+        if (collision.gameObject.CompareTag("ClimbableWall"))
+        {
+            canClimb = false;
+            rb.gravityScale = 1.5f;
         }
     }
 //------------------------------------------------------------------------------------------------------------
@@ -179,7 +227,7 @@ public class Gato : MonoBehaviour , Idamagable
                 TocandoPiso = false;
                 timer = 0;
             }
-            else if (Input.GetKey(KeyCode.Space) && timer < 0.2)
+            /*else if (Input.GetKey(KeyCode.Space) && timer < 0.2)
             {
                 rb.AddForce(new Vector3(0, jumpStrenght, 0), ForceMode2D.Force);
             }
@@ -188,7 +236,9 @@ public class Gato : MonoBehaviour , Idamagable
             {
                 jumpCount++;
                 //TocandoPiso = true;
-            }
+            }*/
+
+            
         }
     }
 

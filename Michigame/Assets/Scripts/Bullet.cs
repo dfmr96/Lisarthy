@@ -8,6 +8,11 @@ public class Bullet : MonoBehaviour
 {
     [SerializeField] private int speed;
 
+    private void Start()
+    {
+        Destroy(gameObject, 4f);
+    }
+
     private void Update()
     {
         Move();

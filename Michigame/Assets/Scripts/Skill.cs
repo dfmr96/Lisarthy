@@ -42,7 +42,7 @@ public class Skill : MonoBehaviour
                     //throw new ArgumentOutOfRangeException();
                     break;
             }
-            
+            AudioManager.instance.PlaySound();
             Destroy(gameObject);
         }
     }

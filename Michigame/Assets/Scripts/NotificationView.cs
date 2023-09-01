@@ -19,7 +19,7 @@ public class NotificationView : MonoBehaviour
     {
         TMP_Text tmpText = GetComponent<TMP_Text>();
         tmpText.SetText($"{text}");
-        yield return new WaitForSeconds(2f);
+        yield return new WaitForSeconds(4f);
         gameObject.SetActive(false);
     }
 }

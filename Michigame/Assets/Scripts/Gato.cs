@@ -73,9 +73,14 @@ public class Gato : MonoBehaviour , Idamagable
         {
             if (Input.GetKey(KeyCode.W))
             {
-                
                 Debug.Log("Subiendo");
                 transform.Translate(transform.up * (12 * Time.deltaTime));
+            }
+            
+            if (Input.GetKey(KeyCode.S))
+            {
+                Debug.Log("Subiendo");
+                transform.Translate(-transform.up * (12 * Time.deltaTime));
             }
         }
     }

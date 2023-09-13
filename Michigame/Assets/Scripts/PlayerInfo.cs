@@ -5,13 +5,20 @@ using UnityEngine;
 public class PlayerInfo : MonoBehaviour
 {
     public int hp;
-    public Vector2 currentPos;
+    private Vector2 direction;
     public float moveSpeed;
     public float maxSpeed;
-    public Vector2 direction;
+    [SerializeField]
+    [Tooltip("increase the height of the jump the longer the jump button is pressed, until it reaches the maxJumpHeight.")]
+    private bool incrementalJump; 
+    public float jumpForce;
+    public float maxJumpHeight;
+    public float fallingSpeed;
+    private bool isTouchingGround;
+
 
     private void Update()
     {
-        currentPos = this.transform.position;
+
     }
 }

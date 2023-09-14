@@ -13,7 +13,8 @@ public class PlayerInfo : MonoBehaviour
     private bool incrementalJump; 
     public float jumpForce;
     public float maxJumpHeight;
-    public float fallingSpeed;
+    public float fallingSpeedMultiplier;
+    public float terminalVelocity;
     private bool isTouchingGround;
 
 

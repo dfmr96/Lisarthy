@@ -14,7 +14,12 @@ public class PlayerPhysics : MonoBehaviour
 
     public void MoveFoward(float speed, float direction)
     {
-        rigidbody.AddForce(new Vector2(speed * direction, transform.position.y));
+        rigidbody.AddForce(new Vector2(speed * direction, rigidbody.velocity.y));
+    }
+
+    public void Jump(float force)
+    {
+        rigidbody.AddForce(transform.up * force);
     }
     
 }

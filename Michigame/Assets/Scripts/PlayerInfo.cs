@@ -5,7 +5,6 @@ using UnityEngine;
 public class PlayerInfo : MonoBehaviour
 {
     public int hp;
-    private float direction;
     public float moveSpeed;
     public float maxSpeed;
     [SerializeField]
@@ -15,20 +14,38 @@ public class PlayerInfo : MonoBehaviour
     public float maxJumpHeight;
     public float fallingSpeedMultiplier;
     public float terminalVelocity;
-    private bool isTouchingGround;
+    public bool onFloor;
+
 
     private void Update()
     {
-        direction = Input.GetAxis("Horizontal");
+
     }
 
-    public float GetDirection()
+    public float GetJumpForce()
     {
-        return direction;
+        return jumpForce;
     }
 
-    //public bool CanJump()
-    //{
-        
-    //}
+    public float GetJumpHeight()
+    {
+        return maxJumpHeight;
+    }
+
+
+    public bool CanJump()
+    {
+        return onFloor;
+    }
+
+    private void OnTriggerEnter2D(Collider2D other)
+    {
+        onFloor = true;
+    }
+
+    private void OnTriggerExit2D(Collider2D collision)
+    {
+        onFloor = false;
+    }
+
 }

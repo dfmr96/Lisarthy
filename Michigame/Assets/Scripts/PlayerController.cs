@@ -5,6 +5,7 @@ using UnityEngine;
 public class PlayerController : MonoBehaviour
 {
     private float moveSpeed;
+    private float jumpForce;
     private float direction;
     //Traduce los inputs
 
@@ -17,11 +18,12 @@ public class PlayerController : MonoBehaviour
 
     private void FixedUpdate()
     {
-
+        
     }
     private void Update()
-    {
+    {        
         UpdatePlayerInfo();
+        UpdatePlayerInput();
 
 //Horizontal movement----------------------------------------------------------------
         if (Input.GetAxis("Horizontal") != 0)
@@ -29,7 +31,7 @@ public class PlayerController : MonoBehaviour
             gameObject.GetComponent<PlayerPhysics>().MoveFoward(moveSpeed, direction);
         }
 
-        // Adjust player horizontal rotation------------------------------------------------------
+// Adjust player horizontal rotation------------------------------------------------------
         if (direction > 0)
         {
             transform.eulerAngles = Vector3.zero;
@@ -39,12 +41,29 @@ public class PlayerController : MonoBehaviour
             transform.eulerAngles = new Vector3(0, 180f, 0);
         }
 
+//Player Jump------------------------------------------------------------------------------
+
+        if (Input.GetButtonDown("Jump"))
+        {
+            Debug.Log("jump pressed");
+            if (gameObject.GetComponent<PlayerInfo>().CanJump())
+            {
+                Debug.Log("canJump");
+                gameObject.GetComponent<PlayerPhysics>().Jump(jumpForce);
+            }
+        }
     }
 
     private void UpdatePlayerInfo()
     {
         moveSpeed = gameObject.GetComponent<PlayerInfo>().moveSpeed;
-        direction = gameObject.GetComponent<PlayerInfo>().GetDirection();
+        jumpForce = gameObject.GetComponent<PlayerInfo>().jumpForce;
+    }
+
+    private void UpdatePlayerInput()
+    {
+        direction = Input.GetAxis("Horizontal");
+       
     }
 
 }

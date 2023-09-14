@@ -5,7 +5,7 @@ using UnityEngine;
 public class PlayerInfo : MonoBehaviour
 {
     public int hp;
-    private Vector2 direction;
+    private float direction;
     public float moveSpeed;
     public float maxSpeed;
     [SerializeField]
@@ -17,9 +17,18 @@ public class PlayerInfo : MonoBehaviour
     public float terminalVelocity;
     private bool isTouchingGround;
 
-
     private void Update()
     {
-
+        direction = Input.GetAxis("Horizontal");
     }
+
+    public float GetDirection()
+    {
+        return direction;
+    }
+
+    //public bool CanJump()
+    //{
+        
+    //}
 }

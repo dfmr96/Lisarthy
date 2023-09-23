@@ -19,7 +19,12 @@ public class PlayerPhysics : MonoBehaviour
 
     public void Jump(float force)
     {
-        rigidbody.AddForce(transform.up * force);
+        rigidbody.AddForce(transform.up * force, ForceMode2D.Impulse);
+    }
+
+    public void SustainedJump(float force, float multiplier = 0.5f)
+    {
+        rigidbody.AddForce(transform.up * (force * multiplier), ForceMode2D.Force);
     }
     
 }

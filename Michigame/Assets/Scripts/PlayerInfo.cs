@@ -7,11 +7,8 @@ public class PlayerInfo : MonoBehaviour
     public int hp;
     public float moveSpeed;
     public float maxSpeed;
-    [SerializeField]
-    [Tooltip("increase the height of the jump the longer the jump button is pressed, until it reaches the maxJumpHeight.")]
-    private bool incrementalJump; 
     public float jumpForce;
-    public float maxJumpHeight;
+    public float maxJumpHeight = 50;
     public float fallingSpeedMultiplier;
     public float terminalVelocity;
     public bool onFloor;
@@ -32,6 +29,11 @@ public class PlayerInfo : MonoBehaviour
         return maxJumpHeight;
     }
 
+    public float CalculateMaxJumpHeight()
+    {
+        return transform.position.y + maxJumpHeight;
+    }
+
 
     public bool CanJump()
     {
@@ -40,6 +42,7 @@ public class PlayerInfo : MonoBehaviour
 
     private void OnTriggerEnter2D(Collider2D other)
     {
+        
         onFloor = true;
     }
 

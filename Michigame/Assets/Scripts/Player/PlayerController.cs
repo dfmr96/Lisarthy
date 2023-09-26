@@ -4,6 +4,7 @@ using UnityEngine;
 
 public class PlayerController : MonoBehaviour
 {
+    private Animator animator;
     private float moveSpeed;
     private float jumpForce;
     [SerializeField] float jumpForceMultiplier = 2;
@@ -16,8 +17,8 @@ public class PlayerController : MonoBehaviour
 
     // Start is called before the first frame update
     void Start()
-    {        
-        
+    {
+        animator = GetComponent<Animator>();
     }
 
     private void FixedUpdate()
@@ -43,11 +44,13 @@ public class PlayerController : MonoBehaviour
         if (direction > 0)
         {
             transform.eulerAngles = Vector3.zero;
+            animator.SetTrigger("Walking");
         }
         else if (direction < 0)
         {
             transform.eulerAngles = new Vector3(0, 180f, 0);
-        }
+            animator.SetTrigger("Walking");
+        }        
 
 //Check if jump button is pressed------------------------------------------------
 

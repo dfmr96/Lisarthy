@@ -6,7 +6,12 @@ public class PlayerController : MonoBehaviour
 {
     private PlayerInfo playerInfo;
     private Animator animator;
+
+    //Horizontal movement Variables
     private float moveSpeed;
+    private float direction;
+
+    //Jump Variables
     private float jumpForce;
     [SerializeField] float jumpForceMultiplier = 2;
     private float maxJumpHeight =0;
@@ -14,10 +19,9 @@ public class PlayerController : MonoBehaviour
     private float jumpTime;
     private bool canJump;
     private int jumpState;//0-on the ground / 1-Jumping / 2-Falling
-    private float direction;
-    private bool isJumping = false;
     private bool jumpButton;
-    //Traduce los inputs
+    private float terminalVelocity;
+    private float fallSpeed;   
 
 
     // Start is called before the first frame update
@@ -56,7 +60,7 @@ public class PlayerController : MonoBehaviour
             transform.eulerAngles = new Vector3(0, 180f, 0);
         }
 
-        if (direction != 0 && isJumping == false) 
+        if (direction != 0 && jumpState == 0) 
         { 
             animator.SetBool("Walking", true); 
         }
@@ -64,10 +68,6 @@ public class PlayerController : MonoBehaviour
 
         // jump mechanics ------------------------------------------------
 
-        //if (!canJump && jumpState == 0 && !jumpButton)
-        //{
-        //    jumpState = 2;
-        //}
         if (canJump) { jumpState = 0; }
 
         //Si alcanza su altura maxima o si alcanza el tiempo maximo de salto o si esta callendo
@@ -97,8 +97,6 @@ public class PlayerController : MonoBehaviour
 
         if (jumpState == 2) { jumpTime = 0; }
 
-        isJumping = !gameObject.GetComponent<PlayerInfo>().CanJump();
-
     }
 
     private void UpdatePlayerInfo()
@@ -117,13 +115,25 @@ public class PlayerController : MonoBehaviour
 
     private void PlayerJump()
     {
-        Debug.Log("jump pressed");
         if (canJump)
         {
-            Debug.Log("canJump");
             maxJumpHeight = gameObject.GetComponent<PlayerInfo>().CalculateMaxJumpHeight();
             gameObject.GetComponent<PlayerPhysics>().Jump(jumpForce);
 
+        }
+    }
+
+    public bool GetKey(string actionKey)
+    {
+        if (actionKey == "jump")
+        {
+            return jumpButton;
+        }
+
+        else 
+        {
+            Debug.Log("The requested Key is invalid");
+            return false; 
         }
     }
 

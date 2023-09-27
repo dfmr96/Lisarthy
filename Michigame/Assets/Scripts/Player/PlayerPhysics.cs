@@ -47,5 +47,10 @@ public class PlayerPhysics : MonoBehaviour
     {
         rigidbody.AddForce(transform.up * (force * multiplier), ForceMode2D.Force);
     }
+
+    public void Fall(float force, float multiplier = 0.5f)
+    {
+        rigidbody.AddForce(-transform.up * (force * multiplier), ForceMode2D.Force);
+    }
     
 }

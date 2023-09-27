@@ -173,27 +173,6 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Idle de Lisarthy_3
-      rect:
-        serializedVersion: 2
-        x: 0
-        y: 1464
-        width: 69
-        height: 75
-      alignment: 7
-      pivot: {x: 0.5, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 3c0ff2439009a2e4aa978f5b809e822c
-      internalID: -251884796
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
       name: Idle de Lisarthy_4
       rect:
         serializedVersion: 2
@@ -210,27 +189,6 @@ TextureImporter:
       bones: []
       spriteID: 6fe271702e8427b44aac1eb27ff046d5
       internalID: 107368031
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Idle de Lisarthy_5
-      rect:
-        serializedVersion: 2
-        x: 8411
-        y: 1431
-        width: 119
-        height: 124
-      alignment: 7
-      pivot: {x: 0.5, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 0d137eaf279e628488cbd81088b516fd
-      internalID: 1274850498
       vertices: []
       indices: 
       edges: []
@@ -296,6 +254,7 @@ TextureImporter:
       Idle de Lisarthy_5: 1274850498
       Idle de Lisarthy_6: -2146884136
       Idle de Lisarthy_7: -282081008
+      Idle de Lisarthy_8: -1876976796
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 

@@ -4,9 +4,11 @@ using UnityEngine;
 
 public class PlayerInfo : MonoBehaviour
 {
+    private PlayerController playerController;
     public int hp;
     public float moveSpeed;
     public float maxSpeed;
+    public int jumpState;
     public float jumpForce;
     public float maxJumpHeight;
     public float maxJumpTime;
@@ -14,7 +16,10 @@ public class PlayerInfo : MonoBehaviour
     public float terminalVelocity;
     public bool onFloor;
 
-
+    private void Awake()
+    {
+        playerController = GetComponent<PlayerController>();
+    }
     private void Update()
     {
 
@@ -55,6 +60,26 @@ public class PlayerInfo : MonoBehaviour
     private void OnTriggerExit2D(Collider2D collision)
     {
         onFloor = false;
+    }
+
+    public float GetFallSpeed()
+    {
+        return fallingSpeedMultiplier;
+    }
+
+    public float GetTerminalVelocity()
+    {
+        return terminalVelocity;
+    }
+
+    private void UpdateJumpState()
+    {
+
+    }
+
+    public int GetJumpState()
+    {
+       return jumpState;
     }
 
 }

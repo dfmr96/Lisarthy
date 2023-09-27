@@ -8,7 +8,7 @@ public class PlayerInfo : MonoBehaviour
     public float moveSpeed;
     public float maxSpeed;
     public float jumpForce;
-    public float maxJumpHeight = 50;
+    public float maxJumpHeight = 3;
     public float fallingSpeedMultiplier;
     public float terminalVelocity;
     public bool onFloor;

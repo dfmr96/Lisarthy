@@ -10,8 +10,10 @@ public class PlayerController : MonoBehaviour
     [SerializeField] float jumpForceMultiplier = 2;
     private float maxJumpHeight;
     private bool canJump;
+    private int jumpState;//0-on the ground / 1-Jumping / 2-Falling
     private float direction;
     private bool isJumping = false;
+    private bool jumpButton;
     //Traduce los inputs
 
 
@@ -23,10 +25,10 @@ public class PlayerController : MonoBehaviour
 
     private void FixedUpdate()
     {
-        if (isJumping)
+        if (jumpButton && jumpState ==0)
         {
             PlayerJump();
-            
+            jumpState = 1;
         }
     }
     private void Update()
@@ -44,21 +46,25 @@ public class PlayerController : MonoBehaviour
         if (direction > 0)
         {
             transform.eulerAngles = Vector3.zero;
-            animator.SetTrigger("Walking");
         }
         else if (direction < 0)
         {
             transform.eulerAngles = new Vector3(0, 180f, 0);
-            animator.SetTrigger("Walking");
-        }        
+        }
+
+        if (direction != 0 && isJumping == false) 
+        { 
+            animator.SetBool("Walking", true); 
+        }
+        else if (direction == 0) { animator.SetBool("Walking", false); }
 
 //Check if jump button is pressed------------------------------------------------
 
         if (Input.GetButton("Jump"))
-        {            
-            isJumping = true;
+        {
+            jumpButton = true;
 
-            if (canJump)
+            if (jumpState ==1)
             {
                 gameObject.GetComponent<PlayerPhysics>().SustainedJump(jumpForce, jumpForceMultiplier);
             }            
@@ -68,16 +74,19 @@ public class PlayerController : MonoBehaviour
         {
             if (transform.position.y >= maxJumpHeight)
             {
-                canJump = false;
-            }
+                jumpState = 2;
+            }           
         }
+        else { jumpState = 0; }
         
         if (Input.GetButtonUp("Jump"))
         {
-            //jumpForce = localJumpForce;
-            isJumping = false;
+            jumpButton = false;
+            jumpState = 2;
 
         }
+
+        isJumping = !gameObject.GetComponent<PlayerInfo>().CanJump();
 
     }
 
@@ -85,6 +94,7 @@ public class PlayerController : MonoBehaviour
     {
         moveSpeed = gameObject.GetComponent<PlayerInfo>().moveSpeed;
         jumpForce = gameObject.GetComponent<PlayerInfo>().jumpForce;
+        canJump = gameObject.GetComponent<PlayerInfo>().CanJump();
     }
 
     private void UpdatePlayerInput()
@@ -96,10 +106,9 @@ public class PlayerController : MonoBehaviour
     private void PlayerJump()
     {
         Debug.Log("jump pressed");
-        if (gameObject.GetComponent<PlayerInfo>().CanJump())
+        if (canJump)
         {
             Debug.Log("canJump");
-            canJump = true;
             maxJumpHeight = gameObject.GetComponent<PlayerInfo>().CalculateMaxJumpHeight();
             gameObject.GetComponent<PlayerPhysics>().Jump(jumpForce);
 

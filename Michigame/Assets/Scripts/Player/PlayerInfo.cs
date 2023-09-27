@@ -8,7 +8,8 @@ public class PlayerInfo : MonoBehaviour
     public float moveSpeed;
     public float maxSpeed;
     public float jumpForce;
-    public float maxJumpHeight = 3;
+    public float maxJumpHeight;
+    public float maxJumpTime;
     public float fallingSpeedMultiplier;
     public float terminalVelocity;
     public bool onFloor;
@@ -27,6 +28,11 @@ public class PlayerInfo : MonoBehaviour
     public float GetJumpHeight()
     {
         return maxJumpHeight;
+    }
+
+    public float GetJumpTime()
+    {
+        return maxJumpTime;
     }
 
     public float CalculateMaxJumpHeight()

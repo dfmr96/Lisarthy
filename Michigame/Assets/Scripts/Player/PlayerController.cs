@@ -4,11 +4,14 @@ using UnityEngine;
 
 public class PlayerController : MonoBehaviour
 {
+    private PlayerInfo playerInfo;
     private Animator animator;
     private float moveSpeed;
     private float jumpForce;
     [SerializeField] float jumpForceMultiplier = 2;
-    private float maxJumpHeight;
+    private float maxJumpHeight =0;
+    private float maxJumpTime;
+    private float jumpTime;
     private bool canJump;
     private int jumpState;//0-on the ground / 1-Jumping / 2-Falling
     private float direction;
@@ -18,8 +21,9 @@ public class PlayerController : MonoBehaviour
 
 
     // Start is called before the first frame update
-    void Start()
+    void Awake()
     {
+        playerInfo = GetComponent<PlayerInfo>();
         animator = GetComponent<Animator>();
     }
 
@@ -27,8 +31,8 @@ public class PlayerController : MonoBehaviour
     {
         if (jumpButton && jumpState ==0)
         {
-            PlayerJump();
             jumpState = 1;
+            PlayerJump();            
         }
     }
     private void Update()
@@ -58,7 +62,19 @@ public class PlayerController : MonoBehaviour
         }
         else if (direction == 0) { animator.SetBool("Walking", false); }
 
-//Check if jump button is pressed------------------------------------------------
+        // jump mechanics ------------------------------------------------
+
+        //if (!canJump && jumpState == 0 && !jumpButton)
+        //{
+        //    jumpState = 2;
+        //}
+        if (canJump) { jumpState = 0; }
+
+        //Si alcanza su altura maxima o si alcanza el tiempo maximo de salto o si esta callendo
+        if (transform.position.y >= maxJumpHeight || jumpTime>=maxJumpTime || (!canJump && jumpState == 0 && !jumpButton))
+        {
+            jumpState = 2;
+        }
 
         if (Input.GetButton("Jump"))
         {
@@ -66,25 +82,20 @@ public class PlayerController : MonoBehaviour
 
             if (jumpState ==1)
             {
+                jumpTime += Time.deltaTime;
+                //jump higher if button remains pressed
                 gameObject.GetComponent<PlayerPhysics>().SustainedJump(jumpForce, jumpForceMultiplier);
             }            
             
         }
-        if (isJumping)
-        {
-            if (transform.position.y >= maxJumpHeight)
-            {
-                jumpState = 2;
-            }           
-        }
-        else { jumpState = 0; }
-        
         if (Input.GetButtonUp("Jump"))
         {
             jumpButton = false;
             jumpState = 2;
 
         }
+
+        if (jumpState == 2) { jumpTime = 0; }
 
         isJumping = !gameObject.GetComponent<PlayerInfo>().CanJump();
 
@@ -95,6 +106,7 @@ public class PlayerController : MonoBehaviour
         moveSpeed = gameObject.GetComponent<PlayerInfo>().moveSpeed;
         jumpForce = gameObject.GetComponent<PlayerInfo>().jumpForce;
         canJump = gameObject.GetComponent<PlayerInfo>().CanJump();
+        maxJumpTime = playerInfo.maxJumpTime;
     }
 
     private void UpdatePlayerInput()

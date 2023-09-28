@@ -15,6 +15,7 @@ public class GameManager : MonoBehaviour
     //public event OnVictory onVictory;
     public bool playerDead = false;
     private float timeScale;
+    public bool victory;
 
     private void Awake()
     {
@@ -31,7 +32,11 @@ public class GameManager : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        if (playerDead)
+        if (victory)
+        {
+            Victory();
+        }
+        else if (playerDead)
         {
             Defeat();
         }

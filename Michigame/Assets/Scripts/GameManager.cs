@@ -6,33 +6,38 @@ public class GameManager : MonoBehaviour
 {
     [SerializeField] GameObject pauseMenu;
     [SerializeField] GameObject defeatScreen;
-    [SerializeField] GameObject winScreen;
-    public delegate void OnPause();
-    public event OnPause onPause;
-    public delegate void OnDefeat();
-    public event OnDefeat onDefeat;
-    public delegate void OnVictory();
-    public event OnVictory onVictory;
-    private bool playerDead = false;
+    [SerializeField] GameObject victoryScreen;
+    //public delegate void OnPause();
+    //public event OnPause onPause;
+    //public delegate void OnDefeat();
+    //public event OnDefeat onDefeat;
+    //public delegate void OnVictory();
+    //public event OnVictory onVictory;
+    public bool playerDead = false;
+    private float timeScale;
 
-    // Start is called before the first frame update
+    private void Awake()
+    {
+        Time.timeScale = 1.0f;
+    }
+    // Start is called before the first frame update    
     void Start()
     {
-        onPause += Pause;
-        onDefeat += Defeat;
-        onVictory += Victory;
+        //onPause += Pause;
+        //onDefeat += Defeat;
+        //onVictory += Victory;
     }
 
     // Update is called once per frame
     void Update()
     {
-        if (!playerDead)
+        if (playerDead)
         {
-
+            Defeat();
         }
-        if (Input.GetButtonDown("Cancel"))
+        else if (Input.GetButtonDown("Cancel"))
         {
-            onPause();
+            Pause();
         }        
         
     }
@@ -40,16 +45,18 @@ public class GameManager : MonoBehaviour
     public void Pause()
     {
         pauseMenu.SetActive(true);
+        Time.timeScale = 0f;
     }
 
     public void Defeat()
     {
-
+        defeatScreen.SetActive(true);
+        Time.timeScale = 0;
     }
 
     public void Victory()
     {
-
+        victoryScreen.SetActive(true);
     }
 
 }

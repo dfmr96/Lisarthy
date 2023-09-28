@@ -5,6 +5,7 @@ using UnityEngine;
 public class Frog : MonoBehaviour
 {
     private Rigidbody2D rigidbody;
+    private Animator animator;
     [SerializeField] float moveSpeed;
     [SerializeField] float jumpForce;
     [SerializeField] float jumpIntervalSeconds;
@@ -16,6 +17,7 @@ public class Frog : MonoBehaviour
     private void Awake()
     {
         rigidbody = GetComponent<Rigidbody2D>();
+        animator = GetComponent<Animator>();
     }
 
     // Update is called once per frame
@@ -32,7 +34,7 @@ public class Frog : MonoBehaviour
     }
 
     private void Movement()
-    {
+    {        
         rigidbody.AddForce(new Vector2(transform.right.x * moveSpeed, transform.up.y * jumpForce), ForceMode2D.Impulse);
         jumps++;
         jumpTimer = 0;
@@ -62,6 +64,7 @@ public class Frog : MonoBehaviour
         if (collision.CompareTag("floor"))
         {
             onFloor = true;
+            animator.SetBool("jumping", false);
         }
     }
 
@@ -69,7 +72,16 @@ public class Frog : MonoBehaviour
     {
         if (collision.CompareTag("floor"))
         {
+            animator.SetBool("jumping", true);
             onFloor = false;
+        }
+    }
+
+    private void OnCollisionEnter2D(Collision2D collision)
+    {
+        if (collision.gameObject.CompareTag("Player"))
+        {
+            collision.gameObject.GetComponent<PlayerInfo>().DeathAnimation();
         }
     }
 }

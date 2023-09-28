@@ -86,9 +86,9 @@ AnimationClip:
   m_HasMotionFloatCurves: 0
   m_Events:
   - time: 0.5
-    functionName: Defeat()
+    functionName: Dead
     data: 
-    objectReferenceParameter: {fileID: 6245690982432419857, guid: e9e2f56d44648664dbe0264df2eaf231, type: 3}
+    objectReferenceParameter: {fileID: 0}
     floatParameter: 0
     intParameter: 0
     messageOptions: 0

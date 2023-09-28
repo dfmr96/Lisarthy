@@ -2505,6 +2505,7 @@ GameObject:
   - component: {fileID: 938713250}
   - component: {fileID: 938713249}
   - component: {fileID: 938713248}
+  - component: {fileID: 938713251}
   m_Layer: 5
   m_Name: Close Button
   m_TagString: Untagged
@@ -2587,6 +2588,18 @@ MonoBehaviour:
           m_StringArgument: 
           m_BoolArgument: 0
         m_CallState: 2
+      - m_Target: {fileID: 938713251}
+        m_TargetAssemblyTypeName: CloseButton, Assembly-CSharp
+        m_MethodName: UnPause
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!114 &938713249
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -2625,6 +2638,18 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 938713246}
   m_CullTransparentMesh: 1
+--- !u!114 &938713251
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 938713246}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: e2db6c0eab846924d838e2406c1613e3, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &972602822
 GameObject:
   m_ObjectHideFlags: 0
@@ -3818,7 +3843,19 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 1534718628}
   m_OnClick:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 0}
+        m_TargetAssemblyTypeName: 
+        m_MethodName: 
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: 
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!114 &1534718628
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -4392,18 +4429,18 @@ BoxCollider2D:
   m_IsTrigger: 0
   m_UsedByEffector: 0
   m_UsedByComposite: 0
-  m_Offset: {x: 0, y: 0}
+  m_Offset: {x: 0, y: 0.82059836}
   m_SpriteTilingProperty:
     border: {x: 0, y: 0, z: 0, w: 0}
-    pivot: {x: 0.5, y: 0.5}
-    oldSize: {x: 1, y: 1}
+    pivot: {x: 0.5, y: 0}
+    oldSize: {x: 1.2236363, y: 1.6411967}
     newSize: {x: 1, y: 1}
     adaptiveTilingThreshold: 0.5
     drawMode: 0
     adaptiveTiling: 0
   m_AutoTiling: 0
   serializedVersion: 2
-  m_Size: {x: 1, y: 1}
+  m_Size: {x: 1.2236363, y: 1.6411967}
   m_EdgeRadius: 0
 --- !u!212 &1753630898
 SpriteRenderer:
@@ -4446,7 +4483,7 @@ SpriteRenderer:
   m_SortingLayerID: 0
   m_SortingLayer: 0
   m_SortingOrder: 0
-  m_Sprite: {fileID: 7482667652216324306, guid: 311925a002f4447b3a28927169b83ea6, type: 3}
+  m_Sprite: {fileID: 182056382, guid: 61462ba8db5331642a087817ff5a22c3, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
   m_FlipY: 0
@@ -4504,18 +4541,18 @@ BoxCollider2D:
   m_IsTrigger: 1
   m_UsedByEffector: 0
   m_UsedByComposite: 0
-  m_Offset: {x: 0, y: -0.5331733}
+  m_Offset: {x: -0.08799887, y: -0.04477954}
   m_SpriteTilingProperty:
     border: {x: 0, y: 0, z: 0, w: 0}
-    pivot: {x: 0.5, y: 0.5}
-    oldSize: {x: 1, y: 1}
+    pivot: {x: 0.5, y: 0}
+    oldSize: {x: 1.2236363, y: 1.6411967}
     newSize: {x: 1, y: 1}
     adaptiveTilingThreshold: 0.5
     drawMode: 0
     adaptiveTiling: 0
   m_AutoTiling: 0
   serializedVersion: 2
-  m_Size: {x: 1, y: 0.13359308}
+  m_Size: {x: 1.0351992, y: 0.08959341}
   m_EdgeRadius: 0
 --- !u!95 &1753630901
 Animator:
@@ -4634,8 +4671,9 @@ GameObject:
   - component: {fileID: 2048578866}
   - component: {fileID: 2048578865}
   - component: {fileID: 2048578864}
+  - component: {fileID: 2048578867}
   m_Layer: 5
-  m_Name: Button (Legacy) (6)
+  m_Name: Restart Button
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -4703,7 +4741,19 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 2048578865}
   m_OnClick:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 2048578867}
+        m_TargetAssemblyTypeName: RestartButton, Assembly-CSharp
+        m_MethodName: RestartLevel
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!114 &2048578865
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -4742,6 +4792,18 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 2048578862}
   m_CullTransparentMesh: 1
+--- !u!114 &2048578867
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2048578862}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 0ef74f147cf24ed4a8e3ffc8ef580cad, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &2063412814
 GameObject:
   m_ObjectHideFlags: 0
@@ -5412,6 +5474,14 @@ PrefabInstance:
       propertyPath: pauseMenu
       value: 
       objectReference: {fileID: 1839631978}
+    - target: {fileID: 6127704550553085530, guid: e9e2f56d44648664dbe0264df2eaf231, type: 3}
+      propertyPath: defeatScreen
+      value: 
+      objectReference: {fileID: 702571869}
+    - target: {fileID: 6127704550553085530, guid: e9e2f56d44648664dbe0264df2eaf231, type: 3}
+      propertyPath: victoryScreen
+      value: 
+      objectReference: {fileID: 125149453}
     - target: {fileID: 6245690982432419857, guid: e9e2f56d44648664dbe0264df2eaf231, type: 3}
       propertyPath: m_Name
       value: Game Manager

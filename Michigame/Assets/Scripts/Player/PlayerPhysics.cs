@@ -20,22 +20,21 @@ public class PlayerPhysics : MonoBehaviour
     {
         drag = rigidbody.drag;
     }
+    private void FixedUpdate()
+    {
+        if (playerInfo.GetJumpState() != 0 && transform.position.y < playerInfo.GetJumpHeight())
+        {
+            Fall(playerInfo.GetFallSpeed(), playerInfo.GetFallMultiplier());
+        }
+    }
+
     private void Update()
     {
         if (!playerInfo.CanJump())
         {
             rigidbody.drag = dragWhileJumping;
         }
-        else { rigidbody.drag = drag; }
-
-        if (playerInfo.GetJumpState() != 0 && transform.position.y < playerInfo.GetJumpHeight())
-        {
-            Fall(playerInfo.GetFallSpeed(), playerInfo.GetFallMultiplier());
-        }
-        //else if (playerInfo.GetJumpState() != 0 && transform.position.y >= playerInfo.GetJumpHeight())
-        //{
-        //    Fall(playerInfo.GetFallSpeed(), playerInfo.GetFallMultiplier()- antiGravityApex);
-        //}
+        else { rigidbody.drag = drag; }       
 
     }
 

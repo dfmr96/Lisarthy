@@ -5,6 +5,7 @@ using UnityEngine;
 public class PlayerInfo : MonoBehaviour
 {
     private PlayerController playerController;
+    private GameManager gameManager;
     private Animator animator;
     public int hp;
     [SerializeField] float moveSpeed;
@@ -24,12 +25,22 @@ public class PlayerInfo : MonoBehaviour
 
     private void Awake()
     {
+        gameManager = GameObject.Find("Game Manager").GetComponent<GameManager>();
         playerController = GetComponent<PlayerController>();
         animator = GetComponent<Animator>();
     }
     private void Update()
     {
         UpdateJumpState();
+
+        if (dead)
+        {
+            gameManager.playerDead = true;
+        }
+        else if (dying)
+        {
+            DeathAnimation();
+        }
     }
 
     public float GetMoveSpeed()
@@ -116,9 +127,14 @@ public class PlayerInfo : MonoBehaviour
        return jumpState;
     }
 
-    public void Death()
+    public void DeathAnimation()
     {
         animator.SetBool("Dead", true);
+    }
+
+    public void Dead()
+    {
+        dead = true;
     }
 
 }

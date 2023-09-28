@@ -7,5 +7,10 @@ public class CloseButton : MonoBehaviour
     public void Close()
     {
        gameObject.GetComponentInParent<GameObject>().SetActive(false);
-    }    
+    }
+    
+    public void UnPause()
+    {
+        Time.timeScale = 1.0f;
+    }
 }

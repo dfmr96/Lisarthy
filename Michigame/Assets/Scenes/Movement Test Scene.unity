@@ -4872,7 +4872,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: b915a15266c672d4481c39e46614be82, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  dragWhileJumping: 1
+  dragWhileJumping: 2.5
 --- !u!114 &2063412819
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -4886,15 +4886,15 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   hp: 0
-  moveSpeed: 30
+  moveSpeed: 1500
   maxSpeed: 0
   jumpState: 0
-  jumpForce: 5
-  jumpForceMiltiplier: 3
+  jumpForce: 230
+  jumpForceMiltiplier: 10
   maxJumpHeight: 1.5
   maxJumpTime: 0.6
-  fallSpeed: 4
-  fallingSpeedMultiplier: 1
+  fallSpeed: 40
+  fallingSpeedMultiplier: 2
   terminalVelocity: 0
   onFloor: 0
   jumping: 0

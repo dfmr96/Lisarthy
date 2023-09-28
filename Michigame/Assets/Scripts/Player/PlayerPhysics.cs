@@ -46,22 +46,22 @@ public class PlayerPhysics : MonoBehaviour
 
     public void MoveFoward(float speed, float direction)
     {
-        rigidbody.AddForce(new Vector2(speed * direction, rigidbody.velocity.y));
+        rigidbody.AddForce(new Vector2(speed * Time.deltaTime * direction, rigidbody.velocity.y));
     }
 
     public void Jump(float force)
     {
-        rigidbody.AddForce(transform.up * force, ForceMode2D.Impulse);
+        rigidbody.AddForce(transform.up * force * Time.deltaTime, ForceMode2D.Impulse);
     }
 
     public void SustainedJump(float force, float multiplier = 0.5f)
     {
-        rigidbody.AddForce(transform.up * (force * multiplier), ForceMode2D.Force);
+        rigidbody.AddForce(transform.up * (force* Time.deltaTime * multiplier), ForceMode2D.Force);
     }
 
     public void Fall(float force, float multiplier = 0.5f)
     {
-        rigidbody.AddForce(-transform.up * (force * multiplier), ForceMode2D.Force);
+        rigidbody.AddForce(-transform.up * (force * Time.deltaTime * multiplier), ForceMode2D.Force);
     }
     
 }

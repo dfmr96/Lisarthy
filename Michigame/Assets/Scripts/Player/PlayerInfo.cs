@@ -9,7 +9,7 @@ public class PlayerInfo : MonoBehaviour
     public int hp;
     [SerializeField] float moveSpeed;
     [SerializeField] float maxSpeed;
-    [SerializeField] int jumpState;
+    [SerializeField] int jumpState;//0-on the ground / 1-Jumping / 2-Falling
     [SerializeField] float jumpForce;
     [SerializeField] float jumpForceMiltiplier;
     [SerializeField] float maxJumpHeight;

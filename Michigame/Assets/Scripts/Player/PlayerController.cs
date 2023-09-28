@@ -20,8 +20,6 @@ public class PlayerController : MonoBehaviour
     private bool canJump;
     private int jumpState;//0-on the ground / 1-Jumping / 2-Falling
     private bool jumpButton;
-    private float terminalVelocity;
-    private float fallSpeed;   
 
 
     // Start is called before the first frame update
@@ -33,17 +31,28 @@ public class PlayerController : MonoBehaviour
 
     private void FixedUpdate()
     {
+// Horizontal Movement--------------------------------------------------------------------------------------
+
+        if (Input.GetAxis("Horizontal") != 0)
+        {
+            gameObject.GetComponent<PlayerPhysics>().MoveFoward(moveSpeed, direction);
+        }
+
 //------- Jumping -----------------------------------------------------------------------------
+        
         if (jumpButton && jumpState ==0)
         {
             playerInfo.jumping = true;
             PlayerJump();            
         }
 
-        if (Input.GetAxis("Horizontal") != 0)
+        //Long Jump
+        if (jumpState == 1 && jumpButton)
         {
-            gameObject.GetComponent<PlayerPhysics>().MoveFoward(moveSpeed, direction);
-        }
+            //jump higher if button remains pressed
+            jumpTime += Time.deltaTime;
+            gameObject.GetComponent<PlayerPhysics>().SustainedJump(jumpForce, jumpForceMultiplier);
+        }       
     }
     private void Update()
     {        
@@ -69,24 +78,15 @@ public class PlayerController : MonoBehaviour
         }
         else if (direction == 0) { animator.SetBool("Walking", false); }
 
-//------ jump mechanics ------------------------------------------------
+//------ jump button detection ------------------------------------------------
 
         if (Input.GetButton("Jump"))
         {
-            jumpButton = true;
-
-            if (jumpState ==1)
-            {
-                //jump higher if button remains pressed
-                jumpTime += Time.deltaTime;                
-                gameObject.GetComponent<PlayerPhysics>().SustainedJump(jumpForce, jumpForceMultiplier);
-            }            
-            
+            jumpButton = true;           
         }
         if (Input.GetButtonUp("Jump"))
         {
             jumpButton = false;
-
         }
 
         if (jumpState == 2) { jumpTime = 0; }

@@ -39,6 +39,11 @@ public class PlayerController : MonoBehaviour
             playerInfo.jumping = true;
             PlayerJump();            
         }
+
+        if (Input.GetAxis("Horizontal") != 0)
+        {
+            gameObject.GetComponent<PlayerPhysics>().MoveFoward(moveSpeed, direction);
+        }
     }
     private void Update()
     {        
@@ -46,10 +51,7 @@ public class PlayerController : MonoBehaviour
         UpdatePlayerInput();
 
 //Horizontal movement----------------------------------------------------------------
-        if (Input.GetAxis("Horizontal") != 0)
-        {
-            gameObject.GetComponent<PlayerPhysics>().MoveFoward(moveSpeed, direction);
-        }
+        
 
 // Adjust player horizontal rotation------------------------------------------------------
         if (direction > 0)

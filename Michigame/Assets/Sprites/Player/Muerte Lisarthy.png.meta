@@ -110,27 +110,6 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: Muerte Lisarthy_0
-      rect:
-        serializedVersion: 2
-        x: 0
-        y: 3252
-        width: 68
-        height: 116
-      alignment: 7
-      pivot: {x: 0.5, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 57239d0b3e2a0ac4cabf092851b2db95
-      internalID: 1680177179
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
       name: Muerte Lisarthy_1
       rect:
         serializedVersion: 2
@@ -147,27 +126,6 @@ TextureImporter:
       bones: []
       spriteID: 3e7aac76df841c34a926a35869842598
       internalID: -478101858
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Muerte Lisarthy_2
-      rect:
-        serializedVersion: 2
-        x: 8267
-        y: 3215
-        width: 117
-        height: 141
-      alignment: 7
-      pivot: {x: 0.5, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: c0ffa0d50dd29f045a44f70a8cb2a1c4
-      internalID: 298879853
       vertices: []
       indices: 
       edges: []
@@ -296,6 +254,7 @@ TextureImporter:
       Muerte Lisarthy_5: 1557474247
       Muerte Lisarthy_6: -1483764822
       Muerte Lisarthy_7: -1454662799
+      Muerte Lisarthy_8: -1082710151
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 

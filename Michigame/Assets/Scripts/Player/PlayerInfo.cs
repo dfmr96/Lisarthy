@@ -6,15 +6,18 @@ public class PlayerInfo : MonoBehaviour
 {
     private PlayerController playerController;
     public int hp;
-    public float moveSpeed;
-    public float maxSpeed;
-    public int jumpState;
-    public float jumpForce;
-    public float maxJumpHeight;
-    public float maxJumpTime;
-    public float fallingSpeedMultiplier;
-    public float terminalVelocity;
-    public bool onFloor;
+    [SerializeField] float moveSpeed;
+    [SerializeField] float maxSpeed;
+    [SerializeField] int jumpState;
+    [SerializeField] float jumpForce;
+    [SerializeField] float jumpForceMiltiplier;
+    [SerializeField] float maxJumpHeight;
+    [SerializeField] float maxJumpTime;
+    [SerializeField] float fallSpeed;
+    [SerializeField] float fallingSpeedMultiplier;
+    [SerializeField] float terminalVelocity;
+    [SerializeField] bool onFloor;
+    public bool jumping;
 
     private void Awake()
     {
@@ -22,7 +25,12 @@ public class PlayerInfo : MonoBehaviour
     }
     private void Update()
     {
+        UpdateJumpState();
+    }
 
+    public float GetMoveSpeed()
+    {
+        return moveSpeed;
     }
 
     public float GetJumpForce()
@@ -30,12 +38,17 @@ public class PlayerInfo : MonoBehaviour
         return jumpForce;
     }
 
+    public float GetJumpForceMultiplier()
+    {
+        return jumpForceMiltiplier;
+    }
+
     public float GetJumpHeight()
     {
         return maxJumpHeight;
     }
 
-    public float GetJumpTime()
+    public float GetMaxJumpTime()
     {
         return maxJumpTime;
     }
@@ -64,6 +77,11 @@ public class PlayerInfo : MonoBehaviour
 
     public float GetFallSpeed()
     {
+        return fallSpeed;
+    }
+
+    public float GetFallMultiplier()
+    {
         return fallingSpeedMultiplier;
     }
 
@@ -74,6 +92,18 @@ public class PlayerInfo : MonoBehaviour
 
     private void UpdateJumpState()
     {
+        if (transform.position.y >= maxJumpHeight || playerController.GetJumpTime() >= maxJumpTime || (!onFloor && jumpState == 0 && !playerController.GetKey("jump")) || !playerController.GetKey("jump") && !onFloor)
+        {
+            jumping = false;
+            jumpState = 2;
+        }        
+        else if (onFloor) 
+        { 
+            jumpState = 0;
+            jumping = false;
+        }
+        else if (jumping) { jumpState = 1; }
+
 
     }
 

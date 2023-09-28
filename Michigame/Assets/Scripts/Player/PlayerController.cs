@@ -13,7 +13,7 @@ public class PlayerController : MonoBehaviour
 
     //Jump Variables
     private float jumpForce;
-    [SerializeField] float jumpForceMultiplier = 2;
+    private float jumpForceMultiplier;
     private float maxJumpHeight =0;
     private float maxJumpTime;
     private float jumpTime;
@@ -33,9 +33,11 @@ public class PlayerController : MonoBehaviour
 
     private void FixedUpdate()
     {
+//------- Jumping -----------------------------------------------------------------------------
         if (jumpButton && jumpState ==0)
         {
-            jumpState = 1;
+            //jumpState = 1;
+            playerInfo.jumping = true;
             PlayerJump();            
         }
     }
@@ -66,15 +68,7 @@ public class PlayerController : MonoBehaviour
         }
         else if (direction == 0) { animator.SetBool("Walking", false); }
 
-        // jump mechanics ------------------------------------------------
-
-        if (canJump) { jumpState = 0; }
-
-        //Si alcanza su altura maxima o si alcanza el tiempo maximo de salto o si esta callendo
-        if (transform.position.y >= maxJumpHeight || jumpTime>=maxJumpTime || (!canJump && jumpState == 0 && !jumpButton))
-        {
-            jumpState = 2;
-        }
+//------ jump mechanics ------------------------------------------------
 
         if (Input.GetButton("Jump"))
         {
@@ -82,8 +76,8 @@ public class PlayerController : MonoBehaviour
 
             if (jumpState ==1)
             {
-                jumpTime += Time.deltaTime;
                 //jump higher if button remains pressed
+                jumpTime += Time.deltaTime;                
                 gameObject.GetComponent<PlayerPhysics>().SustainedJump(jumpForce, jumpForceMultiplier);
             }            
             
@@ -91,7 +85,6 @@ public class PlayerController : MonoBehaviour
         if (Input.GetButtonUp("Jump"))
         {
             jumpButton = false;
-            jumpState = 2;
 
         }
 
@@ -101,10 +94,13 @@ public class PlayerController : MonoBehaviour
 
     private void UpdatePlayerInfo()
     {
-        moveSpeed = gameObject.GetComponent<PlayerInfo>().moveSpeed;
-        jumpForce = gameObject.GetComponent<PlayerInfo>().jumpForce;
-        canJump = gameObject.GetComponent<PlayerInfo>().CanJump();
-        maxJumpTime = playerInfo.maxJumpTime;
+        moveSpeed = playerInfo.GetMoveSpeed();
+        jumpState = playerInfo.GetJumpState();
+        jumpForce = playerInfo.GetJumpForce();
+        jumpForceMultiplier = playerInfo.GetJumpForceMultiplier();
+        canJump = playerInfo.CanJump();
+        maxJumpTime = playerInfo.GetMaxJumpTime();
+        jumpState = playerInfo.GetJumpState();
     }
 
     private void UpdatePlayerInput()
@@ -123,6 +119,7 @@ public class PlayerController : MonoBehaviour
         }
     }
 
+//Returns if the specified key is being pressed or not-------------------------------------------------
     public bool GetKey(string actionKey)
     {
         if (actionKey == "jump")
@@ -135,6 +132,11 @@ public class PlayerController : MonoBehaviour
             Debug.Log("The requested Key is invalid");
             return false; 
         }
+    }
+
+    public float GetJumpTime()
+    {
+        return jumpTime;
     }
 
 }

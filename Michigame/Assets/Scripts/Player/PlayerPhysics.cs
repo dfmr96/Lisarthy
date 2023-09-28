@@ -26,6 +26,11 @@ public class PlayerPhysics : MonoBehaviour
             rigidbody.drag = dragWhileJumping;
         }
         else { rigidbody.drag = drag; }
+
+        if (playerInfo.GetJumpState() == 2)
+        {
+            Fall(playerInfo.GetFallSpeed(), playerInfo.GetFallMultiplier());
+        }
     }
 
     public void UpdateDrag(float value)

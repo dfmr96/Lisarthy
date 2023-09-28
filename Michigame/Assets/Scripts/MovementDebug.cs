@@ -7,10 +7,11 @@ using UnityEngine.Serialization;
 public class MovementDebug : MonoBehaviour
 {
     [SerializeField] TMP_Text stats;
-    [SerializeField] private PlayerMovement player;
+    [SerializeField] private PlayerMovement playerMovement;
+    [SerializeField] private PlayerJump playerJump;
 
     void FixedUpdate()
     {
-        stats.SetText(player.PlayerStats);
+        stats.SetText(playerMovement.MovementDebugInfo + playerJump.JumpDebugInfo);
     }
 }

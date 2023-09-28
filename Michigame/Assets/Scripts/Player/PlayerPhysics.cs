@@ -7,6 +7,7 @@ public class PlayerPhysics : MonoBehaviour
     private Rigidbody2D rigidbody;
     private PlayerInfo playerInfo;
     [SerializeField] float dragWhileJumping = 3;
+    //[SerializeField] float antiGravityApex;
     private float drag;
     // Start is called before the first frame update
     void Awake()
@@ -27,10 +28,15 @@ public class PlayerPhysics : MonoBehaviour
         }
         else { rigidbody.drag = drag; }
 
-        if (playerInfo.GetJumpState() == 2)
+        if (playerInfo.GetJumpState() != 0 && transform.position.y < playerInfo.GetJumpHeight())
         {
             Fall(playerInfo.GetFallSpeed(), playerInfo.GetFallMultiplier());
         }
+        //else if (playerInfo.GetJumpState() != 0 && transform.position.y >= playerInfo.GetJumpHeight())
+        //{
+        //    Fall(playerInfo.GetFallSpeed(), playerInfo.GetFallMultiplier()- antiGravityApex);
+        //}
+
     }
 
     public void UpdateDrag(float value)

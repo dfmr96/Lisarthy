@@ -43,7 +43,7 @@ TextureImporter:
   nPOTScale: 0
   lightmap: 0
   compressionQuality: 50
-  spriteMode: 1
+  spriteMode: 2
   spriteExtrude: 1
   spriteMeshType: 1
   alignment: 0
@@ -108,7 +108,112 @@ TextureImporter:
     forceMaximumCompressionQuality_BC6H_BC7: 0
   spriteSheet:
     serializedVersion: 2
-    sprites: []
+    sprites:
+    - serializedVersion: 2
+      name: Sapo Muerte_0
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 2275
+        width: 1755
+        height: 1804
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0785aaa50e7e29d42aa9c56b1babbe97
+      internalID: 1792592571
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Sapo Muerte_1
+      rect:
+        serializedVersion: 2
+        x: 2615
+        y: 2328
+        width: 1609
+        height: 1677
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 67cdb7b2a5784e24bb0750aa43e5151b
+      internalID: -741520489
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Sapo Muerte_2
+      rect:
+        serializedVersion: 2
+        x: 5444
+        y: 2589
+        width: 2312
+        height: 1490
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5dcdea47f4a39cd48b2a701d0a050af0
+      internalID: -671827834
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Sapo Muerte_3
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 0
+        width: 2581
+        height: 1306
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 9bd48bd113805464e90a25eaf469be37
+      internalID: 1923624157
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Sapo Muerte_4
+      rect:
+        serializedVersion: 2
+        x: 3460
+        y: 0
+        width: 4296
+        height: 1009
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 718df600af6619f4cacbaa23066563eb
+      internalID: -591103075
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
     outline: []
     physicsShape: []
     bones: []
@@ -119,7 +224,12 @@ TextureImporter:
     edges: []
     weights: []
     secondaryTextures: []
-    nameFileIdTable: {}
+    nameFileIdTable:
+      Sapo Muerte_0: 1792592571
+      Sapo Muerte_1: -741520489
+      Sapo Muerte_2: -671827834
+      Sapo Muerte_3: 1923624157
+      Sapo Muerte_4: -591103075
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 

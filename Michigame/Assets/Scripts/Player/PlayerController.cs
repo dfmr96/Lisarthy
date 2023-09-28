@@ -14,7 +14,7 @@ public class PlayerController : MonoBehaviour
     //Jump Variables
     private float jumpForce;
     private float jumpForceMultiplier;
-    private float maxJumpHeight =0;
+    private float maxJumpHeight = 0;
     private float maxJumpTime;
     private float jumpTime;
     private bool canJump;
@@ -36,7 +36,6 @@ public class PlayerController : MonoBehaviour
 //------- Jumping -----------------------------------------------------------------------------
         if (jumpButton && jumpState ==0)
         {
-            //jumpState = 1;
             playerInfo.jumping = true;
             PlayerJump();            
         }

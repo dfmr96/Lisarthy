@@ -43,7 +43,7 @@ TextureImporter:
   nPOTScale: 0
   lightmap: 0
   compressionQuality: 50
-  spriteMode: 1
+  spriteMode: 2
   spriteExtrude: 1
   spriteMeshType: 1
   alignment: 0
@@ -108,7 +108,112 @@ TextureImporter:
     forceMaximumCompressionQuality_BC6H_BC7: 0
   spriteSheet:
     serializedVersion: 2
-    sprites: []
+    sprites:
+    - serializedVersion: 2
+      name: Sapo Salto_0
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 0
+        width: 1346
+        height: 1805
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1fbc335f8c763b943bf76365466a5330
+      internalID: 182056382
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Sapo Salto_1
+      rect:
+        serializedVersion: 2
+        x: 1616
+        y: 525
+        width: 1587
+        height: 2313
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1c6cba5de37c3084ba16cdfe9afffa8f
+      internalID: 1835947109
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Sapo Salto_2
+      rect:
+        serializedVersion: 2
+        x: 3397
+        y: 939
+        width: 1663
+        height: 2270
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8b09c471f213b454785bf6ef38a19eac
+      internalID: 1289499935
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Sapo Salto_3
+      rect:
+        serializedVersion: 2
+        x: 5488
+        y: 615
+        width: 2002
+        height: 1578
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c676f123c15e46e4ab04090001c4925d
+      internalID: -1058889086
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Sapo Salto_4
+      rect:
+        serializedVersion: 2
+        x: 7886
+        y: 16
+        width: 1346
+        height: 1902
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4a3af70fa039e7d4bb8f41d5ab767159
+      internalID: 1905265507
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
     outline: []
     physicsShape: []
     bones: []
@@ -119,7 +224,12 @@ TextureImporter:
     edges: []
     weights: []
     secondaryTextures: []
-    nameFileIdTable: {}
+    nameFileIdTable:
+      Sapo Salto_0: 182056382
+      Sapo Salto_1: 1835947109
+      Sapo Salto_2: 1289499935
+      Sapo Salto_3: -1058889086
+      Sapo Salto_4: 1905265507
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 

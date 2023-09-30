@@ -1,0 +1,1535 @@
+fileFormatVersion: 2
+guid: 1b27492b067a4a3429f6514911e31069
+TextureImporter:
+  internalIDToNameTable: []
+  externalObjects: {}
+  serializedVersion: 12
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+    flipGreenChannel: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  vTOnly: 0
+  ignoreMipmapLimit: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: 0
+    aniso: 1
+    mipBias: 0
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 512
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  flipbookRows: 1
+  flipbookColumns: 1
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  ignorePngGamma: 0
+  applyGammaDecoding: 0
+  swizzle: 50462976
+  cookieLightType: 0
+  platformSettings:
+  - serializedVersion: 3
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Server
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: GrayBoxes2D_Mesa de trabajo 1_0
+      rect:
+        serializedVersion: 2
+        x: 49
+        y: 9716
+        width: 270
+        height: 270
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 92adb53757c998e46b8fad56b4ea16d8
+      internalID: -349406827
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: GrayBoxes2D_Mesa de trabajo 1_1
+      rect:
+        serializedVersion: 2
+        x: 357
+        y: 9716
+        width: 535
+        height: 270
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ff2cd6fe86836b64fa2e4821572c0738
+      internalID: 737996741
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: GrayBoxes2D_Mesa de trabajo 1_2
+      rect:
+        serializedVersion: 2
+        x: 928
+        y: 9716
+        width: 803
+        height: 270
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 3aca3df47cf44154c8da0f0f8c637bbe
+      internalID: -914591276
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: GrayBoxes2D_Mesa de trabajo 1_3
+      rect:
+        serializedVersion: 2
+        x: 1769
+        y: 9716
+        width: 1069
+        height: 270
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 2b5b8cc7230dfde44a14d2983243cc6a
+      internalID: 1541216879
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: GrayBoxes2D_Mesa de trabajo 1_4
+      rect:
+        serializedVersion: 2
+        x: 2874
+        y: 9716
+        width: 1336
+        height: 270
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f919a11d8e3db2b47914dcc826d71b09
+      internalID: -942814102
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: GrayBoxes2D_Mesa de trabajo 1_5
+      rect:
+        serializedVersion: 2
+        x: 4247
+        y: 9716
+        width: 1603
+        height: 270
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 3fa43b01d98dbff45a986c3575d99df6
+      internalID: -1700995604
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: GrayBoxes2D_Mesa de trabajo 1_6
+      rect:
+        serializedVersion: 2
+        x: 5887
+        y: 9716
+        width: 1869
+        height: 270
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 3aaad1458393f264fba178746514a368
+      internalID: 9857290
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: GrayBoxes2D_Mesa de trabajo 1_7
+      rect:
+        serializedVersion: 2
+        x: 7803
+        y: 9716
+        width: 2136
+        height: 270
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 302d87742b716e44a89796f86f3dab8c
+      internalID: 468821545
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: GrayBoxes2D_Mesa de trabajo 1_8
+      rect:
+        serializedVersion: 2
+        x: 49
+        y: 9148
+        width: 270
+        height: 535
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 29c673fe80b198843bde5d67763754a1
+      internalID: 353931602
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: GrayBoxes2D_Mesa de trabajo 1_9
+      rect:
+        serializedVersion: 2
+        x: 357
+        y: 9148
+        width: 535
+        height: 535
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: dfd155bb921d5e74f943b71a47665117
+      internalID: -258942057
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: GrayBoxes2D_Mesa de trabajo 1_10
+      rect:
+        serializedVersion: 2
+        x: 928
+        y: 9148
+        width: 803
+        height: 535
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1f1fae29f2f28fb4380c7504415234d5
+      internalID: 966225217
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: GrayBoxes2D_Mesa de trabajo 1_11
+      rect:
+        serializedVersion: 2
+        x: 1769
+        y: 9148
+        width: 1069
+        height: 535
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: dc9f559f29219674799e8408dc85d596
+      internalID: 155828677
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: GrayBoxes2D_Mesa de trabajo 1_12
+      rect:
+        serializedVersion: 2
+        x: 2874
+        y: 9148
+        width: 1336
+        height: 535
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d527b85764a448c439dc36ff76baf4b2
+      internalID: 1248801415
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: GrayBoxes2D_Mesa de trabajo 1_13
+      rect:
+        serializedVersion: 2
+        x: 4247
+        y: 9148
+        width: 1603
+        height: 535
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: dc26bfda23d6a6f4fafe3f56ad7e9296
+      internalID: 2040081322
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: GrayBoxes2D_Mesa de trabajo 1_14
+      rect:
+        serializedVersion: 2
+        x: 5887
+        y: 9148
+        width: 1869
+        height: 535
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 62fe46b715086174f8f8f5b852cf109b
+      internalID: 1360643497
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: GrayBoxes2D_Mesa de trabajo 1_15
+      rect:
+        serializedVersion: 2
+        x: 7803
+        y: 9148
+        width: 2136
+        height: 535
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8cbfc33bba597e84e9cb683c552010d3
+      internalID: 742083504
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: GrayBoxes2D_Mesa de trabajo 1_16
+      rect:
+        serializedVersion: 2
+        x: 49
+        y: 8312
+        width: 270
+        height: 802
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: cb5ad8f253e11b948af9fceee1084036
+      internalID: -1240819081
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: GrayBoxes2D_Mesa de trabajo 1_17
+      rect:
+        serializedVersion: 2
+        x: 357
+        y: 8312
+        width: 535
+        height: 802
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f832a7262b28a6247b40287f774f8cef
+      internalID: 824078197
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: GrayBoxes2D_Mesa de trabajo 1_18
+      rect:
+        serializedVersion: 2
+        x: 928
+        y: 8312
+        width: 803
+        height: 802
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8ac2f8b70ad987f4eacb664c6315126e
+      internalID: -395050664
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: GrayBoxes2D_Mesa de trabajo 1_19
+      rect:
+        serializedVersion: 2
+        x: 1769
+        y: 8312
+        width: 1069
+        height: 802
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 42a6a562491653f4b8ec5be395ea1adc
+      internalID: 438093206
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: GrayBoxes2D_Mesa de trabajo 1_20
+      rect:
+        serializedVersion: 2
+        x: 2874
+        y: 8312
+        width: 1336
+        height: 802
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ee7a4ea74f961b74ba7639f92ccc0115
+      internalID: 955551967
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: GrayBoxes2D_Mesa de trabajo 1_21
+      rect:
+        serializedVersion: 2
+        x: 4247
+        y: 8312
+        width: 1603
+        height: 802
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 28e3223379b82c84bb6b90ed376c1b64
+      internalID: 1853238809
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: GrayBoxes2D_Mesa de trabajo 1_22
+      rect:
+        serializedVersion: 2
+        x: 5887
+        y: 8312
+        width: 1869
+        height: 802
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 9d758d1a4dcc04f469bc91b1a5908eb9
+      internalID: 1539174741
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: GrayBoxes2D_Mesa de trabajo 1_23
+      rect:
+        serializedVersion: 2
+        x: 7803
+        y: 8312
+        width: 2136
+        height: 802
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 614d67b2b3549b945979836f2de50a9b
+      internalID: -852231242
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: GrayBoxes2D_Mesa de trabajo 1_24
+      rect:
+        serializedVersion: 2
+        x: 49
+        y: 7199
+        width: 270
+        height: 1067
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a2d55f3e7e93d784e9f00b01a047461e
+      internalID: -1124028647
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: GrayBoxes2D_Mesa de trabajo 1_25
+      rect:
+        serializedVersion: 2
+        x: 357
+        y: 7199
+        width: 535
+        height: 1067
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 03e8f24a18504264cbd3c7ca8106f02b
+      internalID: 1041166485
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: GrayBoxes2D_Mesa de trabajo 1_26
+      rect:
+        serializedVersion: 2
+        x: 928
+        y: 7199
+        width: 803
+        height: 1067
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: fb9ff4841c94150419b1cf991721c4c6
+      internalID: -779857426
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: GrayBoxes2D_Mesa de trabajo 1_27
+      rect:
+        serializedVersion: 2
+        x: 1769
+        y: 7199
+        width: 1069
+        height: 1067
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 755b4c250f3923f43a08010c4df8dd99
+      internalID: -252995944
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: GrayBoxes2D_Mesa de trabajo 1_28
+      rect:
+        serializedVersion: 2
+        x: 2874
+        y: 7199
+        width: 1336
+        height: 1067
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6f0f7f741a75f6046b31de4851d68e15
+      internalID: 223263156
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: GrayBoxes2D_Mesa de trabajo 1_29
+      rect:
+        serializedVersion: 2
+        x: 4247
+        y: 7199
+        width: 1603
+        height: 1067
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: eda0955e88bf0af48aed5ee63b229e5e
+      internalID: 1056719093
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: GrayBoxes2D_Mesa de trabajo 1_30
+      rect:
+        serializedVersion: 2
+        x: 5887
+        y: 7199
+        width: 1869
+        height: 1067
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: efb24939b2023c84583ec79d13e28c9e
+      internalID: -1479120051
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: GrayBoxes2D_Mesa de trabajo 1_31
+      rect:
+        serializedVersion: 2
+        x: 7803
+        y: 7199
+        width: 2136
+        height: 1067
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ed5575e49374ee44abaf26094869eee3
+      internalID: -1262417999
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: GrayBoxes2D_Mesa de trabajo 1_32
+      rect:
+        serializedVersion: 2
+        x: 49
+        y: 5817
+        width: 270
+        height: 1336
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a1b4d89ed8333cf47a0abeb0f947bc7a
+      internalID: 1778632827
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: GrayBoxes2D_Mesa de trabajo 1_33
+      rect:
+        serializedVersion: 2
+        x: 357
+        y: 5817
+        width: 535
+        height: 1336
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 153f4a553da82074e8abfafe6d039447
+      internalID: 1612963534
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: GrayBoxes2D_Mesa de trabajo 1_34
+      rect:
+        serializedVersion: 2
+        x: 928
+        y: 5817
+        width: 803
+        height: 1336
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e7ef500d3111c484aa986ce5282b04ba
+      internalID: -876497635
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: GrayBoxes2D_Mesa de trabajo 1_35
+      rect:
+        serializedVersion: 2
+        x: 1769
+        y: 5817
+        width: 1069
+        height: 1336
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 9fb9ac5893097ee48931d4e78075dccb
+      internalID: 673934956
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: GrayBoxes2D_Mesa de trabajo 1_36
+      rect:
+        serializedVersion: 2
+        x: 2874
+        y: 5817
+        width: 1336
+        height: 1336
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ac7d5ae653f2ad14ea8f472e31c5f54f
+      internalID: -1977733006
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: GrayBoxes2D_Mesa de trabajo 1_37
+      rect:
+        serializedVersion: 2
+        x: 4247
+        y: 5817
+        width: 1603
+        height: 1336
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: fbe7f3a744bf47f4fa4c37f41678e703
+      internalID: -2017769547
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: GrayBoxes2D_Mesa de trabajo 1_38
+      rect:
+        serializedVersion: 2
+        x: 5887
+        y: 5817
+        width: 1869
+        height: 1336
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: fa667c1792ea26c4287b1c3e7d1e6e80
+      internalID: -667465577
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: GrayBoxes2D_Mesa de trabajo 1_39
+      rect:
+        serializedVersion: 2
+        x: 7803
+        y: 5817
+        width: 2136
+        height: 1336
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 32597518db6089645ae78fa79d9451a1
+      internalID: -406704014
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: GrayBoxes2D_Mesa de trabajo 1_40
+      rect:
+        serializedVersion: 2
+        x: 49
+        y: 4170
+        width: 270
+        height: 1603
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c831fb133d5da874aa07205c7f591b98
+      internalID: -1102723614
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: GrayBoxes2D_Mesa de trabajo 1_41
+      rect:
+        serializedVersion: 2
+        x: 357
+        y: 4170
+        width: 535
+        height: 1603
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 800ea8fb8f486d14f8a03a1b5df8d231
+      internalID: 846998790
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: GrayBoxes2D_Mesa de trabajo 1_42
+      rect:
+        serializedVersion: 2
+        x: 928
+        y: 4170
+        width: 803
+        height: 1603
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 9ff0079c851b592419b8846a0f4277a7
+      internalID: -463478440
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: GrayBoxes2D_Mesa de trabajo 1_43
+      rect:
+        serializedVersion: 2
+        x: 1769
+        y: 4170
+        width: 1069
+        height: 1603
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0071668dac113bc4eb82eaf094bcee1f
+      internalID: 1226008197
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: GrayBoxes2D_Mesa de trabajo 1_44
+      rect:
+        serializedVersion: 2
+        x: 2874
+        y: 4170
+        width: 1336
+        height: 1603
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1231c36ad61ae894284bc25367c7a5ac
+      internalID: 1888372396
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: GrayBoxes2D_Mesa de trabajo 1_45
+      rect:
+        serializedVersion: 2
+        x: 4247
+        y: 4170
+        width: 1603
+        height: 1603
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f29c960120ccd144bb97a44cd0803ea5
+      internalID: 191966547
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: GrayBoxes2D_Mesa de trabajo 1_46
+      rect:
+        serializedVersion: 2
+        x: 5887
+        y: 4170
+        width: 1869
+        height: 1603
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 78064c02fe41b34458f397e1157f4430
+      internalID: 231236604
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: GrayBoxes2D_Mesa de trabajo 1_47
+      rect:
+        serializedVersion: 2
+        x: 7803
+        y: 4170
+        width: 2136
+        height: 1603
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d6c6b8e7f417365459117afb7b7e5d34
+      internalID: 1051930984
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: GrayBoxes2D_Mesa de trabajo 1_48
+      rect:
+        serializedVersion: 2
+        x: 49
+        y: 2255
+        width: 270
+        height: 1870
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d9c392df87cee104294182aa60b3a8b6
+      internalID: -1020356843
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: GrayBoxes2D_Mesa de trabajo 1_49
+      rect:
+        serializedVersion: 2
+        x: 357
+        y: 2255
+        width: 535
+        height: 1870
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e9eb076a2afa04e4abcbacea8273458b
+      internalID: 876199998
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: GrayBoxes2D_Mesa de trabajo 1_50
+      rect:
+        serializedVersion: 2
+        x: 928
+        y: 2255
+        width: 803
+        height: 1870
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 312c9a2fce572994a9cf06d9e6b09d78
+      internalID: 402400495
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: GrayBoxes2D_Mesa de trabajo 1_51
+      rect:
+        serializedVersion: 2
+        x: 1769
+        y: 2255
+        width: 1069
+        height: 1870
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 673da8fadea9e3b4bbf1aa9e593b1f85
+      internalID: 629388489
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: GrayBoxes2D_Mesa de trabajo 1_52
+      rect:
+        serializedVersion: 2
+        x: 2874
+        y: 2255
+        width: 1336
+        height: 1870
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 9383f5f76d098ee42a56803319918db9
+      internalID: -2109506656
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: GrayBoxes2D_Mesa de trabajo 1_53
+      rect:
+        serializedVersion: 2
+        x: 4247
+        y: 2255
+        width: 1603
+        height: 1870
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4269cfa26ad3edd488a535f832450164
+      internalID: 1835693177
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: GrayBoxes2D_Mesa de trabajo 1_54
+      rect:
+        serializedVersion: 2
+        x: 5887
+        y: 2255
+        width: 1869
+        height: 1870
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 75b7eb9c8616743488d89bf82d3fb81f
+      internalID: -304084303
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: GrayBoxes2D_Mesa de trabajo 1_55
+      rect:
+        serializedVersion: 2
+        x: 7803
+        y: 2255
+        width: 2136
+        height: 1870
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 46b2eec298ae6bc43874c2de93e73331
+      internalID: -1455375989
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: GrayBoxes2D_Mesa de trabajo 1_56
+      rect:
+        serializedVersion: 2
+        x: 49
+        y: 75
+        width: 270
+        height: 2136
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ae69e6aeb8fcc1c4e8f8acfcefdb373b
+      internalID: -2081412383
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: GrayBoxes2D_Mesa de trabajo 1_57
+      rect:
+        serializedVersion: 2
+        x: 357
+        y: 75
+        width: 535
+        height: 2136
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e0e3404229307a847aba08e23d51d11e
+      internalID: 2080904068
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: GrayBoxes2D_Mesa de trabajo 1_58
+      rect:
+        serializedVersion: 2
+        x: 928
+        y: 75
+        width: 803
+        height: 2136
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: dc99b949334b2054890391d79ae474ad
+      internalID: -1942472533
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: GrayBoxes2D_Mesa de trabajo 1_59
+      rect:
+        serializedVersion: 2
+        x: 1769
+        y: 75
+        width: 1069
+        height: 2136
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e5eaeeba1ec340f439ce0f026ef87ab9
+      internalID: 74562862
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: GrayBoxes2D_Mesa de trabajo 1_60
+      rect:
+        serializedVersion: 2
+        x: 2874
+        y: 75
+        width: 1336
+        height: 2136
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a37906062fd68fa449d7287693f5f246
+      internalID: -1185631555
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: GrayBoxes2D_Mesa de trabajo 1_61
+      rect:
+        serializedVersion: 2
+        x: 4247
+        y: 75
+        width: 1603
+        height: 2136
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7fb06e1df229b0f40abed2e7ef14a243
+      internalID: -135194086
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: GrayBoxes2D_Mesa de trabajo 1_62
+      rect:
+        serializedVersion: 2
+        x: 5887
+        y: 75
+        width: 1869
+        height: 2136
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6a6b2d06c04941d4db6686121c747efe
+      internalID: -452343334
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: GrayBoxes2D_Mesa de trabajo 1_63
+      rect:
+        serializedVersion: 2
+        x: 7803
+        y: 75
+        width: 2136
+        height: 2136
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: de6fe24b9ba1cac43ab64a6f11c51e5a
+      internalID: 1033449766
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    physicsShape: []
+    bones: []
+    spriteID: 5e97eb03825dee720800000000000000
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+    nameFileIdTable:
+      GrayBoxes2D_Mesa de trabajo 1_0: -349406827
+      GrayBoxes2D_Mesa de trabajo 1_1: 737996741
+      GrayBoxes2D_Mesa de trabajo 1_10: 966225217
+      GrayBoxes2D_Mesa de trabajo 1_11: 155828677
+      GrayBoxes2D_Mesa de trabajo 1_12: 1248801415
+      GrayBoxes2D_Mesa de trabajo 1_13: 2040081322
+      GrayBoxes2D_Mesa de trabajo 1_14: 1360643497
+      GrayBoxes2D_Mesa de trabajo 1_15: 742083504
+      GrayBoxes2D_Mesa de trabajo 1_16: -1240819081
+      GrayBoxes2D_Mesa de trabajo 1_17: 824078197
+      GrayBoxes2D_Mesa de trabajo 1_18: -395050664
+      GrayBoxes2D_Mesa de trabajo 1_19: 438093206
+      GrayBoxes2D_Mesa de trabajo 1_2: -914591276
+      GrayBoxes2D_Mesa de trabajo 1_20: 955551967
+      GrayBoxes2D_Mesa de trabajo 1_21: 1853238809
+      GrayBoxes2D_Mesa de trabajo 1_22: 1539174741
+      GrayBoxes2D_Mesa de trabajo 1_23: -852231242
+      GrayBoxes2D_Mesa de trabajo 1_24: -1124028647
+      GrayBoxes2D_Mesa de trabajo 1_25: 1041166485
+      GrayBoxes2D_Mesa de trabajo 1_26: -779857426
+      GrayBoxes2D_Mesa de trabajo 1_27: -252995944
+      GrayBoxes2D_Mesa de trabajo 1_28: 223263156
+      GrayBoxes2D_Mesa de trabajo 1_29: 1056719093
+      GrayBoxes2D_Mesa de trabajo 1_3: 1541216879
+      GrayBoxes2D_Mesa de trabajo 1_30: -1479120051
+      GrayBoxes2D_Mesa de trabajo 1_31: -1262417999
+      GrayBoxes2D_Mesa de trabajo 1_32: 1778632827
+      GrayBoxes2D_Mesa de trabajo 1_33: 1612963534
+      GrayBoxes2D_Mesa de trabajo 1_34: -876497635
+      GrayBoxes2D_Mesa de trabajo 1_35: 673934956
+      GrayBoxes2D_Mesa de trabajo 1_36: -1977733006
+      GrayBoxes2D_Mesa de trabajo 1_37: -2017769547
+      GrayBoxes2D_Mesa de trabajo 1_38: -667465577
+      GrayBoxes2D_Mesa de trabajo 1_39: -406704014
+      GrayBoxes2D_Mesa de trabajo 1_4: -942814102
+      GrayBoxes2D_Mesa de trabajo 1_40: -1102723614
+      GrayBoxes2D_Mesa de trabajo 1_41: 846998790
+      GrayBoxes2D_Mesa de trabajo 1_42: -463478440
+      GrayBoxes2D_Mesa de trabajo 1_43: 1226008197
+      GrayBoxes2D_Mesa de trabajo 1_44: 1888372396
+      GrayBoxes2D_Mesa de trabajo 1_45: 191966547
+      GrayBoxes2D_Mesa de trabajo 1_46: 231236604
+      GrayBoxes2D_Mesa de trabajo 1_47: 1051930984
+      GrayBoxes2D_Mesa de trabajo 1_48: -1020356843
+      GrayBoxes2D_Mesa de trabajo 1_49: 876199998
+      GrayBoxes2D_Mesa de trabajo 1_5: -1700995604
+      GrayBoxes2D_Mesa de trabajo 1_50: 402400495
+      GrayBoxes2D_Mesa de trabajo 1_51: 629388489
+      GrayBoxes2D_Mesa de trabajo 1_52: -2109506656
+      GrayBoxes2D_Mesa de trabajo 1_53: 1835693177
+      GrayBoxes2D_Mesa de trabajo 1_54: -304084303
+      GrayBoxes2D_Mesa de trabajo 1_55: -1455375989
+      GrayBoxes2D_Mesa de trabajo 1_56: -2081412383
+      GrayBoxes2D_Mesa de trabajo 1_57: 2080904068
+      GrayBoxes2D_Mesa de trabajo 1_58: -1942472533
+      GrayBoxes2D_Mesa de trabajo 1_59: 74562862
+      GrayBoxes2D_Mesa de trabajo 1_6: 9857290
+      GrayBoxes2D_Mesa de trabajo 1_60: -1185631555
+      GrayBoxes2D_Mesa de trabajo 1_61: -135194086
+      GrayBoxes2D_Mesa de trabajo 1_62: -452343334
+      GrayBoxes2D_Mesa de trabajo 1_63: 1033449766
+      GrayBoxes2D_Mesa de trabajo 1_7: 468821545
+      GrayBoxes2D_Mesa de trabajo 1_8: 353931602
+      GrayBoxes2D_Mesa de trabajo 1_9: -258942057
+  mipmapLimitGroupName: 
+  pSDRemoveMatte: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

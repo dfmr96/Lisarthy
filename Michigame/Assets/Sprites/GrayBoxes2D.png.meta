@@ -1,0 +1,6055 @@
+fileFormatVersion: 2
+guid: 595ccd5ff3bce974fa53fc8fed95134b
+TextureImporter:
+  internalIDToNameTable: []
+  externalObjects: {}
+  serializedVersion: 12
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+    flipGreenChannel: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  vTOnly: 0
+  ignoreMipmapLimit: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: 0
+    aniso: 1
+    mipBias: 0
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 512
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  flipbookRows: 1
+  flipbookColumns: 1
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  ignorePngGamma: 0
+  applyGammaDecoding: 0
+  swizzle: 50462976
+  cookieLightType: 0
+  platformSettings:
+  - serializedVersion: 3
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 8192
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Server
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: GrayBoxes2D_8
+      rect:
+        serializedVersion: 2
+        x: 2436
+        y: 4795
+        width: 65
+        height: 65
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: af918783a7276aa4d99bb19fe495d63e
+      internalID: -1817793281
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: GrayBoxes2D_9
+      rect:
+        serializedVersion: 2
+        x: 2510
+        y: 4795
+        width: 129
+        height: 65
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 2f9386b986792d5419ec465bfe983ac6
+      internalID: 830022208
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: GrayBoxes2D_10
+      rect:
+        serializedVersion: 2
+        x: 2647
+        y: 4795
+        width: 193
+        height: 65
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 35a2ca6e663ec6b4e85b4660b10ec406
+      internalID: -2093557780
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: GrayBoxes2D_11
+      rect:
+        serializedVersion: 2
+        x: 2849
+        y: 4795
+        width: 257
+        height: 65
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 523ebee2fcd62654682dd4c75fcfa86e
+      internalID: 2087341285
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: GrayBoxes2D_12
+      rect:
+        serializedVersion: 2
+        x: 3114
+        y: 4795
+        width: 321
+        height: 65
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 3892eb71804730b41931bd18333881fe
+      internalID: -68452103
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: GrayBoxes2D_13
+      rect:
+        serializedVersion: 2
+        x: 3444
+        y: 4795
+        width: 385
+        height: 65
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6646fc87ae9d2e143b19e5bd203c4423
+      internalID: 1717826073
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: GrayBoxes2D_14
+      rect:
+        serializedVersion: 2
+        x: 3837
+        y: 4795
+        width: 449
+        height: 65
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5e2692207b1e2a447ad19be2ce691560
+      internalID: 2124004233
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: GrayBoxes2D_15
+      rect:
+        serializedVersion: 2
+        x: 4297
+        y: 4795
+        width: 513
+        height: 65
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 9339333df42c0084f8df47bfab1da535
+      internalID: -680040717
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: GrayBoxes2D_16
+      rect:
+        serializedVersion: 2
+        x: 4866
+        y: 4795
+        width: 513
+        height: 65
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a80fa9df7fe7745428d9f8cdc27c687f
+      internalID: 1732030331
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: GrayBoxes2D_17
+      rect:
+        serializedVersion: 2
+        x: 5390
+        y: 4795
+        width: 449
+        height: 65
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 55eb5ce971526a448b032237008db062
+      internalID: 1911575870
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: GrayBoxes2D_18
+      rect:
+        serializedVersion: 2
+        x: 5847
+        y: 4795
+        width: 385
+        height: 65
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 68fdfbadf15bb0e4b8a3ff29a14f333b
+      internalID: 206032260
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: GrayBoxes2D_19
+      rect:
+        serializedVersion: 2
+        x: 6241
+        y: 4795
+        width: 321
+        height: 65
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5afcdb5a335194f47926fea54aa77aef
+      internalID: -1654083011
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: GrayBoxes2D_20
+      rect:
+        serializedVersion: 2
+        x: 6570
+        y: 4795
+        width: 257
+        height: 65
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: dc7cd87caa814ea469864c814493abd3
+      internalID: 2143882105
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: GrayBoxes2D_21
+      rect:
+        serializedVersion: 2
+        x: 6836
+        y: 4795
+        width: 193
+        height: 65
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0e21d6618dd5a41458cd95e365a52895
+      internalID: -1936289297
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: GrayBoxes2D_22
+      rect:
+        serializedVersion: 2
+        x: 7037
+        y: 4795
+        width: 129
+        height: 65
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1083e161a72bd954bb3dd7ef86d3d9f3
+      internalID: 1552290968
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: GrayBoxes2D_23
+      rect:
+        serializedVersion: 2
+        x: 7175
+        y: 4795
+        width: 65
+        height: 65
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: eaaa97b17c0628d429bc2da311855426
+      internalID: 177096466
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: GrayBoxes2D_32
+      rect:
+        serializedVersion: 2
+        x: 2436
+        y: 4658
+        width: 65
+        height: 129
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: af23b2e605a0e81488b33350f3c88427
+      internalID: -1701896843
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: GrayBoxes2D_33
+      rect:
+        serializedVersion: 2
+        x: 2510
+        y: 4658
+        width: 129
+        height: 129
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b5db8499fc70944459ae84b167f5ca78
+      internalID: -971401289
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: GrayBoxes2D_34
+      rect:
+        serializedVersion: 2
+        x: 2647
+        y: 4658
+        width: 193
+        height: 129
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 9e5ef73b39d9f9041b7c200327657365
+      internalID: -634733759
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: GrayBoxes2D_35
+      rect:
+        serializedVersion: 2
+        x: 2849
+        y: 4658
+        width: 257
+        height: 129
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c3d3f3f51449cb545b48f6a20fe4d392
+      internalID: -762443556
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: GrayBoxes2D_36
+      rect:
+        serializedVersion: 2
+        x: 3114
+        y: 4658
+        width: 321
+        height: 129
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5cebce99f02a2ab4c8a62a26a4f10618
+      internalID: 449479736
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: GrayBoxes2D_37
+      rect:
+        serializedVersion: 2
+        x: 3444
+        y: 4658
+        width: 385
+        height: 129
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8b5fd80f20fd8ba4386182db282a006a
+      internalID: 1478517471
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: GrayBoxes2D_38
+      rect:
+        serializedVersion: 2
+        x: 3837
+        y: 4658
+        width: 449
+        height: 129
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7a99cfb2cabda144e8873d9af5588037
+      internalID: -27943938
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: GrayBoxes2D_39
+      rect:
+        serializedVersion: 2
+        x: 4297
+        y: 4658
+        width: 513
+        height: 129
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6a046dec0cbdcd344ac9458eac1038d2
+      internalID: -241789440
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: GrayBoxes2D_40
+      rect:
+        serializedVersion: 2
+        x: 4866
+        y: 4658
+        width: 513
+        height: 129
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b61dbe775aeae934db130f0b1fbc0267
+      internalID: -822453246
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: GrayBoxes2D_41
+      rect:
+        serializedVersion: 2
+        x: 5390
+        y: 4658
+        width: 449
+        height: 129
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f5e3e1984d50cc44c9cbf950a05bba0e
+      internalID: -1991732079
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: GrayBoxes2D_42
+      rect:
+        serializedVersion: 2
+        x: 5847
+        y: 4658
+        width: 385
+        height: 129
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 2701d01e53b02d343a51e1150e3d2650
+      internalID: 1090606704
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: GrayBoxes2D_43
+      rect:
+        serializedVersion: 2
+        x: 6241
+        y: 4658
+        width: 321
+        height: 129
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: da40984c6d7d3fc408ce517669e95acf
+      internalID: -392652575
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: GrayBoxes2D_44
+      rect:
+        serializedVersion: 2
+        x: 6570
+        y: 4658
+        width: 257
+        height: 129
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 564328dfd6b54144498e43e2004bac47
+      internalID: 1087813928
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: GrayBoxes2D_45
+      rect:
+        serializedVersion: 2
+        x: 6836
+        y: 4658
+        width: 193
+        height: 129
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 2b9dceb1584a2c34186148a21ffbf310
+      internalID: -901973589
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: GrayBoxes2D_46
+      rect:
+        serializedVersion: 2
+        x: 7037
+        y: 4658
+        width: 129
+        height: 129
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a36d8f671c724c54e805c7483195eb02
+      internalID: 205662550
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: GrayBoxes2D_47
+      rect:
+        serializedVersion: 2
+        x: 7175
+        y: 4658
+        width: 65
+        height: 129
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 501c3bc5a70177b488ca05c9e77023bf
+      internalID: -1516627211
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: GrayBoxes2D_56
+      rect:
+        serializedVersion: 2
+        x: 2436
+        y: 4457
+        width: 65
+        height: 193
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 3a82190c38973c946bcfa04a10c5f402
+      internalID: -436891941
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: GrayBoxes2D_57
+      rect:
+        serializedVersion: 2
+        x: 2510
+        y: 4457
+        width: 129
+        height: 193
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 3d3e2f0946ff50f41b2c39874c60af16
+      internalID: 2111486602
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: GrayBoxes2D_58
+      rect:
+        serializedVersion: 2
+        x: 2647
+        y: 4457
+        width: 193
+        height: 193
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 3e92a662dab3c60478ed3fb489abbcda
+      internalID: -1254769927
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: GrayBoxes2D_59
+      rect:
+        serializedVersion: 2
+        x: 2849
+        y: 4457
+        width: 257
+        height: 193
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 00408b6d3b4bc3d40a76622d31d7ed38
+      internalID: 409789016
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: GrayBoxes2D_60
+      rect:
+        serializedVersion: 2
+        x: 3114
+        y: 4457
+        width: 321
+        height: 193
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0b6ee6c04c56501459dbafb875ecfc7c
+      internalID: -1624654934
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: GrayBoxes2D_61
+      rect:
+        serializedVersion: 2
+        x: 3444
+        y: 4457
+        width: 385
+        height: 193
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c0294d5555638e94181d19c1d03663db
+      internalID: 31472553
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: GrayBoxes2D_62
+      rect:
+        serializedVersion: 2
+        x: 3837
+        y: 4457
+        width: 449
+        height: 193
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 887252eae3bbdb84c9cffcdced937e82
+      internalID: -1976324476
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: GrayBoxes2D_63
+      rect:
+        serializedVersion: 2
+        x: 4297
+        y: 4457
+        width: 513
+        height: 193
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1b04eae92c1e6f340af90b1a53c56bef
+      internalID: 1555750850
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: GrayBoxes2D_64
+      rect:
+        serializedVersion: 2
+        x: 4866
+        y: 4457
+        width: 513
+        height: 193
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6e471c76d1262ef4c9001d878e7fb6dd
+      internalID: -859329561
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: GrayBoxes2D_65
+      rect:
+        serializedVersion: 2
+        x: 5390
+        y: 4457
+        width: 449
+        height: 193
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e83ecf2741a8e904d9bdaf0b91c3d2b6
+      internalID: 354277986
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: GrayBoxes2D_66
+      rect:
+        serializedVersion: 2
+        x: 5847
+        y: 4457
+        width: 385
+        height: 193
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 05dfe3f140f466c4eaef77d7c4104cab
+      internalID: -633254930
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: GrayBoxes2D_67
+      rect:
+        serializedVersion: 2
+        x: 6241
+        y: 4457
+        width: 321
+        height: 193
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6a3f3ec9e08d3f94aac0c39e2526d867
+      internalID: -1621735280
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: GrayBoxes2D_68
+      rect:
+        serializedVersion: 2
+        x: 6570
+        y: 4457
+        width: 257
+        height: 193
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: cb150a885d843f6458c31b7b7ca604bf
+      internalID: 851629639
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: GrayBoxes2D_69
+      rect:
+        serializedVersion: 2
+        x: 6836
+        y: 4457
+        width: 193
+        height: 193
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f0f82cbf771f46846bfed80af8b5e330
+      internalID: 2051190885
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: GrayBoxes2D_70
+      rect:
+        serializedVersion: 2
+        x: 7037
+        y: 4457
+        width: 129
+        height: 193
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e98862d87d4116149a21b4d38fe0af13
+      internalID: 1746831580
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: GrayBoxes2D_71
+      rect:
+        serializedVersion: 2
+        x: 7175
+        y: 4457
+        width: 65
+        height: 193
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 9082e8e160bfa5846bedacd51ddeba0b
+      internalID: -29537348
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: GrayBoxes2D_80
+      rect:
+        serializedVersion: 2
+        x: 2436
+        y: 4190
+        width: 65
+        height: 257
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 340c1b8b994bd2145a1e0c92de6703bb
+      internalID: -481543286
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: GrayBoxes2D_81
+      rect:
+        serializedVersion: 2
+        x: 2510
+        y: 4190
+        width: 129
+        height: 257
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d67428a51c00e6e448841b31f96d436b
+      internalID: -174337501
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: GrayBoxes2D_82
+      rect:
+        serializedVersion: 2
+        x: 2647
+        y: 4190
+        width: 193
+        height: 257
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: bb51af904edc73c468841a09f428bb92
+      internalID: 916540490
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: GrayBoxes2D_83
+      rect:
+        serializedVersion: 2
+        x: 2849
+        y: 4190
+        width: 257
+        height: 257
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0cfe7d49112a5ca46bbcd96387588a9a
+      internalID: 1315890007
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: GrayBoxes2D_84
+      rect:
+        serializedVersion: 2
+        x: 3114
+        y: 4190
+        width: 321
+        height: 257
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a03b99d39a2583a42ab825971bd04801
+      internalID: 1790431384
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: GrayBoxes2D_85
+      rect:
+        serializedVersion: 2
+        x: 3444
+        y: 4190
+        width: 385
+        height: 257
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e5ce7bdab8bdae64c8545c970780eefd
+      internalID: 493599569
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: GrayBoxes2D_86
+      rect:
+        serializedVersion: 2
+        x: 3837
+        y: 4190
+        width: 449
+        height: 257
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c6b75c72ff8ee8e46ae1a9a4ed930ea6
+      internalID: 168157907
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: GrayBoxes2D_87
+      rect:
+        serializedVersion: 2
+        x: 4297
+        y: 4190
+        width: 513
+        height: 257
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8770e44ac810dab488bb878a477acbb3
+      internalID: -1410655256
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: GrayBoxes2D_88
+      rect:
+        serializedVersion: 2
+        x: 4866
+        y: 4190
+        width: 513
+        height: 257
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8b34e6a464f64e54a95f44a6ed054afb
+      internalID: -1039096910
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: GrayBoxes2D_89
+      rect:
+        serializedVersion: 2
+        x: 5390
+        y: 4190
+        width: 449
+        height: 257
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 02841f4e77679a3499472e675d01cf18
+      internalID: 1630829471
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: GrayBoxes2D_90
+      rect:
+        serializedVersion: 2
+        x: 5847
+        y: 4190
+        width: 385
+        height: 257
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 48e129418d9e5994b9beee2fdc31d762
+      internalID: 385211638
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: GrayBoxes2D_91
+      rect:
+        serializedVersion: 2
+        x: 6241
+        y: 4190
+        width: 321
+        height: 257
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 47da41bbba90bbf4fa378ec907addd2d
+      internalID: -456022452
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: GrayBoxes2D_92
+      rect:
+        serializedVersion: 2
+        x: 6570
+        y: 4190
+        width: 257
+        height: 257
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 3940dd3af82a91c4e98d671c3c61e7a0
+      internalID: 1101033485
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: GrayBoxes2D_93
+      rect:
+        serializedVersion: 2
+        x: 6836
+        y: 4190
+        width: 193
+        height: 257
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4de79f707e96a1942a95183f4d390187
+      internalID: 130472181
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: GrayBoxes2D_94
+      rect:
+        serializedVersion: 2
+        x: 7037
+        y: 4190
+        width: 129
+        height: 257
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 9a9c38997b2001e46965c9999b4203bd
+      internalID: -1754174459
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: GrayBoxes2D_95
+      rect:
+        serializedVersion: 2
+        x: 7175
+        y: 4190
+        width: 65
+        height: 257
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 065bd7df4e16c934bb1285a8a2a321f4
+      internalID: 1065690857
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: GrayBoxes2D_104
+      rect:
+        serializedVersion: 2
+        x: 2436
+        y: 3859
+        width: 65
+        height: 321
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0082f24c77ea78a41a64d75d1eb1b906
+      internalID: -333104445
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: GrayBoxes2D_105
+      rect:
+        serializedVersion: 2
+        x: 2510
+        y: 3859
+        width: 129
+        height: 321
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f3ac70d87277ed447871dad87c831ece
+      internalID: -2097835424
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: GrayBoxes2D_106
+      rect:
+        serializedVersion: 2
+        x: 2647
+        y: 3859
+        width: 193
+        height: 321
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f55477b73f9b4a048bcfc11fbfdd1b76
+      internalID: 1097488707
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: GrayBoxes2D_107
+      rect:
+        serializedVersion: 2
+        x: 2849
+        y: 3859
+        width: 257
+        height: 321
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b2a2a4fd628bf1a4681ce38ee0a2c6a8
+      internalID: -1382748199
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: GrayBoxes2D_108
+      rect:
+        serializedVersion: 2
+        x: 3114
+        y: 3859
+        width: 321
+        height: 321
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e8f59e86ebf1fbe4cb20fdbca767a1b8
+      internalID: 1165734974
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: GrayBoxes2D_109
+      rect:
+        serializedVersion: 2
+        x: 3444
+        y: 3859
+        width: 385
+        height: 321
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: af0a27c2196634441853398d139146f6
+      internalID: 115397695
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: GrayBoxes2D_110
+      rect:
+        serializedVersion: 2
+        x: 3837
+        y: 3859
+        width: 449
+        height: 321
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 68a3715b95bfa8645b3fd7a28ab6cefa
+      internalID: -1480215634
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: GrayBoxes2D_111
+      rect:
+        serializedVersion: 2
+        x: 4297
+        y: 3859
+        width: 513
+        height: 321
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ee0ab559ba5e1dc4fb3e2c17abef5d4f
+      internalID: 2133204436
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: GrayBoxes2D_112
+      rect:
+        serializedVersion: 2
+        x: 4866
+        y: 3859
+        width: 513
+        height: 321
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d7bf7930243030a4a893cb874f44bb31
+      internalID: -383949659
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: GrayBoxes2D_113
+      rect:
+        serializedVersion: 2
+        x: 5390
+        y: 3859
+        width: 449
+        height: 321
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5196738c314102940834b0310c071f21
+      internalID: -1173067374
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: GrayBoxes2D_114
+      rect:
+        serializedVersion: 2
+        x: 5847
+        y: 3859
+        width: 385
+        height: 321
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 10d30f564cda3a147b1b805ea3022572
+      internalID: 1650512544
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: GrayBoxes2D_115
+      rect:
+        serializedVersion: 2
+        x: 6241
+        y: 3859
+        width: 321
+        height: 321
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 76a91afd61e63f54f919253ed07d5243
+      internalID: -1592895789
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: GrayBoxes2D_116
+      rect:
+        serializedVersion: 2
+        x: 6570
+        y: 3859
+        width: 257
+        height: 321
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 98c91bc182b9b3249943b1f3186741ea
+      internalID: -1608048223
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: GrayBoxes2D_117
+      rect:
+        serializedVersion: 2
+        x: 6836
+        y: 3859
+        width: 193
+        height: 321
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 71e5cbd794515274d9d1b8950378012a
+      internalID: -1042991605
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: GrayBoxes2D_118
+      rect:
+        serializedVersion: 2
+        x: 7037
+        y: 3859
+        width: 129
+        height: 321
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e3ff77d717a42a84684afa6bc40a5cdc
+      internalID: 2039966789
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: GrayBoxes2D_119
+      rect:
+        serializedVersion: 2
+        x: 7175
+        y: 3859
+        width: 65
+        height: 321
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a014256056adac74987444f6d36de9cf
+      internalID: 1945451831
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: GrayBoxes2D_128
+      rect:
+        serializedVersion: 2
+        x: 2436
+        y: 3464
+        width: 65
+        height: 385
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1e700834fb49c7141b93c2a0c0f8d3eb
+      internalID: 2138008659
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: GrayBoxes2D_129
+      rect:
+        serializedVersion: 2
+        x: 2510
+        y: 3464
+        width: 129
+        height: 385
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 779bac669a1034c4d9f7a08953d5473f
+      internalID: 745919054
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: GrayBoxes2D_130
+      rect:
+        serializedVersion: 2
+        x: 2647
+        y: 3464
+        width: 193
+        height: 385
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 803a4c5fda61b64419792f94b72333de
+      internalID: -705475669
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: GrayBoxes2D_131
+      rect:
+        serializedVersion: 2
+        x: 2849
+        y: 3464
+        width: 257
+        height: 385
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0da6811ce1e4e3a4498318fe001ba9c1
+      internalID: 1262319674
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: GrayBoxes2D_132
+      rect:
+        serializedVersion: 2
+        x: 3114
+        y: 3464
+        width: 321
+        height: 385
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 53f0db0c9c60fd34fba83fa7e54efee0
+      internalID: 296251685
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: GrayBoxes2D_133
+      rect:
+        serializedVersion: 2
+        x: 3444
+        y: 3464
+        width: 385
+        height: 385
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 9a4db8cb322453a4aa110235e75141d7
+      internalID: -1399237510
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: GrayBoxes2D_134
+      rect:
+        serializedVersion: 2
+        x: 3837
+        y: 3464
+        width: 449
+        height: 385
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 2f854d8dfc542564ba3d4845a0d554ff
+      internalID: -1865126680
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: GrayBoxes2D_135
+      rect:
+        serializedVersion: 2
+        x: 4297
+        y: 3464
+        width: 513
+        height: 385
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5a85eab8cb58ddc48b5df97498966d08
+      internalID: -1080532348
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: GrayBoxes2D_136
+      rect:
+        serializedVersion: 2
+        x: 4866
+        y: 3464
+        width: 513
+        height: 385
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 82273a0f52151b04eb7bb02ccd6f59d9
+      internalID: -457644201
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: GrayBoxes2D_137
+      rect:
+        serializedVersion: 2
+        x: 5390
+        y: 3464
+        width: 449
+        height: 385
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f7c3b6be9dbb7be4baa51a822381ac03
+      internalID: -1227674041
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: GrayBoxes2D_138
+      rect:
+        serializedVersion: 2
+        x: 5847
+        y: 3464
+        width: 385
+        height: 385
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d59bc3adb6ee7a6459b6486ce92c8b7b
+      internalID: 767105965
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: GrayBoxes2D_139
+      rect:
+        serializedVersion: 2
+        x: 6241
+        y: 3464
+        width: 321
+        height: 385
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 3027063ce1a612a4cbe64c82a44b85f3
+      internalID: -35962289
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: GrayBoxes2D_140
+      rect:
+        serializedVersion: 2
+        x: 6570
+        y: 3464
+        width: 257
+        height: 385
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f84d55e0a23c77c40aa05cad9de02b00
+      internalID: -1225957848
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: GrayBoxes2D_141
+      rect:
+        serializedVersion: 2
+        x: 6836
+        y: 3464
+        width: 193
+        height: 385
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 02d82ffe18eee564c9925f045dd7a12b
+      internalID: 1242531240
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: GrayBoxes2D_142
+      rect:
+        serializedVersion: 2
+        x: 7037
+        y: 3464
+        width: 129
+        height: 385
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b2f6143678051334ab7cfed5503291fc
+      internalID: 730840847
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: GrayBoxes2D_143
+      rect:
+        serializedVersion: 2
+        x: 7175
+        y: 3464
+        width: 65
+        height: 385
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d90c2836dbffa5a42afbcd3740b6f95e
+      internalID: 274448986
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: GrayBoxes2D_152
+      rect:
+        serializedVersion: 2
+        x: 2436
+        y: 3004
+        width: 65
+        height: 449
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6fdea06c1c72fff4b8f175c4a8d72cbc
+      internalID: 319595218
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: GrayBoxes2D_153
+      rect:
+        serializedVersion: 2
+        x: 2510
+        y: 3004
+        width: 129
+        height: 449
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 90dbfe875b1a8c34aa4208771606873a
+      internalID: 1928682627
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: GrayBoxes2D_154
+      rect:
+        serializedVersion: 2
+        x: 2647
+        y: 3004
+        width: 193
+        height: 449
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: aa26728fc9bdac24e885f0d5fb6f783a
+      internalID: -857026505
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: GrayBoxes2D_155
+      rect:
+        serializedVersion: 2
+        x: 2849
+        y: 3004
+        width: 257
+        height: 449
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6817786558e47754f8ebee567095a2b6
+      internalID: -1200586553
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: GrayBoxes2D_156
+      rect:
+        serializedVersion: 2
+        x: 3114
+        y: 3004
+        width: 321
+        height: 449
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5c04864cb5f2ad54789b955ac1208700
+      internalID: -1319463411
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: GrayBoxes2D_157
+      rect:
+        serializedVersion: 2
+        x: 3444
+        y: 3004
+        width: 385
+        height: 449
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e9cfe32fb28e78e4fa027c306c7425a4
+      internalID: 631248872
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: GrayBoxes2D_158
+      rect:
+        serializedVersion: 2
+        x: 3837
+        y: 3004
+        width: 449
+        height: 449
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: dead6a56ba7987640bf38a5553cd9d44
+      internalID: -438975305
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: GrayBoxes2D_159
+      rect:
+        serializedVersion: 2
+        x: 4297
+        y: 3004
+        width: 513
+        height: 449
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 62ce7c228aa13764284fa1fca340d216
+      internalID: 757578406
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: GrayBoxes2D_160
+      rect:
+        serializedVersion: 2
+        x: 4866
+        y: 3004
+        width: 513
+        height: 449
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 35f7e55d52dfb5945bf84d987a256918
+      internalID: 440850036
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: GrayBoxes2D_161
+      rect:
+        serializedVersion: 2
+        x: 5390
+        y: 3004
+        width: 449
+        height: 449
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: cf5d3dc96471d524c98a8496c643d30f
+      internalID: -433115286
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: GrayBoxes2D_162
+      rect:
+        serializedVersion: 2
+        x: 5847
+        y: 3004
+        width: 385
+        height: 449
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 761ae129a8aebcf47bfa21aaf8f5bbd1
+      internalID: -1765290163
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: GrayBoxes2D_163
+      rect:
+        serializedVersion: 2
+        x: 6241
+        y: 3004
+        width: 321
+        height: 449
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c5a20041e81561547bb35682801ba0f8
+      internalID: -1845766367
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: GrayBoxes2D_164
+      rect:
+        serializedVersion: 2
+        x: 6570
+        y: 3004
+        width: 257
+        height: 449
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: cc33b0edbeb409e43848281bd9e26945
+      internalID: -2115308491
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: GrayBoxes2D_165
+      rect:
+        serializedVersion: 2
+        x: 6836
+        y: 3004
+        width: 193
+        height: 449
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 3e6d3b8c9d943ba4999de3dfb5decc90
+      internalID: -2065586552
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: GrayBoxes2D_166
+      rect:
+        serializedVersion: 2
+        x: 7037
+        y: 3004
+        width: 129
+        height: 449
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 258a55623229d0c4b8ce5b243dc397b8
+      internalID: -1544146507
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: GrayBoxes2D_167
+      rect:
+        serializedVersion: 2
+        x: 7175
+        y: 3004
+        width: 65
+        height: 449
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4a11b703e503ed549b660dedf8b32f1d
+      internalID: 1813194992
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: GrayBoxes2D_168
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 2484
+        width: 65
+        height: 513
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d23a0623f21d34f4bad5f0dc0f6b2dcb
+      internalID: -237833935
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: GrayBoxes2D_169
+      rect:
+        serializedVersion: 2
+        x: 74
+        y: 2484
+        width: 129
+        height: 513
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a245a02f8d7aeed4ead3a750f07bf2a1
+      internalID: 349543523
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: GrayBoxes2D_170
+      rect:
+        serializedVersion: 2
+        x: 209
+        y: 2484
+        width: 193
+        height: 513
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e71feea9fe9d8f5419f35c49b45c3289
+      internalID: -1011430689
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: GrayBoxes2D_171
+      rect:
+        serializedVersion: 2
+        x: 413
+        y: 2484
+        width: 257
+        height: 513
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b9bf5f65c9d4ad84b8b51a38fdfc0050
+      internalID: -308671709
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: GrayBoxes2D_172
+      rect:
+        serializedVersion: 2
+        x: 678
+        y: 2484
+        width: 321
+        height: 513
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 47cbca25ecf3eb440a0d6f8902b90f3e
+      internalID: 1252081082
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: GrayBoxes2D_173
+      rect:
+        serializedVersion: 2
+        x: 1008
+        y: 2484
+        width: 385
+        height: 513
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c14364ac142425e468d79ef4a575b38f
+      internalID: -691263783
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: GrayBoxes2D_174
+      rect:
+        serializedVersion: 2
+        x: 1401
+        y: 2484
+        width: 449
+        height: 513
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d480600b1efb77a428e70689c0ce0ece
+      internalID: -1903956882
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: GrayBoxes2D_175
+      rect:
+        serializedVersion: 2
+        x: 1861
+        y: 2484
+        width: 513
+        height: 513
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d29e0def8b465d04798c4a205e0d7fa7
+      internalID: -1434677177
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: GrayBoxes2D_176
+      rect:
+        serializedVersion: 2
+        x: 2436
+        y: 2481
+        width: 65
+        height: 513
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c59eb585c77ef904f89000d6359ae23a
+      internalID: -471758272
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: GrayBoxes2D_177
+      rect:
+        serializedVersion: 2
+        x: 2510
+        y: 2481
+        width: 129
+        height: 513
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d04e91ac3a2fcdc4c806201065cdbc30
+      internalID: -1210935200
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: GrayBoxes2D_178
+      rect:
+        serializedVersion: 2
+        x: 2647
+        y: 2481
+        width: 193
+        height: 513
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 66202a96eb462ae4f8646248cb98ec66
+      internalID: -2135602321
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: GrayBoxes2D_179
+      rect:
+        serializedVersion: 2
+        x: 2849
+        y: 2481
+        width: 257
+        height: 513
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 28d8a91b1070366428e7cf25e647a84a
+      internalID: 374021591
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: GrayBoxes2D_180
+      rect:
+        serializedVersion: 2
+        x: 3114
+        y: 2481
+        width: 321
+        height: 513
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 673451bd9351700479784fdb25a5887e
+      internalID: 1584278478
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: GrayBoxes2D_181
+      rect:
+        serializedVersion: 2
+        x: 3444
+        y: 2481
+        width: 385
+        height: 513
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 29b67fca69b760d4d93c4ad736e5e454
+      internalID: 793948926
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: GrayBoxes2D_182
+      rect:
+        serializedVersion: 2
+        x: 3837
+        y: 2481
+        width: 449
+        height: 513
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f1d735ae9077f034eba107ff57213bd0
+      internalID: -1764695159
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: GrayBoxes2D_183
+      rect:
+        serializedVersion: 2
+        x: 4297
+        y: 2481
+        width: 513
+        height: 513
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 3dc42e2daf4492a4cb0f9d630a992d53
+      internalID: -1039437199
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: GrayBoxes2D_184
+      rect:
+        serializedVersion: 2
+        x: 4866
+        y: 2481
+        width: 513
+        height: 513
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6c465babc031dde4fb965d06aeccd8e7
+      internalID: 1974376715
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: GrayBoxes2D_185
+      rect:
+        serializedVersion: 2
+        x: 5390
+        y: 2481
+        width: 449
+        height: 513
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a2efcc6f4b059a9459f2fff2d650b63d
+      internalID: -1013008286
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: GrayBoxes2D_186
+      rect:
+        serializedVersion: 2
+        x: 5847
+        y: 2481
+        width: 385
+        height: 513
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: adc348301863d4e409b0f0195e863281
+      internalID: -1614325922
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: GrayBoxes2D_187
+      rect:
+        serializedVersion: 2
+        x: 6241
+        y: 2481
+        width: 321
+        height: 513
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 831a501c02ee8f64ba55f85d9c465279
+      internalID: -371417122
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: GrayBoxes2D_188
+      rect:
+        serializedVersion: 2
+        x: 6570
+        y: 2481
+        width: 257
+        height: 513
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: dfc869eccd8c9784782cf22b3f43767d
+      internalID: -348049411
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: GrayBoxes2D_189
+      rect:
+        serializedVersion: 2
+        x: 6836
+        y: 2481
+        width: 193
+        height: 513
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0d9fe56a08adf2c4cafa12123ccb8842
+      internalID: 1647803023
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: GrayBoxes2D_190
+      rect:
+        serializedVersion: 2
+        x: 7037
+        y: 2481
+        width: 129
+        height: 513
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 763c30f6c81dcb843aca1cc604142366
+      internalID: 1712104072
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: GrayBoxes2D_191
+      rect:
+        serializedVersion: 2
+        x: 7175
+        y: 2481
+        width: 65
+        height: 513
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 175d015f22dda1e42a0c423dad3060be
+      internalID: 803054759
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: GrayBoxes2D_192
+      rect:
+        serializedVersion: 2
+        x: 2440
+        y: 1867
+        width: 65
+        height: 513
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 3ba8561973974cd4e95fd4b612090998
+      internalID: 2019652999
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: GrayBoxes2D_193
+      rect:
+        serializedVersion: 2
+        x: 2514
+        y: 1867
+        width: 129
+        height: 513
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 98220964fae7bf742977ccfd3c120131
+      internalID: -1724410301
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: GrayBoxes2D_194
+      rect:
+        serializedVersion: 2
+        x: 2651
+        y: 1867
+        width: 193
+        height: 513
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8f5e6369b9aa80e45be7ae6dc61102b9
+      internalID: -166840954
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: GrayBoxes2D_195
+      rect:
+        serializedVersion: 2
+        x: 2853
+        y: 1867
+        width: 257
+        height: 513
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 70197be8a87741745ad548c160bb0d5d
+      internalID: -2102583842
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: GrayBoxes2D_196
+      rect:
+        serializedVersion: 2
+        x: 3118
+        y: 1867
+        width: 321
+        height: 513
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f25fee7ca3cc4114ea27d116a6f499bf
+      internalID: 439621317
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: GrayBoxes2D_197
+      rect:
+        serializedVersion: 2
+        x: 3448
+        y: 1867
+        width: 385
+        height: 513
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 78af84a547e9ad14b851819ae125ca66
+      internalID: 448116566
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: GrayBoxes2D_198
+      rect:
+        serializedVersion: 2
+        x: 3841
+        y: 1867
+        width: 449
+        height: 513
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 002a5617a1f7ae847b1ac9b72507bc81
+      internalID: 370031475
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: GrayBoxes2D_199
+      rect:
+        serializedVersion: 2
+        x: 4301
+        y: 1867
+        width: 513
+        height: 513
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 3ff2f48a6a9979e4e8c7083971d36e34
+      internalID: -506053760
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: GrayBoxes2D_200
+      rect:
+        serializedVersion: 2
+        x: 4864
+        y: 1866
+        width: 513
+        height: 513
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d01b597be4353e84e81a799cd8d6ebaa
+      internalID: 1950295996
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: GrayBoxes2D_201
+      rect:
+        serializedVersion: 2
+        x: 5388
+        y: 1866
+        width: 449
+        height: 513
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d570b1c9109add948adf6b1e1f471dbf
+      internalID: -1134173631
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: GrayBoxes2D_202
+      rect:
+        serializedVersion: 2
+        x: 5846
+        y: 1866
+        width: 385
+        height: 513
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: caa47598668e5bc49a0c6c200ad80259
+      internalID: -455392673
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: GrayBoxes2D_203
+      rect:
+        serializedVersion: 2
+        x: 6239
+        y: 1866
+        width: 321
+        height: 513
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ec9fe38a9ba6c6e49935532104d8aa70
+      internalID: 630443922
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: GrayBoxes2D_204
+      rect:
+        serializedVersion: 2
+        x: 6569
+        y: 1866
+        width: 257
+        height: 513
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c35747acb503b5b43b76a7f1ab97d852
+      internalID: -2095386942
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: GrayBoxes2D_205
+      rect:
+        serializedVersion: 2
+        x: 6834
+        y: 1866
+        width: 193
+        height: 513
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5e487d15e4a679f4f87d5f5e0cae5e11
+      internalID: 359456380
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: GrayBoxes2D_206
+      rect:
+        serializedVersion: 2
+        x: 7036
+        y: 1866
+        width: 129
+        height: 513
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e815c0f34085ccc44b0cc7bcb92a6de3
+      internalID: -704679747
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: GrayBoxes2D_207
+      rect:
+        serializedVersion: 2
+        x: 7173
+        y: 1866
+        width: 65
+        height: 513
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 01b33c7c3dc827349bd4114242e5bb17
+      internalID: 701323938
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: GrayBoxes2D_208
+      rect:
+        serializedVersion: 2
+        x: 2440
+        y: 1408
+        width: 65
+        height: 449
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ce847139857d3f44cb0327ada2a988c8
+      internalID: -466897438
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: GrayBoxes2D_209
+      rect:
+        serializedVersion: 2
+        x: 2514
+        y: 1408
+        width: 129
+        height: 449
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 3ea35517c2aeaf2489f761eb6238a7e4
+      internalID: 395769197
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: GrayBoxes2D_210
+      rect:
+        serializedVersion: 2
+        x: 2651
+        y: 1408
+        width: 193
+        height: 449
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7135fc7bb47932c4fb231d1c724871e3
+      internalID: -1448848396
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: GrayBoxes2D_211
+      rect:
+        serializedVersion: 2
+        x: 2853
+        y: 1408
+        width: 257
+        height: 449
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 066424941d2f87242ba7ed5f59f6f0cf
+      internalID: -718911466
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: GrayBoxes2D_212
+      rect:
+        serializedVersion: 2
+        x: 3118
+        y: 1408
+        width: 321
+        height: 449
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: adefc30cb3ed4854da5c5f07da05b94e
+      internalID: 1410272885
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: GrayBoxes2D_213
+      rect:
+        serializedVersion: 2
+        x: 3448
+        y: 1408
+        width: 385
+        height: 449
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 12b03a40e18494344ad93d3429da4b1d
+      internalID: -1751294971
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: GrayBoxes2D_214
+      rect:
+        serializedVersion: 2
+        x: 3841
+        y: 1408
+        width: 449
+        height: 449
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6e5532cd2efa96947a4305bbb881df07
+      internalID: -1144124108
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: GrayBoxes2D_215
+      rect:
+        serializedVersion: 2
+        x: 4301
+        y: 1408
+        width: 513
+        height: 449
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a292d4c5ff68be54ab69b0efedf290ab
+      internalID: 1335761785
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: GrayBoxes2D_216
+      rect:
+        serializedVersion: 2
+        x: 4864
+        y: 1406
+        width: 513
+        height: 449
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 3af3c30c6144f9c44a5e3e2b7d06dec5
+      internalID: -86631374
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: GrayBoxes2D_217
+      rect:
+        serializedVersion: 2
+        x: 5388
+        y: 1406
+        width: 449
+        height: 449
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d1daf27281c21e74e95b8568fe8b9458
+      internalID: -1572352328
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: GrayBoxes2D_218
+      rect:
+        serializedVersion: 2
+        x: 5846
+        y: 1406
+        width: 385
+        height: 449
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d76733ad0aa6cb94dad2563bb2838b57
+      internalID: -681901757
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: GrayBoxes2D_219
+      rect:
+        serializedVersion: 2
+        x: 6239
+        y: 1406
+        width: 321
+        height: 449
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 3bdc60cd1bb82b94db9ec92d7db8fe6a
+      internalID: -579972768
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: GrayBoxes2D_220
+      rect:
+        serializedVersion: 2
+        x: 6569
+        y: 1406
+        width: 257
+        height: 449
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: fa5124a52c0792c4a82629e3d33802f9
+      internalID: -1040242618
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: GrayBoxes2D_221
+      rect:
+        serializedVersion: 2
+        x: 6834
+        y: 1406
+        width: 193
+        height: 449
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 76a3903b828f4da47a76f8a91134f2ee
+      internalID: 2083261441
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: GrayBoxes2D_222
+      rect:
+        serializedVersion: 2
+        x: 7036
+        y: 1406
+        width: 129
+        height: 449
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6ccaab47eb90e5c4dae1c817dad2e6a3
+      internalID: 301374868
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: GrayBoxes2D_223
+      rect:
+        serializedVersion: 2
+        x: 7173
+        y: 1406
+        width: 65
+        height: 449
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: adf08839d30550041bdb3964cb432f92
+      internalID: 1523799958
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: GrayBoxes2D_224
+      rect:
+        serializedVersion: 2
+        x: 2440
+        y: 1012
+        width: 65
+        height: 385
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8f1313277c3aed2419fd35757cbf5870
+      internalID: -1320648419
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: GrayBoxes2D_225
+      rect:
+        serializedVersion: 2
+        x: 2514
+        y: 1012
+        width: 129
+        height: 385
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 128556994b247fe408e033237c01db29
+      internalID: -735896250
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: GrayBoxes2D_226
+      rect:
+        serializedVersion: 2
+        x: 2651
+        y: 1012
+        width: 193
+        height: 385
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e721b8db515e5f549ab8d46c79c20136
+      internalID: 1645513329
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: GrayBoxes2D_227
+      rect:
+        serializedVersion: 2
+        x: 2853
+        y: 1012
+        width: 257
+        height: 385
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ec8dfa7e0e685754b8e28afdfa38efad
+      internalID: -552080322
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: GrayBoxes2D_228
+      rect:
+        serializedVersion: 2
+        x: 3118
+        y: 1012
+        width: 321
+        height: 385
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5374c9fef9149ed449d1c983b1d4a35b
+      internalID: 569960257
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: GrayBoxes2D_229
+      rect:
+        serializedVersion: 2
+        x: 3448
+        y: 1012
+        width: 385
+        height: 385
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7d241501dd8ce0b4a8f8c1c5e8308f73
+      internalID: -824958294
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: GrayBoxes2D_230
+      rect:
+        serializedVersion: 2
+        x: 3841
+        y: 1012
+        width: 449
+        height: 385
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 9567c62e8a94f3941b1a27c7c3e42c5d
+      internalID: 1379292836
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: GrayBoxes2D_231
+      rect:
+        serializedVersion: 2
+        x: 4301
+        y: 1012
+        width: 513
+        height: 385
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c3622fb4d5b684f4998fc6863dc10652
+      internalID: 2106473447
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: GrayBoxes2D_232
+      rect:
+        serializedVersion: 2
+        x: 4864
+        y: 1011
+        width: 513
+        height: 385
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 24e701b1c200bce469fba14186c03cd9
+      internalID: -626203104
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: GrayBoxes2D_233
+      rect:
+        serializedVersion: 2
+        x: 5388
+        y: 1011
+        width: 449
+        height: 385
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 9c2da010ebc97c64d9f74c76ae985a6c
+      internalID: 2080537216
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: GrayBoxes2D_234
+      rect:
+        serializedVersion: 2
+        x: 5846
+        y: 1011
+        width: 385
+        height: 385
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 833749335ee63dc428055b56216754cb
+      internalID: -2065937203
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: GrayBoxes2D_235
+      rect:
+        serializedVersion: 2
+        x: 6239
+        y: 1011
+        width: 321
+        height: 385
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 374ac6dae0c164e4cb096993175120f8
+      internalID: -2140934252
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: GrayBoxes2D_236
+      rect:
+        serializedVersion: 2
+        x: 6569
+        y: 1011
+        width: 257
+        height: 385
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 07abb4b9a1440044dae6f930b0ee71f7
+      internalID: 738939208
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: GrayBoxes2D_237
+      rect:
+        serializedVersion: 2
+        x: 6834
+        y: 1011
+        width: 193
+        height: 385
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7475d8a679ec76e4cbb80385f8c3ffd0
+      internalID: 1047758767
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: GrayBoxes2D_238
+      rect:
+        serializedVersion: 2
+        x: 7036
+        y: 1011
+        width: 129
+        height: 385
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 18d648503bd301247859513d98a5ef9b
+      internalID: -1543854940
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: GrayBoxes2D_239
+      rect:
+        serializedVersion: 2
+        x: 7173
+        y: 1011
+        width: 65
+        height: 385
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 19c9cba3edcf9614e864d2d23e1735f2
+      internalID: -1189693322
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: GrayBoxes2D_240
+      rect:
+        serializedVersion: 2
+        x: 2440
+        y: 681
+        width: 65
+        height: 321
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 71a99e8c0a960c149aef069b5ce645e9
+      internalID: -1303787861
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: GrayBoxes2D_241
+      rect:
+        serializedVersion: 2
+        x: 2514
+        y: 681
+        width: 129
+        height: 321
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d8ddf638b572ceb4da6fd9398bde0679
+      internalID: 1899594371
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: GrayBoxes2D_242
+      rect:
+        serializedVersion: 2
+        x: 2651
+        y: 681
+        width: 193
+        height: 321
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: cbd7dd06e748f5845b81899008f47519
+      internalID: 1338112499
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: GrayBoxes2D_243
+      rect:
+        serializedVersion: 2
+        x: 2853
+        y: 681
+        width: 257
+        height: 321
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 533674061e763f44d8d852b2a75f02ad
+      internalID: 1752643715
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: GrayBoxes2D_244
+      rect:
+        serializedVersion: 2
+        x: 3118
+        y: 681
+        width: 321
+        height: 321
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8f6cff4783f3b4446afdeb24a6f54c1d
+      internalID: 1631661732
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: GrayBoxes2D_245
+      rect:
+        serializedVersion: 2
+        x: 3448
+        y: 681
+        width: 385
+        height: 321
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 3c9f4383b6505b848b45c0e53400b5b5
+      internalID: -1587278953
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: GrayBoxes2D_246
+      rect:
+        serializedVersion: 2
+        x: 3841
+        y: 681
+        width: 449
+        height: 321
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: cc77be6df844f87418a60b0d7c367a34
+      internalID: 2016751097
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: GrayBoxes2D_247
+      rect:
+        serializedVersion: 2
+        x: 4301
+        y: 681
+        width: 513
+        height: 321
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4cf71997fed45894fb8e6655eb20c875
+      internalID: 558295646
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: GrayBoxes2D_248
+      rect:
+        serializedVersion: 2
+        x: 4864
+        y: 679
+        width: 513
+        height: 321
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 294ad2ec3de04d7439ba56830d4e25f6
+      internalID: 1152125742
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: GrayBoxes2D_249
+      rect:
+        serializedVersion: 2
+        x: 5388
+        y: 679
+        width: 449
+        height: 321
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5e818aac1150d504d8c7f2a2bff40375
+      internalID: -1099134046
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: GrayBoxes2D_250
+      rect:
+        serializedVersion: 2
+        x: 5846
+        y: 679
+        width: 385
+        height: 321
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a66b0dee688b6ea44b0a0afb7dc1df1d
+      internalID: -1319766921
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: GrayBoxes2D_251
+      rect:
+        serializedVersion: 2
+        x: 6239
+        y: 679
+        width: 321
+        height: 321
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4fae3a11fc2fba1498aa95909966eaf9
+      internalID: -572058377
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: GrayBoxes2D_252
+      rect:
+        serializedVersion: 2
+        x: 6569
+        y: 679
+        width: 257
+        height: 321
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 25821a103b5e46e478ea2d7886c8dd16
+      internalID: -2143621710
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: GrayBoxes2D_253
+      rect:
+        serializedVersion: 2
+        x: 6834
+        y: 679
+        width: 193
+        height: 321
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 57c7365f47c64af4795ff6b60b2d916a
+      internalID: -1984138002
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: GrayBoxes2D_254
+      rect:
+        serializedVersion: 2
+        x: 7036
+        y: 679
+        width: 129
+        height: 321
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: bd71e9b58d6b5cb4c868de1bd1d0d5b4
+      internalID: 1587230518
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: GrayBoxes2D_255
+      rect:
+        serializedVersion: 2
+        x: 7173
+        y: 679
+        width: 65
+        height: 321
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b210618f960e6b3468cfedd14202eb36
+      internalID: -456747828
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: GrayBoxes2D_256
+      rect:
+        serializedVersion: 2
+        x: 2440
+        y: 414
+        width: 65
+        height: 257
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5e37e214ae14aa04eb43ac2851e3d86b
+      internalID: -1939986904
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: GrayBoxes2D_257
+      rect:
+        serializedVersion: 2
+        x: 2514
+        y: 414
+        width: 129
+        height: 257
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f34657a80df3c67488b964af28682df3
+      internalID: 1416122817
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: GrayBoxes2D_258
+      rect:
+        serializedVersion: 2
+        x: 2651
+        y: 414
+        width: 193
+        height: 257
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1ed13df0f77ef774dbb863403a5d5e14
+      internalID: -615195192
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: GrayBoxes2D_259
+      rect:
+        serializedVersion: 2
+        x: 2853
+        y: 414
+        width: 257
+        height: 257
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b3277fb3689e9dc4aa5e0d25cf316fb1
+      internalID: 484724543
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: GrayBoxes2D_260
+      rect:
+        serializedVersion: 2
+        x: 3118
+        y: 414
+        width: 321
+        height: 257
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 697610da6f48015418b18fa1caef7e8e
+      internalID: 361098265
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: GrayBoxes2D_261
+      rect:
+        serializedVersion: 2
+        x: 3448
+        y: 414
+        width: 385
+        height: 257
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 04dcef9c08b2e9946ada7843fd6a752a
+      internalID: 64321009
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: GrayBoxes2D_262
+      rect:
+        serializedVersion: 2
+        x: 3841
+        y: 414
+        width: 449
+        height: 257
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 13e0b4bbfb53be14c957d5291f900afd
+      internalID: 1769484287
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: GrayBoxes2D_263
+      rect:
+        serializedVersion: 2
+        x: 4301
+        y: 414
+        width: 513
+        height: 257
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: fa7c1e9b6417c2f4e883a5d0600943a3
+      internalID: 304562853
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: GrayBoxes2D_264
+      rect:
+        serializedVersion: 2
+        x: 4864
+        y: 412
+        width: 513
+        height: 257
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d073c80a7013bf04b88eb1de1695d5eb
+      internalID: -1002185000
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: GrayBoxes2D_265
+      rect:
+        serializedVersion: 2
+        x: 5388
+        y: 412
+        width: 449
+        height: 257
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8fcc46e2234f4414e9dddf617a230d5d
+      internalID: 568276395
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: GrayBoxes2D_266
+      rect:
+        serializedVersion: 2
+        x: 5846
+        y: 412
+        width: 385
+        height: 257
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e85075241e969114ba0efebe53c84355
+      internalID: 196889333
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: GrayBoxes2D_267
+      rect:
+        serializedVersion: 2
+        x: 6239
+        y: 412
+        width: 321
+        height: 257
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 81f4ac9de18b4614483b4567b59763c5
+      internalID: -870911943
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: GrayBoxes2D_268
+      rect:
+        serializedVersion: 2
+        x: 6569
+        y: 412
+        width: 257
+        height: 257
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: fc883b1f56f551243abe698a35c9d1a8
+      internalID: 1196816890
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: GrayBoxes2D_269
+      rect:
+        serializedVersion: 2
+        x: 6834
+        y: 412
+        width: 193
+        height: 257
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 90fab403fc802a640a3d3d0b0d1e2852
+      internalID: 1330534650
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: GrayBoxes2D_270
+      rect:
+        serializedVersion: 2
+        x: 7036
+        y: 412
+        width: 129
+        height: 257
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6d312cbea3866aa48ae7ee2ebefc2fa0
+      internalID: -1776420377
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: GrayBoxes2D_271
+      rect:
+        serializedVersion: 2
+        x: 7173
+        y: 412
+        width: 65
+        height: 257
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 3cce4bb71e890a64fbca6d5f360f315c
+      internalID: 1142739038
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: GrayBoxes2D_272
+      rect:
+        serializedVersion: 2
+        x: 2440
+        y: 211
+        width: 65
+        height: 193
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 36b851dc9ba988542980121e1c650855
+      internalID: 1740195813
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: GrayBoxes2D_273
+      rect:
+        serializedVersion: 2
+        x: 2514
+        y: 211
+        width: 129
+        height: 193
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 581e217f414316f49bde8ea513aa462f
+      internalID: 112818809
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: GrayBoxes2D_274
+      rect:
+        serializedVersion: 2
+        x: 2651
+        y: 211
+        width: 193
+        height: 193
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 95c3a61c42ce5564f918632c24b85d0e
+      internalID: -1952308408
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: GrayBoxes2D_275
+      rect:
+        serializedVersion: 2
+        x: 2853
+        y: 211
+        width: 257
+        height: 193
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 494d487898491134a814a3d823b1ba6a
+      internalID: -2132417547
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: GrayBoxes2D_276
+      rect:
+        serializedVersion: 2
+        x: 3118
+        y: 211
+        width: 321
+        height: 193
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b39479f173385f94cb899f138aa0f11c
+      internalID: -573730900
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: GrayBoxes2D_277
+      rect:
+        serializedVersion: 2
+        x: 3448
+        y: 211
+        width: 385
+        height: 193
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 90be1712eba4ce14baf543f2e4195a42
+      internalID: -1951204390
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: GrayBoxes2D_278
+      rect:
+        serializedVersion: 2
+        x: 3841
+        y: 211
+        width: 449
+        height: 193
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 458621b6414044b4ea7b25f4c9b1424f
+      internalID: -166183878
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: GrayBoxes2D_279
+      rect:
+        serializedVersion: 2
+        x: 4301
+        y: 211
+        width: 513
+        height: 193
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 3492c6748bc19ac43b07163ec7dc7f84
+      internalID: 1616334620
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: GrayBoxes2D_280
+      rect:
+        serializedVersion: 2
+        x: 4864
+        y: 209
+        width: 513
+        height: 193
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4c123e2a3ff67c9478bd6d43e92fdf1f
+      internalID: -1332694478
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: GrayBoxes2D_281
+      rect:
+        serializedVersion: 2
+        x: 5388
+        y: 209
+        width: 449
+        height: 193
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: eb8d9bd7ac74ed549a27c67193d5d914
+      internalID: -889729688
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: GrayBoxes2D_282
+      rect:
+        serializedVersion: 2
+        x: 5846
+        y: 209
+        width: 385
+        height: 193
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 9e88e25631660e04aa9847da5adb77fa
+      internalID: -938418063
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: GrayBoxes2D_283
+      rect:
+        serializedVersion: 2
+        x: 6239
+        y: 209
+        width: 321
+        height: 193
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4bbcfb27a663d8d49b557303a5c378f6
+      internalID: 1659801561
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: GrayBoxes2D_284
+      rect:
+        serializedVersion: 2
+        x: 6569
+        y: 209
+        width: 257
+        height: 193
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8ed558f2fdbac6e44b7ffebce1fa717b
+      internalID: 79568397
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: GrayBoxes2D_285
+      rect:
+        serializedVersion: 2
+        x: 6834
+        y: 209
+        width: 193
+        height: 193
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c72e191197a8ac94f91b28540a9967b0
+      internalID: 1909751158
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: GrayBoxes2D_286
+      rect:
+        serializedVersion: 2
+        x: 7036
+        y: 209
+        width: 129
+        height: 193
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: edb15a6c8f99c6746ac2fccd462566a9
+      internalID: -938884508
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: GrayBoxes2D_287
+      rect:
+        serializedVersion: 2
+        x: 7173
+        y: 209
+        width: 65
+        height: 193
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 20d40aaa9e5045a47bec69be56e0a36f
+      internalID: -830556795
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: GrayBoxes2D_288
+      rect:
+        serializedVersion: 2
+        x: 2440
+        y: 74
+        width: 65
+        height: 129
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4ea7f81536fffb54286a09515aab8ff9
+      internalID: 380614608
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: GrayBoxes2D_289
+      rect:
+        serializedVersion: 2
+        x: 2514
+        y: 74
+        width: 129
+        height: 129
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: be81b79ad0819ed4f8d851db1c70009e
+      internalID: 1985973424
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: GrayBoxes2D_290
+      rect:
+        serializedVersion: 2
+        x: 2651
+        y: 74
+        width: 193
+        height: 129
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 150fb56c57a431148abc30236ddd2dd4
+      internalID: 568702006
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: GrayBoxes2D_291
+      rect:
+        serializedVersion: 2
+        x: 2853
+        y: 74
+        width: 257
+        height: 129
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 641e657e0990de743a8a08aade859e6b
+      internalID: 127111052
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: GrayBoxes2D_292
+      rect:
+        serializedVersion: 2
+        x: 3118
+        y: 74
+        width: 321
+        height: 129
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1a0d127c17a9f11429ff01b726948b1e
+      internalID: 592803012
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: GrayBoxes2D_293
+      rect:
+        serializedVersion: 2
+        x: 3448
+        y: 74
+        width: 385
+        height: 129
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0c951fb776e75624ab95d939a45f932c
+      internalID: 1814709895
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: GrayBoxes2D_294
+      rect:
+        serializedVersion: 2
+        x: 3841
+        y: 74
+        width: 449
+        height: 129
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1868eca43ea7db2419344bd97fbbf76d
+      internalID: -1847223124
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: GrayBoxes2D_295
+      rect:
+        serializedVersion: 2
+        x: 4301
+        y: 74
+        width: 513
+        height: 129
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8e2774dbb00285d41928d6cd0df2429e
+      internalID: -1124573778
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: GrayBoxes2D_296
+      rect:
+        serializedVersion: 2
+        x: 4864
+        y: 72
+        width: 513
+        height: 129
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d5bb33e597070bb4f8301a4bf6676e21
+      internalID: -350296980
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: GrayBoxes2D_297
+      rect:
+        serializedVersion: 2
+        x: 5388
+        y: 72
+        width: 449
+        height: 129
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a842d8c428b81a749a04ae8788c4eee3
+      internalID: 1488230941
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: GrayBoxes2D_298
+      rect:
+        serializedVersion: 2
+        x: 5846
+        y: 72
+        width: 385
+        height: 129
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 2355ac9dc2bcdcb4daaa3a2f47141833
+      internalID: 1931970323
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: GrayBoxes2D_299
+      rect:
+        serializedVersion: 2
+        x: 6239
+        y: 72
+        width: 321
+        height: 129
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 47a5d565198f199449c9c688aad2c955
+      internalID: -740450165
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: GrayBoxes2D_300
+      rect:
+        serializedVersion: 2
+        x: 6569
+        y: 72
+        width: 257
+        height: 129
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1817b084b319cfd4f9d60f6a4c5bd997
+      internalID: -1179578135
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: GrayBoxes2D_301
+      rect:
+        serializedVersion: 2
+        x: 6834
+        y: 72
+        width: 193
+        height: 129
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c771f52c4393bd249a9e6d85d3163fa4
+      internalID: -412263872
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: GrayBoxes2D_302
+      rect:
+        serializedVersion: 2
+        x: 7036
+        y: 72
+        width: 129
+        height: 129
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d6c7c70809db3074f8815c5bb411128c
+      internalID: -1879510263
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: GrayBoxes2D_303
+      rect:
+        serializedVersion: 2
+        x: 7173
+        y: 72
+        width: 65
+        height: 129
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0f8243749c8559749ac23b58345e8cb2
+      internalID: -524620193
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: GrayBoxes2D_304
+      rect:
+        serializedVersion: 2
+        x: 2440
+        y: 1
+        width: 65
+        height: 65
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a806be89d24be2f4599227cd44c66cc0
+      internalID: 1990617530
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: GrayBoxes2D_305
+      rect:
+        serializedVersion: 2
+        x: 2514
+        y: 1
+        width: 129
+        height: 65
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4b82364689102f04aa412785d8e2e6f9
+      internalID: -1732477597
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: GrayBoxes2D_306
+      rect:
+        serializedVersion: 2
+        x: 2651
+        y: 1
+        width: 193
+        height: 65
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0716bf5be104a244e8d3d50603f7f9f2
+      internalID: 706985288
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: GrayBoxes2D_307
+      rect:
+        serializedVersion: 2
+        x: 2853
+        y: 1
+        width: 257
+        height: 65
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8506d3d133bd5894baee90dbac40f92a
+      internalID: 736069214
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: GrayBoxes2D_308
+      rect:
+        serializedVersion: 2
+        x: 3118
+        y: 1
+        width: 321
+        height: 65
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 3bfe62447fdfb79488024c230721021f
+      internalID: 1587429432
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: GrayBoxes2D_309
+      rect:
+        serializedVersion: 2
+        x: 3448
+        y: 1
+        width: 385
+        height: 65
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e80b52ef8541b234e81f9d4c94f5421b
+      internalID: 135103345
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: GrayBoxes2D_310
+      rect:
+        serializedVersion: 2
+        x: 3841
+        y: 1
+        width: 449
+        height: 65
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7ef9f2bb14c29f14d91ab417deebc83d
+      internalID: 1494862990
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: GrayBoxes2D_311
+      rect:
+        serializedVersion: 2
+        x: 4301
+        y: 1
+        width: 513
+        height: 65
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 3836d644da006ec4987d12dd5d1feca5
+      internalID: 278967130
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: GrayBoxes2D_312
+      rect:
+        serializedVersion: 2
+        x: 4864
+        y: 0
+        width: 513
+        height: 65
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: bb20b221e982e4e448f5a9968afc7ab6
+      internalID: -1263641347
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: GrayBoxes2D_313
+      rect:
+        serializedVersion: 2
+        x: 5388
+        y: 0
+        width: 449
+        height: 65
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 293ffaea3c3571f4e87705041e773a9e
+      internalID: -335874882
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: GrayBoxes2D_314
+      rect:
+        serializedVersion: 2
+        x: 5846
+        y: 0
+        width: 385
+        height: 65
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 9cd997fb4ad599a46be05e3bd906c6b1
+      internalID: 1868813810
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: GrayBoxes2D_315
+      rect:
+        serializedVersion: 2
+        x: 6239
+        y: 0
+        width: 321
+        height: 65
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f650186a48a9ccd40b7897359d4d9b6e
+      internalID: -40131946
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: GrayBoxes2D_316
+      rect:
+        serializedVersion: 2
+        x: 6569
+        y: 0
+        width: 257
+        height: 65
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ecc3b54439c33284187da8b1d3a0aeda
+      internalID: 94394141
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: GrayBoxes2D_317
+      rect:
+        serializedVersion: 2
+        x: 6834
+        y: 0
+        width: 193
+        height: 65
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 9d12460ef496bae40bb401651eee15db
+      internalID: -867001429
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: GrayBoxes2D_318
+      rect:
+        serializedVersion: 2
+        x: 7036
+        y: 0
+        width: 129
+        height: 65
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d49dc317a2f04b34f8525b229780cc6c
+      internalID: -1488811983
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: GrayBoxes2D_319
+      rect:
+        serializedVersion: 2
+        x: 7173
+        y: 0
+        width: 65
+        height: 65
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 17e2ccdff6305fc418e29a0cbecfbceb
+      internalID: 1282403524
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: GrayBoxes2D_0
+      rect:
+        serializedVersion: 2
+        x: 1861
+        y: 4798
+        width: 513
+        height: 65
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: bac5bd2eb549d7840a122706144e1d28
+      internalID: -301360176
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: GrayBoxes2D_1
+      rect:
+        serializedVersion: 2
+        x: 1861
+        y: 4661
+        width: 513
+        height: 129
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d2481017b60536844ab56ebb2ea41799
+      internalID: -342149909
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: GrayBoxes2D_2
+      rect:
+        serializedVersion: 2
+        x: 1861
+        y: 4460
+        width: 513
+        height: 193
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 673830f3680739543b178c7c29616547
+      internalID: 42147048
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    physicsShape: []
+    bones: []
+    spriteID: 5e97eb03825dee720800000000000000
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+    nameFileIdTable:
+      GrayBoxes2D_0: -301360176
+      GrayBoxes2D_1: -342149909
+      GrayBoxes2D_10: -2093557780
+      GrayBoxes2D_100: 1271887573
+      GrayBoxes2D_101: -1364215630
+      GrayBoxes2D_102: 1030149559
+      GrayBoxes2D_103: -1162967398
+      GrayBoxes2D_104: -333104445
+      GrayBoxes2D_105: -2097835424
+      GrayBoxes2D_106: 1097488707
+      GrayBoxes2D_107: -1382748199
+      GrayBoxes2D_108: 1165734974
+      GrayBoxes2D_109: 115397695
+      GrayBoxes2D_11: 2087341285
+      GrayBoxes2D_110: -1480215634
+      GrayBoxes2D_111: 2133204436
+      GrayBoxes2D_112: -383949659
+      GrayBoxes2D_113: -1173067374
+      GrayBoxes2D_114: 1650512544
+      GrayBoxes2D_115: -1592895789
+      GrayBoxes2D_116: -1608048223
+      GrayBoxes2D_117: -1042991605
+      GrayBoxes2D_118: 2039966789
+      GrayBoxes2D_119: 1945451831
+      GrayBoxes2D_12: -68452103
+      GrayBoxes2D_120: -940815852
+      GrayBoxes2D_121: -1160994227
+      GrayBoxes2D_122: -61966860
+      GrayBoxes2D_123: 216962127
+      GrayBoxes2D_124: 2147087589
+      GrayBoxes2D_125: -106692471
+      GrayBoxes2D_126: -526904463
+      GrayBoxes2D_127: -1479574332
+      GrayBoxes2D_128: 2138008659
+      GrayBoxes2D_129: 745919054
+      GrayBoxes2D_13: 1717826073
+      GrayBoxes2D_130: -705475669
+      GrayBoxes2D_131: 1262319674
+      GrayBoxes2D_132: 296251685
+      GrayBoxes2D_133: -1399237510
+      GrayBoxes2D_134: -1865126680
+      GrayBoxes2D_135: -1080532348
+      GrayBoxes2D_136: -457644201
+      GrayBoxes2D_137: -1227674041
+      GrayBoxes2D_138: 767105965
+      GrayBoxes2D_139: -35962289
+      GrayBoxes2D_14: 2124004233
+      GrayBoxes2D_140: -1225957848
+      GrayBoxes2D_141: 1242531240
+      GrayBoxes2D_142: 730840847
+      GrayBoxes2D_143: 274448986
+      GrayBoxes2D_144: -2110111057
+      GrayBoxes2D_145: 1261843141
+      GrayBoxes2D_146: -584032358
+      GrayBoxes2D_147: 1848903150
+      GrayBoxes2D_148: -1885163643
+      GrayBoxes2D_149: 225970133
+      GrayBoxes2D_15: -680040717
+      GrayBoxes2D_150: -1340257095
+      GrayBoxes2D_151: 1513169551
+      GrayBoxes2D_152: 319595218
+      GrayBoxes2D_153: 1928682627
+      GrayBoxes2D_154: -857026505
+      GrayBoxes2D_155: -1200586553
+      GrayBoxes2D_156: -1319463411
+      GrayBoxes2D_157: 631248872
+      GrayBoxes2D_158: -438975305
+      GrayBoxes2D_159: 757578406
+      GrayBoxes2D_16: 1732030331
+      GrayBoxes2D_160: 440850036
+      GrayBoxes2D_161: -433115286
+      GrayBoxes2D_162: -1765290163
+      GrayBoxes2D_163: -1845766367
+      GrayBoxes2D_164: -2115308491
+      GrayBoxes2D_165: -2065586552
+      GrayBoxes2D_166: -1544146507
+      GrayBoxes2D_167: 1813194992
+      GrayBoxes2D_168: -237833935
+      GrayBoxes2D_169: 349543523
+      GrayBoxes2D_17: 1911575870
+      GrayBoxes2D_170: -1011430689
+      GrayBoxes2D_171: -308671709
+      GrayBoxes2D_172: 1252081082
+      GrayBoxes2D_173: -691263783
+      GrayBoxes2D_174: -1903956882
+      GrayBoxes2D_175: -1434677177
+      GrayBoxes2D_176: -471758272
+      GrayBoxes2D_177: -1210935200
+      GrayBoxes2D_178: -2135602321
+      GrayBoxes2D_179: 374021591
+      GrayBoxes2D_18: 206032260
+      GrayBoxes2D_180: 1584278478
+      GrayBoxes2D_181: 793948926
+      GrayBoxes2D_182: -1764695159
+      GrayBoxes2D_183: -1039437199
+      GrayBoxes2D_184: 1974376715
+      GrayBoxes2D_185: -1013008286
+      GrayBoxes2D_186: -1614325922
+      GrayBoxes2D_187: -371417122
+      GrayBoxes2D_188: -348049411
+      GrayBoxes2D_189: 1647803023
+      GrayBoxes2D_19: -1654083011
+      GrayBoxes2D_190: 1712104072
+      GrayBoxes2D_191: 803054759
+      GrayBoxes2D_192: 2019652999
+      GrayBoxes2D_193: -1724410301
+      GrayBoxes2D_194: -166840954
+      GrayBoxes2D_195: -2102583842
+      GrayBoxes2D_196: 439621317
+      GrayBoxes2D_197: 448116566
+      GrayBoxes2D_198: 370031475
+      GrayBoxes2D_199: -506053760
+      GrayBoxes2D_2: 42147048
+      GrayBoxes2D_20: 2143882105
+      GrayBoxes2D_200: 1950295996
+      GrayBoxes2D_201: -1134173631
+      GrayBoxes2D_202: -455392673
+      GrayBoxes2D_203: 630443922
+      GrayBoxes2D_204: -2095386942
+      GrayBoxes2D_205: 359456380
+      GrayBoxes2D_206: -704679747
+      GrayBoxes2D_207: 701323938
+      GrayBoxes2D_208: -466897438
+      GrayBoxes2D_209: 395769197
+      GrayBoxes2D_21: -1936289297
+      GrayBoxes2D_210: -1448848396
+      GrayBoxes2D_211: -718911466
+      GrayBoxes2D_212: 1410272885
+      GrayBoxes2D_213: -1751294971
+      GrayBoxes2D_214: -1144124108
+      GrayBoxes2D_215: 1335761785
+      GrayBoxes2D_216: -86631374
+      GrayBoxes2D_217: -1572352328
+      GrayBoxes2D_218: -681901757
+      GrayBoxes2D_219: -579972768
+      GrayBoxes2D_22: 1552290968
+      GrayBoxes2D_220: -1040242618
+      GrayBoxes2D_221: 2083261441
+      GrayBoxes2D_222: 301374868
+      GrayBoxes2D_223: 1523799958
+      GrayBoxes2D_224: -1320648419
+      GrayBoxes2D_225: -735896250
+      GrayBoxes2D_226: 1645513329
+      GrayBoxes2D_227: -552080322
+      GrayBoxes2D_228: 569960257
+      GrayBoxes2D_229: -824958294
+      GrayBoxes2D_23: 177096466
+      GrayBoxes2D_230: 1379292836
+      GrayBoxes2D_231: 2106473447
+      GrayBoxes2D_232: -626203104
+      GrayBoxes2D_233: 2080537216
+      GrayBoxes2D_234: -2065937203
+      GrayBoxes2D_235: -2140934252
+      GrayBoxes2D_236: 738939208
+      GrayBoxes2D_237: 1047758767
+      GrayBoxes2D_238: -1543854940
+      GrayBoxes2D_239: -1189693322
+      GrayBoxes2D_24: -103175419
+      GrayBoxes2D_240: -1303787861
+      GrayBoxes2D_241: 1899594371
+      GrayBoxes2D_242: 1338112499
+      GrayBoxes2D_243: 1752643715
+      GrayBoxes2D_244: 1631661732
+      GrayBoxes2D_245: -1587278953
+      GrayBoxes2D_246: 2016751097
+      GrayBoxes2D_247: 558295646
+      GrayBoxes2D_248: 1152125742
+      GrayBoxes2D_249: -1099134046
+      GrayBoxes2D_25: 296000377
+      GrayBoxes2D_250: -1319766921
+      GrayBoxes2D_251: -572058377
+      GrayBoxes2D_252: -2143621710
+      GrayBoxes2D_253: -1984138002
+      GrayBoxes2D_254: 1587230518
+      GrayBoxes2D_255: -456747828
+      GrayBoxes2D_256: -1939986904
+      GrayBoxes2D_257: 1416122817
+      GrayBoxes2D_258: -615195192
+      GrayBoxes2D_259: 484724543
+      GrayBoxes2D_26: 271598047
+      GrayBoxes2D_260: 361098265
+      GrayBoxes2D_261: 64321009
+      GrayBoxes2D_262: 1769484287
+      GrayBoxes2D_263: 304562853
+      GrayBoxes2D_264: -1002185000
+      GrayBoxes2D_265: 568276395
+      GrayBoxes2D_266: 196889333
+      GrayBoxes2D_267: -870911943
+      GrayBoxes2D_268: 1196816890
+      GrayBoxes2D_269: 1330534650
+      GrayBoxes2D_27: -308050476
+      GrayBoxes2D_270: -1776420377
+      GrayBoxes2D_271: 1142739038
+      GrayBoxes2D_272: 1740195813
+      GrayBoxes2D_273: 112818809
+      GrayBoxes2D_274: -1952308408
+      GrayBoxes2D_275: -2132417547
+      GrayBoxes2D_276: -573730900
+      GrayBoxes2D_277: -1951204390
+      GrayBoxes2D_278: -166183878
+      GrayBoxes2D_279: 1616334620
+      GrayBoxes2D_28: 574206322
+      GrayBoxes2D_280: -1332694478
+      GrayBoxes2D_281: -889729688
+      GrayBoxes2D_282: -938418063
+      GrayBoxes2D_283: 1659801561
+      GrayBoxes2D_284: 79568397
+      GrayBoxes2D_285: 1909751158
+      GrayBoxes2D_286: -938884508
+      GrayBoxes2D_287: -830556795
+      GrayBoxes2D_288: 380614608
+      GrayBoxes2D_289: 1985973424
+      GrayBoxes2D_29: -1478606997
+      GrayBoxes2D_290: 568702006
+      GrayBoxes2D_291: 127111052
+      GrayBoxes2D_292: 592803012
+      GrayBoxes2D_293: 1814709895
+      GrayBoxes2D_294: -1847223124
+      GrayBoxes2D_295: -1124573778
+      GrayBoxes2D_296: -350296980
+      GrayBoxes2D_297: 1488230941
+      GrayBoxes2D_298: 1931970323
+      GrayBoxes2D_299: -740450165
+      GrayBoxes2D_3: 135562973
+      GrayBoxes2D_30: 983447917
+      GrayBoxes2D_300: -1179578135
+      GrayBoxes2D_301: -412263872
+      GrayBoxes2D_302: -1879510263
+      GrayBoxes2D_303: -524620193
+      GrayBoxes2D_304: 1990617530
+      GrayBoxes2D_305: -1732477597
+      GrayBoxes2D_306: 706985288
+      GrayBoxes2D_307: 736069214
+      GrayBoxes2D_308: 1587429432
+      GrayBoxes2D_309: 135103345
+      GrayBoxes2D_31: 2029260793
+      GrayBoxes2D_310: 1494862990
+      GrayBoxes2D_311: 278967130
+      GrayBoxes2D_312: -1263641347
+      GrayBoxes2D_313: -335874882
+      GrayBoxes2D_314: 1868813810
+      GrayBoxes2D_315: -40131946
+      GrayBoxes2D_316: 94394141
+      GrayBoxes2D_317: -867001429
+      GrayBoxes2D_318: -1488811983
+      GrayBoxes2D_319: 1282403524
+      GrayBoxes2D_32: -1701896843
+      GrayBoxes2D_320: -168275484
+      GrayBoxes2D_33: -971401289
+      GrayBoxes2D_34: -634733759
+      GrayBoxes2D_35: -762443556
+      GrayBoxes2D_36: 449479736
+      GrayBoxes2D_37: 1478517471
+      GrayBoxes2D_38: -27943938
+      GrayBoxes2D_39: -241789440
+      GrayBoxes2D_4: -1452805001
+      GrayBoxes2D_40: -822453246
+      GrayBoxes2D_41: -1991732079
+      GrayBoxes2D_42: 1090606704
+      GrayBoxes2D_43: -392652575
+      GrayBoxes2D_44: 1087813928
+      GrayBoxes2D_45: -901973589
+      GrayBoxes2D_46: 205662550
+      GrayBoxes2D_47: -1516627211
+      GrayBoxes2D_48: 739554493
+      GrayBoxes2D_49: 2083670379
+      GrayBoxes2D_5: -1000009582
+      GrayBoxes2D_50: -698659333
+      GrayBoxes2D_51: -1425897200
+      GrayBoxes2D_52: -1959510812
+      GrayBoxes2D_53: 177514086
+      GrayBoxes2D_54: 1811004061
+      GrayBoxes2D_55: -1218658157
+      GrayBoxes2D_56: -436891941
+      GrayBoxes2D_57: 2111486602
+      GrayBoxes2D_58: -1254769927
+      GrayBoxes2D_59: 409789016
+      GrayBoxes2D_6: 44110356
+      GrayBoxes2D_60: -1624654934
+      GrayBoxes2D_61: 31472553
+      GrayBoxes2D_62: -1976324476
+      GrayBoxes2D_63: 1555750850
+      GrayBoxes2D_64: -859329561
+      GrayBoxes2D_65: 354277986
+      GrayBoxes2D_66: -633254930
+      GrayBoxes2D_67: -1621735280
+      GrayBoxes2D_68: 851629639
+      GrayBoxes2D_69: 2051190885
+      GrayBoxes2D_7: 125502788
+      GrayBoxes2D_70: 1746831580
+      GrayBoxes2D_71: -29537348
+      GrayBoxes2D_72: 654074883
+      GrayBoxes2D_73: -404267962
+      GrayBoxes2D_74: -776272258
+      GrayBoxes2D_75: -560595569
+      GrayBoxes2D_76: -912440822
+      GrayBoxes2D_77: -11087313
+      GrayBoxes2D_78: -62370371
+      GrayBoxes2D_79: 195715591
+      GrayBoxes2D_8: -1817793281
+      GrayBoxes2D_80: -481543286
+      GrayBoxes2D_81: -174337501
+      GrayBoxes2D_82: 916540490
+      GrayBoxes2D_83: 1315890007
+      GrayBoxes2D_84: 1790431384
+      GrayBoxes2D_85: 493599569
+      GrayBoxes2D_86: 168157907
+      GrayBoxes2D_87: -1410655256
+      GrayBoxes2D_88: -1039096910
+      GrayBoxes2D_89: 1630829471
+      GrayBoxes2D_9: 830022208
+      GrayBoxes2D_90: 385211638
+      GrayBoxes2D_91: -456022452
+      GrayBoxes2D_92: 1101033485
+      GrayBoxes2D_93: 130472181
+      GrayBoxes2D_94: -1754174459
+      GrayBoxes2D_95: 1065690857
+      GrayBoxes2D_96: -242416044
+      GrayBoxes2D_97: 154737158
+      GrayBoxes2D_98: -346980980
+      GrayBoxes2D_99: 1170981486
+  mipmapLimitGroupName: 
+  pSDRemoveMatte: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

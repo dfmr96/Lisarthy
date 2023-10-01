@@ -42,13 +42,17 @@ public class PlayerJump : MonoBehaviour
     [SerializeField] private LayerMask groundLayer;
 
     [SerializeField] private float timeToApexDebug = 0; //Debug USE ONLY
-    public string JumpDebugInfo =>
-        $"\n \n Jump Debug Info " +
-        $" \n" +
-        $" Vertical Velocity {rb.velocity.y} \n" +
-        $" currentlyJumping? {currentlyJumping} \n" +
-        $" Time to Apex: {timeToApexDebug} \n" +
-        $" Jump Height = {jumpHeight}";
+    public string JumpDebugInfo
+    {
+        get =>
+            $"\n \n Jump Debug Info " +
+            $" \n" +
+            $" Vertical Velocity {rb.velocity.y} \n" +
+            $" currentlyJumping? {currentlyJumping} \n" +
+            $" Time to Apex: {timeToApexDebug} \n" +
+            $" Jump Height = {jumpHeight}";
+        set => throw new NotImplementedException();
+    }
 
     private void Awake()
     {
@@ -57,12 +61,30 @@ public class PlayerJump : MonoBehaviour
         defaultGravityScale = 1f;
     }
 
-    public float JumpHeight => jumpHeight;
-
-    public void SetJumpHeight(float jumpHeight)
+    public float JumpHeight
     {
-        this.jumpHeight = jumpHeight;
+        get => jumpHeight;
+        set => jumpHeight = value;
     }
+
+    public float TimeToJumpApex
+    {
+        get => timeToJumpApex;
+        set => timeToJumpApex = value / 10;
+    }
+
+    public float UpwardMultiplier
+    {
+        get => upwardMultiplier;
+        set => upwardMultiplier = value;
+    }
+
+    public float GravityMultiplier
+    {
+        get => gravityMultiplier;
+        set => gravityMultiplier = value;
+    }
+
 
     private void Start()
     {
@@ -109,15 +131,15 @@ public class PlayerJump : MonoBehaviour
         }
         else
         {
-            gravityMultiplier = upwardMultiplier;
+            gravityMultiplier = UpwardMultiplier;
         }
     }
 
     private void SetPhysics()
     {
        //
-        Vector2 newGravity = new Vector2(0, -2 * jumpHeight / (timeToJumpApex * timeToJumpApex));
-        rb.gravityScale = (newGravity.y / Physics2D.gravity.y) * gravityMultiplier;
+        Vector2 newGravity = new Vector2(0, -2 * jumpHeight / (TimeToJumpApex * TimeToJumpApex));
+        rb.gravityScale = (newGravity.y / Physics2D.gravity.y) * GravityMultiplier;
         Debug.Log(newGravity);
     }
 

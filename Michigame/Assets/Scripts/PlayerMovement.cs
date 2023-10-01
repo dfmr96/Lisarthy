@@ -1,5 +1,6 @@
 using System;
 using UnityEngine;
+using UnityEngine.Serialization;
 
 [RequireComponent(typeof(Rigidbody2D))]
 public class PlayerMovement : MonoBehaviour
@@ -7,7 +8,7 @@ public class PlayerMovement : MonoBehaviour
     [SerializeField] private PlayerMetrics _playerMetrics;
     [SerializeField] private float maxSpeed = 1f;
     [SerializeField] private float maxAcceleration = 1f;
-    [SerializeField] private float maxDeccaleration = 1f;
+    [SerializeField] private float maxDeceleration = 1f;
     [SerializeField] private float friction;
     [SerializeField] private float turnSpeed;
     private string accelUsed = ""; // DONT USE (Just for debug)
@@ -17,27 +18,42 @@ public class PlayerMovement : MonoBehaviour
     private Rigidbody2D rb;
     private bool turning; //DONT USE (Just for debug )
 
-    public string MovementDebugInfo =>
-        $" Movenment info \n " +
-        $"\n" +
-        $" Desired Horizontal Velocity: {desiredVelocity.x} \n " +
-        $" Velocity: {rb.velocity.x} \n " +
-        $" Horizontal Acceleration: {maxSpeedChange / Time.deltaTime} \n " +
-        $" Horizontal AccelUsed: {accelUsed} \n " +
-        $" turning? {turning}"; // 
-
-    public float MaxSpeed => maxSpeed;
-    public float MaxAcceleration => maxAcceleration;
-
-    public void SetMaxSpeed(float maxSpeed)
+    public string MovementDebugInfo
     {
-        this.maxSpeed = maxSpeed;
+        get =>
+            $" Movenment info \n " +
+            $"\n" +
+            $" Desired Horizontal Velocity: {desiredVelocity.x} \n " +
+            $" Velocity: {rb.velocity.x} \n " +
+            $" Horizontal Acceleration: {maxSpeedChange / Time.deltaTime} \n " +
+            $" Horizontal AccelUsed: {accelUsed} \n " +
+            $" turning? {turning}"; // 
+        set => throw new NotImplementedException();
     }
-    
-    public void SetMaxAccel(float maxAccel)
+
+    public float MaxSpeed
     {
-        this.maxAcceleration = maxAccel;
+        get => maxSpeed;
+        set => maxSpeed = value;
     }
+
+    public float MaxAcceleration
+    {
+        get => maxAcceleration;
+        set => maxAcceleration = value;
+    }
+
+    public float MaxDeceleration
+    {
+        get => maxDeceleration;
+        set => maxDeceleration = value;
+    }
+    public float TurnSpeed
+    {
+        get => turnSpeed;
+        set => turnSpeed = value;
+    }
+
 
     private void Awake()
     {
@@ -74,7 +90,7 @@ public class PlayerMovement : MonoBehaviour
         {
             if (rb.velocity.x != 0)
             {
-                maxSpeedChange = maxDeccaleration * Time.fixedDeltaTime;
+                maxSpeedChange = MaxDeceleration * Time.fixedDeltaTime;
                 accelUsed = "maxDeAccel";
                 Debug.Log("Desacelerando, ninguna tecla presionada");
             }
@@ -95,7 +111,7 @@ public class PlayerMovement : MonoBehaviour
     {
         maxSpeed = _playerMetrics.maxSpeed;
         maxAcceleration = _playerMetrics.maxAcceleration;
-        maxDeccaleration = _playerMetrics.maxDeccaleration;
+        maxDeceleration = _playerMetrics.maxDeceleration;
         turnSpeed = _playerMetrics.turnSpeed;
     }
 }

@@ -7,6 +7,8 @@ using UnityEngine.Serialization;
 [RequireComponent(typeof(Rigidbody2D))]
 public class PlayerJump : MonoBehaviour
 {
+    public Action<bool,bool> OnGravityValueChanged;
+    
     [SerializeField] private PlayerMetrics _playerMetrics;
     private Rigidbody2D rb;
     private Vector2 velocity;
@@ -14,7 +16,7 @@ public class PlayerJump : MonoBehaviour
     [SerializeField] private float jumpHeight = 5f;
     [SerializeField] private float timeToJumpApex = 2f;
     [SerializeField] private float upwardMultiplier = 1f;
-    //[SerializeField] private float downwardMultiplier = 2f;
+    [SerializeField] private float downwardMultiplier = 2f;
     //private float maxAirJumps = 0;
 
     [SerializeField] private bool variableJumpHeight;
@@ -42,13 +44,20 @@ public class PlayerJump : MonoBehaviour
     [SerializeField] private LayerMask groundLayer;
 
     [SerializeField] private float timeToApexDebug = 0; //Debug USE ONLY
-    public string JumpDebugInfo =>
-        $"\n \n Jump Debug Info " +
-        $" \n" +
-        $" Vertical Velocity {rb.velocity.y} \n" +
-        $" currentlyJumping? {currentlyJumping} \n" +
-        $" Time to Apex: {timeToApexDebug} \n" +
-        $" Jump Height = {jumpHeight}";
+    [SerializeField] private float timeToGroundDebug; //Debug USE ONLY
+
+    public string JumpDebugInfo
+    {
+        get =>
+            $"\n \n Jump Debug Info " +
+            $" \n" +
+            $" Vertical Velocity {rb.velocity.y} \n" +
+            $" currentlyJumping? {currentlyJumping} \n" +
+            $" Time to Apex: {timeToApexDebug} \n" +
+            $" Time to Ground: {timeToGroundDebug} \n" +
+            $" Jump Height = {jumpHeight}";
+        set => throw new NotImplementedException();
+    }
 
     private void Awake()
     {
@@ -57,12 +66,30 @@ public class PlayerJump : MonoBehaviour
         defaultGravityScale = 1f;
     }
 
-    public float JumpHeight => jumpHeight;
-
-    public void SetJumpHeight(float jumpHeight)
+    public float JumpHeight
     {
-        this.jumpHeight = jumpHeight;
+        get => jumpHeight;
+        set => jumpHeight = value;
     }
+
+    public float TimeToJumpApex
+    {
+        get => timeToJumpApex;
+        set => timeToJumpApex = value / 10;
+    }
+
+    public float UpwardMultiplier
+    {
+        get => upwardMultiplier;
+        set => upwardMultiplier = value;
+    }
+
+    public float GravityMultiplier
+    {
+        get => gravityMultiplier;
+        set => gravityMultiplier = value;
+    }
+
 
     private void Start()
     {
@@ -76,6 +103,7 @@ public class PlayerJump : MonoBehaviour
         if (onGround && !currentlyJumping) rb.velocity = new Vector2(rb.velocity.x, 0);
 
         if (currentlyJumping && rb.velocity.y > 0) timeToApexDebug += Time.deltaTime;
+        if (currentlyJumping && rb.velocity.y < 0) timeToGroundDebug += Time.deltaTime;
         SetPhysics();
 
         if (Input.GetKeyDown(KeyCode.Space))
@@ -102,21 +130,31 @@ public class PlayerJump : MonoBehaviour
 
     private void CalculateGravity()
     {
+        bool isUpwards = false;
         if (onGround)
         {
-            gravityMultiplier = defaultGravityScale;
             currentlyJumping = false;
-        }
-        else
+            gravityMultiplier = defaultGravityScale;
+        } 
+        else switch (rb.velocity.y)
         {
-            gravityMultiplier = upwardMultiplier;
+                
+            case > 0:
+                gravityMultiplier = upwardMultiplier;
+                isUpwards = true;
+                break;
+            case < 0:
+                gravityMultiplier = downwardMultiplier;
+                break;
         }
+        
+        OnGravityValueChanged?.Invoke(onGround, isUpwards);
     }
 
     private void SetPhysics()
     {
-       //
-        Vector2 newGravity = new Vector2(0, -2 * jumpHeight / (timeToJumpApex * timeToJumpApex));
+        //
+        Vector2 newGravity = new Vector2(0, -2 * jumpHeight / (TimeToJumpApex * TimeToJumpApex));
         rb.gravityScale = (newGravity.y / Physics2D.gravity.y) * gravityMultiplier;
         Debug.Log(newGravity);
     }
@@ -126,6 +164,7 @@ public class PlayerJump : MonoBehaviour
         if (onGround)
         {
             timeToApexDebug = 0;
+            timeToGroundDebug = 0;
             desiredJump = false;
 
             jumpSpeed = MathF.Sqrt(-2f * Physics2D.gravity.y * rb.gravityScale * jumpHeight);

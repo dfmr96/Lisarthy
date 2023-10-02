@@ -4820,6 +4820,7 @@ MonoBehaviour:
   timeToJumpApex: 0.75
   upwardMultiplier: 1
   downwardMultiplier: 0.5
+  jumpCutOffMultiplier: 5
   variableJumpHeight: 0
   gravityMultiplier: 0
   desiredJump: 0
@@ -4831,6 +4832,9 @@ MonoBehaviour:
     m_Bits: 1024
   timeToApexDebug: 0
   timeToGroundDebug: 0
+  coyoteTimeCounter: 0
+  coyoteTimeUsable: 0
+  coyoteTime: 0.15
 --- !u!114 &901804724
 MonoBehaviour:
   m_ObjectHideFlags: 0

@@ -17,6 +17,7 @@ public class PlayerJump : MonoBehaviour
     [SerializeField] private float timeToJumpApex = 2f;
     [SerializeField] private float upwardMultiplier = 1f;
     [SerializeField] private float downwardMultiplier = 2f;
+    [SerializeField] private float jumpCutOffMultiplier = 5f;
     //private float maxAirJumps = 0;
 
     [SerializeField] private bool variableJumpHeight;
@@ -111,6 +112,12 @@ public class PlayerJump : MonoBehaviour
         if (Input.GetKeyDown(KeyCode.Space))
         {
             desiredJump = true;
+            pressingJump = true;
+        }
+
+        if (Input.GetKeyUp(KeyCode.Space))
+        {
+            pressingJump = false;
         }
     }
 
@@ -142,8 +149,18 @@ public class PlayerJump : MonoBehaviour
         {
                 
             case > 0:
-                gravityMultiplier = upwardMultiplier;
-                isUpwards = true;
+
+                if (pressingJump && currentlyJumping)
+                {
+                    gravityMultiplier = upwardMultiplier;
+                    isUpwards = true;
+                }
+                else
+                {
+                    /*Vector2 cutOffVelocity = new Vector2(rb.velocity.x, 0);
+                    rb.velocity = cutOffVelocity;*/
+                    gravityMultiplier = jumpCutOffMultiplier;
+                }
                 break;
             case < 0:
                 gravityMultiplier = downwardMultiplier;

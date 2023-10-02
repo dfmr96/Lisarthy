@@ -39,7 +39,8 @@ public class PlayerJump : MonoBehaviour
     private bool currentlyJumping;
     private float defaultGravityScale;
 
-    private float jumpBufferCounter;
+    [SerializeField] private float jumpBuffer;
+    private float jumpBufferCounter = 0;
     [SerializeField] private float coyoteTime = 0.15f;
     //[SerializeField] private float jumpBuffer = 0.15f;
 
@@ -129,6 +130,20 @@ public class PlayerJump : MonoBehaviour
         {
             coyoteTimeCounter = 0;
         }
+
+        if (jumpBuffer > 0)
+        {
+            if (desiredJump)
+            {
+                jumpBufferCounter += Time.deltaTime;
+
+                if (jumpBufferCounter > jumpBuffer)
+                {
+                    desiredJump = false;
+                    jumpBufferCounter = 0;
+                }
+            }
+        }
     }
 
     private void FixedUpdate()
@@ -194,7 +209,7 @@ public class PlayerJump : MonoBehaviour
             }
         }
 
-        if (coyoteTimeCounter > 0 && coyoteTimeCounter < coyoteTime) gravityMultiplier = upwardMultiplier;
+        //if (coyoteTimeCounter > 0 && coyoteTimeCounter < coyoteTime) gravityMultiplier = upwardMultiplier;
         OnGravityValueChanged?.Invoke(OnGround, isUpwards);
     }
 
@@ -212,9 +227,13 @@ public class PlayerJump : MonoBehaviour
             timeToApexDebug = 0;
             timeToGroundDebug = 0;
             coyoteTimeCounter = 0;
+            jumpBufferCounter = 0;
             desiredJump = false;
 
-
+            gravityMultiplier = upwardMultiplier;
+            OnGravityValueChanged?.Invoke(OnGround, true);
+            SetPhysics();
+            
             jumpSpeed = MathF.Sqrt(-2f * Physics2D.gravity.y * rb.gravityScale * jumpHeight);
             Debug.Log(jumpSpeed + " velocidad de salto");
             velocity.y = jumpSpeed;

@@ -7,15 +7,20 @@ public class PlayerMovement : MonoBehaviour
 {
     [SerializeField] private PlayerMetrics _playerMetrics;
     [SerializeField] private float maxSpeed = 1f;
+    [SerializeField] private float maxFallingSpeed = -15f;
     [SerializeField] private float maxAcceleration = 1f;
     [SerializeField] private float maxDeceleration = 1f;
+    [SerializeField] private float maxAirAcceleration;
+    [SerializeField] private float maxAirDeceleration;
+    [SerializeField] private float maxTurnSpeed;
+    [SerializeField] private float maxAirTurnSpeed;
     [SerializeField] private float friction;
-    [SerializeField] private float turnSpeed;
     private string accelUsed = ""; // DONT USE (Just for debug)
     private Vector2 desiredVelocity;
     private float maxSpeedChange;
 
     private Rigidbody2D rb;
+    private PlayerJump playerJump;
     private bool turning; //DONT USE (Just for debug )
 
     public string MovementDebugInfo
@@ -50,14 +55,15 @@ public class PlayerMovement : MonoBehaviour
     }
     public float TurnSpeed
     {
-        get => turnSpeed;
-        set => turnSpeed = value;
+        get => maxTurnSpeed;
+        set => maxTurnSpeed = value;
     }
 
 
     private void Awake()
     {
         rb = GetComponent<Rigidbody2D>();
+        playerJump = GetComponent<PlayerJump>();
         LoadData();
     }
 
@@ -69,6 +75,12 @@ public class PlayerMovement : MonoBehaviour
 
     private void FixedUpdate()
     {
+        bool onGround = playerJump.OnGround;
+
+        float acceleration = onGround ? maxAcceleration : maxAirAcceleration;
+        float deceleration = onGround ? maxDeceleration : maxAirDeceleration;
+        float turnSpeed = onGround ? maxTurnSpeed : maxAirTurnSpeed;
+        
         turning = false;
         if (desiredVelocity.x != 0)
         {
@@ -81,7 +93,7 @@ public class PlayerMovement : MonoBehaviour
             }
             else
             {
-                maxSpeedChange = maxAcceleration * Time.fixedDeltaTime;
+                maxSpeedChange = acceleration * Time.fixedDeltaTime;
                 accelUsed = "maxAccel";
                 Debug.Log("horizontal y rb velocity mismo signo: aceleration aplicada");
             }
@@ -90,7 +102,7 @@ public class PlayerMovement : MonoBehaviour
         {
             if (rb.velocity.x != 0)
             {
-                maxSpeedChange = MaxDeceleration * Time.fixedDeltaTime;
+                maxSpeedChange = deceleration * Time.fixedDeltaTime;
                 accelUsed = "maxDeAccel";
                 Debug.Log("Desacelerando, ninguna tecla presionada");
             }
@@ -99,12 +111,13 @@ public class PlayerMovement : MonoBehaviour
                 accelUsed = "No one";
                 maxSpeedChange = 0;
                 Debug.Log("Idle");
-                return;
+                //return;
             }
         }
 
-        Vector2 velocity = new(Mathf.MoveTowards(rb.velocity.x, desiredVelocity.x, maxSpeedChange), 0f);
-        rb.velocity = new Vector2(velocity.x, rb.velocity.y);
+       
+        Vector2 velocity = new(Mathf.MoveTowards(rb.velocity.x, desiredVelocity.x, maxSpeedChange), rb.velocity.y < maxFallingSpeed ? maxFallingSpeed: rb.velocity.y);
+        rb.velocity = new Vector2(velocity.x, velocity.y);
     }
 
     public void LoadData()
@@ -112,6 +125,6 @@ public class PlayerMovement : MonoBehaviour
         maxSpeed = _playerMetrics.maxSpeed;
         maxAcceleration = _playerMetrics.maxAcceleration;
         maxDeceleration = _playerMetrics.maxDeceleration;
-        turnSpeed = _playerMetrics.turnSpeed;
+        maxTurnSpeed = _playerMetrics.turnSpeed;
     }
 }

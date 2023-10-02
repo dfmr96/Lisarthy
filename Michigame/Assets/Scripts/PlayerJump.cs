@@ -90,6 +90,8 @@ public class PlayerJump : MonoBehaviour
         set => gravityMultiplier = value;
     }
 
+    public bool OnGround => onGround;
+
 
     private void Start()
     {
@@ -100,7 +102,7 @@ public class PlayerJump : MonoBehaviour
     {
         onGround =  Physics2D.Raycast(new Vector3(col.bounds.max.x, transform.position.y), Vector2.down, groundLength, groundLayer) 
                     || Physics2D.Raycast( new Vector3(col.bounds.min.x, transform.position.y,0), Vector2.down, groundLength, groundLayer);
-        if (onGround && !currentlyJumping) rb.velocity = new Vector2(rb.velocity.x, 0);
+        if (OnGround && !currentlyJumping) rb.velocity = new Vector2(rb.velocity.x, 0);
 
         if (currentlyJumping && rb.velocity.y > 0) timeToApexDebug += Time.deltaTime;
         if (currentlyJumping && rb.velocity.y < 0) timeToGroundDebug += Time.deltaTime;
@@ -131,7 +133,7 @@ public class PlayerJump : MonoBehaviour
     private void CalculateGravity()
     {
         bool isUpwards = false;
-        if (onGround)
+        if (OnGround)
         {
             currentlyJumping = false;
             gravityMultiplier = defaultGravityScale;
@@ -148,7 +150,7 @@ public class PlayerJump : MonoBehaviour
                 break;
         }
         
-        OnGravityValueChanged?.Invoke(onGround, isUpwards);
+        OnGravityValueChanged?.Invoke(OnGround, isUpwards);
     }
 
     private void SetPhysics()
@@ -161,7 +163,7 @@ public class PlayerJump : MonoBehaviour
 
     private void Jump()
     {
-        if (onGround)
+        if (OnGround)
         {
             timeToApexDebug = 0;
             timeToGroundDebug = 0;
@@ -176,7 +178,7 @@ public class PlayerJump : MonoBehaviour
 
     private void OnDrawGizmos()
     {
-        if (onGround)
+        if (OnGround)
         {
             Gizmos.color = Color.green;
         }

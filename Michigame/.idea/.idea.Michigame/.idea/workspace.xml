@@ -6,8 +6,14 @@
   <component name="ChangeListManager">
     <list default="true" id="4df7d40f-8887-4bba-9d80-6ae23a8fa518" name="Changes" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/.idea.Michigame/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.Michigame/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scenes/MetricsTest.unity" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scenes/MetricsTest.unity" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/PlayerTrail.cs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/PlayerTrail.cs.meta" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/Scripts/PlayerJump.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/PlayerJump.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/PlayerMovement.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/PlayerMovement.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/SliderUpdater.cs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/SliderUpdater.cs.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/SliderValueText.cs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/SliderValueText.cs.meta" beforeDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -114,7 +120,8 @@
       <workItem from="1695333580424" duration="1367000" />
       <workItem from="1695584980555" duration="10462000" />
       <workItem from="1695926104416" duration="10083000" />
-      <workItem from="1696180775215" duration="8070000" />
+      <workItem from="1696180775215" duration="9794000" />
+      <workItem from="1696213770058" duration="1677000" />
     </task>
     <servers />
   </component>

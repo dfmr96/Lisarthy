@@ -1,69 +1,66 @@
 using System;
-using System.Collections;
-using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.Serialization;
 
 [RequireComponent(typeof(Rigidbody2D))]
 public class PlayerJump : MonoBehaviour
 {
-    public Action<bool,bool> OnGravityValueChanged;
-    
+    public Action<bool, bool> OnGravityValueChanged;
+
     [SerializeField] private PlayerMetrics _playerMetrics;
-    private Rigidbody2D rb;
-    private Vector2 velocity;
 
     [SerializeField] private float jumpHeight = 5f;
     [SerializeField] private float timeToJumpApex = 2f;
     [SerializeField] private float upwardMultiplier = 1f;
     [SerializeField] private float downwardMultiplier = 2f;
+
+    [SerializeField] private float jumpCutOffMultiplier = 5f;
     //private float maxAirJumps = 0;
 
-    [SerializeField] private bool variableJumpHeight;
-    //private float jumpCutOff;
-    private float speedLimit;
-    //[SerializeField] private float coyoteTime = 0.15f;
-    //[SerializeField] private float jumpBuffer = 0.15f;
-
-    private float jumpSpeed;
-    private float defaultGravityScale;
+    //[SerializeField] private bool variableJumpHeight;
     [SerializeField] private float gravityMultiplier;
 
 
     //private bool canJumpAgain = false;
     [SerializeField] private bool desiredJump;
-    private float jumpBufferCounter;
-    private float coyoteTimeCounter;
-    private bool pressingJump;
     [SerializeField] private bool onGround;
-    private bool currentlyJumping;
 
     [SerializeField] private float groundLength = 0.95f;
-    [FormerlySerializedAs("collider")] [SerializeField] private BoxCollider2D col;
+
+    [FormerlySerializedAs("collider")] [SerializeField]
+    private BoxCollider2D col;
 
     [SerializeField] private LayerMask groundLayer;
 
-    [SerializeField] private float timeToApexDebug = 0; //Debug USE ONLY
+    [SerializeField] private float timeToApexDebug; //Debug USE ONLY
     [SerializeField] private float timeToGroundDebug; //Debug USE ONLY
+    [SerializeField] float coyoteTimeCounter = 0;
+    
+    private bool currentlyJumping;
+    private float defaultGravityScale;
+
+    [SerializeField] private float jumpBuffer;
+    private float jumpBufferCounter = 0;
+    [SerializeField] private float coyoteTime = 0.15f;
+    //[SerializeField] private float jumpBuffer = 0.15f;
+
+    private float jumpSpeed;
+    private bool pressingJump;
+    private Rigidbody2D rb;
+    
+    private Vector2 velocity;
 
     public string JumpDebugInfo
     {
         get =>
-            $"\n \n Jump Debug Info " +
-            $" \n" +
+            "\n \n Jump Debug Info " +
+            " \n" +
             $" Vertical Velocity {rb.velocity.y} \n" +
             $" currentlyJumping? {currentlyJumping} \n" +
             $" Time to Apex: {timeToApexDebug} \n" +
             $" Time to Ground: {timeToGroundDebug} \n" +
             $" Jump Height = {jumpHeight}";
         set => throw new NotImplementedException();
-    }
-
-    private void Awake()
-    {
-        rb = GetComponent<Rigidbody2D>();
-        col = GetComponent<BoxCollider2D>();
-        defaultGravityScale = 1f;
     }
 
     public float JumpHeight
@@ -92,6 +89,13 @@ public class PlayerJump : MonoBehaviour
 
     public bool OnGround => onGround;
 
+    private void Awake()
+    {
+        rb = GetComponent<Rigidbody2D>();
+        col = GetComponent<BoxCollider2D>();
+        defaultGravityScale = 1f;
+    }
+
 
     private void Start()
     {
@@ -100,8 +104,10 @@ public class PlayerJump : MonoBehaviour
 
     private void Update()
     {
-        onGround =  Physics2D.Raycast(new Vector3(col.bounds.max.x, transform.position.y), Vector2.down, groundLength, groundLayer) 
-                    || Physics2D.Raycast( new Vector3(col.bounds.min.x, transform.position.y,0), Vector2.down, groundLength, groundLayer);
+        onGround = Physics2D.Raycast(new Vector3(col.bounds.max.x, transform.position.y), Vector2.down, groundLength,
+                       groundLayer)
+                   || Physics2D.Raycast(new Vector3(col.bounds.min.x, transform.position.y, 0), Vector2.down,
+                       groundLength, groundLayer);
         if (OnGround && !currentlyJumping) rb.velocity = new Vector2(rb.velocity.x, 0);
 
         if (currentlyJumping && rb.velocity.y > 0) timeToApexDebug += Time.deltaTime;
@@ -111,6 +117,32 @@ public class PlayerJump : MonoBehaviour
         if (Input.GetKeyDown(KeyCode.Space))
         {
             desiredJump = true;
+            pressingJump = true;
+        }
+
+        if (Input.GetKeyUp(KeyCode.Space)) pressingJump = false;
+
+        if (!currentlyJumping && !onGround)
+        {
+            coyoteTimeCounter += Time.deltaTime;
+        }
+        else
+        {
+            coyoteTimeCounter = 0;
+        }
+
+        if (jumpBuffer > 0)
+        {
+            if (desiredJump)
+            {
+                jumpBufferCounter += Time.deltaTime;
+
+                if (jumpBufferCounter > jumpBuffer)
+                {
+                    desiredJump = false;
+                    jumpBufferCounter = 0;
+                }
+            }
         }
     }
 
@@ -121,73 +153,92 @@ public class PlayerJump : MonoBehaviour
         if (desiredJump)
         {
             Jump();
-            
+
             rb.velocity = velocity;
-            
+
             return;
         }
 
         CalculateGravity();
     }
 
+    private void OnDrawGizmos()
+    {
+        if (OnGround)
+            Gizmos.color = Color.green;
+        else
+            Gizmos.color = Color.red;
+
+        Gizmos.DrawLine(new Vector3(col.bounds.max.x, transform.position.y, 0),
+            new Vector3(col.bounds.max.x, transform.position.y, 0) + Vector3.down * groundLength);
+        Gizmos.DrawLine(new Vector3(col.bounds.min.x, transform.position.y, 0),
+            new Vector3(col.bounds.min.x, transform.position.y, 0) + Vector3.down * groundLength);
+    }
+
     private void CalculateGravity()
     {
-        bool isUpwards = false;
+        var isUpwards = false;
+
+
         if (OnGround)
         {
             currentlyJumping = false;
             gravityMultiplier = defaultGravityScale;
-        } 
-        else switch (rb.velocity.y)
-        {
-                
-            case > 0:
-                gravityMultiplier = upwardMultiplier;
-                isUpwards = true;
-                break;
-            case < 0:
-                gravityMultiplier = downwardMultiplier;
-                break;
         }
-        
+        else
+        {
+            switch (rb.velocity.y)
+            {
+                case > 0.5f:
+                    if (pressingJump && currentlyJumping)
+                    {
+                        gravityMultiplier = upwardMultiplier;
+                        isUpwards = true;
+                    }
+                    else
+                    {
+                        /*Vector2 cutOffVelocity = new Vector2(rb.velocity.x, 0);
+                        rb.velocity = cutOffVelocity;*/
+                        gravityMultiplier = jumpCutOffMultiplier;
+                    }
+
+                    break;
+                case < -0.5f:
+                    gravityMultiplier = downwardMultiplier;
+                    break;
+            }
+        }
+
+        //if (coyoteTimeCounter > 0 && coyoteTimeCounter < coyoteTime) gravityMultiplier = upwardMultiplier;
         OnGravityValueChanged?.Invoke(OnGround, isUpwards);
     }
 
     private void SetPhysics()
     {
-        //
-        Vector2 newGravity = new Vector2(0, -2 * jumpHeight / (TimeToJumpApex * TimeToJumpApex));
-        rb.gravityScale = (newGravity.y / Physics2D.gravity.y) * gravityMultiplier;
+        Vector2 newGravity = new(0, -2 * jumpHeight / (TimeToJumpApex * TimeToJumpApex));
+        rb.gravityScale = newGravity.y / Physics2D.gravity.y * gravityMultiplier;
         Debug.Log(newGravity);
     }
 
     private void Jump()
     {
-        if (OnGround)
+        if (OnGround || coyoteTimeCounter < coyoteTime && coyoteTimeCounter > 0.03f)
         {
             timeToApexDebug = 0;
             timeToGroundDebug = 0;
+            coyoteTimeCounter = 0;
+            jumpBufferCounter = 0;
             desiredJump = false;
 
+            gravityMultiplier = upwardMultiplier;
+            OnGravityValueChanged?.Invoke(OnGround, true);
+            SetPhysics();
+            
             jumpSpeed = MathF.Sqrt(-2f * Physics2D.gravity.y * rb.gravityScale * jumpHeight);
-
-            velocity.y += jumpSpeed;
+            Debug.Log(jumpSpeed + " velocidad de salto");
+            velocity.y = jumpSpeed;
             currentlyJumping = true;
         }
-    }
-
-    private void OnDrawGizmos()
-    {
-        if (OnGround)
-        {
-            Gizmos.color = Color.green;
-        }
-        else
-        {
-            Gizmos.color = Color.red;
-        }
-        Gizmos.DrawLine(new Vector3(col.bounds.max.x,transform.position.y,0), new Vector3(col.bounds.max.x,transform.position.y ,0) + Vector3.down * groundLength);
-        Gizmos.DrawLine(new Vector3(col.bounds.min.x,transform.position.y,0), new Vector3(col.bounds.min.x,transform.position.y ,0) + Vector3.down * groundLength);
     }
 
     public void LoadData()

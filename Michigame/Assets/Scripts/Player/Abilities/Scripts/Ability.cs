@@ -8,8 +8,8 @@ public class Ability : ScriptableObject
     public int level;
     public int currentSouls;
     public int[] lvlUpCondition;
-    public float coolDown;
-    public float damage;
+    public float coolDownTime;
+    public int damage;
     public float knockBack;
     public float stunDuration;
 

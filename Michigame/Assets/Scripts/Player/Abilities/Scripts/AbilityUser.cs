@@ -10,14 +10,15 @@ public class AbilityUser : MonoBehaviour
     private int id;
     private int level;
     private int souls;
-    private float coolDown;
-    private float damage;
+    private float coolDownTime;
+    private float[] currentCoolDowns = new float[4];
+    private int damage;
     private float knockBack;
     private float stunDuration;
 
     private void Awake()
     {
-        player = gameObject;
+        player = gameObject.GetComponentInParent<GameObject>();
     }
     // Start is called before the first frame update
     void Start()
@@ -28,10 +29,16 @@ public class AbilityUser : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
+        UpdateCoolDowns();
+
         if (Input.GetKeyDown(abilityKey))
         {
             GetAbilityData();
-
+            if (currentCoolDowns[id] == 0)
+            {
+                gameObject.SetActive(true);
+            }
+            
 
         }
         
@@ -42,7 +49,7 @@ public class AbilityUser : MonoBehaviour
         name = ability.name;
         id = ability.id;
         level = ability.level;
-        coolDown = ability.coolDown;
+        coolDownTime = ability.coolDownTime;
         damage = ability.damage;
         knockBack = ability.knockBack;
         stunDuration = ability.stunDuration;
@@ -65,8 +72,41 @@ public class AbilityUser : MonoBehaviour
 
     }
 
-    private void ExplorationUse(int abilityID)
+    private void UpdateCoolDowns()
     {
+        for (int i = 0; i < currentCoolDowns.Length; i++)
+        {
+            if (currentCoolDowns[i] > 0)
+            {
+                currentCoolDowns[i] -= Time.deltaTime;
+            }
+            else if (currentCoolDowns[i] < 0)
+            {
+                currentCoolDowns[i] = 0;
+            }
+        }
+    }
 
+    private void OnTriggerEnter2D(Collider2D collision)
+    {
+        if(collision.GetComponent<IEnemy>() != null) 
+        {
+            collision.GetComponent<IEnemy>().TakeDamage(damage,stunDuration);
+            currentCoolDowns[id] = coolDownTime;
+        }
+        else if (id == 1 && collision.CompareTag("Climbable"))
+        {
+            
+        }
+
+    }
+
+    private void OnTriggerExit2D(Collider2D collision)
+    {
+        if (id == 1 && collision.CompareTag("Climbable"))
+        {
+            
+
+        }
     }
 }

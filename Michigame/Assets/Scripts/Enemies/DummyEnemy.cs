@@ -37,6 +37,7 @@ public class DummyEnemy : MonoBehaviour, IEnemy
     {
         health -= damage;
         stunTime = stun;
+        Debug.Log("Enemy attacked");
     }
 
 }

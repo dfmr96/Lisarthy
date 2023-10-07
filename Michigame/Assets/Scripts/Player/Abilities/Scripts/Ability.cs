@@ -5,6 +5,7 @@ public class Ability : ScriptableObject
 {
     public string name;
     public int id;
+    public KeyCode abilityKey;
     public int level;
     public int currentSouls;
     public int[] lvlUpCondition;

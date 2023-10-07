@@ -10,15 +10,14 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 20d30cfe22e06c14e9fe1aef5cc348fb, type: 3}
-  m_Name: Claws
+  m_Name: TailAttack
   m_EditorClassIdentifier: 
-  name: Claws
-  id: 0
-  abilityKey: 102
-  level: 1
+  name: 
+  id: 2
+  level: 0
   currentSouls: 0
   lvlUpCondition: 
-  coolDownTime: 5
-  damage: 1
+  coolDownTime: 0
+  damage: 0
   knockBack: 0
   stunDuration: 0

@@ -8,20 +8,8 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="4df7d40f-8887-4bba-9d80-6ae23a8fa518" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/Assets/PlayerAbilityTree.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/PlayerAbilityTree.cs.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Scripts/Player/Abilities/Scripts/Pawn.asset" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Scripts/Player/Abilities/Scripts/Pawn.asset.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Scripts/Player/Abilities/Scripts/Pawn.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Scripts/Player/Abilities/Scripts/Pawn.cs.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/UI Toolkit.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/UI Toolkit/PanelSettings.asset" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/UI Toolkit/PanelSettings.asset.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/UI Toolkit/UnityThemes.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/UI Toolkit/UnityThemes/UnityDefaultRuntimeTheme.tss" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/UI Toolkit/UnityThemes/UnityDefaultRuntimeTheme.tss.meta" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/.idea.Michigame/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.Michigame/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scenes/MetricsTest.unity" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scenes/MetricsTest.unity" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/PlayerAbilityTree.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/PlayerAbilityTree.cs" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -53,7 +41,7 @@
     "RunOnceActivity.ShowReadmeOnStart": "true",
     "SHARE_PROJECT_CONFIGURATION_FILES": "true",
     "WebServerToolWindowFactoryState": "false",
-    "git-widget-placeholder": "Nicolas",
+    "git-widget-placeholder": "Development",
     "ignore.virus.scanning.warn.message": "true",
     "node.js.detected.package.eslint": "true",
     "node.js.detected.package.tslint": "true",
@@ -131,6 +119,7 @@
       <workItem from="1696180775215" duration="9794000" />
       <workItem from="1696213770058" duration="9985000" />
       <workItem from="1696709100767" duration="2313000" />
+      <workItem from="1696801463354" duration="449000" />
     </task>
     <servers />
   </component>

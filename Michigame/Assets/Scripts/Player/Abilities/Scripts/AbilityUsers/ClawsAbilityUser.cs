@@ -4,6 +4,7 @@ using UnityEngine;
 
 public class ClawsAbilityUser : AbilityUser
 {
+    public bool active = false;
     public bool climbing = false;
     private float gravity;
     private float drag;
@@ -48,14 +49,13 @@ public class ClawsAbilityUser : AbilityUser
         {
             if (currentCoolDown == 0)
             {
-                if (id == 0 || id == 2)
+                if (TryGetComponent<TailPunchAbilityUser>(out TailPunchAbilityUser component) && component.active == false)
                 {
                     hitBox.SetActive(true);// Tengan en cuenta que el hit box no se desactiva hasta que no golpee a un enemigo.
-                }
+                    active = true;
+                }                
             }
-
-        }        
-
+        }  
     }   
 
     private void IsCilmbing(bool state)
@@ -80,11 +80,12 @@ public class ClawsAbilityUser : AbilityUser
 
     private void OnTriggerEnter2D(Collider2D collision)
     {
-        if (collision.GetComponent<IEnemy>() != null)//Verifica si el collider entro en contacto con un enemigo
+        if (collision.GetComponent<IEnemy>() != null && active)//Verifica si el collider entro en contacto con un enemigo
         {
             collision.GetComponent<IEnemy>().TakeDamage(damage, stunDuration);//Aplica el daño y el stun del enemigo atravez de su intefaz
             currentCoolDown = coolDownTime;// Pone la habilidad en cooldown
             hitBox.SetActive(false);// Desactiva el hit box de la habilidad
+            active = false;
         }
     }
 

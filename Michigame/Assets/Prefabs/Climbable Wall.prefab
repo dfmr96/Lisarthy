@@ -141,7 +141,6 @@ GameObject:
   - component: {fileID: 5808054823515264178}
   - component: {fileID: 8173888245982984097}
   - component: {fileID: 8488951790746951714}
-  - component: {fileID: 7559001050314811045}
   m_Layer: 0
   m_Name: Musgo Trrepable
   m_TagString: Climbable
@@ -261,21 +260,6 @@ BoxCollider2D:
   serializedVersion: 2
   m_Size: {x: 1, y: 1}
   m_EdgeRadius: 0
---- !u!114 &7559001050314811045
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 2301378815931247347}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 941f40d56ed35e841ac16f27886e34c8, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  climbing: 0
-  climbSpeed: 10
-  input: 0
 --- !u!1 &3161469159224487815
 GameObject:
   m_ObjectHideFlags: 0

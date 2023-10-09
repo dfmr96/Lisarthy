@@ -1,7 +1,7 @@
 using UnityEngine;
 
-[CreateAssetMenu(fileName = "Ability", menuName = "ScriptableObjects/Ability")]
-public class Ability : ScriptableObject
+//[CreateAssetMenu(fileName = "Ability", menuName = "ScriptableObjects/Ability")]
+public abstract class Ability : ScriptableObject
 {
     public string name;
     public int id;
@@ -21,5 +21,7 @@ public class Ability : ScriptableObject
             level++;
             currentSouls -= lvlUpCondition[level-1];            
         }
-    }    
+    }
+
+
 }

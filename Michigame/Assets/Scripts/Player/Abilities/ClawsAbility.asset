@@ -12,9 +12,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: ac41a600697ffcf4481941d62115f728, type: 3}
   m_Name: ClawsAbility
   m_EditorClassIdentifier: 
-  name: 
+  name: CLAWS
   id: 0
-  abilityKey: 0
+  abilityKey: 102
   level: 0
   currentSouls: 0
   lvlUpCondition: 

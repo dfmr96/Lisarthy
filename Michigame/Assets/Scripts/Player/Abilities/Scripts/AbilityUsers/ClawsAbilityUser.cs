@@ -47,14 +47,19 @@ public class ClawsAbilityUser : AbilityUser
         }
         else if (Input.GetKeyDown(abilityKey))// Si no esta trepando, activa el hit box de la habilidad para poder atacar.
         {
-            if (currentCoolDown == 0)
+            if (currentCoolDown == 0 && hitBox.activeSelf == false)
             {
-                if (TryGetComponent<TailPunchAbilityUser>(out TailPunchAbilityUser component) && component.active == false)
-                {
-                    hitBox.SetActive(true);// Tengan en cuenta que el hit box no se desactiva hasta que no golpee a un enemigo.
-                    active = true;
-                }                
+                hitBox.SetActive(!hitBox.activeSelf);
+                //hitBox.SetActive(true);// Tengan en cuenta que el hit box no se desactiva hasta que no golpee a un enemigo.
+                active = true;
+              
             }
+            //FOR TESTING ONLY------------------------------------------------------------------------------------------
+            else if (currentCoolDown == 0 && Input.GetKeyDown(abilityKey) && hitBox.activeSelf == true)
+            {
+                hitBox.SetActive(false);
+            }
+            //----------------------------------------------------------------------------------------------------
         }  
     }   
 

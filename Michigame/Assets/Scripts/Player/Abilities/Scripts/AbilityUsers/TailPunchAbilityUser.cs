@@ -15,14 +15,17 @@ public class TailPunchAbilityUser : AbilityUser
 
         UpdateCoolDown();
 
-        if (currentCoolDown == 0 && Input.GetKeyDown(abilityKey))
-        {
-            if (TryGetComponent<ClawsAbilityUser>(out ClawsAbilityUser component) && component.active == false)
-            {
-                hitBox.SetActive(true);// Tengan en cuenta que el hit box no se desactiva hasta que no golpee a un enemigo o una superficie rompible.
-                active = true;
-            }
+        if (currentCoolDown == 0 && Input.GetKeyDown(abilityKey) && hitBox.activeSelf == false)
+        {            
+            hitBox.SetActive(true);// Tengan en cuenta que el hit box no se desactiva hasta que no golpee a un enemigo o una superficie rompible.
+            active = true;            
         }
+        //FOR TESTING ONLY------------------------------------------------------------------------------------------
+        else if (currentCoolDown == 0 && Input.GetKeyDown(abilityKey) && hitBox.activeSelf == true)
+        {
+            hitBox.SetActive(false);
+        }
+    //------------------------------------------------------------------------------------------
     }
 
     private void OnTriggerEnter2D(Collider2D collision)

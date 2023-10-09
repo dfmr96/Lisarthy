@@ -6,6 +6,8 @@ TagManager:
   tags:
   - floor
   - Climbable
+  - furBall
+  - furBall Destructible
   layers:
   - Default
   - TransparentFX

@@ -4807,6 +4807,7 @@ GameObject:
   - component: {fileID: 901804722}
   - component: {fileID: 901804724}
   - component: {fileID: 901804725}
+  - component: {fileID: 901804726}
   m_Layer: 0
   m_Name: Player
   m_TagString: Player
@@ -5032,15 +5033,26 @@ MonoBehaviour:
   m_GameObject: {fileID: 901804717}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 974767af121274c46af07b423690420f, type: 3}
+  m_Script: {fileID: 11500000, guid: e4fedf574adfa3e4bb0725fa5a167d9f, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  ability: {fileID: 11400000, guid: 68916f0baee262340b066bc3ac935782, type: 2}
+  ability: {fileID: 11400000, guid: 36d04147511367d4a863b7b485b11222, type: 2}
   hitBox: {fileID: 1890968351}
   climbing: 0
-  climbSpeed: 10
-  climbingDrag: 10
-  exitImpulse: 1500
+--- !u!114 &901804726
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 901804717}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 86830459684a80e4e9ad040a2edecb0a, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  ability: {fileID: 11400000, guid: f45463717a9666f45a9b0290771d1cb8, type: 2}
+  hitBox: {fileID: 1890968351}
 --- !u!1 &903623881
 GameObject:
   m_ObjectHideFlags: 0
@@ -9132,7 +9144,7 @@ PrefabInstance:
     m_Modifications:
     - target: {fileID: 354251895496610035, guid: 87067d1f78d1199428a37383a7629bbc, type: 3}
       propertyPath: m_LocalPosition.x
-      value: -37.33
+      value: 20.97
       objectReference: {fileID: 0}
     - target: {fileID: 354251895496610035, guid: 87067d1f78d1199428a37383a7629bbc, type: 3}
       propertyPath: m_LocalPosition.y
@@ -9173,6 +9185,10 @@ PrefabInstance:
     - target: {fileID: 7111783575098766172, guid: 87067d1f78d1199428a37383a7629bbc, type: 3}
       propertyPath: m_Name
       value: Climbable Wall
+      objectReference: {fileID: 0}
+    - target: {fileID: 7559001050314811045, guid: 87067d1f78d1199428a37383a7629bbc, type: 3}
+      propertyPath: m_Enabled
+      value: 0
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []

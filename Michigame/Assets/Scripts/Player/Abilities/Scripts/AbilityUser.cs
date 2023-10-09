@@ -20,10 +20,9 @@ public abstract class AbilityUser : MonoBehaviour
 
     private void Awake()
     {
+        ExecuteAtAwake();
         player = gameObject;
         GetAbilityData();
-        ExecuteAtAwake();
-
     }
 
     protected void GetAbilityData()

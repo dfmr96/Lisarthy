@@ -23,6 +23,13 @@ public class ClawsAbilityUser : AbilityUser
     // Update is called once per frame
     void Update()
     {
+        //FOR TESTING PROPUSES---------------------------------------------------------------
+        ClawsAbility clawsAbility = ability as ClawsAbility;
+        climbSpeed = clawsAbility.climbSpeed;
+        climbingDrag = clawsAbility.climbingDrag;
+        exitImpulse = clawsAbility.exitImpulse;
+    //---------------------------------------------------------------------------------------------
+
         UpdateCoolDown();
 
         if (climbing)

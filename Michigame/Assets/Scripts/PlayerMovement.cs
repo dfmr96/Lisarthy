@@ -90,13 +90,13 @@ public class PlayerMovement : MonoBehaviour
                 turning = true;
                 accelUsed = "Turn Accel";
                 maxSpeedChange = turnSpeed * Time.fixedDeltaTime;
-                Debug.Log("horizontal y rb velocity distintos signos: Turn speed aplicado");
+                //Debug.Log("horizontal y rb velocity distintos signos: Turn speed aplicado");
             }
             else
             {
                 maxSpeedChange = acceleration * Time.fixedDeltaTime;
                 accelUsed = "maxAccel";
-                Debug.Log("horizontal y rb velocity mismo signo: aceleration aplicada");
+                //Debug.Log("horizontal y rb velocity mismo signo: aceleration aplicada");
             }
         }
         else
@@ -105,13 +105,13 @@ public class PlayerMovement : MonoBehaviour
             {
                 maxSpeedChange = deceleration * Time.fixedDeltaTime;
                 accelUsed = "maxDeAccel";
-                Debug.Log("Desacelerando, ninguna tecla presionada");
+                //Debug.Log("Desacelerando, ninguna tecla presionada");
             }
             else
             {
                 accelUsed = "No one";
                 maxSpeedChange = 0;
-                Debug.Log("Idle");
+                //Debug.Log("Idle");
                 //return;
             }
         }

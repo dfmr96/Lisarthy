@@ -17,15 +17,19 @@ public class SliderUpdater : MonoBehaviour
         UpwardMultiplier,
         GravityMultiplier
     }
+
     [SerializeField] PlayerJump playerJump;
     [SerializeField] private PlayerMovement playerMovement;
     [SerializeField] private StatToChange statToChange;
+
     public Slider slider;
+
     // Start is called before the first frame update
     void Start()
     {
+        /*
         slider = GetComponent<Slider>();
-        slider.maxValue = 15;
+        slider.maxValue = 100;
         slider.minValue = 0;
 
         switch (statToChange)
@@ -54,8 +58,7 @@ public class SliderUpdater : MonoBehaviour
             case StatToChange.GravityMultiplier:
                 SetValue(playerJump.GravityMultiplier);
                 break;
-            
-        }
+                */
     }
 
     private void SetValue(float value)
@@ -64,5 +67,4 @@ public class SliderUpdater : MonoBehaviour
     }
 
     // Update is called once per frame
-    
 }

@@ -99,7 +99,7 @@ public class PlayerJump : MonoBehaviour
 
     private void Start()
     {
-        LoadData();
+        //LoadData();
     }
 
     private void Update()

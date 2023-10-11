@@ -9,7 +9,12 @@
   <component name="ChangeListManager">
     <list default="true" id="4df7d40f-8887-4bba-9d80-6ae23a8fa518" name="Changes" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/.idea.Michigame/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.Michigame/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/PlayerAbilityTree.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/PlayerAbilityTree.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/PlayerJump.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/PlayerJump.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/PlayerMetrics.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/PlayerMetrics.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/PlayerMovement.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/PlayerMovement.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/SliderUpdater.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/SliderUpdater.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/custom.asset" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/ScriptableObjects/custom.asset" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/custom.asset.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/ScriptableObjects/custom.asset.meta" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -41,7 +46,7 @@
     "RunOnceActivity.ShowReadmeOnStart": "true",
     "SHARE_PROJECT_CONFIGURATION_FILES": "true",
     "WebServerToolWindowFactoryState": "false",
-    "git-widget-placeholder": "Development",
+    "git-widget-placeholder": "Nicolas",
     "ignore.virus.scanning.warn.message": "true",
     "node.js.detected.package.eslint": "true",
     "node.js.detected.package.tslint": "true",
@@ -118,8 +123,7 @@
       <workItem from="1695926104416" duration="10083000" />
       <workItem from="1696180775215" duration="9794000" />
       <workItem from="1696213770058" duration="9985000" />
-      <workItem from="1696709100767" duration="2313000" />
-      <workItem from="1696801463354" duration="449000" />
+      <workItem from="1697038481612" duration="1266000" />
     </task>
     <servers />
   </component>

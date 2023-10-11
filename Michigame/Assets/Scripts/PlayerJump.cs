@@ -104,9 +104,9 @@ public class PlayerJump : MonoBehaviour
 
     private void Update()
     {
-        onGround = Physics2D.Raycast(new Vector3(col.bounds.max.x, transform.position.y), Vector2.down, groundLength,
+        onGround = Physics2D.Raycast(new Vector3(col.bounds.max.x + 0.0118f, transform.position.y), Vector2.down, groundLength,
                        groundLayer)
-                   || Physics2D.Raycast(new Vector3(col.bounds.min.x, transform.position.y, 0), Vector2.down,
+                   || Physics2D.Raycast(new Vector3(col.bounds.min.x - 0.0118f, transform.position.y, 0), Vector2.down,
                        groundLength, groundLayer);
         if (OnGround && !currentlyJumping) rb.velocity = new Vector2(rb.velocity.x, 0);
 

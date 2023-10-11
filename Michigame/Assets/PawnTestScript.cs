@@ -9,6 +9,9 @@ public class PawnTestScript : MonoBehaviour
     [SerializeField] private Vector3 pawnBoxSize;
     [SerializeField] private float detectionDistance;
     [SerializeField] private LayerMask climbableWall;
+    [SerializeField] private float maxFallingSpeedSliding = -2f;
+
+    public float MaxFallingSpeedSliding => maxFallingSpeedSliding;
 
     /*private void FixedUpdate()
     {

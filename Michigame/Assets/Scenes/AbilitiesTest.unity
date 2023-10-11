@@ -44321,6 +44321,7 @@ MonoBehaviour:
   climbableWall:
     serializedVersion: 2
     m_Bits: 2048
+  maxFallingSpeedSliding: -2
 --- !u!1 &903623881
 GameObject:
   m_ObjectHideFlags: 0

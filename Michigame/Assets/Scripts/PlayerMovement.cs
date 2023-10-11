@@ -9,6 +9,7 @@ public class PlayerMovement : MonoBehaviour
     [SerializeField] private PlayerMetrics _playerMetrics;
     [SerializeField] private float maxSpeed = 1f;
     [SerializeField] private float maxFallingSpeed = -15f;
+
     [SerializeField] private float maxAcceleration = 1f;
     [SerializeField] private float maxDeceleration = 1f;
     [SerializeField] private float maxAirAcceleration;

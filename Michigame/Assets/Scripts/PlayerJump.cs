@@ -183,7 +183,7 @@ public class PlayerJump : MonoBehaviour
         velocity = rb.velocity;
         if (OnClimb)
         {
-            if (rb.velocity.y < -2) rb.velocity = new Vector2(rb.velocity.x, -2);
+            if (rb.velocity.y < pawnTest.MaxFallingSpeedSliding) rb.velocity = new Vector2(rb.velocity.x, pawnTest.MaxFallingSpeedSliding);
         }
 
         if (desiredJump)

@@ -5,6 +5,9 @@ TagManager:
   serializedVersion: 2
   tags:
   - floor
+  - Climbable
+  - furBall
+  - furBall Destructible
   layers:
   - Default
   - TransparentFX

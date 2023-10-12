@@ -23,6 +23,7 @@ public class PlayerMovement : MonoBehaviour
 
     private Rigidbody2D rb;
     private PlayerJump playerJump;
+    private DashTestScript dashTest;
     private bool turning; //DONT USE (Just for debug )
 
     public string MovementDebugInfo
@@ -66,6 +67,7 @@ public class PlayerMovement : MonoBehaviour
     {
         rb = GetComponent<Rigidbody2D>();
         playerJump = GetComponent<PlayerJump>();
+        dashTest = GetComponent<DashTestScript>();
         //LoadData();
     }
 
@@ -99,6 +101,10 @@ public class PlayerMovement : MonoBehaviour
                 accelUsed = "maxAccel";
                 //Debug.Log("horizontal y rb velocity mismo signo: aceleration aplicada");
             }
+        } else if (dashTest.OnDash())
+        {
+            //rb.velocity = new Vector2(dashTest.DashSpeed, rb.velocity.y);
+            return;
         }
         else
         {

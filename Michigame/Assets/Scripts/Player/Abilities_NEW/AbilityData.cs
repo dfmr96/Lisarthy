@@ -4,7 +4,7 @@ using UnityEngine;
 
 public abstract class AbilityData : ScriptableObject
 {
-   public string name = "";
+   public string abilityName = "";
 
    public abstract void GatherAbility();
    public abstract void Use();

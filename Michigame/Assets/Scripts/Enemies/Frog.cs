@@ -4,7 +4,7 @@ using UnityEngine;
 
 public class Frog : MonoBehaviour
 {
-    private Rigidbody2D rigidbody;
+    private Rigidbody2D rb;
     private Animator animator;
     [SerializeField] float moveSpeed;
     [SerializeField] float jumpForce;
@@ -16,7 +16,7 @@ public class Frog : MonoBehaviour
 
     private void Awake()
     {
-        rigidbody = GetComponent<Rigidbody2D>();
+        rb = GetComponent<Rigidbody2D>();
         animator = GetComponent<Animator>();
     }
 
@@ -35,7 +35,7 @@ public class Frog : MonoBehaviour
 
     private void Movement()
     {        
-        rigidbody.AddForce(new Vector2(transform.right.x * moveSpeed, transform.up.y * jumpForce), ForceMode2D.Impulse);
+        rb.AddForce(new Vector2(transform.right.x * moveSpeed, transform.up.y * jumpForce), ForceMode2D.Impulse);
         jumps++;
         jumpTimer = 0;
     }

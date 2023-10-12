@@ -258,7 +258,7 @@ public class PlayerJump : MonoBehaviour
     {
         Vector2 newGravity = new(0, -2 * jumpHeight / (TimeToJumpApex * TimeToJumpApex));
         rb.gravityScale = newGravity.y / Physics2D.gravity.y * gravityMultiplier;
-        Debug.Log(gravityMultiplier);
+        //Debug.Log(gravityMultiplier);
     }
 
     private void Jump()

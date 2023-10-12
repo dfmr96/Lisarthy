@@ -19,7 +19,9 @@ GameObject:
   - component: {fileID: 220412806605638029}
   - component: {fileID: 1273852562857435830}
   - component: {fileID: 6530223804374353995}
-  m_Layer: 0
+  - component: {fileID: 2067636287723500323}
+  - component: {fileID: 9057643130936559449}
+  m_Layer: 15
   m_Name: Player
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -218,7 +220,7 @@ Rigidbody2D:
     m_Bits: 0
   m_Interpolate: 1
   m_SleepingMode: 1
-  m_CollisionDetection: 1
+  m_CollisionDetection: 0
   m_Constraints: 4
 --- !u!114 &2779412635082131890
 MonoBehaviour:
@@ -301,6 +303,36 @@ MonoBehaviour:
   dashDuration: 0.1
   dashTrail: {fileID: 9211094561355387515}
   onDash: 0
+--- !u!114 &2067636287723500323
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 191155203977936549}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 79807668d726c9249a9c9af825549722, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  HairballPrefab: {fileID: 8935446252266883572, guid: 3103fe4411c161d42acf34292fcd266b, type: 3}
+  speed: 12
+--- !u!114 &9057643130936559449
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 191155203977936549}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 8da34c20d28b1114e9e5b74cdd137e0a, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  tailPrefab: {fileID: 1512341991398690200, guid: ff1fa2cda51e3b248be4fa399f2fb611, type: 3}
+  offset: {x: 0, y: 0}
+  tail: {fileID: 0}
+  anim: {fileID: 0}
 --- !u!1 &2826718522641574865
 GameObject:
   m_ObjectHideFlags: 0
@@ -311,7 +343,7 @@ GameObject:
   m_Component:
   - component: {fileID: 770426367563127581}
   - component: {fileID: 9211094561355387515}
-  m_Layer: 0
+  m_Layer: 15
   m_Name: Dash Trail
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -447,7 +479,7 @@ GameObject:
   m_Component:
   - component: {fileID: 7763913253813497947}
   - component: {fileID: 1982697590775850542}
-  m_Layer: 0
+  m_Layer: 15
   m_Name: Downward
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -583,7 +615,7 @@ GameObject:
   m_Component:
   - component: {fileID: 378882301528086297}
   - component: {fileID: 2699455718004796913}
-  m_Layer: 0
+  m_Layer: 15
   m_Name: Upward
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -719,7 +751,7 @@ GameObject:
   m_Component:
   - component: {fileID: 3202013610422006235}
   - component: {fileID: 3790438297568106109}
-  m_Layer: 0
+  m_Layer: 15
   m_Name: Ground
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -854,7 +886,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 2412420487904214290}
-  m_Layer: 0
+  m_Layer: 15
   m_Name: Trails
   m_TagString: Untagged
   m_Icon: {fileID: 0}

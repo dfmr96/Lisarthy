@@ -81,6 +81,6 @@ public class PawTestScript : MonoBehaviour
 
     public void ChangeOffset(PlayerJump playerJump)
     {
-        playerJump.RaycastOffset = 0.012f;
+        playerJump.RaycastOffset = 0.0125f;
     }
 }

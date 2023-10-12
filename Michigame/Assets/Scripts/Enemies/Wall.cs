@@ -19,7 +19,7 @@ public class Wall : Enemy
     void Update()
     {
         distance = player_transform.position - transform.position;
-        if (distance.magnitude < 13)
+        if (distance.magnitude < 8)
         {
             transform.position = new Vector2(transform.position.x,(player_transform.position.y +(transform.localScale.y - 1 )/2));
         }

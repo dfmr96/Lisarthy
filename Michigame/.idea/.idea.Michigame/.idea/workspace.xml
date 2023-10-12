@@ -8,7 +8,23 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="4df7d40f-8887-4bba-9d80-6ae23a8fa518" name="Changes" comment="">
+      <change afterPath="$PROJECT_DIR$/Assets/Scripts/PlayerAbilityTree.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Scripts/PlayerAbilityTree.cs.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Scripts/TestScripts.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Scripts/TestScripts/DashTestScript.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Scripts/TestScripts/DashTestScript.cs.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Scripts/TestScripts/HairballTestScript.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Scripts/TestScripts/HairballTestScript.cs.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Scripts/TestScripts/PawnTestScript.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Scripts/TestScripts/PawnTestScript.cs.meta" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/.idea.Michigame/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.Michigame/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/DashTestScript.cs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/DashTestScript.cs.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/PawnTestScript.cs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/PawnTestScript.cs.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/PlayerAbilityTree.cs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/PlayerAbilityTree.cs.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scenes/AbilitiesTest.unity" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scenes/AbilitiesTest.unity" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -40,6 +56,7 @@
   </component>
   <component name="PropertiesComponent"><![CDATA[{
   "keyToString": {
+    "ASKED_ADD_EXTERNAL_FILES": "true",
     "ASKED_SHARE_PROJECT_CONFIGURATION_FILES": "true",
     "RunOnceActivity.OpenProjectViewOnStart": "true",
     "RunOnceActivity.ShowReadmeOnStart": "true",
@@ -122,7 +139,8 @@
       <workItem from="1695926104416" duration="10083000" />
       <workItem from="1696180775215" duration="9794000" />
       <workItem from="1696213770058" duration="9985000" />
-      <workItem from="1697038481612" duration="13114000" />
+      <workItem from="1697038481612" duration="13869000" />
+      <workItem from="1697082859074" duration="4605000" />
     </task>
     <servers />
   </component>
@@ -132,6 +150,7 @@
   <component name="UnityProjectConfiguration" hasMinimizedUI="true" />
   <component name="UnityUnitTestConfiguration" currentTestLauncher="Both" />
   <component name="VcsManagerConfiguration">
+    <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
     <option name="CLEAR_INITIAL_COMMIT_MESSAGE" value="true" />
   </component>
 </project>

@@ -15,10 +15,12 @@ GameObject:
   - component: {fileID: 2015477566593181487}
   - component: {fileID: 3343614705420988869}
   - component: {fileID: 2779412635082131890}
+  - component: {fileID: 6272660644198144354}
   - component: {fileID: 220412806605638029}
   - component: {fileID: 1273852562857435830}
   - component: {fileID: 6530223804374353995}
-  - component: {fileID: 6266307809804885754}
+  - component: {fileID: 2067636287723500323}
+  - component: {fileID: 9057643130936559449}
   m_Layer: 15
   m_Name: Player
   m_TagString: Untagged
@@ -218,7 +220,7 @@ Rigidbody2D:
     m_Bits: 0
   m_Interpolate: 1
   m_SleepingMode: 1
-  m_CollisionDetection: 1
+  m_CollisionDetection: 0
   m_Constraints: 4
 --- !u!114 &2779412635082131890
 MonoBehaviour:
@@ -235,6 +237,22 @@ MonoBehaviour:
   groundTrail: {fileID: 3790438297568106109}
   upwardTrail: {fileID: 2699455718004796913}
   downwardTrail: {fileID: 1982697590775850542}
+--- !u!114 &6272660644198144354
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 191155203977936549}
+  m_Enabled: 0
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: e4fedf574adfa3e4bb0725fa5a167d9f, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  ability: {fileID: 0}
+  hitBox: {fileID: 0}
+  active: 0
+  climbing: 0
 --- !u!114 &220412806605638029
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -285,7 +303,7 @@ MonoBehaviour:
   dashDuration: 0.1
   dashTrail: {fileID: 9211094561355387515}
   onDash: 0
---- !u!114 &6266307809804885754
+--- !u!114 &2067636287723500323
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -299,6 +317,22 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   HairballPrefab: {fileID: 8935446252266883572, guid: 3103fe4411c161d42acf34292fcd266b, type: 3}
   speed: 12
+--- !u!114 &9057643130936559449
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 191155203977936549}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 8da34c20d28b1114e9e5b74cdd137e0a, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  tailPrefab: {fileID: 1512341991398690200, guid: ff1fa2cda51e3b248be4fa399f2fb611, type: 3}
+  offset: {x: 0, y: 0}
+  tail: {fileID: 0}
+  anim: {fileID: 0}
 --- !u!1 &2826718522641574865
 GameObject:
   m_ObjectHideFlags: 0

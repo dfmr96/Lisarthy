@@ -12,11 +12,17 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: dc3897820c6f41347919a0dcfa2a9ffe, type: 3}
   m_Name: custom
   m_EditorClassIdentifier: 
-  maxSpeed: 8
-  maxAcceleration: 8
+  maxSpeed: 66
+  maxFallingSpeed: -15
+  maxAcceleration: 15
   maxDeceleration: 7
+  maxAirAcceleration: 1
+  maxAirDeceleration: 2
   turnSpeed: 14
+  maxAirTurnSpeed: 0
   jumpHeight: 4
   timeToJumpApex: 0.4
   upwardMultiplier: 1
+  downwardMultiplier: 1
+  jumpCutOffMultipler: 2
   gravityMultiplier: 1

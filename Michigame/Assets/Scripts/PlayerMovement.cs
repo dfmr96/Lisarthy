@@ -1,4 +1,5 @@
 using System;
+using Unity.VisualScripting;
 using UnityEngine;
 using UnityEngine.Serialization;
 
@@ -64,7 +65,7 @@ public class PlayerMovement : MonoBehaviour
     {
         rb = GetComponent<Rigidbody2D>();
         playerJump = GetComponent<PlayerJump>();
-        LoadData();
+        //LoadData();
     }
 
 
@@ -127,4 +128,6 @@ public class PlayerMovement : MonoBehaviour
         maxDeceleration = _playerMetrics.maxDeceleration;
         maxTurnSpeed = _playerMetrics.turnSpeed;
     }
+    
+    
 }

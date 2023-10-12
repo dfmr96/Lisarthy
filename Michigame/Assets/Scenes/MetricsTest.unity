@@ -5101,6 +5101,7 @@ MonoBehaviour:
   timeToApexDebug: 0
   timeToGroundDebug: 0
   coyoteTimeCounter: 0
+  currentlyJumping: 0
   jumpBuffer: 0.15
   coyoteTime: 0.15
 --- !u!114 &901804724
@@ -5134,6 +5135,10 @@ MonoBehaviour:
   hitBox: {fileID: 1890968351}
   active: 0
   climbing: 0
+  maxJumps: 0
+  jumpForce: 10
+  horizontalJumpModifier: 100
+  dragWhileJumping: 0
 --- !u!114 &901804726
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -9542,6 +9547,26 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 5808054823515264178, guid: 87067d1f78d1199428a37383a7629bbc, type: 3}
+      propertyPath: m_LocalScale.y
+      value: 3.6429183
+      objectReference: {fileID: 0}
+    - target: {fileID: 5808054823515264178, guid: 87067d1f78d1199428a37383a7629bbc, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: -0.0715
+      objectReference: {fileID: 0}
+    - target: {fileID: 5842345702786548984, guid: 87067d1f78d1199428a37383a7629bbc, type: 3}
+      propertyPath: m_LocalScale.y
+      value: 0.1512209
+      objectReference: {fileID: 0}
+    - target: {fileID: 5842345702786548984, guid: 87067d1f78d1199428a37383a7629bbc, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: 0.104
+      objectReference: {fileID: 0}
+    - target: {fileID: 5842345702786548984, guid: 87067d1f78d1199428a37383a7629bbc, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 1.8275
+      objectReference: {fileID: 0}
     - target: {fileID: 7111783575098766172, guid: 87067d1f78d1199428a37383a7629bbc, type: 3}
       propertyPath: m_Name
       value: Climbable Wall
@@ -9549,6 +9574,14 @@ PrefabInstance:
     - target: {fileID: 7559001050314811045, guid: 87067d1f78d1199428a37383a7629bbc, type: 3}
       propertyPath: m_Enabled
       value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7720996651954924051, guid: 87067d1f78d1199428a37383a7629bbc, type: 3}
+      propertyPath: m_LocalScale.y
+      value: 3.9032502
+      objectReference: {fileID: 0}
+    - target: {fileID: 7720996651954924051, guid: 87067d1f78d1199428a37383a7629bbc, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: -0.0516
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []

@@ -23,7 +23,7 @@ public class PlayerJump : MonoBehaviour
 
     //private bool canJumpAgain = false;
     [SerializeField] private bool desiredJump;
-    [SerializeField] private bool onGround;
+    [SerializeField] public bool onGround;
 
     [SerializeField] private float groundLength = 0.95f;
 
@@ -36,7 +36,7 @@ public class PlayerJump : MonoBehaviour
     [SerializeField] private float timeToGroundDebug; //Debug USE ONLY
     [SerializeField] float coyoteTimeCounter = 0;
     
-    private bool currentlyJumping;
+    public bool currentlyJumping;
     private float defaultGravityScale;
 
     [SerializeField] private float jumpBuffer;

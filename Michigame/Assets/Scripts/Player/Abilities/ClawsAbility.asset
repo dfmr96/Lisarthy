@@ -24,4 +24,5 @@ MonoBehaviour:
   stunDuration: 0
   climbSpeed: 10
   climbingDrag: 10
-  exitImpulse: 1200
+  exitImpulse: 1500
+  maxJumps: 0

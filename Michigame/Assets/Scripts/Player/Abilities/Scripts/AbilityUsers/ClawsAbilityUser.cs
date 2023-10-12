@@ -6,6 +6,14 @@ public class ClawsAbilityUser : AbilityUser
 {
     public bool active = false;
     public bool climbing = false;
+    private bool jumping;
+    private bool inTheAir;
+    private bool scape;
+    private int maxJumps;
+    private int jumpCount;
+    private float jumpForce;
+    private float horizontalJumpModifier;
+    private float dragWhileJumping;
     private float gravity;
     private float drag;
     private float climbSpeed;
@@ -18,9 +26,29 @@ public class ClawsAbilityUser : AbilityUser
         climbSpeed = clawsAbility.climbSpeed;
         climbingDrag = clawsAbility.climbingDrag;
         exitImpulse = clawsAbility.exitImpulse;
+        maxJumps = clawsAbility.maxJumps;
+        jumpForce = clawsAbility.jumpForce;
+        horizontalJumpModifier = clawsAbility.horizontalJumpModifier;
+        dragWhileJumping = clawsAbility.dragWhileJumping;
+}
+
+    private void FixedUpdate()
+    {
+        if (jumping)
+        {
+            player.GetComponent<PlayerJump>().currentlyJumping = true;
+            player.GetComponent<PlayerJump>().onGround = false;
+            player.GetComponent<Rigidbody2D>().AddForce( transform.right * Mathf.Sign(Input.GetAxisRaw("Horizontal")) * (jumpForce*horizontalJumpModifier) * Time.deltaTime + transform.up * jumpForce * Time.deltaTime, ForceMode2D.Impulse);
+            jumpCount++;
+            inTheAir = true;
+            jumping = false;
+        }
+        else if (scape)
+        {
+            player.GetComponent<Rigidbody2D>().AddForce(transform.right + (transform.up * exitImpulse * Time.deltaTime), ForceMode2D.Impulse);// Impulsa al jugador hacia arriva para que pueda "escapar" de la pared.
+            scape = false;
+        }
     }
-
-
     // Update is called once per frame
     void Update()
     {
@@ -35,29 +63,42 @@ public class ClawsAbilityUser : AbilityUser
 
         if (climbing)
         {
-            if (Input.GetAxisRaw("Vertical") > 0)
+            player.GetComponent<Rigidbody2D>().drag = climbingDrag;
+            if (Input.GetAxisRaw("Vertical") > 0 && !Input.GetButtonDown("Jump"))
             {
-                //player.transform.position += transform.up * climbSpeed * Time.deltaTime;
                 player.GetComponent<Rigidbody2D>().AddForce(new Vector2(0, climbSpeed * Time.deltaTime), ForceMode2D.Impulse);
             }
-            else if (Input.GetAxisRaw("Vertical") < 0)
+            else if (Input.GetAxisRaw("Vertical") < 0 && !Input.GetButtonDown("Jump"))
             {
                 player.GetComponent<Rigidbody2D>().AddForce(new Vector2(0, climbSpeed * Time.deltaTime * -1), ForceMode2D.Impulse);
             }
+            else if(Input.GetKeyDown(KeyCode.Space) && player.GetComponent<PlayerJump>().currentlyJumping)
+            {
+                player.GetComponent<PlayerJump>().currentlyJumping = false;
+            }
+            else if (Input.GetKeyDown(KeyCode.Space) && jumpCount < maxJumps && !scape && !player.GetComponent<PlayerJump>().currentlyJumping)
+            {                
+                jumping = true;
+            }            
+        }
+        else if (inTheAir && !scape)
+        {
+            player.GetComponent<Rigidbody2D>().drag = dragWhileJumping;
+            inTheAir = false;
         }
         else if (Input.GetKeyDown(abilityKey))// Si no esta trepando, activa el hit box de la habilidad para poder atacar.
         {
             if (currentCoolDown == 0 && hitBox.activeSelf == false)
             {
-                hitBox.SetActive(!hitBox.activeSelf);
-                //hitBox.SetActive(true);// Tengan en cuenta que el hit box no se desactiva hasta que no golpee a un enemigo.
+                hitBox.SetActive(true);
                 active = true;
-              
+
             }
             //FOR TESTING ONLY------------------------------------------------------------------------------------------
             else if (currentCoolDown == 0 && Input.GetKeyDown(abilityKey) && hitBox.activeSelf == true)
             {
                 hitBox.SetActive(false);
+                active = false;
             }
             //----------------------------------------------------------------------------------------------------
         }  
@@ -70,7 +111,9 @@ public class ClawsAbilityUser : AbilityUser
             gravity = player.GetComponent<Rigidbody2D>().gravityScale;// Guarda la gravedad actual del jugador
             drag = player.GetComponent<Rigidbody2D>().drag;// Guarda el linear drag actual del jugador
             player.GetComponent<PlayerMovement>().enabled = false;// Desactiva el movimiento del jugador
-            player.GetComponent<PlayerJump>().enabled = false; // Desactiva el salto del jugador
+            player.GetComponent<PlayerJump>().enabled = false;
+            player.GetComponent<PlayerJump>().currentlyJumping = false;
+            player.GetComponent<PlayerJump>().onGround = true;
             player.GetComponent<Rigidbody2D>().gravityScale = 0; // Pone la gravedad del jugador en cero para que pueda trepar sin caerse
             player.GetComponent<Rigidbody2D>().drag = climbingDrag; // modifica el linear drag del jugador para que pueda o no resbalar en la pared
         }
@@ -96,30 +139,36 @@ public class ClawsAbilityUser : AbilityUser
 
     private void OnCollisionEnter2D(Collision2D collision)
     {
-        if (id == 0 && collision.gameObject.CompareTag("Climbable"))// Verifica que la habilidad que tiene este AbilityUser son las Garra y si el jugador entro en contacto con un objeto que tiene el tag de "Trepable"
+        if (id == 0 && collision.gameObject.CompareTag("Climbable") && !scape)// Verifica que la habilidad que tiene este AbilityUser son las Garra y si el jugador entro en contacto con un objeto que tiene el tag de "Trepable"
         {
             climbing = true;// Permite ejecutar el codigo de movimiento vertical en el update de este script
             IsCilmbing(true); // Modifica varias cosas del player para que pueda trepar sin problemas
         }
 
-        if (climbing && collision.gameObject.layer == 10 && Input.GetAxisRaw("Vertical") == -1)//
+        if (climbing && collision.gameObject.layer == 10 && Input.GetAxisRaw("Vertical") == -1 && !scape)//
         {
             climbing = false;// Impide ejecutar el codigo de movimiento vertical en el update de este script
             IsCilmbing(false);// Modifica varias cosas del player para que vuelva a la normalidad
+        }
+        else if (collision.gameObject.layer == 10 && !climbing && !scape)
+        {
+            jumpCount = 0;
+            player.GetComponent<Rigidbody2D>().drag = drag;
         }
     }
 
     private void OnCollisionExit2D(Collision2D collision)
     {
-        if (collision.gameObject.CompareTag("Climbable") && Input.GetAxisRaw("Vertical") > 0)
+        if (collision.gameObject.CompareTag("Climbable") && Input.GetAxisRaw("Vertical") > 0 && (!jumping && !inTheAir && !player.GetComponent<PlayerJump>().currentlyJumping))
         {
             climbing = false;// Impide ejecutar el codigo de movimiento vertical en el update de este script
             IsCilmbing(false);// Modifica varias cosas del player para que vuelva a la normalidad
-            player.GetComponent<Rigidbody2D>().AddForce(transform.right + (transform.up * exitImpulse * Time.deltaTime), ForceMode2D.Impulse);// Impulsa al jugador hacia arriva para que pueda "escapar" de la pared.
+            scape = true;
         }
         else if (collision.gameObject.CompareTag("Climbable"))
         {
             climbing = false; // Impide ejecutar el codigo de movimiento vertical en el update de este script
+            IsCilmbing(false);
         }
     }
 }

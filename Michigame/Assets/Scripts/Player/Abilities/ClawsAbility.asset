@@ -25,4 +25,7 @@ MonoBehaviour:
   climbSpeed: 10
   climbingDrag: 10
   exitImpulse: 1500
-  maxJumps: 0
+  maxJumps: 1
+  jumpForce: 10
+  horizontalJumpModifier: 100
+  dragWhileJumping: 2

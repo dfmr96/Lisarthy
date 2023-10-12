@@ -5,10 +5,16 @@ using UnityEngine;
 
 public class HairballController : MonoBehaviour
 {
+    [SerializeField] private int damage;
     [SerializeField] private float speed;
     [SerializeField] private LayerMask colliderMask;
     private Vector2 direction;
-    
+
+    private void Start()
+    {
+        Destroy(gameObject,2f);
+    }
+
     public float Speed
     {
         get => speed;
@@ -37,6 +43,13 @@ public class HairballController : MonoBehaviour
         if (other.gameObject.CompareTag("Door"))
         {
             Destroy(other.gameObject);
+            Destroy(gameObject);
+        }
+        
+        if (other.gameObject.TryGetComponent<Enemy>(out Enemy enemy))
+        {
+            Debug.Log($"{enemy.health}");
+            enemy.TakeDamage(damage);
             Destroy(gameObject);
         }
         

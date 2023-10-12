@@ -7,17 +7,7 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="4df7d40f-8887-4bba-9d80-6ae23a8fa518" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/Assets/PawController.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/PawController.cs.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Prefabs/Paw.prefab" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Prefabs/Paw.prefab.meta" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/.idea.Michigame/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.Michigame/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scenes/AbilitiesTest.unity" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scenes/AbilitiesTest.unity" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/PlayerJump.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/PlayerJump.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/TestScripts/PawnTestScript.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/TestScripts/PawTestScript.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/TestScripts/PawnTestScript.cs.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/TestScripts/PawTestScript.cs.meta" afterDir="false" />
-    </list>
+    <list default="true" id="4df7d40f-8887-4bba-9d80-6ae23a8fa518" name="Changes" comment="" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />

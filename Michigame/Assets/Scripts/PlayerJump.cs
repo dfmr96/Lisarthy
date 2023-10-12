@@ -93,11 +93,11 @@ public class PlayerJump : MonoBehaviour
     {
         get
         {
-            bool raycast = Physics2D.Raycast(new Vector3(col.bounds.max.x + 0.0118f, transform.position.y),
+            bool raycast = Physics2D.Raycast(new Vector3(col.bounds.max.x + 0.012f, transform.position.y),
                                Vector2.down,
                                groundLength,
                                groundLayer)
-                           || Physics2D.Raycast(new Vector3(col.bounds.min.x - 0.0118f, transform.position.y, 0),
+                           || Physics2D.Raycast(new Vector3(col.bounds.min.x - 0.012f, transform.position.y, 0),
                                Vector2.down,
                                groundLength, groundLayer);
             return raycast;

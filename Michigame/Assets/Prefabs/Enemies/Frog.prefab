@@ -175,5 +175,5 @@ MonoBehaviour:
   speed: 8
   damage: 0
   player_transform: {fileID: 0}
-  jumpHeight: 6
+  jumpHeight: 8
   OnGround: 0

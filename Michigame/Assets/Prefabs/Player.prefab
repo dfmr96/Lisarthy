@@ -22,7 +22,7 @@ GameObject:
   - component: {fileID: 9057643130936559449}
   m_Layer: 15
   m_Name: Player
-  m_TagString: Untagged
+  m_TagString: Player
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -193,7 +193,8 @@ MonoBehaviour:
   coyoteTimeCounter: 0
   jumpBuffer: 0.15
   coyoteTime: 0.15
-  pawnTest: {fileID: 0}
+  raycastOffset: -0.1
+  pawTest: {fileID: 0}
 --- !u!50 &3343614705420988869
 Rigidbody2D:
   serializedVersion: 4
@@ -257,7 +258,7 @@ MonoBehaviour:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 191155203977936549}
-  m_Enabled: 1
+  m_Enabled: 0
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 551a8b6d1a457c94fa38c3b50baf2223, type: 3}
   m_Name: 
@@ -268,6 +269,11 @@ MonoBehaviour:
     serializedVersion: 2
     m_Bits: 2048
   maxFallingSpeedSliding: -2
+  pawPrefab: {fileID: 1975601910024896205, guid: 3273b358c4d26e64ab11086311645871, type: 3}
+  paw: {fileID: 0}
+  pawDuration: 0.15
+  pawCooldown: 0.5
+  onCooldown: 0
 --- !u!114 &6530223804374353995
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -275,7 +281,7 @@ MonoBehaviour:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 191155203977936549}
-  m_Enabled: 1
+  m_Enabled: 0
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 244eeb66451cbdf438c3725d9ed58f99, type: 3}
   m_Name: 
@@ -293,7 +299,7 @@ MonoBehaviour:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 191155203977936549}
-  m_Enabled: 1
+  m_Enabled: 0
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 79807668d726c9249a9c9af825549722, type: 3}
   m_Name: 
@@ -307,7 +313,7 @@ MonoBehaviour:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 191155203977936549}
-  m_Enabled: 1
+  m_Enabled: 0
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 8da34c20d28b1114e9e5b74cdd137e0a, type: 3}
   m_Name: 

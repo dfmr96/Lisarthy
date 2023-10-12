@@ -13,6 +13,7 @@ public class Snail : Enemy
     private int rotation = 0;
     private int fase = 0;
     private bool a = true;
+
     void Start()
     {
         rb2d = GetComponent<Rigidbody2D>();
@@ -22,15 +23,14 @@ public class Snail : Enemy
     // Update is called once per frame
     void Update()
     {
-        Debug.DrawRay(point.position, transform.TransformDirection(Vector2.right)*1.2f, Color.red);
-
+        Debug.DrawRay(point.position, transform.TransformDirection(Vector2.right) * 1.2f, Color.red);
     }
 
     private void FixedUpdate()
     {
-        
-        RaycastHit2D hit = Physics2D.Raycast(point.position, transform.TransformDirection(Vector2.right), 1.2f, layerMask);
- 
+        RaycastHit2D hit =
+            Physics2D.Raycast(point.position, transform.TransformDirection(Vector2.right), 1.2f, layerMask);
+
 
         if (hit.collider != null)
         {
@@ -43,9 +43,9 @@ public class Snail : Enemy
             {
                 rotation = 0;
             }
+
             rb2d.velocity = Vector2.zero;
-            transform.rotation = Quaternion.Euler(new Vector3(0,0,-rotation));
-            
+            transform.rotation = Quaternion.Euler(new Vector3(0, 0, -rotation));
         }
     }
 }

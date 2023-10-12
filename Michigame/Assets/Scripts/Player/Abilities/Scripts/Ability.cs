@@ -3,7 +3,7 @@ using UnityEngine;
 //[CreateAssetMenu(fileName = "Ability", menuName = "ScriptableObjects/Ability")]
 public abstract class Ability : ScriptableObject
 {
-    public string name;
+    public string abilityName;
     public int id;
     public KeyCode abilityKey;
     public int level;

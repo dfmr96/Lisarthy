@@ -50,7 +50,7 @@ public class PlayerJump : MonoBehaviour
 
     private Vector2 velocity;
 
-    public PawnTestScript pawnTest;
+    [FormerlySerializedAs("pawnTest")] public PawTestScript pawTest;
 
     public string JumpDebugInfo
     {
@@ -108,18 +108,18 @@ public class PlayerJump : MonoBehaviour
     {
         get
         {
-            if (pawnTest == null)
+            if (pawTest == null)
             {
-                if (TryGetComponent<PawnTestScript>(out PawnTestScript pawnTestScript))
+                if (TryGetComponent<PawTestScript>(out PawTestScript pawnTestScript))
                 {
-                    pawnTest = pawnTestScript;
+                    pawTest = pawnTestScript;
                 }
 
                 return false;
             }
             else
             {
-                return pawnTest.OnClimb();
+                return pawTest.OnClimb();
             }
         }
     }
@@ -183,7 +183,7 @@ public class PlayerJump : MonoBehaviour
         velocity = rb.velocity;
         if (OnClimb)
         {
-            if (rb.velocity.y < pawnTest.MaxFallingSpeedSliding) rb.velocity = new Vector2(rb.velocity.x, pawnTest.MaxFallingSpeedSliding);
+            if (rb.velocity.y < pawTest.MaxFallingSpeedSliding) rb.velocity = new Vector2(rb.velocity.x, pawTest.MaxFallingSpeedSliding);
         }
 
         if (desiredJump)

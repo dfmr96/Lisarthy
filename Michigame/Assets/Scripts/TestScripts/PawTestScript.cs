@@ -78,4 +78,9 @@ public class PawTestScript : MonoBehaviour
         yield return new WaitForSeconds(pawCooldown - pawDuration);
         onCooldown = false;
     }
+
+    public void ChangeOffset(PlayerJump playerJump)
+    {
+        playerJump.RaycastOffset = 0.0118f;
+    }
 }

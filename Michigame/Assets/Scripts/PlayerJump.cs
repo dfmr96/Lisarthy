@@ -50,6 +50,8 @@ public class PlayerJump : MonoBehaviour
 
     private Vector2 velocity;
 
+    [SerializeField] private float raycastOffset = -0.1f;
+
     [FormerlySerializedAs("pawnTest")] public PawTestScript pawTest;
 
     public string JumpDebugInfo
@@ -93,11 +95,11 @@ public class PlayerJump : MonoBehaviour
     {
         get
         {
-            bool raycast = Physics2D.Raycast(new Vector3(col.bounds.max.x + 0.0118f, transform.position.y),
+            bool raycast = Physics2D.Raycast(new Vector3(col.bounds.max.x + raycastOffset, transform.position.y),
                                Vector2.down,
                                groundLength,
                                groundLayer)
-                           || Physics2D.Raycast(new Vector3(col.bounds.min.x - 0.0118f, transform.position.y, 0),
+                           || Physics2D.Raycast(new Vector3(col.bounds.min.x - raycastOffset, transform.position.y, 0),
                                Vector2.down,
                                groundLength, groundLayer);
             return raycast;
@@ -122,6 +124,12 @@ public class PlayerJump : MonoBehaviour
                 return pawTest.OnClimb();
             }
         }
+    }
+
+    public float RaycastOffset
+    {
+        get => raycastOffset;
+        set => raycastOffset = value;
     }
 
     private void Awake()
@@ -204,10 +212,10 @@ public class PlayerJump : MonoBehaviour
         else
             Gizmos.color = Color.red;
 
-        Gizmos.DrawLine(new Vector3(col.bounds.max.x, transform.position.y, 0),
-            new Vector3(col.bounds.max.x, transform.position.y, 0) + Vector3.down * groundLength);
-        Gizmos.DrawLine(new Vector3(col.bounds.min.x, transform.position.y, 0),
-            new Vector3(col.bounds.min.x, transform.position.y, 0) + Vector3.down * groundLength);
+        Gizmos.DrawLine(new Vector3(col.bounds.max.x + raycastOffset, transform.position.y, 0),
+            new Vector3(col.bounds.max.x + raycastOffset, transform.position.y, 0) + Vector3.down * groundLength);
+        Gizmos.DrawLine(new Vector3(col.bounds.min.x - raycastOffset, transform.position.y, 0),
+            new Vector3(col.bounds.min.x - raycastOffset, transform.position.y, 0) + Vector3.down * groundLength);
     }
 
     private void CalculateGravity()

@@ -15,7 +15,6 @@ GameObject:
   - component: {fileID: 2015477566593181487}
   - component: {fileID: 3343614705420988869}
   - component: {fileID: 2779412635082131890}
-  - component: {fileID: 6272660644198144354}
   - component: {fileID: 220412806605638029}
   - component: {fileID: 1273852562857435830}
   - component: {fileID: 6530223804374353995}
@@ -237,22 +236,6 @@ MonoBehaviour:
   groundTrail: {fileID: 3790438297568106109}
   upwardTrail: {fileID: 2699455718004796913}
   downwardTrail: {fileID: 1982697590775850542}
---- !u!114 &6272660644198144354
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 191155203977936549}
-  m_Enabled: 0
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: e4fedf574adfa3e4bb0725fa5a167d9f, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  ability: {fileID: 0}
-  hitBox: {fileID: 0}
-  active: 0
-  climbing: 0
 --- !u!114 &220412806605638029
 MonoBehaviour:
   m_ObjectHideFlags: 0

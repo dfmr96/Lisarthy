@@ -14,7 +14,7 @@ GameObject:
   - component: {fileID: 618800038979465276}
   m_Layer: 10
   m_Name: weak floor
-  m_TagString: Untagged
+  m_TagString: floor
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0

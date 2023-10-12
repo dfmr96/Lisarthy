@@ -15,11 +15,11 @@ GameObject:
   - component: {fileID: 2015477566593181487}
   - component: {fileID: 3343614705420988869}
   - component: {fileID: 2779412635082131890}
-  - component: {fileID: 6272660644198144354}
   - component: {fileID: 220412806605638029}
   - component: {fileID: 1273852562857435830}
   - component: {fileID: 6530223804374353995}
-  m_Layer: 0
+  - component: {fileID: 6266307809804885754}
+  m_Layer: 15
   m_Name: Player
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -235,22 +235,6 @@ MonoBehaviour:
   groundTrail: {fileID: 3790438297568106109}
   upwardTrail: {fileID: 2699455718004796913}
   downwardTrail: {fileID: 1982697590775850542}
---- !u!114 &6272660644198144354
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 191155203977936549}
-  m_Enabled: 0
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: e4fedf574adfa3e4bb0725fa5a167d9f, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  ability: {fileID: 0}
-  hitBox: {fileID: 0}
-  active: 0
-  climbing: 0
 --- !u!114 &220412806605638029
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -301,6 +285,20 @@ MonoBehaviour:
   dashDuration: 0.1
   dashTrail: {fileID: 9211094561355387515}
   onDash: 0
+--- !u!114 &6266307809804885754
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 191155203977936549}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 79807668d726c9249a9c9af825549722, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  HairballPrefab: {fileID: 8935446252266883572, guid: 3103fe4411c161d42acf34292fcd266b, type: 3}
+  speed: 12
 --- !u!1 &2826718522641574865
 GameObject:
   m_ObjectHideFlags: 0
@@ -311,7 +309,7 @@ GameObject:
   m_Component:
   - component: {fileID: 770426367563127581}
   - component: {fileID: 9211094561355387515}
-  m_Layer: 0
+  m_Layer: 15
   m_Name: Dash Trail
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -447,7 +445,7 @@ GameObject:
   m_Component:
   - component: {fileID: 7763913253813497947}
   - component: {fileID: 1982697590775850542}
-  m_Layer: 0
+  m_Layer: 15
   m_Name: Downward
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -583,7 +581,7 @@ GameObject:
   m_Component:
   - component: {fileID: 378882301528086297}
   - component: {fileID: 2699455718004796913}
-  m_Layer: 0
+  m_Layer: 15
   m_Name: Upward
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -719,7 +717,7 @@ GameObject:
   m_Component:
   - component: {fileID: 3202013610422006235}
   - component: {fileID: 3790438297568106109}
-  m_Layer: 0
+  m_Layer: 15
   m_Name: Ground
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -854,7 +852,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 2412420487904214290}
-  m_Layer: 0
+  m_Layer: 15
   m_Name: Trails
   m_TagString: Untagged
   m_Icon: {fileID: 0}

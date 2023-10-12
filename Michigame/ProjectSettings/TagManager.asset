@@ -8,6 +8,7 @@ TagManager:
   - Climbable
   - furBall
   - furBall Destructible
+  - Door
   layers:
   - Default
   - TransparentFX
@@ -20,7 +21,7 @@ TagManager:
   - Roof
   - Plataform
   - Ground
-  - 
+  - ClimbableWall
   - 
   - 
   - 

@@ -11,15 +11,13 @@ public class DashAbilityUser : AbilityUser
         DashAbility dashAbility = ability as DashAbility;
         impulse = dashAbility.impulse;       
     }
-
-    // Update is called once per frame
+    
     void Update()
     {
-        // Para propositos de prueba-------------------------------------------
+
         DashAbility dashAbility = ability as DashAbility;
         impulse = dashAbility.impulse;
-      //--------------------------------------------------------------------------------------------------
-        
+       
         UpdateCoolDown();
         if (currentCoolDown < 1.9)
         {

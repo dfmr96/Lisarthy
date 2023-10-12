@@ -9,6 +9,7 @@ public class PlayerMovement : MonoBehaviour
     [SerializeField] private PlayerMetrics _playerMetrics;
     [SerializeField] private float maxSpeed = 1f;
     [SerializeField] private float maxFallingSpeed = -15f;
+
     [SerializeField] private float maxAcceleration = 1f;
     [SerializeField] private float maxDeceleration = 1f;
     [SerializeField] private float maxAirAcceleration;
@@ -22,6 +23,7 @@ public class PlayerMovement : MonoBehaviour
 
     private Rigidbody2D rb;
     private PlayerJump playerJump;
+    private DashTestScript dashTest;
     private bool turning; //DONT USE (Just for debug )
 
     public string MovementDebugInfo
@@ -65,6 +67,7 @@ public class PlayerMovement : MonoBehaviour
     {
         rb = GetComponent<Rigidbody2D>();
         playerJump = GetComponent<PlayerJump>();
+        dashTest = GetComponent<DashTestScript>();
         //LoadData();
     }
 
@@ -90,14 +93,18 @@ public class PlayerMovement : MonoBehaviour
                 turning = true;
                 accelUsed = "Turn Accel";
                 maxSpeedChange = turnSpeed * Time.fixedDeltaTime;
-                Debug.Log("horizontal y rb velocity distintos signos: Turn speed aplicado");
+                //Debug.Log("horizontal y rb velocity distintos signos: Turn speed aplicado");
             }
             else
             {
                 maxSpeedChange = acceleration * Time.fixedDeltaTime;
                 accelUsed = "maxAccel";
-                Debug.Log("horizontal y rb velocity mismo signo: aceleration aplicada");
+                //Debug.Log("horizontal y rb velocity mismo signo: aceleration aplicada");
             }
+        } else if (dashTest.OnDash())
+        {
+            //rb.velocity = new Vector2(dashTest.DashSpeed, rb.velocity.y);
+            return;
         }
         else
         {
@@ -105,13 +112,13 @@ public class PlayerMovement : MonoBehaviour
             {
                 maxSpeedChange = deceleration * Time.fixedDeltaTime;
                 accelUsed = "maxDeAccel";
-                Debug.Log("Desacelerando, ninguna tecla presionada");
+                //Debug.Log("Desacelerando, ninguna tecla presionada");
             }
             else
             {
                 accelUsed = "No one";
                 maxSpeedChange = 0;
-                Debug.Log("Idle");
+                //Debug.Log("Idle");
                 //return;
             }
         }

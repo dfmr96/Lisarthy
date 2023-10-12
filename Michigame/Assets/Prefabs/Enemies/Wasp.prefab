@@ -161,10 +161,10 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 6440b8e21f599dc488090cac56da6cff, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  health: 3
-  speed: 8.5
+  health: 1
+  speed: 7.5
   damage: 1
   player_transform: {fileID: 0}
-  timer: 3
+  timer: 3.2
   a: 1
   b: 0

@@ -8,10 +8,13 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="4df7d40f-8887-4bba-9d80-6ae23a8fa518" name="Changes" comment="">
+      <change afterPath="$PROJECT_DIR$/Assets/Prefabs/Enemies.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Prefabs/Enemies/Frog.prefab" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Prefabs/Enemies/Frog.prefab.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Scripts/Enemies 1/Snail.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Scripts/Enemies 1/Snail.cs.meta" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/.idea.Michigame/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.Michigame/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scenes/Enemies.unity" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scenes/Enemies.unity.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Enemies 1/Enemy_Frog.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Enemies 1/Enemy_Frog.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scenes/Enemies_test.unity" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scenes/Enemies_test.unity" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -23,6 +26,7 @@
   </component>
   <component name="HighlightingSettingsPerFile">
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/Enemies 1/Enemy_Frog.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/Scripts/Enemies 1/Snail.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/Player/Abilities/Scripts/AbilityUsers/DashAbilityUser.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/PlayerMetrics.cs" root0="FORCE_HIGHLIGHTING" />
   </component>
@@ -125,7 +129,7 @@
       <workItem from="1696213770058" duration="9985000" />
       <workItem from="1697038481612" duration="1266000" />
       <workItem from="1697063153759" duration="194000" />
-      <workItem from="1697063363375" duration="6587000" />
+      <workItem from="1697063363375" duration="12303000" />
     </task>
     <servers />
   </component>

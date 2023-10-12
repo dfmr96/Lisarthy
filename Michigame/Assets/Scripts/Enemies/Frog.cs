@@ -3,7 +3,7 @@ using System.Collections.Generic;
 using Unity.VisualScripting;
 using UnityEngine;
 
-public class Enemy_Frog : Enemy
+public class Frog : Enemy
 {
     private Rigidbody2D rb2d;
     private float timer = 3;
@@ -16,6 +16,8 @@ public class Enemy_Frog : Enemy
     void Start()
     {
         rb2d = GetComponent<Rigidbody2D>();
+        GameObject playerObject = GameObject.FindWithTag("Player");
+        player_transform = playerObject.GetComponent<Transform>();
     }
 
     // Update is called once per frame

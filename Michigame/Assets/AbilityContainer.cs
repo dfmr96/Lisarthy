@@ -26,7 +26,7 @@ public class AbilityContainer : MonoBehaviour
                     Debug.Log("Garras tomadas");
                     if (player.TryGetComponent<PlayerJump>(out PlayerJump playerJump))
                     {
-                        pawTestScript.ChangeOffset(playerJump);
+                        //pawTestScript.ChangeOffset(playerJump);
                         Debug.Log("offset cambiado");
                     }
                 }

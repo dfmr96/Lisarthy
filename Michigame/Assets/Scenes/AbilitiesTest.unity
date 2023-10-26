@@ -42218,7 +42218,7 @@ GameObject:
   - component: {fileID: 552921316}
   - component: {fileID: 552921315}
   - component: {fileID: 552921314}
-  m_Layer: 11
+  m_Layer: 10
   m_Name: Tilemap
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -49309,6 +49309,10 @@ PrefabInstance:
     - target: {fileID: 1634405167914182078, guid: 4ccb806f74edd454c936309d1b742a3e, type: 3}
       propertyPath: m_Name
       value: DestructibleDoor
+      objectReference: {fileID: 0}
+    - target: {fileID: 1634405167914182078, guid: 4ccb806f74edd454c936309d1b742a3e, type: 3}
+      propertyPath: m_IsActive
+      value: 0
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []

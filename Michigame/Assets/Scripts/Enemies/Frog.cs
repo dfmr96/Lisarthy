@@ -1,87 +1,50 @@
 using System.Collections;
 using System.Collections.Generic;
+using Unity.VisualScripting;
 using UnityEngine;
 
-public class Frog : MonoBehaviour
+public class Frog : Enemy
 {
-    private Rigidbody2D rigidbody;
-    private Animator animator;
-    [SerializeField] float moveSpeed;
-    [SerializeField] float jumpForce;
-    [SerializeField] float jumpIntervalSeconds;
-    private float jumpTimer;
-    [SerializeField] int maxJumps;
-    private int jumps;
-    private bool onFloor;
-
-    private void Awake()
+    private Rigidbody2D rb2d;
+    private float timer = 3;
+    private float a;
+    [SerializeField] private Transform player_transform;
+    [SerializeField] private int jumpHeight = 10;
+    [SerializeField] private bool OnGround;
+    private Vector2 distance;
+    // Start is called before the first frame update
+    void Start()
     {
-        rigidbody = GetComponent<Rigidbody2D>();
-        animator = GetComponent<Animator>();
+        rb2d = GetComponent<Rigidbody2D>();
+        GameObject playerObject = GameObject.FindWithTag("Player");
+        player_transform = playerObject.GetComponent<Transform>();
     }
 
     // Update is called once per frame
     void Update()
     {
-        if (JumpTimer() && jumps < maxJumps && onFloor)
+        timer += Time.deltaTime;
+        
+        distance = player_transform.position - transform.position;
+        if (distance.magnitude < 10 && timer > 3.5 && OnGround)
         {
-            Movement();
+            timer = 0;
+            OnGround = false;
+            rb2d.AddForce(transform.up * jumpHeight, ForceMode2D.Impulse);
+            var direction = distance.normalized;
+            rb2d.AddForce(new Vector2(direction.x,0) * speed, ForceMode2D.Impulse);
+                    
         }
-        if (jumps >= maxJumps)
-        {
-            Rotate();
-        }
+        
     }
 
-    private void Movement()
-    {        
-        rigidbody.AddForce(new Vector2(transform.right.x * moveSpeed, transform.up.y * jumpForce), ForceMode2D.Impulse);
-        jumps++;
-        jumpTimer = 0;
-    }
-
-    private void Rotate()
+    void OnCollisionEnter2D(Collision2D other)
     {
-        transform.Rotate(new Vector3(0, 180, 0));
-        jumps = 0;
-    }
-
-    private bool JumpTimer()
-    {
-        if (onFloor)
+        if (other.gameObject.layer == 10)
         {
-            if (jumpTimer >= jumpIntervalSeconds)
-            {
-                return true;
-            }            
-        }
-        jumpTimer += Time.deltaTime;
-        return false;
-    }
-
-    private void OnTriggerEnter2D(Collider2D collision)
-    {
-        if (collision.CompareTag("floor"))
-        {
-            onFloor = true;
-            animator.SetBool("jumping", false);
-        }
-    }
-
-    private void OnTriggerExit2D(Collider2D collision)
-    {
-        if (collision.CompareTag("floor"))
-        {
-            animator.SetBool("jumping", true);
-            onFloor = false;
-        }
-    }
-
-    private void OnCollisionEnter2D(Collision2D collision)
-    {
-        if (collision.gameObject.CompareTag("Player"))
-        {
-            collision.gameObject.GetComponent<PlayerInfo>().DeathAnimation();
+            OnGround = true;
+            rb2d.velocity = Vector2.zero;
+            
         }
     }
 }

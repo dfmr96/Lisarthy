@@ -1,4 +1,5 @@
 using System;
+using System.Collections;
 using UnityEngine;
 using UnityEngine.Serialization;
 
@@ -35,20 +36,26 @@ public class PlayerJump : MonoBehaviour
     [SerializeField] private float timeToApexDebug; //Debug USE ONLY
     [SerializeField] private float timeToGroundDebug; //Debug USE ONLY
     [SerializeField] float coyoteTimeCounter = 0;
-    
+
     private bool currentlyJumping;
     private float defaultGravityScale;
 
     [SerializeField] private float jumpBuffer;
-    private float jumpBufferCounter = 0;
+    [SerializeField] private float jumpBufferCounter = 0;
     [SerializeField] private float coyoteTime = 0.15f;
     //[SerializeField] private float jumpBuffer = 0.15f;
 
     private float jumpSpeed;
     private bool pressingJump;
     private Rigidbody2D rb;
-    
+
     private Vector2 velocity;
+
+    [SerializeField] private float raycastOffset = -0.1f;
+
+    [FormerlySerializedAs("pawnTest")] public PawTestScript pawTest;
+    [SerializeField] bool wallJumpBuffer = false;
+    [SerializeField] private float wallJumpBufferTimer;
 
     public string JumpDebugInfo
     {
@@ -87,7 +94,49 @@ public class PlayerJump : MonoBehaviour
         set => gravityMultiplier = value;
     }
 
-    public bool OnGround => onGround;
+    public bool OnGround
+    {
+        get
+        {
+            bool raycast = Physics2D.Raycast(new Vector3(col.bounds.max.x + raycastOffset, transform.position.y),
+                               Vector2.down,
+                               groundLength,
+                               groundLayer)
+                           || Physics2D.Raycast(new Vector3(col.bounds.min.x - raycastOffset, transform.position.y, 0),
+                               Vector2.down,
+                               groundLength, groundLayer);
+            return raycast;
+        }
+    }
+
+    public bool OnClimb
+    {
+        get
+        {
+            if (pawTest == null)
+            {
+                if (TryGetComponent<PawTestScript>(out PawTestScript pawnTestScript))
+                {
+                    if (pawnTestScript.isActiveAndEnabled)
+                    {
+                        pawTest = pawnTestScript;
+                    }
+                }
+
+                return false;
+            }
+            else
+            {
+                return pawTest.OnClimb();
+            }
+        }
+    }
+
+    public float RaycastOffset
+    {
+        get => raycastOffset;
+        set => raycastOffset = value;
+    }
 
     private void Awake()
     {
@@ -99,15 +148,11 @@ public class PlayerJump : MonoBehaviour
 
     private void Start()
     {
-        LoadData();
+        //LoadData();
     }
 
     private void Update()
     {
-        onGround = Physics2D.Raycast(new Vector3(col.bounds.max.x, transform.position.y), Vector2.down, groundLength,
-                       groundLayer)
-                   || Physics2D.Raycast(new Vector3(col.bounds.min.x, transform.position.y, 0), Vector2.down,
-                       groundLength, groundLayer);
         if (OnGround && !currentlyJumping) rb.velocity = new Vector2(rb.velocity.x, 0);
 
         if (currentlyJumping && rb.velocity.y > 0) timeToApexDebug += Time.deltaTime;
@@ -144,21 +189,31 @@ public class PlayerJump : MonoBehaviour
                 }
             }
         }
+
+        if (OnClimb && !wallJumpBuffer)
+        {
+            StartCoroutine(WallJumpBufferCounter());
+        }
     }
+
 
     private void FixedUpdate()
     {
         velocity = rb.velocity;
+        /*if (OnClimb) Apply Sliding
+        {
+            if (rb.velocity.y < pawTest.MaxFallingSpeedSliding) rb.velocity = new Vector2(rb.velocity.x, pawTest.MaxFallingSpeedSliding);
+        }*/
 
         if (desiredJump)
         {
+            //if (OnClimb) WallJump(); else Jump();
             Jump();
-
+            
             rb.velocity = velocity;
 
             return;
         }
-
         CalculateGravity();
     }
 
@@ -169,10 +224,10 @@ public class PlayerJump : MonoBehaviour
         else
             Gizmos.color = Color.red;
 
-        Gizmos.DrawLine(new Vector3(col.bounds.max.x, transform.position.y, 0),
-            new Vector3(col.bounds.max.x, transform.position.y, 0) + Vector3.down * groundLength);
-        Gizmos.DrawLine(new Vector3(col.bounds.min.x, transform.position.y, 0),
-            new Vector3(col.bounds.min.x, transform.position.y, 0) + Vector3.down * groundLength);
+        Gizmos.DrawLine(new Vector3(col.bounds.max.x + raycastOffset, transform.position.y, 0),
+            new Vector3(col.bounds.max.x + raycastOffset, transform.position.y, 0) + Vector3.down * groundLength);
+        Gizmos.DrawLine(new Vector3(col.bounds.min.x - raycastOffset, transform.position.y, 0),
+            new Vector3(col.bounds.min.x - raycastOffset, transform.position.y, 0) + Vector3.down * groundLength);
     }
 
     private void CalculateGravity()
@@ -185,6 +240,12 @@ public class PlayerJump : MonoBehaviour
             currentlyJumping = false;
             gravityMultiplier = defaultGravityScale;
         }
+        /*else if (OnClimb) Apply Sliding
+        {
+            Debug.Log("gravedad cambiada a deslizando");
+            if (rb.velocity.y > 0) rb.velocity = Vector2.zero;
+            gravityMultiplier = 0.01f;
+        }*/
         else
         {
             switch (rb.velocity.y)
@@ -217,11 +278,18 @@ public class PlayerJump : MonoBehaviour
     {
         Vector2 newGravity = new(0, -2 * jumpHeight / (TimeToJumpApex * TimeToJumpApex));
         rb.gravityScale = newGravity.y / Physics2D.gravity.y * gravityMultiplier;
-        Debug.Log(newGravity);
+        //Debug.Log(gravityMultiplier);
     }
 
     private void Jump()
     {
+
+        if (wallJumpBuffer)
+        {
+            
+            WallJump();
+            return;
+        }
         if (OnGround || coyoteTimeCounter < coyoteTime && coyoteTimeCounter > 0.03f)
         {
             timeToApexDebug = 0;
@@ -233,12 +301,24 @@ public class PlayerJump : MonoBehaviour
             gravityMultiplier = upwardMultiplier;
             OnGravityValueChanged?.Invoke(OnGround, true);
             SetPhysics();
-            
+
             jumpSpeed = MathF.Sqrt(-2f * Physics2D.gravity.y * rb.gravityScale * jumpHeight);
-            Debug.Log(jumpSpeed + " velocidad de salto");
+            //Debug.Log(jumpSpeed + " velocidad de salto");
             velocity.y = jumpSpeed;
             currentlyJumping = true;
         }
+    }
+
+    private void WallJump()
+    {
+        
+        gravityMultiplier = upwardMultiplier;
+        SetPhysics();
+        jumpSpeed = MathF.Sqrt(-2f * Physics2D.gravity.y * rb.gravityScale * jumpHeight);
+        Debug.Log(jumpSpeed + " velocidad de salto");
+        velocity.y = jumpSpeed;
+        //velocity.x = jumpSpeed * -Input.GetAxisRaw("Horizontal");
+        currentlyJumping = true;
     }
 
     public void LoadData()
@@ -247,5 +327,14 @@ public class PlayerJump : MonoBehaviour
         timeToJumpApex = _playerMetrics.timeToJumpApex;
         upwardMultiplier = _playerMetrics.upwardMultiplier;
         gravityMultiplier = _playerMetrics.gravityMultiplier;
+    }
+
+    private IEnumerator WallJumpBufferCounter()
+    {
+        Debug.Log("Wall Jump Buffer activado");
+        wallJumpBuffer = true;
+        yield return new WaitForSeconds(wallJumpBufferTimer);
+        wallJumpBuffer = false;
+        Debug.Log("Wall Jump Buffer desactivado");
     }
 }

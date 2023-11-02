@@ -8,7 +8,7 @@ public class PawTestScript : MonoBehaviour
 {
     [SerializeField] private Vector3 pawnBoxSize;
     [SerializeField] private float detectionDistance;
-    [SerializeField] private LayerMask climbableWall;
+    [FormerlySerializedAs("climbableWall")] [SerializeField] private LayerMask climbableLayer;
     [SerializeField] private float maxFallingSpeedSliding = -2f;
     [SerializeField] private GameObject pawPrefab;
     [SerializeField] private GameObject paw;
@@ -38,7 +38,7 @@ public class PawTestScript : MonoBehaviour
     public bool OnClimb()
     {
         return Physics2D.BoxCast(transform.position, pawnBoxSize, 0, new Vector2(Input.GetAxisRaw("Horizontal"), 0),
-            detectionDistance, climbableWall);
+            detectionDistance, climbableLayer);
     }
 
     private void OnDrawGizmos()
@@ -79,8 +79,8 @@ public class PawTestScript : MonoBehaviour
         onCooldown = false;
     }
 
-    public void ChangeOffset(PlayerJump playerJump)
+    /*public void ChangeOffset(PlayerJump playerJump)
     {
-        playerJump.RaycastOffset = 0.0118f;
-    }
+        playerJump.RaycastOffset = 0.0125f;
+    }*/
 }

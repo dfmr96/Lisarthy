@@ -1,9 +1,5 @@
 fileFormatVersion: 2
-<<<<<<< HEAD
-guid: 1cc87957d56e85c45b90d094e70b2455
-=======
-guid: a106a57aecd24ee4b9435d081b100489
->>>>>>> Arte
+guid: 70aa82b90c6d9fc48be0ff2beb7f8ced
 TextureImporter:
   internalIDToNameTable: []
   externalObjects: {}
@@ -47,20 +43,12 @@ TextureImporter:
   nPOTScale: 0
   lightmap: 0
   compressionQuality: 50
-<<<<<<< HEAD
   spriteMode: 1
-=======
-  spriteMode: 2
->>>>>>> Arte
   spriteExtrude: 1
   spriteMeshType: 1
   alignment: 0
   spritePivot: {x: 0.5, y: 0.5}
-<<<<<<< HEAD
   spritePixelsToUnits: 100
-=======
-  spritePixelsToUnits: 512
->>>>>>> Arte
   spriteBorder: {x: 0, y: 0, z: 0, w: 0}
   spriteGenerateFallbackPhysicsShape: 1
   alphaUsage: 1
@@ -120,74 +108,7 @@ TextureImporter:
     forceMaximumCompressionQuality_BC6H_BC7: 0
   spriteSheet:
     serializedVersion: 2
-<<<<<<< HEAD
     sprites: []
-=======
-    sprites:
-    - serializedVersion: 2
-      name: Salto_Lisarthy_0
-      rect:
-        serializedVersion: 2
-        x: 1
-        y: 1439
-        width: 752
-        height: 609
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 5edec5ec93068cc4e821f5e8f277703b
-      internalID: -581130735
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Salto_Lisarthy_1
-      rect:
-        serializedVersion: 2
-        x: 754
-        y: 1361
-        width: 720
-        height: 686
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 0a7a57ec53085c64cb86667062ea8592
-      internalID: 306050799
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Salto_Lisarthy_2
-      rect:
-        serializedVersion: 2
-        x: 1
-        y: 891
-        width: 842
-        height: 468
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 913d609a5efa67c4bbb113dc994ee487
-      internalID: -1269371578
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
->>>>>>> Arte
     outline: []
     physicsShape: []
     bones: []
@@ -198,14 +119,7 @@ TextureImporter:
     edges: []
     weights: []
     secondaryTextures: []
-<<<<<<< HEAD
     nameFileIdTable: {}
-=======
-    nameFileIdTable:
-      Salto_Lisarthy_0: -581130735
-      Salto_Lisarthy_1: 306050799
-      Salto_Lisarthy_2: -1269371578
->>>>>>> Arte
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 

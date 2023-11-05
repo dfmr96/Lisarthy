@@ -20,6 +20,7 @@ GameObject:
   - component: {fileID: 6530223804374353995}
   - component: {fileID: 2067636287723500323}
   - component: {fileID: 9057643130936559449}
+  - component: {fileID: 7147979786523387304}
   m_Layer: 15
   m_Name: Player
   m_TagString: Player
@@ -198,6 +199,7 @@ MonoBehaviour:
   pawTest: {fileID: 0}
   wallJumpBuffer: 0
   wallJumpBufferTimer: 0.2
+  extraJumpAvailable: 0
 --- !u!50 &3343614705420988869
 Rigidbody2D:
   serializedVersion: 4
@@ -277,6 +279,9 @@ MonoBehaviour:
   pawDuration: 0.15
   pawCooldown: 0.5
   onCooldown: 0
+  lastClimbDirection: {x: 0, y: 0}
+  climbDir: {x: 0, y: 0}
+  wallJumpAvailable: 0
 --- !u!114 &6530223804374353995
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -289,8 +294,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 244eeb66451cbdf438c3725d9ed58f99, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  cooldown: 3
-  impulseForce: 100
+  cooldown: 2
+  impulseForce: 45
   onCooldown: 0
   dashDuration: 0.1
   dashTrail: {fileID: 9211094561355387515}
@@ -325,6 +330,19 @@ MonoBehaviour:
   offset: {x: 0, y: 0}
   tail: {fileID: 0}
   anim: {fileID: 0}
+--- !u!114 &7147979786523387304
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 191155203977936549}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: a6e3450099a079643aaecdcacec10ee2, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  health: 10
 --- !u!1 &2826718522641574865
 GameObject:
   m_ObjectHideFlags: 0
@@ -534,7 +552,7 @@ TrailRenderer:
   m_LightmapParameters: {fileID: 0}
   m_SortingLayerID: 0
   m_SortingLayer: 0
-  m_SortingOrder: 0
+  m_SortingOrder: 1
   m_Time: 2
   m_PreviewTimeScale: 1
   m_Parameters:

@@ -122616,18 +122616,6 @@ PrefabInstance:
       propertyPath: m_Name
       value: Player
       objectReference: {fileID: 0}
-    - target: {fileID: 1273852562857435830, guid: 2f84c873b49122f4e9bcc37e23f257b8, type: 3}
-      propertyPath: m_Enabled
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 6530223804374353995, guid: 2f84c873b49122f4e9bcc37e23f257b8, type: 3}
-      propertyPath: cooldown
-      value: 2
-      objectReference: {fileID: 0}
-    - target: {fileID: 6530223804374353995, guid: 2f84c873b49122f4e9bcc37e23f257b8, type: 3}
-      propertyPath: impulseForce
-      value: 45
-      objectReference: {fileID: 0}
     - target: {fileID: 8232200383610649068, guid: 2f84c873b49122f4e9bcc37e23f257b8, type: 3}
       propertyPath: m_LocalPosition.x
       value: 569.1
@@ -122671,10 +122659,7 @@ PrefabInstance:
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
-    m_AddedComponents:
-    - targetCorrespondingSourceObject: {fileID: 191155203977936549, guid: 2f84c873b49122f4e9bcc37e23f257b8, type: 3}
-      insertIndex: -1
-      addedObject: {fileID: 1727391583}
+    m_AddedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 2f84c873b49122f4e9bcc37e23f257b8, type: 3}
 --- !u!1001 &1383839248
 PrefabInstance:
@@ -126187,24 +126172,6 @@ Transform:
   m_CorrespondingSourceObject: {fileID: 6127843236783263122, guid: 4f53f6058fa2f0a4898929a6a512a847, type: 3}
   m_PrefabInstance: {fileID: 1715191586}
   m_PrefabAsset: {fileID: 0}
---- !u!1 &1727391560 stripped
-GameObject:
-  m_CorrespondingSourceObject: {fileID: 191155203977936549, guid: 2f84c873b49122f4e9bcc37e23f257b8, type: 3}
-  m_PrefabInstance: {fileID: 1380794333}
-  m_PrefabAsset: {fileID: 0}
---- !u!114 &1727391583
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1727391560}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: a6e3450099a079643aaecdcacec10ee2, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  health: 10
 --- !u!1001 &1728464533
 PrefabInstance:
   m_ObjectHideFlags: 0

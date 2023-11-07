@@ -6,6 +6,7 @@ using UnityEngine;
 public class DashAbilityUser : AbilityUser
 {
     private float impulse;
+    public bool dashing;
     protected override void ExecuteAtAwake()
     {
         DashAbility dashAbility = ability as DashAbility;
@@ -21,6 +22,7 @@ public class DashAbilityUser : AbilityUser
         UpdateCoolDown();
         if (currentCoolDown < 1.9)
         {
+            dashing = false;
            var a = player.GetComponent<Rigidbody2D>().velocity;
            if (a.x is > 7 or < -7)
            {
@@ -34,7 +36,7 @@ public class DashAbilityUser : AbilityUser
         {
             if (Input.GetKeyDown(ability.abilityKey) && Input.GetAxisRaw("Horizontal") != 0)
             {
-                
+                dashing = true;
                 player.GetComponent<Rigidbody2D>().AddForce(transform.right * impulse * Mathf.Sign(Input.GetAxisRaw("Horizontal")), ForceMode2D.Impulse);
                 currentCoolDown = coolDownTime;
             }

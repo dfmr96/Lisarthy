@@ -15,6 +15,7 @@ public class Enemy : MonoBehaviour
     public virtual void TakeDamage(int damage)
     {
         health -= damage;
+        gameObject.GetComponent<Animator>().SetTrigger("damaged");
         Die();
     }
 
@@ -22,6 +23,7 @@ public class Enemy : MonoBehaviour
     {
         if (health <= 0)
         {
+            gameObject.GetComponent<Animator>().SetBool("isDead", true);
             Destroy(gameObject);
         }
     }

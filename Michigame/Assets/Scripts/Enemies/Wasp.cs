@@ -12,6 +12,7 @@ public class Wasp : Enemy
 
     [SerializeField] private bool a = true;
     [SerializeField] private bool b = false;
+
     // Start is called before the first frame update
     void Start()
     {
@@ -25,7 +26,6 @@ public class Wasp : Enemy
     {
         timer += Time.deltaTime;
         distance = player_transform.position - transform.position;
-        
     }
 
     void FixedUpdate()
@@ -52,6 +52,5 @@ public class Wasp : Enemy
             rb2d.AddForce(dir * (speed * 1.8f),ForceMode2D.Impulse);
         }
     }
-
     
 }

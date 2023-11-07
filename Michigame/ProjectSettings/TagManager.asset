@@ -22,7 +22,7 @@ TagManager:
   - Plataform
   - Ground
   - ClimbableWall
-  - 
+  - CameraBounds
   - 
   - 
   - Player

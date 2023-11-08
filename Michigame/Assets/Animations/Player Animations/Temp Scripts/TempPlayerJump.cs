@@ -4,7 +4,7 @@ using UnityEngine;
 using UnityEngine.Serialization;
 
 [RequireComponent(typeof(Rigidbody2D))]
-public class PlayerJump : MonoBehaviour
+public class TempPlayerJump : MonoBehaviour
 {
     public Action<bool, bool> OnGravityValueChanged;
 
@@ -28,7 +28,8 @@ public class PlayerJump : MonoBehaviour
 
     [SerializeField] private float groundLength = 0.95f;
 
-    [FormerlySerializedAs("collider")] [SerializeField]
+    [FormerlySerializedAs("collider")]
+    [SerializeField]
     private BoxCollider2D col;
 
     [SerializeField] private LayerMask groundLayer;
@@ -98,14 +99,15 @@ public class PlayerJump : MonoBehaviour
     {
         get
         {
-            bool raycast = Physics2D.Raycast(new Vector3(col.bounds.max.x + raycastOffset, transform.position.y),
+            RaycastHit2D hit1 = Physics2D.Raycast(new Vector2(col.bounds.max.x + raycastOffset, col.bounds.min.y),
                                Vector2.down,
                                groundLength,
-                               groundLayer)
-                           || Physics2D.Raycast(new Vector3(col.bounds.min.x - raycastOffset, transform.position.y, 0),
+                               groundLayer);
+            RaycastHit2D hit2 = Physics2D.Raycast(new Vector2(col.bounds.min.x - raycastOffset, col.bounds.min.y),
                                Vector2.down,
                                groundLength, groundLayer);
-            return raycast;
+
+            return hit1.collider != null || hit2.collider != null;
         }
     }
 
@@ -165,7 +167,7 @@ public class PlayerJump : MonoBehaviour
         //{
         //    gameObject.GetComponent<Animator>().SetBool("falling", true);
         //}
-        
+
 
         if (currentlyJumping && rb.velocity.y > 0) timeToApexDebug += Time.deltaTime;
         if (currentlyJumping && rb.velocity.y < 0) timeToGroundDebug += Time.deltaTime;
@@ -221,7 +223,7 @@ public class PlayerJump : MonoBehaviour
         {
             //if (OnClimb) WallJump(); else Jump();
             Jump();
-            
+
             rb.velocity = velocity;
 
             return;
@@ -271,7 +273,7 @@ public class PlayerJump : MonoBehaviour
                     else
                     {
                         /*Vector2 cutOffVelocity = new Vector2(rb.velocity.x, 0);
-                        rb.velocity = cutOffVelocity;*/                       
+                        rb.velocity = cutOffVelocity;*/
                         gravityMultiplier = jumpCutOffMultiplier;
                     }
 
@@ -298,7 +300,7 @@ public class PlayerJump : MonoBehaviour
 
         if (wallJumpBuffer)
         {
-            
+
             WallJump();
             return;
         }
@@ -323,7 +325,7 @@ public class PlayerJump : MonoBehaviour
 
     private void WallJump()
     {
-        
+
         gravityMultiplier = upwardMultiplier;
         SetPhysics();
         jumpSpeed = MathF.Sqrt(-2f * Physics2D.gravity.y * rb.gravityScale * jumpHeight);

@@ -22,7 +22,7 @@ public class TempPlayerMovement : MonoBehaviour
     private float maxSpeedChange;
 
     private Rigidbody2D rb;
-    private TempPlayerJump TempPlayerJump;
+    private PlayerJump playerJump;
     private DashTestScript dashTest;
     private bool turning; //DONT USE (Just for debug )
 
@@ -66,7 +66,7 @@ public class TempPlayerMovement : MonoBehaviour
     private void Awake()
     {
         rb = GetComponent<Rigidbody2D>();
-        TempPlayerJump = GetComponent<TempPlayerJump>();
+        playerJump = GetComponent<PlayerJump>();
         dashTest = GetComponent<DashTestScript>();
         //LoadData();
     }
@@ -87,7 +87,7 @@ public class TempPlayerMovement : MonoBehaviour
 
     private void FixedUpdate()
     {
-        bool onGround = TempPlayerJump.OnGround;
+        bool onGround = playerJump.OnGround;
 
         float acceleration = onGround ? maxAcceleration : maxAirAcceleration;
         float deceleration = onGround ? maxDeceleration : maxAirDeceleration;

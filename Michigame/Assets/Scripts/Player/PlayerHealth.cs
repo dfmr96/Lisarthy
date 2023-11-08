@@ -9,7 +9,20 @@ public class PlayerHealth : MonoBehaviour
 
     public void TakeDamage(int damage)
     {
-        health -= damage;
-        Debug.Log(health);
+        if (health > 0)
+        {
+            health -= damage;
+            Debug.Log(health);
+        }
+        else if (health <= 0)
+        {
+            gameObject.GetComponent<Animator>().SetBool("dead", true);
+        }
+        
+    }
+
+    public void Death()
+    {
+        Destroy(this.gameObject);
     }
 }

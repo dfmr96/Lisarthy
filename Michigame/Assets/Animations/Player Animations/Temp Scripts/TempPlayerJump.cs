@@ -99,15 +99,14 @@ public class TempPlayerJump : MonoBehaviour
     {
         get
         {
-            RaycastHit2D hit1 = Physics2D.Raycast(new Vector2(col.bounds.max.x + raycastOffset, col.bounds.min.y),
+            bool raycast = Physics2D.Raycast(new Vector3(col.bounds.max.x + raycastOffset, transform.position.y),
                                Vector2.down,
                                groundLength,
-                               groundLayer);
-            RaycastHit2D hit2 = Physics2D.Raycast(new Vector2(col.bounds.min.x - raycastOffset, col.bounds.min.y),
+                               groundLayer)
+                           || Physics2D.Raycast(new Vector3(col.bounds.min.x - raycastOffset, transform.position.y, 0),
                                Vector2.down,
                                groundLength, groundLayer);
-
-            return hit1.collider != null || hit2.collider != null;
+            return raycast;
         }
     }
 
@@ -158,7 +157,7 @@ public class TempPlayerJump : MonoBehaviour
         if (OnGround && !currentlyJumping) rb.velocity = new Vector2(rb.velocity.x, 0);
 
         gameObject.GetComponent<Animator>().SetBool("jumping", currentlyJumping);
-
+        gameObject.GetComponent<Animator>().SetBool("wallClimb", wallJumpBuffer);
         //if (OnGround)
         //{
         //    gameObject.GetComponent<Animator>().SetBool("falling", false);
@@ -206,6 +205,7 @@ public class TempPlayerJump : MonoBehaviour
 
         if (OnClimb && !wallJumpBuffer)
         {
+            gameObject.GetComponent<Animator>().SetBool("wallClimb", true);
             StartCoroutine(WallJumpBufferCounter());
         }
     }
@@ -325,7 +325,6 @@ public class TempPlayerJump : MonoBehaviour
 
     private void WallJump()
     {
-
         gravityMultiplier = upwardMultiplier;
         SetPhysics();
         jumpSpeed = MathF.Sqrt(-2f * Physics2D.gravity.y * rb.gravityScale * jumpHeight);

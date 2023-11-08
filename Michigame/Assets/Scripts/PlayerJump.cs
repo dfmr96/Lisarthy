@@ -156,7 +156,7 @@ public class PlayerJump : MonoBehaviour
         if (OnGround && !currentlyJumping) rb.velocity = new Vector2(rb.velocity.x, 0);
 
         gameObject.GetComponent<Animator>().SetBool("jumping", currentlyJumping);
-
+        gameObject.GetComponent<Animator>().SetBool("wallClimb", wallJumpBuffer);
         //if (OnGround)
         //{
         //    gameObject.GetComponent<Animator>().SetBool("falling", false);
@@ -165,7 +165,7 @@ public class PlayerJump : MonoBehaviour
         //{
         //    gameObject.GetComponent<Animator>().SetBool("falling", true);
         //}
-        
+
 
         if (currentlyJumping && rb.velocity.y > 0) timeToApexDebug += Time.deltaTime;
         if (currentlyJumping && rb.velocity.y < 0) timeToGroundDebug += Time.deltaTime;
@@ -204,6 +204,7 @@ public class PlayerJump : MonoBehaviour
 
         if (OnClimb && !wallJumpBuffer)
         {
+            gameObject.GetComponent<Animator>().SetBool("wallClimb", true);
             StartCoroutine(WallJumpBufferCounter());
         }
     }
@@ -322,8 +323,7 @@ public class PlayerJump : MonoBehaviour
     }
 
     private void WallJump()
-    {
-        
+    {        
         gravityMultiplier = upwardMultiplier;
         SetPhysics();
         jumpSpeed = MathF.Sqrt(-2f * Physics2D.gravity.y * rb.gravityScale * jumpHeight);

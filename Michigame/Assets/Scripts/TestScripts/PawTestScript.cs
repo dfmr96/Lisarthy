@@ -30,7 +30,7 @@ public class PawTestScript : MonoBehaviour
     {
         if (Input.GetKeyDown(KeyCode.R))
         {
-            Debug.Log("Atacó con garra");
+            Debug.Log("Atacó con garra");            
             Attack();
         }
     }
@@ -66,7 +66,7 @@ public class PawTestScript : MonoBehaviour
     public IEnumerator Swing()
     {
         float inputRaw = Input.GetAxisRaw("Horizontal") == 0 ? 1 : Input.GetAxisRaw("Horizontal");
-        
+        gameObject.GetComponent<Animator>().SetTrigger("attack");
         paw.transform.localPosition = new Vector3((inputRaw), 0, 0);
         
         

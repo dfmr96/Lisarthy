@@ -15,6 +15,7 @@ public class Frog : Enemy
     // Start is called before the first frame update
     void Start()
     {
+        gameObject.GetComponent<Animator>().SetInteger("hp", health);
         rb2d = GetComponent<Rigidbody2D>();
         GameObject playerObject = GameObject.FindWithTag("Player");
         player_transform = playerObject.GetComponent<Transform>();
@@ -24,12 +25,14 @@ public class Frog : Enemy
     void Update()
     {
         timer += Time.deltaTime;
-        
+
+        gameObject.GetComponent<Animator>().SetBool("jumping", !OnGround);
+
         distance = player_transform.position - transform.position;
         if (distance.magnitude < 10 && timer > 3.5 && OnGround)
         {
             timer = 0;
-            OnGround = false;
+            OnGround = false;            
             rb2d.AddForce(transform.up * jumpHeight, ForceMode2D.Impulse);
             var direction = distance.normalized;
             rb2d.AddForce(new Vector2(direction.x,0) * speed, ForceMode2D.Impulse);
@@ -42,7 +45,7 @@ public class Frog : Enemy
     {
         if (other.gameObject.layer == 10)
         {
-            OnGround = true;
+            OnGround = true;            
             rb2d.velocity = Vector2.zero;
             
         }

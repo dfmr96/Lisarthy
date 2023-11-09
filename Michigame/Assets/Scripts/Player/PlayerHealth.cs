@@ -4,9 +4,9 @@ using UnityEngine;
 
 public class PlayerHealth : MonoBehaviour
 {
-    public int health;
-
-    [SerializeField] private LifeController life;
+    [SerializeField] private int health;
+    [SerializeField] private AudioClip getdamage;
+    [SerializeField] private AudioClip gethealth;
     // Start is called before the first frame update
 
     private void Update()
@@ -15,22 +15,21 @@ public class PlayerHealth : MonoBehaviour
     }
     public void TakeDamage(int damage)
     {
+
+        AudioManager.Instance.PlaySound(getdamage);
+        health -= damage;
+        Debug.Log(health);
+
         if (health > 0)
         {
             health -= damage;
-            life.UpdateHealth(health);
+            Debug.Log(health);
         }
         else if (health <= 0)
         {
             gameObject.GetComponent<Animator>().SetTrigger("dead");
         }
         
-    }
-
-    public void TakeHealth(int heal)
-    {
-        health += heal;
-        life.UpdateHealth(health);
     }
 
     public void Death()
@@ -44,5 +43,12 @@ public class PlayerHealth : MonoBehaviour
         {
             TakeDamage(11);
         }
+
+    }
+    public void TakeHealth(int heal)
+    {
+        AudioManager.Instance.PlaySound(gethealth);
+        health += heal;
+        Debug.Log(health);
     }
 }

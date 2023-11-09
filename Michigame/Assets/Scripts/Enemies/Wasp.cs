@@ -16,6 +16,7 @@ public class Wasp : Enemy
     // Start is called before the first frame update
     void Start()
     {
+        gameObject.GetComponent<Animator>().SetInteger("hp", health);
         rb2d = GetComponent<Rigidbody2D>();
         GameObject playerObject = GameObject.FindWithTag("Player");
         player_transform = playerObject.GetComponent<Transform>();

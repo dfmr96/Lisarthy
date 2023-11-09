@@ -20,11 +20,8 @@ GameObject:
   - component: {fileID: 6530223804374353995}
   - component: {fileID: 2067636287723500323}
   - component: {fileID: 9057643130936559449}
-
   - component: {fileID: 2813443753981254201}
-
   - component: {fileID: 7147979786523387304}
-
   m_Layer: 15
   m_Name: Player
   m_TagString: Player
@@ -204,6 +201,7 @@ MonoBehaviour:
   wallJumpBuffer: 0
   wallJumpBufferTimer: 0.2
   extraJumpAvailable: 0
+  sound: {fileID: 8300000, guid: 4197b1e01030ecf4291eb923791ac1c5, type: 3}
 --- !u!50 &3343614705420988869
 Rigidbody2D:
   serializedVersion: 4
@@ -287,6 +285,7 @@ MonoBehaviour:
   lastClimbDirection: {x: 0, y: 0}
   climbDir: {x: 0, y: 0}
   wallJumpAvailable: 0
+  hit: {fileID: 8300000, guid: 6bd639e9bbf5cd141b91c2455488d0ad, type: 3}
 --- !u!114 &6530223804374353995
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -305,6 +304,7 @@ MonoBehaviour:
   dashDuration: 0.1
   dashTrail: {fileID: 9211094561355387515}
   onDash: 0
+  sound: {fileID: 8300000, guid: 6fdcc26af99dea24fbe6fcdfb2481b25, type: 3}
 --- !u!114 &2067636287723500323
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -319,6 +319,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   HairballPrefab: {fileID: 8935446252266883572, guid: 3103fe4411c161d42acf34292fcd266b, type: 3}
   speed: 12
+  shot: {fileID: 8300000, guid: b70f1aef292b86544aa0a82e1b9fd80b, type: 3}
 --- !u!114 &9057643130936559449
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -335,23 +336,18 @@ MonoBehaviour:
   offset: {x: 0, y: 0}
   tail: {fileID: 0}
   anim: {fileID: 0}
-
+  sound: {fileID: 8300000, guid: aee4389e7d678294fb1d943e3563258f, type: 3}
 --- !u!95 &2813443753981254201
 Animator:
   serializedVersion: 5
-
---- !u!114 &7147979786523387304
-MonoBehaviour:
-
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 191155203977936549}
   m_Enabled: 1
-
   m_Avatar: {fileID: 0}
-  m_Controller: {fileID: 9100000, guid: 6c780143bfb183a43b50ab071a4e3345, type: 2}
+  m_Controller: {fileID: 0}
   m_CullingMode: 0
   m_UpdateMode: 0
   m_ApplyRootMotion: 0
@@ -362,13 +358,21 @@ MonoBehaviour:
   m_AllowConstantClipSamplingOptimization: 1
   m_KeepAnimatorStateOnDisable: 0
   m_WriteDefaultValuesOnDisable: 0
-
+--- !u!114 &7147979786523387304
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 191155203977936549}
+  m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: a6e3450099a079643aaecdcacec10ee2, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  health: 10
-
+  health: 0
+  getdamage: {fileID: 8300000, guid: 58e51077441aa364ba0e7017b63956aa, type: 3}
+  gethealth: {fileID: 8300000, guid: 64105f00d03cb3c409d5bbf435f0542f, type: 3}
 --- !u!1 &2826718522641574865
 GameObject:
   m_ObjectHideFlags: 0

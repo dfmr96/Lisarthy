@@ -25,6 +25,7 @@ public class PlayerMovement : MonoBehaviour
     private PlayerJump playerJump;
     private DashTestScript dashTest;
     private bool turning; //DONT USE (Just for debug )
+    public static bool isFacingRight = true;
 
     public string MovementDebugInfo
     {
@@ -134,6 +135,24 @@ public class PlayerMovement : MonoBehaviour
        
         Vector2 velocity = new(Mathf.MoveTowards(rb.velocity.x, desiredVelocity.x, maxSpeedChange), rb.velocity.y < maxFallingSpeed ? maxFallingSpeed: rb.velocity.y);
         rb.velocity = new Vector2(velocity.x, velocity.y);
+
+
+        if (velocity.x > 0 && !isFacingRight)
+        {
+            Turn();
+        } else if (velocity.x < 0 && isFacingRight)
+        {
+            Turn();
+        }
+    }
+
+    private void Turn()
+    {
+        float angleToRotate = isFacingRight ? 180 : 0;         
+        Vector3 rotator = new Vector3(transform.rotation.x, angleToRotate, transform.rotation.z);
+        transform.rotation = Quaternion.Euler(rotator);
+        isFacingRight = !isFacingRight;
+
     }
 
     public void LoadData()

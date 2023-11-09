@@ -116,9 +116,9 @@ public class PawTestScript : MonoBehaviour
 
     public IEnumerator Swing()
     {
-        float inputRaw = Input.GetAxisRaw("Horizontal") == 0 ? 1 : Input.GetAxisRaw("Horizontal");
+        //float inputRaw = Input.GetAxisRaw("Horizontal") == 0 ? 1 : Input.GetAxisRaw("Horizontal");
         gameObject.GetComponent<Animator>().SetTrigger("attack");
-        paw.transform.localPosition = new Vector3((inputRaw), 0, 0);
+        paw.transform.localPosition = new Vector3((1), 0, 0);
         
         
         onCooldown = true;

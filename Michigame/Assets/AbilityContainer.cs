@@ -27,7 +27,7 @@ public class AbilityContainer : MonoBehaviour
                     if (player.TryGetComponent<PlayerJump>(out PlayerJump playerJump))
                     {
                         //pawTestScript.ChangeOffset(playerJump);
-                        Debug.Log("offset cambiado");
+                        //Debug.Log("offset cambiado");
                     }
                 }
                 break;

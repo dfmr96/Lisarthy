@@ -172,6 +172,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 48ed884d87ba1744da41651f91669050, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  soundHit: {fileID: 8300000, guid: e9efb9e76f07c4741bd4dc01b5c2cbe0, type: 3}
+  soundDeath: {fileID: 8300000, guid: af8cd7acebffe80469d4466b600f50a0, type: 3}
   health: 2
   speed: 8
   damage: 1

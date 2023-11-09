@@ -56,7 +56,8 @@ public class PlayerJump : MonoBehaviour
     [FormerlySerializedAs("pawnTest")] public PawTestScript pawTest;
     [SerializeField] bool wallJumpBuffer = false;
     [SerializeField] private float wallJumpBufferTimer;
-
+    [SerializeField] private bool extraJumpAvailable;
+    [SerializeField] private AudioClip sound;
     public string JumpDebugInfo
     {
         get =>
@@ -155,12 +156,26 @@ public class PlayerJump : MonoBehaviour
     {
         if (OnGround && !currentlyJumping) rb.velocity = new Vector2(rb.velocity.x, 0);
 
+        gameObject.GetComponent<Animator>().SetBool("jumping", currentlyJumping);
+        gameObject.GetComponent<Animator>().SetBool("wallClimb", wallJumpBuffer);
+        //if (OnGround)
+        //{
+        //    gameObject.GetComponent<Animator>().SetBool("falling", false);
+        //}
+        //else if (!OnGround && !currentlyJumping)
+        //{
+        //    gameObject.GetComponent<Animator>().SetBool("falling", true);
+        //}
+
+
         if (currentlyJumping && rb.velocity.y > 0) timeToApexDebug += Time.deltaTime;
         if (currentlyJumping && rb.velocity.y < 0) timeToGroundDebug += Time.deltaTime;
         SetPhysics();
 
         if (Input.GetKeyDown(KeyCode.Space))
         {
+            timeToApexDebug = 0;
+            timeToGroundDebug = 0;
             desiredJump = true;
             pressingJump = true;
         }
@@ -190,8 +205,14 @@ public class PlayerJump : MonoBehaviour
             }
         }
 
-        if (OnClimb && !wallJumpBuffer)
+        if (pawTest != null)
         {
+            if (OnGround) pawTest.ResetClimbDir();
+        }
+
+        if (!OnGround && OnClimb && !wallJumpBuffer && pawTest.WallJumpAvailable)
+        {
+            gameObject.GetComponent<Animator>().SetBool("wallClimb", true);
             StartCoroutine(WallJumpBufferCounter());
         }
     }
@@ -209,11 +230,12 @@ public class PlayerJump : MonoBehaviour
         {
             //if (OnClimb) WallJump(); else Jump();
             Jump();
-            
+
             rb.velocity = velocity;
 
             return;
         }
+
         CalculateGravity();
     }
 
@@ -240,7 +262,12 @@ public class PlayerJump : MonoBehaviour
             currentlyJumping = false;
             gravityMultiplier = defaultGravityScale;
         }
-        /*else if (OnClimb) Apply Sliding
+
+        if (OnClimb)
+        {
+            gravityMultiplier = defaultGravityScale;
+        }
+        /*\else if (OnClimb) Apply Sliding
         {
             Debug.Log("gravedad cambiada a deslizando");
             if (rb.velocity.y > 0) rb.velocity = Vector2.zero;
@@ -259,7 +286,7 @@ public class PlayerJump : MonoBehaviour
                     else
                     {
                         /*Vector2 cutOffVelocity = new Vector2(rb.velocity.x, 0);
-                        rb.velocity = cutOffVelocity;*/
+                        rb.velocity = cutOffVelocity;*/                       
                         gravityMultiplier = jumpCutOffMultiplier;
                     }
 
@@ -283,15 +310,17 @@ public class PlayerJump : MonoBehaviour
 
     private void Jump()
     {
-
-        if (wallJumpBuffer)
+        if (wallJumpBuffer && !onGround)
         {
-            
+            Debug.Log("Wall Jump activado");
             WallJump();
             return;
         }
+
         if (OnGround || coyoteTimeCounter < coyoteTime && coyoteTimeCounter > 0.03f)
         {
+            AudioManager.Instance.PlaySound(sound);
+            Debug.Log("Jump activado");
             timeToApexDebug = 0;
             timeToGroundDebug = 0;
             coyoteTimeCounter = 0;
@@ -303,7 +332,7 @@ public class PlayerJump : MonoBehaviour
             SetPhysics();
 
             jumpSpeed = MathF.Sqrt(-2f * Physics2D.gravity.y * rb.gravityScale * jumpHeight);
-            //Debug.Log(jumpSpeed + " velocidad de salto");
+            Debug.Log(jumpSpeed + " velocidad de salto");
             velocity.y = jumpSpeed;
             currentlyJumping = true;
         }
@@ -311,7 +340,9 @@ public class PlayerJump : MonoBehaviour
 
     private void WallJump()
     {
-        
+        AudioManager.Instance.PlaySound(sound);
+        pawTest.WallJumpAvailable = false;
+        wallJumpBuffer = false;
         gravityMultiplier = upwardMultiplier;
         SetPhysics();
         jumpSpeed = MathF.Sqrt(-2f * Physics2D.gravity.y * rb.gravityScale * jumpHeight);
@@ -331,10 +362,10 @@ public class PlayerJump : MonoBehaviour
 
     private IEnumerator WallJumpBufferCounter()
     {
-        Debug.Log("Wall Jump Buffer activado");
+        //Debug.Log("Wall Jump Buffer activado");
         wallJumpBuffer = true;
         yield return new WaitForSeconds(wallJumpBufferTimer);
         wallJumpBuffer = false;
-        Debug.Log("Wall Jump Buffer desactivado");
+        //Debug.Log("Wall Jump Buffer desactivado");
     }
 }

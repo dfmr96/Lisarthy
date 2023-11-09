@@ -4,7 +4,7 @@ using UnityEngine;
 
 public class PlayerHealth : MonoBehaviour
 {
-    [SerializeField] private int health;
+    [SerializeField] public int health;
     [SerializeField] private AudioClip getdamage;
     [SerializeField] private AudioClip gethealth;
     // Start is called before the first frame update

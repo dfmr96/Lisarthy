@@ -15,7 +15,6 @@ GameObject:
   - component: {fileID: 2015477566593181487}
   - component: {fileID: 3343614705420988869}
   - component: {fileID: 2779412635082131890}
-  - component: {fileID: 220412806605638029}
   - component: {fileID: 1273852562857435830}
   - component: {fileID: 6530223804374353995}
   - component: {fileID: 2067636287723500323}
@@ -86,7 +85,7 @@ SpriteRenderer:
   m_SortingLayerID: 0
   m_SortingLayer: 0
   m_SortingOrder: 1
-  m_Sprite: {fileID: -1434677177, guid: 595ccd5ff3bce974fa53fc8fed95134b, type: 3}
+  m_Sprite: {fileID: 1028257510, guid: 8a267fad093769b498a19761f495b82b, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
   m_FlipY: 0
@@ -132,8 +131,8 @@ BoxCollider2D:
   m_Offset: {x: 0, y: 0}
   m_SpriteTilingProperty:
     border: {x: 0, y: 0, z: 0, w: 0}
-    pivot: {x: 0.5, y: 0.5}
-    oldSize: {x: 1.0019531, y: 1.0019531}
+    pivot: {x: 0.4999999, y: 0.5144092}
+    oldSize: {x: 1.3333334, y: 1}
     newSize: {x: 1, y: 1}
     adaptiveTilingThreshold: 0.5
     drawMode: 0
@@ -244,21 +243,6 @@ MonoBehaviour:
   groundTrail: {fileID: 3790438297568106109}
   upwardTrail: {fileID: 2699455718004796913}
   downwardTrail: {fileID: 1982697590775850542}
---- !u!114 &220412806605638029
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 191155203977936549}
-  m_Enabled: 0
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 86830459684a80e4e9ad040a2edecb0a, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  ability: {fileID: 11400000, guid: f45463717a9666f45a9b0290771d1cb8, type: 2}
-  hitBox: {fileID: 0}
-  dashing: 0
 --- !u!114 &1273852562857435830
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -266,7 +250,7 @@ MonoBehaviour:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 191155203977936549}
-  m_Enabled: 0
+  m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 551a8b6d1a457c94fa38c3b50baf2223, type: 3}
   m_Name: 
@@ -293,7 +277,7 @@ MonoBehaviour:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 191155203977936549}
-  m_Enabled: 0
+  m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 244eeb66451cbdf438c3725d9ed58f99, type: 3}
   m_Name: 
@@ -312,7 +296,7 @@ MonoBehaviour:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 191155203977936549}
-  m_Enabled: 0
+  m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 79807668d726c9249a9c9af825549722, type: 3}
   m_Name: 
@@ -347,7 +331,7 @@ Animator:
   m_GameObject: {fileID: 191155203977936549}
   m_Enabled: 1
   m_Avatar: {fileID: 0}
-  m_Controller: {fileID: 0}
+  m_Controller: {fileID: 9100000, guid: 6c780143bfb183a43b50ab071a4e3345, type: 2}
   m_CullingMode: 0
   m_UpdateMode: 0
   m_ApplyRootMotion: 0

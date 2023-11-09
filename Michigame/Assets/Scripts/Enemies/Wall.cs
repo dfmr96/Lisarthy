@@ -21,7 +21,12 @@ public class Wall : Enemy
         distance = player_transform.position - transform.position;
         if (distance.magnitude < 8)
         {
+            gameObject.GetComponent<Animator>().SetBool("moving", true);
             transform.position = new Vector2(transform.position.x,(player_transform.position.y +(transform.localScale.y - 1 )/2));
+        }
+        else
+        {
+            gameObject.GetComponent<Animator>().SetBool("moving", false);
         }
     }
 }

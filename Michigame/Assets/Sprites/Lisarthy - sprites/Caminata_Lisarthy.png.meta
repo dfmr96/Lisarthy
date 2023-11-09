@@ -1,9 +1,5 @@
 fileFormatVersion: 2
-<<<<<<< HEAD
-guid: aea3417dcdd58be488f2fc4a675cbba0
-=======
 guid: 69f676d161cff0e4ea2b7ec73dddcd77
->>>>>>> Arte
 TextureImporter:
   internalIDToNameTable: []
   externalObjects: {}
@@ -47,20 +43,12 @@ TextureImporter:
   nPOTScale: 0
   lightmap: 0
   compressionQuality: 50
-<<<<<<< HEAD
-  spriteMode: 1
-=======
   spriteMode: 2
->>>>>>> Arte
   spriteExtrude: 1
   spriteMeshType: 1
   alignment: 0
   spritePivot: {x: 0.5, y: 0.5}
-<<<<<<< HEAD
-  spritePixelsToUnits: 100
-=======
   spritePixelsToUnits: 512
->>>>>>> Arte
   spriteBorder: {x: 0, y: 0, z: 0, w: 0}
   spriteGenerateFallbackPhysicsShape: 1
   alphaUsage: 1
@@ -120,9 +108,6 @@ TextureImporter:
     forceMaximumCompressionQuality_BC6H_BC7: 0
   spriteSheet:
     serializedVersion: 2
-<<<<<<< HEAD
-    sprites: []
-=======
     sprites:
     - serializedVersion: 2
       name: Caminata_Lisarthy_0
@@ -313,7 +298,6 @@ TextureImporter:
       indices: 
       edges: []
       weights: []
->>>>>>> Arte
     outline: []
     physicsShape: []
     bones: []
@@ -324,9 +308,6 @@ TextureImporter:
     edges: []
     weights: []
     secondaryTextures: []
-<<<<<<< HEAD
-    nameFileIdTable: {}
-=======
     nameFileIdTable:
       Caminata_Lisarthy_0: 75691760
       Caminata_Lisarthy_1: 164660685
@@ -337,7 +318,6 @@ TextureImporter:
       Caminata_Lisarthy_6: 1766168170
       Caminata_Lisarthy_7: 809812908
       Caminata_Lisarthy_8: 795065566
->>>>>>> Arte
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 

@@ -4,7 +4,9 @@ using UnityEngine;
 
 public class PlayerHealth : MonoBehaviour
 {
-    [SerializeField] private int health;
+    public int health;
+
+    [SerializeField] private LifeController life;
     // Start is called before the first frame update
 
     private void Update()
@@ -16,13 +18,19 @@ public class PlayerHealth : MonoBehaviour
         if (health > 0)
         {
             health -= damage;
-            Debug.Log(health);
+            life.UpdateHealth(health);
         }
         else if (health <= 0)
         {
             gameObject.GetComponent<Animator>().SetTrigger("dead");
         }
         
+    }
+
+    public void TakeHealth(int heal)
+    {
+        health += heal;
+        life.UpdateHealth(health);
     }
 
     public void Death()

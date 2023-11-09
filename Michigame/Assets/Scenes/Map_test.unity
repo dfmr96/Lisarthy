@@ -122800,6 +122800,14 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 55746633218772805, guid: 186054eefb9d33c4fbfa60fb105470f5, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: 116.6
+      objectReference: {fileID: 0}
+    - target: {fileID: 55746633218772805, guid: 186054eefb9d33c4fbfa60fb105470f5, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 71.4
+      objectReference: {fileID: 0}
     - target: {fileID: 586691952960543875, guid: 186054eefb9d33c4fbfa60fb105470f5, type: 3}
       propertyPath: m_LocalPosition.x
       value: 667.3704
@@ -122844,6 +122852,30 @@ PrefabInstance:
       propertyPath: m_Name
       value: Enemies
       objectReference: {fileID: 0}
+    - target: {fileID: 1948350450665606433, guid: 186054eefb9d33c4fbfa60fb105470f5, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: 37.53
+      objectReference: {fileID: 0}
+    - target: {fileID: 1948350450665606433, guid: 186054eefb9d33c4fbfa60fb105470f5, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 71.36
+      objectReference: {fileID: 0}
+    - target: {fileID: 2825633814451040511, guid: 186054eefb9d33c4fbfa60fb105470f5, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: -123.67
+      objectReference: {fileID: 0}
+    - target: {fileID: 2825633814451040511, guid: 186054eefb9d33c4fbfa60fb105470f5, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 68.24
+      objectReference: {fileID: 0}
+    - target: {fileID: 3282030164580874766, guid: 186054eefb9d33c4fbfa60fb105470f5, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: -29.264
+      objectReference: {fileID: 0}
+    - target: {fileID: 3282030164580874766, guid: 186054eefb9d33c4fbfa60fb105470f5, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 57.31
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects:
     - {fileID: 3829505957796158305, guid: 186054eefb9d33c4fbfa60fb105470f5, type: 3}
@@ -122854,6 +122886,8 @@ PrefabInstance:
     - {fileID: 3380078467273301275, guid: 186054eefb9d33c4fbfa60fb105470f5, type: 3}
     - {fileID: 360723339004378077, guid: 186054eefb9d33c4fbfa60fb105470f5, type: 3}
     - {fileID: 789146800678064750, guid: 186054eefb9d33c4fbfa60fb105470f5, type: 3}
+    - {fileID: 4072363905696341318, guid: 186054eefb9d33c4fbfa60fb105470f5, type: 3}
+    - {fileID: 215499460304272727, guid: 186054eefb9d33c4fbfa60fb105470f5, type: 3}
     m_AddedGameObjects: []
     m_AddedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 186054eefb9d33c4fbfa60fb105470f5, type: 3}

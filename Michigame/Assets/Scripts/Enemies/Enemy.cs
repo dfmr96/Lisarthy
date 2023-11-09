@@ -19,8 +19,9 @@ public class Enemy : MonoBehaviour
         health -= damage;        
         if (TryGetComponent<Animator>(out Animator animator))
         {
-            gameObject.GetComponent<Animator>().SetInteger("hp", health);
-            gameObject.GetComponent<Animator>().SetTrigger("damaged");
+            AudioManager.Instance.PlaySound(soundHit);
+            //gameObject.GetComponent<Animator>().SetInteger("hp", health);
+            gameObject.GetComponent<Animator>().SetTrigger("damaged");            
         }
         Die();
     }
@@ -31,16 +32,16 @@ public class Enemy : MonoBehaviour
         {
 
             AudioManager.Instance.PlaySound(soundDeath);
-            Destroy(gameObject);
+            //Destroy(gameObject);
 
-            //if (TryGetComponent<Animator>(out Animator animator))
-            //{
-            //    gameObject.GetComponent<Animator>().SetBool("isDead", true);
-            //}
-            //else
-            //{
-            //    Destroy(gameObject);
-            //}
+            if (TryGetComponent<Animator>(out Animator animator))
+            {
+                gameObject.GetComponent<Animator>().SetBool("isDead", true);
+            }
+            else
+            {
+                Destroy(gameObject);
+            }
 
         }
         else
@@ -48,7 +49,6 @@ public class Enemy : MonoBehaviour
             AudioManager.Instance.PlaySound(soundHit);
         }
     }
-
     public void Kill()
     {
         Destroy(gameObject);

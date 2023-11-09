@@ -48,7 +48,7 @@ TextureImporter:
   spriteMeshType: 1
   alignment: 0
   spritePivot: {x: 0.5, y: 0.5}
-  spritePixelsToUnits: 1250
+  spritePixelsToUnits: 1350
   spriteBorder: {x: 0, y: 0, z: 0, w: 0}
   spriteGenerateFallbackPhysicsShape: 1
   alphaUsage: 1
@@ -114,11 +114,11 @@ TextureImporter:
       rect:
         serializedVersion: 2
         x: 960
-        y: 1748
+        y: 1735
         width: 1674
-        height: 1509
-      alignment: 0
-      pivot: {x: 0, y: 0}
+        height: 1522
+      alignment: 9
+      pivot: {x: 0.55623496, y: 0.36460572}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -135,11 +135,11 @@ TextureImporter:
       rect:
         serializedVersion: 2
         x: 3093
-        y: 1751
+        y: 1735
         width: 1857
-        height: 1506
-      alignment: 0
-      pivot: {x: 0, y: 0}
+        height: 1522
+      alignment: 9
+      pivot: {x: 0.5823765, y: 0.37233722}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -156,11 +156,11 @@ TextureImporter:
       rect:
         serializedVersion: 2
         x: 5304
-        y: 1751
-        width: 1948
-        height: 1506
-      alignment: 0
-      pivot: {x: 0, y: 0}
+        y: 1735
+        width: 1949
+        height: 1522
+      alignment: 9
+      pivot: {x: 0.5845255, y: 0.36460572}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -176,12 +176,12 @@ TextureImporter:
       name: Idle de Lisarthy_4
       rect:
         serializedVersion: 2
-        x: 864
+        x: 3180
         y: 0
-        width: 1754
-        height: 1560
-      alignment: 0
-      pivot: {x: 0, y: 0}
+        width: 1745
+        height: 1405
+      alignment: 9
+      pivot: {x: 0.57478285, y: 0.4109946}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -194,57 +194,15 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Idle de Lisarthy_6
-      rect:
-        serializedVersion: 2
-        x: 3180
-        y: 0
-        width: 1745
-        height: 1406
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 99680bfec3f4bd34eb7645a270469720
-      internalID: -2146884136
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Idle de Lisarthy_7
-      rect:
-        serializedVersion: 2
-        x: 5459
-        y: 0
-        width: 1774
-        height: 1289
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 0599e5d2e548c444980dbb863e01884f
-      internalID: -282081008
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
       name: Idle de Lisarthy_3
       rect:
         serializedVersion: 2
-        x: 0
-        y: 1464
-        width: 69
-        height: 75
-      alignment: 0
-      pivot: {x: 0, y: 0}
+        x: 864
+        y: 0
+        width: 1754
+        height: 1556
+      alignment: 9
+      pivot: {x: 0.5879263, y: 0.36524913}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -260,12 +218,12 @@ TextureImporter:
       name: Idle de Lisarthy_5
       rect:
         serializedVersion: 2
-        x: 8411
-        y: 1431
-        width: 119
-        height: 124
-      alignment: 0
-      pivot: {x: 0, y: 0}
+        x: 5459
+        y: 0
+        width: 1774
+        height: 1288
+      alignment: 9
+      pivot: {x: 0.55349874, y: 0.42020527}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -294,8 +252,6 @@ TextureImporter:
       Idle de Lisarthy_3: -251884796
       Idle de Lisarthy_4: 107368031
       Idle de Lisarthy_5: 1274850498
-      Idle de Lisarthy_6: -2146884136
-      Idle de Lisarthy_7: -282081008
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 

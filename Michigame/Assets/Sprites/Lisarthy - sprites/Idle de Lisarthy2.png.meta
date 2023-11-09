@@ -1,5 +1,5 @@
 fileFormatVersion: 2
-guid: f8b07b439c0cd114081ed32ddb3357f7
+guid: 8a267fad093769b498a19761f495b82b
 TextureImporter:
   internalIDToNameTable: []
   externalObjects: {}
@@ -48,7 +48,7 @@ TextureImporter:
   spriteMeshType: 1
   alignment: 0
   spritePivot: {x: 0.5, y: 0.5}
-  spritePixelsToUnits: 512
+  spritePixelsToUnits: 300
   spriteBorder: {x: 0, y: 0, z: 0, w: 0}
   spriteGenerateFallbackPhysicsShape: 1
   alphaUsage: 1
@@ -110,190 +110,127 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: GolpeCola_Lisarthy_0
+      name: Idle de Lisarthy2_0
       rect:
         serializedVersion: 2
-        x: 542
-        y: 1440
-        width: 695
-        height: 465
+        x: 243
+        y: 406
+        width: 400
+        height: 300
       alignment: 9
-      pivot: {x: 0.47240895, y: 0.56796217}
+      pivot: {x: 0.4999999, y: 0.5144092}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: cb4591875d3b1124ea844e4498693391
-      internalID: -1096826458
+      spriteID: 3927d6ebedecf0c4ab45b95e50446b89
+      internalID: 1028257510
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: GolpeCola_Lisarthy_1
+      name: Idle de Lisarthy2_1
       rect:
         serializedVersion: 2
-        x: 1947
-        y: 1425
-        width: 600
-        height: 500
+        x: 648
+        y: 405
+        width: 444
+        height: 335
       alignment: 9
-      pivot: {x: 0.40609944, y: 0.51795095}
+      pivot: {x: 0.5584163, y: 0.44838357}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 9123b9ead2f96aa4daf1dd2c4947a8f5
-      internalID: 812325173
+      spriteID: c0e88143ce95b2843993d6b6917c0721
+      internalID: 1600555614
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: GolpeCola_Lisarthy_2
+      name: Idle de Lisarthy2_2
       rect:
         serializedVersion: 2
-        x: 3117
-        y: 1434
-        width: 578
-        height: 613
+        x: 1101
+        y: 405
+        width: 465
+        height: 361
       alignment: 9
-      pivot: {x: 0.3114225, y: 0.43538517}
+      pivot: {x: 0.574371, y: 0.41617742}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: c30de569a95b2f94293bf126899a6e36
-      internalID: 2097012740
+      spriteID: 6bcd3f9390f87204f955152cd5864305
+      internalID: -1976044647
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: GolpeCola_Lisarthy_6
+      name: Idle de Lisarthy2_3
       rect:
         serializedVersion: 2
-        x: 581
-        y: 762
-        width: 678
-        height: 614
+        x: 224
+        y: 0
+        width: 419
+        height: 370
       alignment: 9
-      pivot: {x: 0.41704592, y: 0.42360914}
+      pivot: {x: 0.541268, y: 0.41821668}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 5b534a930752302459df85e89bb280bf
-      internalID: 619236161
+      spriteID: f197012c772b1c644ac221b7dba2cc79
+      internalID: -1767741363
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: GolpeCola_Lisarthy_7
+      name: Idle de Lisarthy2_4
       rect:
         serializedVersion: 2
-        x: 1659
-        y: 778
-        width: 844
-        height: 513
+        x: 675
+        y: 0
+        width: 416
+        height: 333
       alignment: 9
-      pivot: {x: 0.5175052, y: 0.47794726}
+      pivot: {x: 0.5103911, y: 0.4480741}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: e42a673588382514f8947c7317c0fc2f
-      internalID: 833540644
+      spriteID: 5709de78b851a20458695978738cc0e1
+      internalID: -2001133956
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: GolpeCola_Lisarthy_10
+      name: Idle de Lisarthy2_5
       rect:
         serializedVersion: 2
-        x: 2801
-        y: 757
-        width: 862
-        height: 398
-      alignment: 9
-      pivot: {x: 0.5289281, y: 0.64683676}
+        x: 1101
+        y: 0
+        width: 424
+        height: 305
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 692e93010557fe94fab455b4261a4eab
-      internalID: 523001063
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: GolpeCola_Lisarthy_11
-      rect:
-        serializedVersion: 2
-        x: 459
-        y: 82
-        width: 820
-        height: 425
-      alignment: 9
-      pivot: {x: 0.5162764, y: 0.5793481}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 1bf28b840f0d1b742b590a4c640dd1cf
-      internalID: 1873948569
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: GolpeCola_Lisarthy_12
-      rect:
-        serializedVersion: 2
-        x: 1735
-        y: 54
-        width: 754
-        height: 453
-      alignment: 9
-      pivot: {x: 0.47049817, y: 0.5599672}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: e886a208ce423de40bc3d3b4ff019378
-      internalID: -1380875835
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: GolpeCola_Lisarthy_13
-      rect:
-        serializedVersion: 2
-        x: 2831
-        y: 18
-        width: 754
-        height: 489
-      alignment: 9
-      pivot: {x: 0.44286138, y: 0.5325715}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 0eeebcca284b9434bad334f14f2f66d1
-      internalID: -712880919
+      spriteID: db6705a0632aebb448aa8cc589302a9d
+      internalID: 1658851619
       vertices: []
       indices: 
       edges: []
@@ -309,20 +246,12 @@ TextureImporter:
     weights: []
     secondaryTextures: []
     nameFileIdTable:
-      GolpeCola_Lisarthy_0: -1096826458
-      GolpeCola_Lisarthy_1: 812325173
-      GolpeCola_Lisarthy_10: 523001063
-      GolpeCola_Lisarthy_11: 1873948569
-      GolpeCola_Lisarthy_12: -1380875835
-      GolpeCola_Lisarthy_13: -712880919
-      GolpeCola_Lisarthy_2: 2097012740
-      GolpeCola_Lisarthy_3: 1835854120
-      GolpeCola_Lisarthy_4: -1310215680
-      GolpeCola_Lisarthy_5: 1144117640
-      GolpeCola_Lisarthy_6: 619236161
-      GolpeCola_Lisarthy_7: 833540644
-      GolpeCola_Lisarthy_8: 294509879
-      GolpeCola_Lisarthy_9: -2108972112
+      Idle de Lisarthy2_0: 1028257510
+      Idle de Lisarthy2_1: 1600555614
+      Idle de Lisarthy2_2: -1976044647
+      Idle de Lisarthy2_3: -1767741363
+      Idle de Lisarthy2_4: -2001133956
+      Idle de Lisarthy2_5: 1658851619
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 

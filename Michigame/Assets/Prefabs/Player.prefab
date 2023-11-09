@@ -15,7 +15,6 @@ GameObject:
   - component: {fileID: 2015477566593181487}
   - component: {fileID: 3343614705420988869}
   - component: {fileID: 2779412635082131890}
-  - component: {fileID: 220412806605638029}
   - component: {fileID: 1273852562857435830}
   - component: {fileID: 6530223804374353995}
   - component: {fileID: 2067636287723500323}
@@ -86,7 +85,7 @@ SpriteRenderer:
   m_SortingLayerID: 0
   m_SortingLayer: 0
   m_SortingOrder: 1
-  m_Sprite: {fileID: -1434677177, guid: 595ccd5ff3bce974fa53fc8fed95134b, type: 3}
+  m_Sprite: {fileID: 1028257510, guid: 8a267fad093769b498a19761f495b82b, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
   m_FlipY: 0
@@ -132,8 +131,8 @@ BoxCollider2D:
   m_Offset: {x: 0, y: 0}
   m_SpriteTilingProperty:
     border: {x: 0, y: 0, z: 0, w: 0}
-    pivot: {x: 0.5, y: 0.5}
-    oldSize: {x: 1.0019531, y: 1.0019531}
+    pivot: {x: 0.4999999, y: 0.5144092}
+    oldSize: {x: 1.3333334, y: 1}
     newSize: {x: 1, y: 1}
     adaptiveTilingThreshold: 0.5
     drawMode: 0
@@ -201,7 +200,6 @@ MonoBehaviour:
   wallJumpBuffer: 0
   wallJumpBufferTimer: 0.2
   extraJumpAvailable: 0
-  sound: {fileID: 8300000, guid: 4197b1e01030ecf4291eb923791ac1c5, type: 3}
 --- !u!50 &3343614705420988869
 Rigidbody2D:
   serializedVersion: 4
@@ -244,21 +242,6 @@ MonoBehaviour:
   groundTrail: {fileID: 3790438297568106109}
   upwardTrail: {fileID: 2699455718004796913}
   downwardTrail: {fileID: 1982697590775850542}
---- !u!114 &220412806605638029
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 191155203977936549}
-  m_Enabled: 0
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 86830459684a80e4e9ad040a2edecb0a, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  ability: {fileID: 11400000, guid: f45463717a9666f45a9b0290771d1cb8, type: 2}
-  hitBox: {fileID: 0}
-  dashing: 0
 --- !u!114 &1273852562857435830
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -285,7 +268,6 @@ MonoBehaviour:
   lastClimbDirection: {x: 0, y: 0}
   climbDir: {x: 0, y: 0}
   wallJumpAvailable: 0
-  hit: {fileID: 8300000, guid: 6bd639e9bbf5cd141b91c2455488d0ad, type: 3}
 --- !u!114 &6530223804374353995
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -304,7 +286,6 @@ MonoBehaviour:
   dashDuration: 0.1
   dashTrail: {fileID: 9211094561355387515}
   onDash: 0
-  sound: {fileID: 8300000, guid: 6fdcc26af99dea24fbe6fcdfb2481b25, type: 3}
 --- !u!114 &2067636287723500323
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -319,7 +300,6 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   HairballPrefab: {fileID: 8935446252266883572, guid: 3103fe4411c161d42acf34292fcd266b, type: 3}
   speed: 12
-  shot: {fileID: 8300000, guid: b70f1aef292b86544aa0a82e1b9fd80b, type: 3}
 --- !u!114 &9057643130936559449
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -327,7 +307,7 @@ MonoBehaviour:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 191155203977936549}
-  m_Enabled: 1
+  m_Enabled: 0
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 8da34c20d28b1114e9e5b74cdd137e0a, type: 3}
   m_Name: 
@@ -336,7 +316,6 @@ MonoBehaviour:
   offset: {x: 0, y: 0}
   tail: {fileID: 0}
   anim: {fileID: 0}
-  sound: {fileID: 8300000, guid: aee4389e7d678294fb1d943e3563258f, type: 3}
 --- !u!95 &2813443753981254201
 Animator:
   serializedVersion: 5
@@ -347,7 +326,7 @@ Animator:
   m_GameObject: {fileID: 191155203977936549}
   m_Enabled: 1
   m_Avatar: {fileID: 0}
-  m_Controller: {fileID: 0}
+  m_Controller: {fileID: 9100000, guid: 6c780143bfb183a43b50ab071a4e3345, type: 2}
   m_CullingMode: 0
   m_UpdateMode: 0
   m_ApplyRootMotion: 0
@@ -371,8 +350,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   health: 0
-  getdamage: {fileID: 8300000, guid: 58e51077441aa364ba0e7017b63956aa, type: 3}
-  gethealth: {fileID: 8300000, guid: 64105f00d03cb3c409d5bbf435f0542f, type: 3}
 --- !u!1 &2826718522641574865
 GameObject:
   m_ObjectHideFlags: 0

@@ -43,12 +43,12 @@ TextureImporter:
   nPOTScale: 0
   lightmap: 0
   compressionQuality: 50
-  spriteMode: 1
+  spriteMode: 2
   spriteExtrude: 1
   spriteMeshType: 1
   alignment: 0
   spritePivot: {x: 0.5, y: 0.5}
-  spritePixelsToUnits: 100
+  spritePixelsToUnits: 470
   spriteBorder: {x: 0, y: 0, z: 0, w: 0}
   spriteGenerateFallbackPhysicsShape: 1
   alphaUsage: 1
@@ -108,7 +108,259 @@ TextureImporter:
     forceMaximumCompressionQuality_BC6H_BC7: 0
   spriteSheet:
     serializedVersion: 2
-    sprites: []
+    sprites:
+    - serializedVersion: 2
+      name: Movimiento_0
+      rect:
+        serializedVersion: 2
+        x: 16
+        y: 1698
+        width: 459
+        height: 278
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 2027aaff0108ce64da1da2ef4e7d0064
+      internalID: 978422279
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Movimiento_1
+      rect:
+        serializedVersion: 2
+        x: 510
+        y: 1694
+        width: 457
+        height: 282
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 674ffd227d4fc7d4b9bc8dd82e0907db
+      internalID: 994872148
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Movimiento_2
+      rect:
+        serializedVersion: 2
+        x: 1109
+        y: 1647
+        width: 350
+        height: 330
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e108961b9c12547489451cb925f892c3
+      internalID: 451572109
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Movimiento_3
+      rect:
+        serializedVersion: 2
+        x: 1630
+        y: 1635
+        width: 320
+        height: 343
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 051354f08dfcd0940b46dbe15424b9d3
+      internalID: 1281161725
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Movimiento_4
+      rect:
+        serializedVersion: 2
+        x: 200
+        y: 1186
+        width: 285
+        height: 357
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8c1f9d709ea4b4947bff6644ac889acc
+      internalID: 266055288
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Movimiento_5
+      rect:
+        serializedVersion: 2
+        x: 676
+        y: 1182
+        width: 294
+        height: 361
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 333a54dab87ce734aa5b0655c97fac11
+      internalID: 1305058322
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Movimiento_6
+      rect:
+        serializedVersion: 2
+        x: 1108
+        y: 1219
+        width: 345
+        height: 323
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ee7b5084f5b6779439ff34d23de4eca2
+      internalID: -2111928643
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Movimiento_7
+      rect:
+        serializedVersion: 2
+        x: 1516
+        y: 1275
+        width: 418
+        height: 267
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 93f82dc5bb5ce744a906797c67e546c8
+      internalID: -1347459750
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Movimiento_8
+      rect:
+        serializedVersion: 2
+        x: 18
+        y: 833
+        width: 457
+        height: 275
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 63be266aeb159614fb2186ed8d5d2596
+      internalID: -83321621
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Movimiento_9
+      rect:
+        serializedVersion: 2
+        x: 521
+        y: 827
+        width: 445
+        height: 350
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8e80b3672e8d4974dbd7921ad06dc967
+      internalID: 1161233822
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Movimiento_10
+      rect:
+        serializedVersion: 2
+        x: 988
+        y: 824
+        width: 466
+        height: 329
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d01b971fbde7bda4f939640947bce7be
+      internalID: 359494693
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Movimiento_11
+      rect:
+        serializedVersion: 2
+        x: 1466
+        y: 825
+        width: 476
+        height: 283
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: bf3297d6f75fe82469273473b47b1743
+      internalID: 1780419221
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
     outline: []
     physicsShape: []
     bones: []
@@ -119,7 +371,19 @@ TextureImporter:
     edges: []
     weights: []
     secondaryTextures: []
-    nameFileIdTable: {}
+    nameFileIdTable:
+      Movimiento_0: 978422279
+      Movimiento_1: 994872148
+      Movimiento_10: 359494693
+      Movimiento_11: 1780419221
+      Movimiento_2: 451572109
+      Movimiento_3: 1281161725
+      Movimiento_4: 266055288
+      Movimiento_5: 1305058322
+      Movimiento_6: -2111928643
+      Movimiento_7: -1347459750
+      Movimiento_8: -83321621
+      Movimiento_9: 1161233822
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 

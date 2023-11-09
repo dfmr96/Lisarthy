@@ -135,6 +135,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Frog
       objectReference: {fileID: 0}
+    - target: {fileID: 587920825176368729, guid: 782522a53e8bb444fb1a4fbb934ad20d, type: 3}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 6995506090729542291, guid: 782522a53e8bb444fb1a4fbb934ad20d, type: 3}
       propertyPath: m_LocalPosition.x
       value: 681.9812
@@ -354,6 +358,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Snail
       objectReference: {fileID: 0}
+    - target: {fileID: 392315623984777113, guid: efac68ad2ac4f4a4eb9d760b6712d5c6, type: 3}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 1453507509796115082, guid: efac68ad2ac4f4a4eb9d760b6712d5c6, type: 3}
       propertyPath: m_LocalPosition.x
       value: 681.02435
@@ -450,6 +458,10 @@ PrefabInstance:
     - target: {fileID: 6469929154370490688, guid: 4f53f6058fa2f0a4898929a6a512a847, type: 3}
       propertyPath: m_Name
       value: Spider
+      objectReference: {fileID: 0}
+    - target: {fileID: 6469929154370490688, guid: 4f53f6058fa2f0a4898929a6a512a847, type: 3}
+      propertyPath: m_IsActive
+      value: 0
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
@@ -616,6 +628,10 @@ PrefabInstance:
     - target: {fileID: 3859782137300320570, guid: fdd64b6713615884fb8fd9124a095723, type: 3}
       propertyPath: m_Name
       value: Wasp
+      objectReference: {fileID: 0}
+    - target: {fileID: 3859782137300320570, guid: fdd64b6713615884fb8fd9124a095723, type: 3}
+      propertyPath: m_IsActive
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 8958496494024141693, guid: fdd64b6713615884fb8fd9124a095723, type: 3}
       propertyPath: m_LocalPosition.x

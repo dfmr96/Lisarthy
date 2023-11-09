@@ -18,6 +18,7 @@ public class PawTestScript : MonoBehaviour
     [SerializeField] private Vector2 lastClimbDirection;
     [SerializeField] private Vector2 climbDir;
     [SerializeField] private bool wallJumpAvailable;
+    [SerializeField] private AudioClip hit;
 
     public float MaxFallingSpeedSliding => maxFallingSpeedSliding;
 
@@ -47,6 +48,7 @@ public class PawTestScript : MonoBehaviour
         {
             Debug.Log("Atacó con garra");
             Attack();
+            
         }
     }
 
@@ -104,6 +106,7 @@ public class PawTestScript : MonoBehaviour
         if (paw == null)
         {
             paw = Instantiate(pawPrefab, transform.position, Quaternion.identity, transform);
+            
         }
         else if (!onCooldown)
         {
@@ -120,6 +123,7 @@ public class PawTestScript : MonoBehaviour
         
         onCooldown = true;
         paw.SetActive(true);
+        AudioManager.Instance.PlaySound(hit);
         yield return new WaitForSeconds(pawDuration);
         paw.transform.localPosition = Vector3.zero;
         paw.SetActive(false);

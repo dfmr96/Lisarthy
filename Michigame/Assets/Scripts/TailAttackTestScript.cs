@@ -11,11 +11,13 @@ public class TailAttackTestScript : MonoBehaviour
     [SerializeField] private Vector2 offset;
     [SerializeField] private GameObject tail;
     [SerializeField] private Animator anim;
+    [SerializeField] private AudioClip sound;
     private void Update()
     {
         if (Input.GetKey(KeyCode.DownArrow) && Input.GetKeyDown(KeyCode.Q))
         {
             Attack();
+            AudioManager.Instance.PlaySound(sound);
         }
     }
 

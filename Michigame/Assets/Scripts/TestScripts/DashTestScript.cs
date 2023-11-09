@@ -14,6 +14,7 @@ public class DashTestScript : MonoBehaviour
     [SerializeField] private TrailRenderer dashTrail;
 
     [SerializeField] private bool onDash;
+    [SerializeField] private AudioClip sound;
 
 
     public bool OnDash() => onDash;
@@ -47,6 +48,7 @@ public class DashTestScript : MonoBehaviour
             dashTrail.emitting = true;
             Vector2 velocity = rb.velocity;
             rb.AddForce(impulseVector * impulseForce, ForceMode2D.Impulse);
+            AudioManager.Instance.PlaySound(sound);
             onCooldown = true;
             
             yield return new WaitForSeconds(dashDuration);

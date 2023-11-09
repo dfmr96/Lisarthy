@@ -5,6 +5,7 @@ using UnityEngine;
 
 public class Enemy : MonoBehaviour
 {
+    [SerializeField] private AudioClip sound;
     public int health;
 
     public float speed;
@@ -16,6 +17,7 @@ public class Enemy : MonoBehaviour
     {
         health -= damage;
         Die();
+        AudioManager.Instance.PlaySound(sound);
     }
 
     public void Die()

@@ -172,6 +172,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 48ed884d87ba1744da41651f91669050, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  sound: {fileID: 8300000, guid: d793b9ae86e00d04d82d9301004c2903, type: 3}
   health: 2
   speed: 8
   damage: 1

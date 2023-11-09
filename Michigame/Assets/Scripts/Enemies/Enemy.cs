@@ -31,7 +31,7 @@ public class Enemy : MonoBehaviour
         {
 
             AudioManager.Instance.PlaySound(soundDeath);
-            Destroy(gameObject);
+            //Destroy(gameObject);
 
             if (TryGetComponent<Animator>(out Animator animator))
             {
@@ -48,6 +48,12 @@ public class Enemy : MonoBehaviour
             AudioManager.Instance.PlaySound(soundHit);
         }
     }
+
+    public void Kill()
+    {
+        Destroy(gameObject);
+    }
+
     [ContextMenu("KillEnemy")]
     public void KillEnemy()
     {

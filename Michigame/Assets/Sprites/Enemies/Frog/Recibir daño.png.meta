@@ -43,12 +43,12 @@ TextureImporter:
   nPOTScale: 0
   lightmap: 0
   compressionQuality: 50
-  spriteMode: 1
+  spriteMode: 2
   spriteExtrude: 1
   spriteMeshType: 1
   alignment: 0
   spritePivot: {x: 0.5, y: 0.5}
-  spritePixelsToUnits: 100
+  spritePixelsToUnits: 400
   spriteBorder: {x: 0, y: 0, z: 0, w: 0}
   spriteGenerateFallbackPhysicsShape: 1
   alphaUsage: 1
@@ -108,7 +108,133 @@ TextureImporter:
     forceMaximumCompressionQuality_BC6H_BC7: 0
   spriteSheet:
     serializedVersion: 2
-    sprites: []
+    sprites:
+    - serializedVersion: 2
+      name: "Recibir da\xF1o_0"
+      rect:
+        serializedVersion: 2
+        x: 2
+        y: 593
+        width: 320
+        height: 431
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ae14cc043b3695149a8f5be33a5d94da
+      internalID: -522887161
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: "Recibir da\xF1o_1"
+      rect:
+        serializedVersion: 2
+        x: 325
+        y: 579
+        width: 305
+        height: 444
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7dbf201a40b59c4448849c16051666e5
+      internalID: -1861208917
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: "Recibir da\xF1o_2"
+      rect:
+        serializedVersion: 2
+        x: 631
+        y: 568
+        width: 286
+        height: 455
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 12285acbfcc91ed41b89994c4018530d
+      internalID: -1813298997
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: "Recibir da\xF1o_3"
+      rect:
+        serializedVersion: 2
+        x: 1
+        y: 102
+        width: 281
+        height: 464
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 326d66962f1cd44459701a765d4486b5
+      internalID: 1503496449
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: "Recibir da\xF1o_4"
+      rect:
+        serializedVersion: 2
+        x: 283
+        y: 103
+        width: 282
+        height: 463
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b16b3ac7d3a99ff4d8974dc92cc5eca6
+      internalID: -2095076919
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: "Recibir da\xF1o_5"
+      rect:
+        serializedVersion: 2
+        x: 566
+        y: 111
+        width: 277
+        height: 455
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1fb7062c3fe1f434ab6f9c24bb324889
+      internalID: -621489561
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
     outline: []
     physicsShape: []
     bones: []
@@ -119,7 +245,13 @@ TextureImporter:
     edges: []
     weights: []
     secondaryTextures: []
-    nameFileIdTable: {}
+    nameFileIdTable:
+      "Recibir da\xF1o_0": -522887161
+      "Recibir da\xF1o_1": -1861208917
+      "Recibir da\xF1o_2": -1813298997
+      "Recibir da\xF1o_3": 1503496449
+      "Recibir da\xF1o_4": -2095076919
+      "Recibir da\xF1o_5": -621489561
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 

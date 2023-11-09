@@ -9,11 +9,72 @@
   <component name="ChangeListManager">
     <list default="true" id="4df7d40f-8887-4bba-9d80-6ae23a8fa518" name="Changes" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/.idea.Michigame/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.Michigame/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/AbilityContainer.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/AbilityContainer.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Prefabs/Player.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Prefabs/Player.prefab" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scenes/AbilitiesTest.unity" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scenes/AbilitiesTest.unity" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/PlayerJump.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/PlayerJump.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/TestScripts/PawTestScript.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/TestScripts/PawTestScript.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scenes/Camera_Test.unity" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scenes/Camera_Test.unity" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Sprites/TileRoom/TileRooms.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Sprites/TileRoom/TileRooms.prefab" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Sprites/TileRoom/Tiles For Rooms_Mesa de trabajo 1_0.asset" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Sprites/TileRoom/Tiles For Rooms_Mesa de trabajo 1_0.asset" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Sprites/TileRoom/Tiles For Rooms_Mesa de trabajo 1_1.asset" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Sprites/TileRoom/Tiles For Rooms_Mesa de trabajo 1_1.asset" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Sprites/TileRoom/Tiles For Rooms_Mesa de trabajo 1_10.asset" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Sprites/TileRoom/Tiles For Rooms_Mesa de trabajo 1_10.asset" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Sprites/TileRoom/Tiles For Rooms_Mesa de trabajo 1_11.asset" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Sprites/TileRoom/Tiles For Rooms_Mesa de trabajo 1_11.asset" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Sprites/TileRoom/Tiles For Rooms_Mesa de trabajo 1_12.asset" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Sprites/TileRoom/Tiles For Rooms_Mesa de trabajo 1_12.asset" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Sprites/TileRoom/Tiles For Rooms_Mesa de trabajo 1_13.asset" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Sprites/TileRoom/Tiles For Rooms_Mesa de trabajo 1_13.asset" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Sprites/TileRoom/Tiles For Rooms_Mesa de trabajo 1_14.asset" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Sprites/TileRoom/Tiles For Rooms_Mesa de trabajo 1_14.asset" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Sprites/TileRoom/Tiles For Rooms_Mesa de trabajo 1_15.asset" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Sprites/TileRoom/Tiles For Rooms_Mesa de trabajo 1_15.asset" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Sprites/TileRoom/Tiles For Rooms_Mesa de trabajo 1_16.asset" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Sprites/TileRoom/Tiles For Rooms_Mesa de trabajo 1_16.asset" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Sprites/TileRoom/Tiles For Rooms_Mesa de trabajo 1_17.asset" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Sprites/TileRoom/Tiles For Rooms_Mesa de trabajo 1_17.asset" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Sprites/TileRoom/Tiles For Rooms_Mesa de trabajo 1_18.asset" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Sprites/TileRoom/Tiles For Rooms_Mesa de trabajo 1_18.asset" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Sprites/TileRoom/Tiles For Rooms_Mesa de trabajo 1_19.asset" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Sprites/TileRoom/Tiles For Rooms_Mesa de trabajo 1_19.asset" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Sprites/TileRoom/Tiles For Rooms_Mesa de trabajo 1_2.asset" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Sprites/TileRoom/Tiles For Rooms_Mesa de trabajo 1_2.asset" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Sprites/TileRoom/Tiles For Rooms_Mesa de trabajo 1_20.asset" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Sprites/TileRoom/Tiles For Rooms_Mesa de trabajo 1_20.asset" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Sprites/TileRoom/Tiles For Rooms_Mesa de trabajo 1_21.asset" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Sprites/TileRoom/Tiles For Rooms_Mesa de trabajo 1_21.asset" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Sprites/TileRoom/Tiles For Rooms_Mesa de trabajo 1_22.asset" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Sprites/TileRoom/Tiles For Rooms_Mesa de trabajo 1_22.asset" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Sprites/TileRoom/Tiles For Rooms_Mesa de trabajo 1_23.asset" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Sprites/TileRoom/Tiles For Rooms_Mesa de trabajo 1_23.asset" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Sprites/TileRoom/Tiles For Rooms_Mesa de trabajo 1_24.asset" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Sprites/TileRoom/Tiles For Rooms_Mesa de trabajo 1_24.asset" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Sprites/TileRoom/Tiles For Rooms_Mesa de trabajo 1_25.asset" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Sprites/TileRoom/Tiles For Rooms_Mesa de trabajo 1_25.asset" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Sprites/TileRoom/Tiles For Rooms_Mesa de trabajo 1_26.asset" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Sprites/TileRoom/Tiles For Rooms_Mesa de trabajo 1_26.asset" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Sprites/TileRoom/Tiles For Rooms_Mesa de trabajo 1_27.asset" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Sprites/TileRoom/Tiles For Rooms_Mesa de trabajo 1_27.asset" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Sprites/TileRoom/Tiles For Rooms_Mesa de trabajo 1_28.asset" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Sprites/TileRoom/Tiles For Rooms_Mesa de trabajo 1_28.asset" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Sprites/TileRoom/Tiles For Rooms_Mesa de trabajo 1_29.asset" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Sprites/TileRoom/Tiles For Rooms_Mesa de trabajo 1_29.asset" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Sprites/TileRoom/Tiles For Rooms_Mesa de trabajo 1_3.asset" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Sprites/TileRoom/Tiles For Rooms_Mesa de trabajo 1_3.asset" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Sprites/TileRoom/Tiles For Rooms_Mesa de trabajo 1_30.asset" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Sprites/TileRoom/Tiles For Rooms_Mesa de trabajo 1_30.asset" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Sprites/TileRoom/Tiles For Rooms_Mesa de trabajo 1_31.asset" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Sprites/TileRoom/Tiles For Rooms_Mesa de trabajo 1_31.asset" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Sprites/TileRoom/Tiles For Rooms_Mesa de trabajo 1_32.asset" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Sprites/TileRoom/Tiles For Rooms_Mesa de trabajo 1_32.asset" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Sprites/TileRoom/Tiles For Rooms_Mesa de trabajo 1_33.asset" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Sprites/TileRoom/Tiles For Rooms_Mesa de trabajo 1_33.asset" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Sprites/TileRoom/Tiles For Rooms_Mesa de trabajo 1_34.asset" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Sprites/TileRoom/Tiles For Rooms_Mesa de trabajo 1_34.asset" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Sprites/TileRoom/Tiles For Rooms_Mesa de trabajo 1_35.asset" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Sprites/TileRoom/Tiles For Rooms_Mesa de trabajo 1_35.asset" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Sprites/TileRoom/Tiles For Rooms_Mesa de trabajo 1_36.asset" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Sprites/TileRoom/Tiles For Rooms_Mesa de trabajo 1_36.asset" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Sprites/TileRoom/Tiles For Rooms_Mesa de trabajo 1_37.asset" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Sprites/TileRoom/Tiles For Rooms_Mesa de trabajo 1_37.asset" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Sprites/TileRoom/Tiles For Rooms_Mesa de trabajo 1_38.asset" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Sprites/TileRoom/Tiles For Rooms_Mesa de trabajo 1_38.asset" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Sprites/TileRoom/Tiles For Rooms_Mesa de trabajo 1_39.asset" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Sprites/TileRoom/Tiles For Rooms_Mesa de trabajo 1_39.asset" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Sprites/TileRoom/Tiles For Rooms_Mesa de trabajo 1_4.asset" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Sprites/TileRoom/Tiles For Rooms_Mesa de trabajo 1_4.asset" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Sprites/TileRoom/Tiles For Rooms_Mesa de trabajo 1_40.asset" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Sprites/TileRoom/Tiles For Rooms_Mesa de trabajo 1_40.asset" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Sprites/TileRoom/Tiles For Rooms_Mesa de trabajo 1_41.asset" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Sprites/TileRoom/Tiles For Rooms_Mesa de trabajo 1_41.asset" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Sprites/TileRoom/Tiles For Rooms_Mesa de trabajo 1_42.asset" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Sprites/TileRoom/Tiles For Rooms_Mesa de trabajo 1_42.asset" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Sprites/TileRoom/Tiles For Rooms_Mesa de trabajo 1_43.asset" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Sprites/TileRoom/Tiles For Rooms_Mesa de trabajo 1_43.asset" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Sprites/TileRoom/Tiles For Rooms_Mesa de trabajo 1_44.asset" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Sprites/TileRoom/Tiles For Rooms_Mesa de trabajo 1_44.asset" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Sprites/TileRoom/Tiles For Rooms_Mesa de trabajo 1_45.asset" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Sprites/TileRoom/Tiles For Rooms_Mesa de trabajo 1_45.asset" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Sprites/TileRoom/Tiles For Rooms_Mesa de trabajo 1_46.asset" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Sprites/TileRoom/Tiles For Rooms_Mesa de trabajo 1_46.asset" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Sprites/TileRoom/Tiles For Rooms_Mesa de trabajo 1_47.asset" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Sprites/TileRoom/Tiles For Rooms_Mesa de trabajo 1_47.asset" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Sprites/TileRoom/Tiles For Rooms_Mesa de trabajo 1_48.asset" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Sprites/TileRoom/Tiles For Rooms_Mesa de trabajo 1_48.asset" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Sprites/TileRoom/Tiles For Rooms_Mesa de trabajo 1_49.asset" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Sprites/TileRoom/Tiles For Rooms_Mesa de trabajo 1_49.asset" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Sprites/TileRoom/Tiles For Rooms_Mesa de trabajo 1_5.asset" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Sprites/TileRoom/Tiles For Rooms_Mesa de trabajo 1_5.asset" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Sprites/TileRoom/Tiles For Rooms_Mesa de trabajo 1_50.asset" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Sprites/TileRoom/Tiles For Rooms_Mesa de trabajo 1_50.asset" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Sprites/TileRoom/Tiles For Rooms_Mesa de trabajo 1_51.asset" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Sprites/TileRoom/Tiles For Rooms_Mesa de trabajo 1_51.asset" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Sprites/TileRoom/Tiles For Rooms_Mesa de trabajo 1_52.asset" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Sprites/TileRoom/Tiles For Rooms_Mesa de trabajo 1_52.asset" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Sprites/TileRoom/Tiles For Rooms_Mesa de trabajo 1_53.asset" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Sprites/TileRoom/Tiles For Rooms_Mesa de trabajo 1_53.asset" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Sprites/TileRoom/Tiles For Rooms_Mesa de trabajo 1_54.asset" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Sprites/TileRoom/Tiles For Rooms_Mesa de trabajo 1_54.asset" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Sprites/TileRoom/Tiles For Rooms_Mesa de trabajo 1_55.asset" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Sprites/TileRoom/Tiles For Rooms_Mesa de trabajo 1_55.asset" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Sprites/TileRoom/Tiles For Rooms_Mesa de trabajo 1_56.asset" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Sprites/TileRoom/Tiles For Rooms_Mesa de trabajo 1_56.asset" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Sprites/TileRoom/Tiles For Rooms_Mesa de trabajo 1_57.asset" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Sprites/TileRoom/Tiles For Rooms_Mesa de trabajo 1_57.asset" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Sprites/TileRoom/Tiles For Rooms_Mesa de trabajo 1_58.asset" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Sprites/TileRoom/Tiles For Rooms_Mesa de trabajo 1_58.asset" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Sprites/TileRoom/Tiles For Rooms_Mesa de trabajo 1_59.asset" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Sprites/TileRoom/Tiles For Rooms_Mesa de trabajo 1_59.asset" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Sprites/TileRoom/Tiles For Rooms_Mesa de trabajo 1_6.asset" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Sprites/TileRoom/Tiles For Rooms_Mesa de trabajo 1_6.asset" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Sprites/TileRoom/Tiles For Rooms_Mesa de trabajo 1_60.asset" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Sprites/TileRoom/Tiles For Rooms_Mesa de trabajo 1_60.asset" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Sprites/TileRoom/Tiles For Rooms_Mesa de trabajo 1_61.asset" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Sprites/TileRoom/Tiles For Rooms_Mesa de trabajo 1_61.asset" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Sprites/TileRoom/Tiles For Rooms_Mesa de trabajo 1_62.asset" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Sprites/TileRoom/Tiles For Rooms_Mesa de trabajo 1_62.asset" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Sprites/TileRoom/Tiles For Rooms_Mesa de trabajo 1_63.asset" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Sprites/TileRoom/Tiles For Rooms_Mesa de trabajo 1_63.asset" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Sprites/TileRoom/Tiles For Rooms_Mesa de trabajo 1_7.asset" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Sprites/TileRoom/Tiles For Rooms_Mesa de trabajo 1_7.asset" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Sprites/TileRoom/Tiles For Rooms_Mesa de trabajo 1_8.asset" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Sprites/TileRoom/Tiles For Rooms_Mesa de trabajo 1_8.asset" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Sprites/TileRoom/Tiles For Rooms_Mesa de trabajo 1_9.asset" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Sprites/TileRoom/Tiles For Rooms_Mesa de trabajo 1_9.asset" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -24,6 +85,7 @@
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/.." />
   </component>
   <component name="HighlightingSettingsPerFile">
+    <setting file="file://$PROJECT_DIR$/Assets/MinimapController.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/PawController.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/Enemies/Snail.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/HairballController.cs" root0="FORCE_HIGHLIGHTING" />
@@ -53,7 +115,7 @@
     &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
     &quot;SHARE_PROJECT_CONFIGURATION_FILES&quot;: &quot;true&quot;,
     &quot;WebServerToolWindowFactoryState&quot;: &quot;false&quot;,
-    &quot;git-widget-placeholder&quot;: &quot;HabilidadesRework&quot;,
+    &quot;git-widget-placeholder&quot;: &quot;Development&quot;,
     &quot;ignore.virus.scanning.warn.message&quot;: &quot;true&quot;,
     &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
     &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
@@ -134,6 +196,9 @@
       <workItem from="1697082859074" duration="4605000" />
       <workItem from="1697126490355" duration="6420000" />
       <workItem from="1698351179447" duration="2459000" />
+      <workItem from="1699204732464" duration="7336000" />
+      <workItem from="1699402606945" duration="1126000" />
+      <workItem from="1699420911812" duration="5279000" />
     </task>
     <servers />
   </component>

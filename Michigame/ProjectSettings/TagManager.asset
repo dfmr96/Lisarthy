@@ -22,12 +22,12 @@ TagManager:
   - Plataform
   - Ground
   - ClimbableWall
-  - 
+  - CameraBounds
   - 
   - 
   - Player
   - Enemy_Ground
-  - 
+  - Minimap
   - 
   - 
   - 

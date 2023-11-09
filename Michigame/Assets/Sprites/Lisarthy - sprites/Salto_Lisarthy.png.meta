@@ -1,5 +1,9 @@
 fileFormatVersion: 2
+<<<<<<< HEAD
+guid: 1cc87957d56e85c45b90d094e70b2455
+=======
 guid: a106a57aecd24ee4b9435d081b100489
+>>>>>>> Arte
 TextureImporter:
   internalIDToNameTable: []
   externalObjects: {}
@@ -43,12 +47,20 @@ TextureImporter:
   nPOTScale: 0
   lightmap: 0
   compressionQuality: 50
+<<<<<<< HEAD
+  spriteMode: 1
+=======
   spriteMode: 2
+>>>>>>> Arte
   spriteExtrude: 1
   spriteMeshType: 1
   alignment: 0
   spritePivot: {x: 0.5, y: 0.5}
+<<<<<<< HEAD
+  spritePixelsToUnits: 100
+=======
   spritePixelsToUnits: 512
+>>>>>>> Arte
   spriteBorder: {x: 0, y: 0, z: 0, w: 0}
   spriteGenerateFallbackPhysicsShape: 1
   alphaUsage: 1
@@ -108,6 +120,9 @@ TextureImporter:
     forceMaximumCompressionQuality_BC6H_BC7: 0
   spriteSheet:
     serializedVersion: 2
+<<<<<<< HEAD
+    sprites: []
+=======
     sprites:
     - serializedVersion: 2
       name: Salto_Lisarthy_0
@@ -172,6 +187,7 @@ TextureImporter:
       indices: 
       edges: []
       weights: []
+>>>>>>> Arte
     outline: []
     physicsShape: []
     bones: []
@@ -182,10 +198,14 @@ TextureImporter:
     edges: []
     weights: []
     secondaryTextures: []
+<<<<<<< HEAD
+    nameFileIdTable: {}
+=======
     nameFileIdTable:
       Salto_Lisarthy_0: -581130735
       Salto_Lisarthy_1: 306050799
       Salto_Lisarthy_2: -1269371578
+>>>>>>> Arte
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 

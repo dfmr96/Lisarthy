@@ -15,8 +15,23 @@ public class PawTestScript : MonoBehaviour
     [SerializeField] private float pawDuration;
     [SerializeField] private float pawCooldown;
     [SerializeField] private bool onCooldown;
+    [SerializeField] private Vector2 lastClimbDirection;
+    [SerializeField] private Vector2 climbDir;
+    [SerializeField] private bool wallJumpAvailable;
 
     public float MaxFallingSpeedSliding => maxFallingSpeedSliding;
+
+    public bool WallJumpAvailable
+    {
+        get => wallJumpAvailable;
+        set => wallJumpAvailable = value;
+    }
+
+    public Vector2 LastClimbDirection
+    {
+        get => lastClimbDirection;
+        set => lastClimbDirection = value;
+    }
 
     /*private void FixedUpdate()
     {
@@ -35,10 +50,43 @@ public class PawTestScript : MonoBehaviour
         }
     }
 
+    public void ResetClimbDir()
+    {
+        LastClimbDirection = Vector2.zero;
+        climbDir = Vector2.zero;
+        wallJumpAvailable = false;
+    }
+
     public bool OnClimb()
     {
-        return Physics2D.BoxCast(transform.position, pawnBoxSize, 0, new Vector2(Input.GetAxisRaw("Horizontal"), 0),
+        Vector2 inputDir = new Vector2(Input.GetAxisRaw("Horizontal"), 0);
+        //climbDir = Vector2.zero;
+        bool onClimb = Physics2D.BoxCast(transform.position, pawnBoxSize, 0,
+            inputDir,
             detectionDistance, climbableLayer);
+        if (onClimb)
+        {
+            climbDir = inputDir;
+            //LastClimbDirection = climbDir;
+            //lastClimbDirection = inputDir;
+            Debug.Log($"Ultima direccion guardad = {LastClimbDirection}");
+        }
+
+        
+        
+        if (LastClimbDirection != climbDir)
+        {
+            WallJumpAvailable = true;
+            LastClimbDirection = climbDir;
+            Debug.Log($"Ultima direccion guardad = {LastClimbDirection} \n {inputDir}");
+            Debug.Log($"Wall Jump disponible");
+        }
+        
+        
+        
+        
+        
+        return onClimb;
     }
 
     private void OnDrawGizmos()

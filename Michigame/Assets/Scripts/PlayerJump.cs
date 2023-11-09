@@ -57,7 +57,7 @@ public class PlayerJump : MonoBehaviour
     [SerializeField] bool wallJumpBuffer = false;
     [SerializeField] private float wallJumpBufferTimer;
     [SerializeField] private bool extraJumpAvailable;
-
+    [SerializeField] private AudioClip sound;
     public string JumpDebugInfo
     {
         get =>
@@ -154,8 +154,19 @@ public class PlayerJump : MonoBehaviour
 
     private void Update()
     {
-        Debug.Log(gravityMultiplier);
         if (OnGround && !currentlyJumping) rb.velocity = new Vector2(rb.velocity.x, 0);
+
+        gameObject.GetComponent<Animator>().SetBool("jumping", currentlyJumping);
+        gameObject.GetComponent<Animator>().SetBool("wallClimb", wallJumpBuffer);
+        //if (OnGround)
+        //{
+        //    gameObject.GetComponent<Animator>().SetBool("falling", false);
+        //}
+        //else if (!OnGround && !currentlyJumping)
+        //{
+        //    gameObject.GetComponent<Animator>().SetBool("falling", true);
+        //}
+
 
         if (currentlyJumping && rb.velocity.y > 0) timeToApexDebug += Time.deltaTime;
         if (currentlyJumping && rb.velocity.y < 0) timeToGroundDebug += Time.deltaTime;
@@ -201,6 +212,7 @@ public class PlayerJump : MonoBehaviour
 
         if (!OnGround && OnClimb && !wallJumpBuffer && pawTest.WallJumpAvailable)
         {
+            gameObject.GetComponent<Animator>().SetBool("wallClimb", true);
             StartCoroutine(WallJumpBufferCounter());
         }
     }
@@ -274,7 +286,7 @@ public class PlayerJump : MonoBehaviour
                     else
                     {
                         /*Vector2 cutOffVelocity = new Vector2(rb.velocity.x, 0);
-                        rb.velocity = cutOffVelocity;*/
+                        rb.velocity = cutOffVelocity;*/                       
                         gravityMultiplier = jumpCutOffMultiplier;
                     }
 
@@ -307,6 +319,7 @@ public class PlayerJump : MonoBehaviour
 
         if (OnGround || coyoteTimeCounter < coyoteTime && coyoteTimeCounter > 0.03f)
         {
+            AudioManager.Instance.PlaySound(sound);
             Debug.Log("Jump activado");
             timeToApexDebug = 0;
             timeToGroundDebug = 0;
@@ -327,6 +340,7 @@ public class PlayerJump : MonoBehaviour
 
     private void WallJump()
     {
+        AudioManager.Instance.PlaySound(sound);
         pawTest.WallJumpAvailable = false;
         wallJumpBuffer = false;
         gravityMultiplier = upwardMultiplier;

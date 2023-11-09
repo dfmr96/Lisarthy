@@ -1,9 +1,5 @@
 fileFormatVersion: 2
-<<<<<<< HEAD
-guid: 3a52a1562cfa57846b689ab61155fe64
-=======
 guid: b63571e7971169042a2d519c1297aec4
->>>>>>> Arte
 TextureImporter:
   internalIDToNameTable: []
   externalObjects: {}
@@ -47,12 +43,12 @@ TextureImporter:
   nPOTScale: 0
   lightmap: 0
   compressionQuality: 50
-  spriteMode: 1
+  spriteMode: 2
   spriteExtrude: 1
   spriteMeshType: 1
   alignment: 0
   spritePivot: {x: 0.5, y: 0.5}
-  spritePixelsToUnits: 100
+  spritePixelsToUnits: 512
   spriteBorder: {x: 0, y: 0, z: 0, w: 0}
   spriteGenerateFallbackPhysicsShape: 1
   alphaUsage: 1
@@ -112,7 +108,238 @@ TextureImporter:
     forceMaximumCompressionQuality_BC6H_BC7: 0
   spriteSheet:
     serializedVersion: 2
-    sprites: []
+    sprites:
+    - serializedVersion: 2
+      name: Ataque_Lisarthy_0
+      rect:
+        serializedVersion: 2
+        x: 625
+        y: 1485
+        width: 680
+        height: 510
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d8d0cfff294030545934d86df3d4ccf9
+      internalID: -2033019171
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Ataque_Lisarthy_1
+      rect:
+        serializedVersion: 2
+        x: 1669
+        y: 1487
+        width: 664
+        height: 508
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 826217887df185f4591d345e49fe36cf
+      internalID: -1896679910
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Ataque_Lisarthy_2
+      rect:
+        serializedVersion: 2
+        x: 2709
+        y: 1491
+        width: 646
+        height: 504
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a9a2d0dac4a887442972135a2f429a43
+      internalID: 586047862
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Ataque_Lisarthy_3
+      rect:
+        serializedVersion: 2
+        x: 349
+        y: 859
+        width: 744
+        height: 520
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 724567b4e7df7ba4f971ee581af7424a
+      internalID: -1898060953
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Ataque_Lisarthy_4
+      rect:
+        serializedVersion: 2
+        x: 1089
+        y: 857
+        width: 6
+        height: 6
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 2474ad189eb561a499182ad894fe59d0
+      internalID: -2127729409
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Ataque_Lisarthy_5
+      rect:
+        serializedVersion: 2
+        x: 1511
+        y: 805
+        width: 912
+        height: 530
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c79c3b58b5221fe4da7535f84f4aab19
+      internalID: -1110791494
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Ataque_Lisarthy_6
+      rect:
+        serializedVersion: 2
+        x: 2741
+        y: 781
+        width: 936
+        height: 526
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1a729dc9111249a47bdf4bb035ad261d
+      internalID: -1139897812
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Ataque_Lisarthy_7
+      rect:
+        serializedVersion: 2
+        x: 453
+        y: 133
+        width: 902
+        height: 506
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ec08d6577a76cc846b746ccaeaa9cf65
+      internalID: 957174401
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Ataque_Lisarthy_8
+      rect:
+        serializedVersion: 2
+        x: 1353
+        y: 585
+        width: 8
+        height: 8
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b70fa84e71365394f9fe46bb37259e28
+      internalID: -1002623016
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Ataque_Lisarthy_9
+      rect:
+        serializedVersion: 2
+        x: 1545
+        y: 147
+        width: 764
+        height: 496
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 478a65be9087751418123fcf76b7d725
+      internalID: -1377571825
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Ataque_Lisarthy_10
+      rect:
+        serializedVersion: 2
+        x: 2592
+        y: 147
+        width: 677
+        height: 496
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7f947e562c8feb14baf456386c147d71
+      internalID: -137716928
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
     outline: []
     physicsShape: []
     bones: []
@@ -123,7 +350,18 @@ TextureImporter:
     edges: []
     weights: []
     secondaryTextures: []
-    nameFileIdTable: {}
+    nameFileIdTable:
+      Ataque_Lisarthy_0: -2033019171
+      Ataque_Lisarthy_1: -1896679910
+      Ataque_Lisarthy_10: -137716928
+      Ataque_Lisarthy_2: 586047862
+      Ataque_Lisarthy_3: -1898060953
+      Ataque_Lisarthy_4: -2127729409
+      Ataque_Lisarthy_5: -1110791494
+      Ataque_Lisarthy_6: -1139897812
+      Ataque_Lisarthy_7: 957174401
+      Ataque_Lisarthy_8: -1002623016
+      Ataque_Lisarthy_9: -1377571825
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 

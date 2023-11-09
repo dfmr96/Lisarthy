@@ -18,6 +18,7 @@ public class PawTestScript : MonoBehaviour
     [SerializeField] private Vector2 lastClimbDirection;
     [SerializeField] private Vector2 climbDir;
     [SerializeField] private bool wallJumpAvailable;
+    [SerializeField] private AudioClip hit;
 
     public float MaxFallingSpeedSliding => maxFallingSpeedSliding;
 
@@ -45,8 +46,9 @@ public class PawTestScript : MonoBehaviour
     {
         if (Input.GetKeyDown(KeyCode.R))
         {
-            Debug.Log("Atacó con garra");
+            Debug.Log("Atacó con garra");            
             Attack();
+            
         }
     }
 
@@ -104,6 +106,7 @@ public class PawTestScript : MonoBehaviour
         if (paw == null)
         {
             paw = Instantiate(pawPrefab, transform.position, Quaternion.identity, transform);
+            
         }
         else if (!onCooldown)
         {
@@ -114,12 +117,13 @@ public class PawTestScript : MonoBehaviour
     public IEnumerator Swing()
     {
         float inputRaw = Input.GetAxisRaw("Horizontal") == 0 ? 1 : Input.GetAxisRaw("Horizontal");
-        
+        gameObject.GetComponent<Animator>().SetTrigger("attack");
         paw.transform.localPosition = new Vector3((inputRaw), 0, 0);
         
         
         onCooldown = true;
         paw.SetActive(true);
+        AudioManager.Instance.PlaySound(hit);
         yield return new WaitForSeconds(pawDuration);
         paw.transform.localPosition = Vector3.zero;
         paw.SetActive(false);

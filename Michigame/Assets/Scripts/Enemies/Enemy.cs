@@ -15,6 +15,10 @@ public class Enemy : MonoBehaviour
     public virtual void TakeDamage(int damage)
     {
         health -= damage;
+        if (TryGetComponent<Animator>(out Animator animator))
+        {
+            gameObject.GetComponent<Animator>().SetTrigger("damaged");
+        }        
         Die();
     }
 
@@ -22,7 +26,15 @@ public class Enemy : MonoBehaviour
     {
         if (health <= 0)
         {
-            Destroy(gameObject);
+            if (TryGetComponent<Animator>(out Animator animator))
+            {
+                gameObject.GetComponent<Animator>().SetBool("isDead", true);
+            }
+            else
+            {
+                Destroy(gameObject);
+            }               
+            
         }
     }
     [ContextMenu("KillEnemy")]

@@ -12,6 +12,7 @@ public class Wasp : Enemy
 
     [SerializeField] private bool a = true;
     [SerializeField] private bool b = false;
+
     // Start is called before the first frame update
     void Start()
     {
@@ -25,7 +26,6 @@ public class Wasp : Enemy
     {
         timer += Time.deltaTime;
         distance = player_transform.position - transform.position;
-        
     }
 
     void FixedUpdate()
@@ -53,5 +53,9 @@ public class Wasp : Enemy
         }
     }
 
+    public void Death()
+    {
+        Destroy(this.gameObject);
+    }
     
 }

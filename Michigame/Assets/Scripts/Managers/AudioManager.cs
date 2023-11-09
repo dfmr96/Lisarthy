@@ -25,4 +25,13 @@ public class AudioManager : MonoBehaviour
         //m_audioSource.Play();
         m_audioSource.PlayOneShot(p_Clip);
     }
+    
+    public void StopMusic()
+    {
+        m_audioSource.Pause();
+    }
+    public void PlayMusic()
+    {
+        m_audioSource.Play();
+    }
 }

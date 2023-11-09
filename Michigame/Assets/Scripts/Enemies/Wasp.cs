@@ -52,5 +52,10 @@ public class Wasp : Enemy
             rb2d.AddForce(dir * (speed * 1.8f),ForceMode2D.Impulse);
         }
     }
+
+    public void Death()
+    {
+        Destroy(this.gameObject);
+    }
     
 }

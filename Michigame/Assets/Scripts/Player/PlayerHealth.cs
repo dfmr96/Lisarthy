@@ -19,7 +19,6 @@ public class PlayerHealth : MonoBehaviour
     {
 
         AudioManager.Instance.PlaySound(getdamage);
-        health -= damage;
         Debug.Log(health);
         
         if (health > 0)
@@ -28,14 +27,12 @@ public class PlayerHealth : MonoBehaviour
             health -= damage;
             life.UpdateHealth(health);
             Debug.Log(health);
+            if (health <= 0)
+            {
+                gameObject.GetComponent<Animator>().SetTrigger("dead");
+            }
         }
-        else if (health <= 0)
-        {
-            gameObject.GetComponent<Animator>().SetTrigger("dead");
-        }
-        
     }
-
     public void Death()
     {
         Destroy(this.gameObject);

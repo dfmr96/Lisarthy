@@ -4,7 +4,7 @@ using UnityEngine;
 using UnityEngine.Serialization;
 
 [RequireComponent(typeof(Rigidbody2D))]
-public class PlayerJump : MonoBehaviour
+public class TempPlayerJump : MonoBehaviour
 {
     public Action<bool, bool> OnGravityValueChanged;
 
@@ -28,7 +28,8 @@ public class PlayerJump : MonoBehaviour
 
     [SerializeField] private float groundLength = 0.95f;
 
-    [FormerlySerializedAs("collider")] [SerializeField]
+    [FormerlySerializedAs("collider")]
+    [SerializeField]
     private BoxCollider2D col;
 
     [SerializeField] private LayerMask groundLayer;
@@ -56,7 +57,6 @@ public class PlayerJump : MonoBehaviour
     [FormerlySerializedAs("pawnTest")] public PawTestScript pawTest;
     [SerializeField] bool wallJumpBuffer = false;
     [SerializeField] private float wallJumpBufferTimer;
-    [SerializeField] private bool extraJumpAvailable;
 
     public string JumpDebugInfo
     {
@@ -154,7 +154,6 @@ public class PlayerJump : MonoBehaviour
 
     private void Update()
     {
-        Debug.Log(gravityMultiplier);
         if (OnGround && !currentlyJumping) rb.velocity = new Vector2(rb.velocity.x, 0);
 
         gameObject.GetComponent<Animator>().SetBool("jumping", currentlyJumping);
@@ -175,8 +174,6 @@ public class PlayerJump : MonoBehaviour
 
         if (Input.GetKeyDown(KeyCode.Space))
         {
-            timeToApexDebug = 0;
-            timeToGroundDebug = 0;
             desiredJump = true;
             pressingJump = true;
         }
@@ -206,12 +203,7 @@ public class PlayerJump : MonoBehaviour
             }
         }
 
-        if (pawTest != null)
-        {
-            if (OnGround) pawTest.ResetClimbDir();
-        }
-
-        if (!OnGround && OnClimb && !wallJumpBuffer && pawTest.WallJumpAvailable)
+        if (OnClimb && !wallJumpBuffer)
         {
             gameObject.GetComponent<Animator>().SetBool("wallClimb", true);
             StartCoroutine(WallJumpBufferCounter());
@@ -236,7 +228,6 @@ public class PlayerJump : MonoBehaviour
 
             return;
         }
-
         CalculateGravity();
     }
 
@@ -263,12 +254,7 @@ public class PlayerJump : MonoBehaviour
             currentlyJumping = false;
             gravityMultiplier = defaultGravityScale;
         }
-
-        if (OnClimb)
-        {
-            gravityMultiplier = defaultGravityScale;
-        }
-        /*\else if (OnClimb) Apply Sliding
+        /*else if (OnClimb) Apply Sliding
         {
             Debug.Log("gravedad cambiada a deslizando");
             if (rb.velocity.y > 0) rb.velocity = Vector2.zero;
@@ -287,7 +273,7 @@ public class PlayerJump : MonoBehaviour
                     else
                     {
                         /*Vector2 cutOffVelocity = new Vector2(rb.velocity.x, 0);
-                        rb.velocity = cutOffVelocity;*/                       
+                        rb.velocity = cutOffVelocity;*/
                         gravityMultiplier = jumpCutOffMultiplier;
                     }
 
@@ -311,16 +297,15 @@ public class PlayerJump : MonoBehaviour
 
     private void Jump()
     {
-        if (wallJumpBuffer && !onGround)
+
+        if (wallJumpBuffer)
         {
-            Debug.Log("Wall Jump activado");
+
             WallJump();
             return;
         }
-
         if (OnGround || coyoteTimeCounter < coyoteTime && coyoteTimeCounter > 0.03f)
         {
-            Debug.Log("Jump activado");
             timeToApexDebug = 0;
             timeToGroundDebug = 0;
             coyoteTimeCounter = 0;
@@ -332,7 +317,7 @@ public class PlayerJump : MonoBehaviour
             SetPhysics();
 
             jumpSpeed = MathF.Sqrt(-2f * Physics2D.gravity.y * rb.gravityScale * jumpHeight);
-            Debug.Log(jumpSpeed + " velocidad de salto");
+            //Debug.Log(jumpSpeed + " velocidad de salto");
             velocity.y = jumpSpeed;
             currentlyJumping = true;
         }
@@ -340,8 +325,6 @@ public class PlayerJump : MonoBehaviour
 
     private void WallJump()
     {
-        pawTest.WallJumpAvailable = false;
-        wallJumpBuffer = false;
         gravityMultiplier = upwardMultiplier;
         SetPhysics();
         jumpSpeed = MathF.Sqrt(-2f * Physics2D.gravity.y * rb.gravityScale * jumpHeight);
@@ -361,10 +344,10 @@ public class PlayerJump : MonoBehaviour
 
     private IEnumerator WallJumpBufferCounter()
     {
-        //Debug.Log("Wall Jump Buffer activado");
+        Debug.Log("Wall Jump Buffer activado");
         wallJumpBuffer = true;
         yield return new WaitForSeconds(wallJumpBufferTimer);
         wallJumpBuffer = false;
-        //Debug.Log("Wall Jump Buffer desactivado");
+        Debug.Log("Wall Jump Buffer desactivado");
     }
 }

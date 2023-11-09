@@ -4,7 +4,7 @@ using UnityEngine;
 using UnityEngine.Serialization;
 
 [RequireComponent(typeof(Rigidbody2D))]
-public class PlayerMovement : MonoBehaviour
+public class TempPlayerMovement : MonoBehaviour
 {
     [SerializeField] private PlayerMetrics _playerMetrics;
     [SerializeField] private float maxSpeed = 1f;
@@ -75,7 +75,7 @@ public class PlayerMovement : MonoBehaviour
     private void Update()
     {
         desiredVelocity = new Vector2(Input.GetAxisRaw("Horizontal") * maxSpeed, 0f);
-        if (desiredVelocity.magnitude > 0f && dashTest.OnDash()==false)
+        if (desiredVelocity.magnitude > 0f && dashTest.OnDash() == false)
         {
             gameObject.GetComponent<Animator>().SetBool("walking", true);
         }
@@ -92,10 +92,10 @@ public class PlayerMovement : MonoBehaviour
         float acceleration = onGround ? maxAcceleration : maxAirAcceleration;
         float deceleration = onGround ? maxDeceleration : maxAirDeceleration;
         float turnSpeed = onGround ? maxTurnSpeed : maxAirTurnSpeed;
-        
+
         turning = false;
         if (desiredVelocity.x != 0)
-        {            
+        {
             if (Mathf.Sign(desiredVelocity.x) != Mathf.Sign(rb.velocity.x) && rb.velocity.x != 0)
             {
                 turning = true;
@@ -109,7 +109,8 @@ public class PlayerMovement : MonoBehaviour
                 accelUsed = "maxAccel";
                 //Debug.Log("horizontal y rb velocity mismo signo: aceleration aplicada");
             }
-        } else if (dashTest.OnDash())
+        }
+        else if (dashTest.OnDash())
         {
             //rb.velocity = new Vector2(dashTest.DashSpeed, rb.velocity.y);
             return;
@@ -131,8 +132,8 @@ public class PlayerMovement : MonoBehaviour
             }
         }
 
-       
-        Vector2 velocity = new(Mathf.MoveTowards(rb.velocity.x, desiredVelocity.x, maxSpeedChange), rb.velocity.y < maxFallingSpeed ? maxFallingSpeed: rb.velocity.y);
+
+        Vector2 velocity = new(Mathf.MoveTowards(rb.velocity.x, desiredVelocity.x, maxSpeedChange), rb.velocity.y < maxFallingSpeed ? maxFallingSpeed : rb.velocity.y);
         rb.velocity = new Vector2(velocity.x, velocity.y);
     }
 
@@ -143,6 +144,6 @@ public class PlayerMovement : MonoBehaviour
         maxDeceleration = _playerMetrics.maxDeceleration;
         maxTurnSpeed = _playerMetrics.turnSpeed;
     }
-    
-    
+
+
 }

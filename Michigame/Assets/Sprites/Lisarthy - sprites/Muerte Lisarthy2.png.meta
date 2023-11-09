@@ -1,5 +1,5 @@
 fileFormatVersion: 2
-guid: 3a52a1562cfa57846b689ab61155fe64
+guid: ebca66bca19abcf468b31f8d0aa87c61
 TextureImporter:
   internalIDToNameTable: []
   externalObjects: {}
@@ -39,7 +39,7 @@ TextureImporter:
     mipBias: 0
     wrapU: 1
     wrapV: 1
-    wrapW: 0
+    wrapW: 1
   nPOTScale: 0
   lightmap: 0
   compressionQuality: 50
@@ -48,7 +48,7 @@ TextureImporter:
   spriteMeshType: 1
   alignment: 0
   spritePivot: {x: 0.5, y: 0.5}
-  spritePixelsToUnits: 512
+  spritePixelsToUnits: 310
   spriteBorder: {x: 0, y: 0, z: 0, w: 0}
   spriteGenerateFallbackPhysicsShape: 1
   alphaUsage: 1
@@ -63,16 +63,16 @@ TextureImporter:
   compressionQualitySet: 0
   textureFormatSet: 0
   ignorePngGamma: 0
-  applyGammaDecoding: 1
+  applyGammaDecoding: 0
   swizzle: 50462976
-  cookieLightType: 2
+  cookieLightType: 0
   platformSettings:
   - serializedVersion: 3
     buildTarget: DefaultTexturePlatform
     maxTextureSize: 2048
     resizeAlgorithm: 0
     textureFormat: -1
-    textureCompression: 0
+    textureCompression: 1
     compressionQuality: 50
     crunchedCompression: 0
     allowsAlphaSplitting: 0
@@ -85,7 +85,7 @@ TextureImporter:
     maxTextureSize: 2048
     resizeAlgorithm: 0
     textureFormat: -1
-    textureCompression: 0
+    textureCompression: 1
     compressionQuality: 50
     crunchedCompression: 0
     allowsAlphaSplitting: 0
@@ -98,7 +98,7 @@ TextureImporter:
     maxTextureSize: 2048
     resizeAlgorithm: 0
     textureFormat: -1
-    textureCompression: 0
+    textureCompression: 1
     compressionQuality: 50
     crunchedCompression: 0
     allowsAlphaSplitting: 0
@@ -110,232 +110,127 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: Ataque_Lisarthy_0
+      name: Muerte Lisarthy2_0
       rect:
         serializedVersion: 2
-        x: 625
-        y: 1485
-        width: 680
-        height: 510
+        x: 235
+        y: 425
+        width: 406
+        height: 306
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: d8d0cfff294030545934d86df3d4ccf9
-      internalID: -2033019171
+      spriteID: 35b8cd820e876344e975769e67b4282d
+      internalID: -1077737465
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Ataque_Lisarthy_1
+      name: Muerte Lisarthy2_1
       rect:
         serializedVersion: 2
-        x: 1669
-        y: 1487
-        width: 664
-        height: 508
-      alignment: 0
-      pivot: {x: 0, y: 0}
+        x: 764
+        y: 426
+        width: 467
+        height: 282
+      alignment: 9
+      pivot: {x: 0.5, y: 0.55}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 826217887df185f4591d345e49fe36cf
-      internalID: -1896679910
+      spriteID: 95bec91a5ba91964c949e9d12ec96a70
+      internalID: -2071670114
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Ataque_Lisarthy_2
+      name: Muerte Lisarthy2_2
       rect:
         serializedVersion: 2
-        x: 2709
-        y: 1491
-        width: 646
-        height: 504
-      alignment: 0
-      pivot: {x: 0, y: 0}
+        x: 1346
+        y: 424
+        width: 477
+        height: 274
+      alignment: 9
+      pivot: {x: 0.5, y: 0.55}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: a9a2d0dac4a887442972135a2f429a43
-      internalID: 586047862
+      spriteID: 275175160d5f22d4cab3b9dc34158719
+      internalID: 1329612197
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Ataque_Lisarthy_3
+      name: Muerte Lisarthy2_3
       rect:
         serializedVersion: 2
-        x: 349
-        y: 859
-        width: 744
-        height: 520
-      alignment: 0
-      pivot: {x: 0, y: 0}
+        x: 165
+        y: 0
+        width: 478
+        height: 228
+      alignment: 9
+      pivot: {x: 0.5, y: 0.7}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 724567b4e7df7ba4f971ee581af7424a
-      internalID: -1898060953
+      spriteID: 7ab0a9d5787f521448050a60eff0b23e
+      internalID: 727733206
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Ataque_Lisarthy_4
+      name: Muerte Lisarthy2_4
       rect:
         serializedVersion: 2
-        x: 1089
-        y: 857
-        width: 6
-        height: 6
-      alignment: 0
-      pivot: {x: 0, y: 0}
+        x: 774
+        y: 16
+        width: 500
+        height: 200
+      alignment: 9
+      pivot: {x: 0.5, y: 0.8}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 2474ad189eb561a499182ad894fe59d0
-      internalID: -2127729409
+      spriteID: cf372f4d0088f2f4ea5610889b7cc2cf
+      internalID: 2111076595
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Ataque_Lisarthy_5
+      name: Muerte Lisarthy2_5
       rect:
         serializedVersion: 2
-        x: 1511
-        y: 805
-        width: 912
-        height: 530
-      alignment: 0
-      pivot: {x: 0, y: 0}
+        x: 1384
+        y: 32
+        width: 507
+        height: 173
+      alignment: 9
+      pivot: {x: 0.5, y: 0.95}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: c79c3b58b5221fe4da7535f84f4aab19
-      internalID: -1110791494
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Ataque_Lisarthy_6
-      rect:
-        serializedVersion: 2
-        x: 2741
-        y: 781
-        width: 936
-        height: 526
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 1a729dc9111249a47bdf4bb035ad261d
-      internalID: -1139897812
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Ataque_Lisarthy_7
-      rect:
-        serializedVersion: 2
-        x: 453
-        y: 133
-        width: 902
-        height: 506
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: ec08d6577a76cc846b746ccaeaa9cf65
-      internalID: 957174401
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Ataque_Lisarthy_8
-      rect:
-        serializedVersion: 2
-        x: 1353
-        y: 585
-        width: 8
-        height: 8
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: b70fa84e71365394f9fe46bb37259e28
-      internalID: -1002623016
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Ataque_Lisarthy_9
-      rect:
-        serializedVersion: 2
-        x: 1545
-        y: 147
-        width: 764
-        height: 496
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 478a65be9087751418123fcf76b7d725
-      internalID: -1377571825
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Ataque_Lisarthy_10
-      rect:
-        serializedVersion: 2
-        x: 2592
-        y: 147
-        width: 677
-        height: 496
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 7f947e562c8feb14baf456386c147d71
-      internalID: -137716928
+      spriteID: 28607536d6a66a94aaf2f75c278aa7d9
+      internalID: -452973345
       vertices: []
       indices: 
       edges: []
@@ -351,17 +246,12 @@ TextureImporter:
     weights: []
     secondaryTextures: []
     nameFileIdTable:
-      Ataque_Lisarthy_0: -2033019171
-      Ataque_Lisarthy_1: -1896679910
-      Ataque_Lisarthy_10: -137716928
-      Ataque_Lisarthy_2: 586047862
-      Ataque_Lisarthy_3: -1898060953
-      Ataque_Lisarthy_4: -2127729409
-      Ataque_Lisarthy_5: -1110791494
-      Ataque_Lisarthy_6: -1139897812
-      Ataque_Lisarthy_7: 957174401
-      Ataque_Lisarthy_8: -1002623016
-      Ataque_Lisarthy_9: -1377571825
+      Muerte Lisarthy2_0: -1077737465
+      Muerte Lisarthy2_1: -2071670114
+      Muerte Lisarthy2_2: 1329612197
+      Muerte Lisarthy2_3: 727733206
+      Muerte Lisarthy2_4: 2111076595
+      Muerte Lisarthy2_5: -452973345
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 

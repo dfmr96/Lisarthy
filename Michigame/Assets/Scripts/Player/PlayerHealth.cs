@@ -7,6 +7,8 @@ public class PlayerHealth : MonoBehaviour
     [SerializeField] public int health;
     [SerializeField] private AudioClip getdamage;
     [SerializeField] private AudioClip gethealth;
+
+    [SerializeField] private LifeController life;
     // Start is called before the first frame update
 
     private void Update()
@@ -19,10 +21,12 @@ public class PlayerHealth : MonoBehaviour
         AudioManager.Instance.PlaySound(getdamage);
         health -= damage;
         Debug.Log(health);
-
+        
         if (health > 0)
         {
+            
             health -= damage;
+            life.UpdateHealth(health);
             Debug.Log(health);
         }
         else if (health <= 0)
@@ -49,6 +53,7 @@ public class PlayerHealth : MonoBehaviour
     {
         AudioManager.Instance.PlaySound(gethealth);
         health += heal;
+        life.UpdateHealth(health);
         Debug.Log(health);
     }
 }

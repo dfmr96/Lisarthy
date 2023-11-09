@@ -7,10 +7,7 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="4df7d40f-8887-4bba-9d80-6ae23a8fa518" name="Changes" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/.idea.Michigame/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.Michigame/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Player/Vida/LifeController.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Player/Vida/LifeController.cs" afterDir="false" />
-    </list>
+    <list default="true" id="4df7d40f-8887-4bba-9d80-6ae23a8fa518" name="Changes" comment="" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -52,7 +49,7 @@
     "RunOnceActivity.ShowReadmeOnStart": "true",
     "SHARE_PROJECT_CONFIGURATION_FILES": "true",
     "WebServerToolWindowFactoryState": "false",
-    "git-widget-placeholder": "UI__0.2",
+    "git-widget-placeholder": "Development",
     "ignore.virus.scanning.warn.message": "true",
     "node.js.detected.package.eslint": "true",
     "node.js.detected.package.tslint": "true",
@@ -137,7 +134,7 @@
       <workItem from="1699402606945" duration="1126000" />
       <workItem from="1699420911812" duration="5279000" />
       <workItem from="1699484781917" duration="4016000" />
-      <workItem from="1699563699854" duration="5322000" />
+      <workItem from="1699563699854" duration="5839000" />
     </task>
     <servers />
   </component>

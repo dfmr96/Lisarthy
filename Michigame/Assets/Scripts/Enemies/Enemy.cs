@@ -16,13 +16,13 @@ public class Enemy : MonoBehaviour
     
     public virtual void TakeDamage(int damage)
     {
-        health -= damage;
+        health -= damage;        
         if (TryGetComponent<Animator>(out Animator animator))
         {
+            gameObject.GetComponent<Animator>().SetInteger("hp", health);
             gameObject.GetComponent<Animator>().SetTrigger("damaged");
-        }        
+        }
         Die();
-        
     }
 
     public void Die()
@@ -31,17 +31,17 @@ public class Enemy : MonoBehaviour
         {
 
             AudioManager.Instance.PlaySound(soundDeath);
-            //Destroy(gameObject);
+            Destroy(gameObject);
 
-            if (TryGetComponent<Animator>(out Animator animator))
-            {
-                gameObject.GetComponent<Animator>().SetBool("isDead", true);
-            }
-            else
-            {
-                Destroy(gameObject);
-            }               
-            
+            //if (TryGetComponent<Animator>(out Animator animator))
+            //{
+            //    gameObject.GetComponent<Animator>().SetBool("isDead", true);
+            //}
+            //else
+            //{
+            //    Destroy(gameObject);
+            //}
+
         }
         else
         {

@@ -2,12 +2,23 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.SceneManagement;
+using UnityEditor;
 
 public class PlayButton : MonoBehaviour
 {
-    [SerializeField] string sceneName;
-    public void ChangeScene()
+    public void Initial_Menu()
     {
-        SceneManager.LoadScene(sceneName);
+        SceneManager.LoadScene(0);
+    }
+    public void Play_Level_1()
+    {
+        SceneManager.LoadScene(1);
+    }
+    public void ExitGame()
+    {
+        Application.Quit();
+        #if UNITY_EDITOR
+		    EditorApplication.ExitPlaymode();
+        #endif 
     }
 }

@@ -123569,14 +123569,6 @@ PrefabInstance:
       value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 2658741759502475452, guid: f4d7183155f9dd549825a7c7b98bb045, type: 3}
-      propertyPath: pointsQuantity
-      value: 3
-      objectReference: {fileID: 0}
-    - target: {fileID: 2658741759502475452, guid: f4d7183155f9dd549825a7c7b98bb045, type: 3}
-      propertyPath: points.Array.size
-      value: 3
-      objectReference: {fileID: 0}
-    - target: {fileID: 2658741759502475452, guid: f4d7183155f9dd549825a7c7b98bb045, type: 3}
       propertyPath: points.Array.data[3]
       value: 
       objectReference: {fileID: 0}

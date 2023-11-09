@@ -17,7 +17,7 @@ public class Fly : Enemy
 
     // Update is called once per frame
     void Update()
-    {
+    {       
         var vec = points[index].position - transform.position;
         var norm = vec.normalized;
         rb2d.velocity = norm * speed;
@@ -30,4 +30,5 @@ public class Fly : Enemy
             }
         }
     }
+    
 }

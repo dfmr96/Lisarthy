@@ -17,7 +17,7 @@ public class LifeController : MonoBehaviour
     
     void Start()
     {
-        
+        desplazamiento = 0;
         GameObject playerObject = GameObject.FindWithTag("Player");
         playerHealth = playerObject.GetComponent<PlayerHealth>();
         health = playerHealth.health;
@@ -27,6 +27,8 @@ public class LifeController : MonoBehaviour
             desplazamiento += 85;
             Petalos.Add(petaloIsta);
         }
+        
+        
     }
     public void UpdateHealth(int playerHealth)
     {

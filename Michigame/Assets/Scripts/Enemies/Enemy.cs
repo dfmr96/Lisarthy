@@ -5,6 +5,8 @@ using UnityEngine;
 
 public class Enemy : MonoBehaviour
 {
+    [SerializeField] private AudioClip soundHit;
+    [SerializeField] private AudioClip soundDeath;
     public int health;
 
     public float speed;
@@ -20,12 +22,17 @@ public class Enemy : MonoBehaviour
             gameObject.GetComponent<Animator>().SetTrigger("damaged");
         }        
         Die();
+        
     }
 
     public void Die()
     {
         if (health <= 0)
         {
+
+            AudioManager.Instance.PlaySound(soundDeath);
+            Destroy(gameObject);
+
             if (TryGetComponent<Animator>(out Animator animator))
             {
                 gameObject.GetComponent<Animator>().SetBool("isDead", true);
@@ -35,6 +42,10 @@ public class Enemy : MonoBehaviour
                 Destroy(gameObject);
             }               
             
+        }
+        else
+        {
+            AudioManager.Instance.PlaySound(soundHit);
         }
     }
     [ContextMenu("KillEnemy")]

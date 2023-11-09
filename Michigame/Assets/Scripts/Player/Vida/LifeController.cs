@@ -7,8 +7,7 @@ using UnityEngine;
 public class LifeController : MonoBehaviour
 {
     [SerializeField] private GameObject petalo;
-    [SerializeField] private GameObject canvas;
-    [SerializeField] private Transform point;
+    [SerializeField] private GameObject padre;
     private List<GameObject> Petalos = new List<GameObject>();
     private PlayerHealth playerHealth;
     private int health;
@@ -23,7 +22,7 @@ public class LifeController : MonoBehaviour
         health = playerHealth.health;
         for (int i = 0; i < health; i++)
         {
-            var petaloIsta = Instantiate(petalo, point.position + new Vector3(desplazamiento,0,0) , Quaternion.identity, canvas.transform);
+            var petaloIsta = Instantiate(petalo, transform.position + new Vector3(desplazamiento,0,0) , Quaternion.identity, padre.transform);
             desplazamiento += 85;
             Petalos.Add(petaloIsta);
         }
@@ -33,7 +32,7 @@ public class LifeController : MonoBehaviour
         healthChanged = playerHealth;
         if (health < healthChanged)
         {
-            var petaloIsta = Instantiate(petalo, transform.position + new Vector3(desplazamiento,0,0) , Quaternion.identity, canvas.transform);
+            var petaloIsta = Instantiate(petalo, transform.position + new Vector3(desplazamiento,0,0) , Quaternion.identity, padre.transform);
             desplazamiento += 85;
             Petalos.Add(petaloIsta);
             petaloIsta.transform.position = new Vector3(petaloIsta.transform.position.x, Petalos[0].transform.position.y, 0);

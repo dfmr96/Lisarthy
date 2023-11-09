@@ -9,11 +9,41 @@ public class PlayerHealth : MonoBehaviour
     [SerializeField] private AudioClip gethealth;
     // Start is called before the first frame update
 
+    private void Update()
+    {
+        Test();
+    }
     public void TakeDamage(int damage)
     {
+
         AudioManager.Instance.PlaySound(getdamage);
         health -= damage;
         Debug.Log(health);
+
+        if (health > 0)
+        {
+            health -= damage;
+            Debug.Log(health);
+        }
+        else if (health <= 0)
+        {
+            gameObject.GetComponent<Animator>().SetTrigger("dead");
+        }
+        
+    }
+
+    public void Death()
+    {
+        Destroy(this.gameObject);
+    }
+
+    public void Test()
+    {
+        if (Input.GetKeyDown(KeyCode.K))
+        {
+            TakeDamage(11);
+        }
+
     }
     public void TakeHealth(int heal)
     {

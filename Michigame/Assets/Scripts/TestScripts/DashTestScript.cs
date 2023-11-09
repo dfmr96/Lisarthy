@@ -42,15 +42,17 @@ public class DashTestScript : MonoBehaviour
     {
         if (!onCooldown)
         {
+            gameObject.GetComponent<Animator>().SetTrigger("dashing");
             Vector2 impulseVector = new Vector2(Input.GetAxisRaw("Horizontal"), 0);
             if (impulseVector == Vector2.zero) yield break;
-            
+
             dashTrail.emitting = true;
             Vector2 velocity = rb.velocity;
             rb.AddForce(impulseVector * impulseForce, ForceMode2D.Impulse);
             AudioManager.Instance.PlaySound(sound);
             onCooldown = true;
-            
+            //gameObject.GetComponent<Animator>().SetBool("dashing", false);
+
             yield return new WaitForSeconds(dashDuration);
             dashTrail.emitting = false;
             rb.velocity = velocity;

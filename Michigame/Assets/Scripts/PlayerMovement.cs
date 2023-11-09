@@ -75,6 +75,14 @@ public class PlayerMovement : MonoBehaviour
     private void Update()
     {
         desiredVelocity = new Vector2(Input.GetAxisRaw("Horizontal") * maxSpeed, 0f);
+        if (desiredVelocity.magnitude > 0f && dashTest.OnDash()==false)
+        {
+            gameObject.GetComponent<Animator>().SetBool("walking", true);
+        }
+        else if (Input.GetAxisRaw("Horizontal") == 0)
+        {
+            gameObject.GetComponent<Animator>().SetBool("walking", false);
+        }
     }
 
     private void FixedUpdate()
@@ -87,7 +95,7 @@ public class PlayerMovement : MonoBehaviour
         
         turning = false;
         if (desiredVelocity.x != 0)
-        {
+        {            
             if (Mathf.Sign(desiredVelocity.x) != Mathf.Sign(rb.velocity.x) && rb.velocity.x != 0)
             {
                 turning = true;

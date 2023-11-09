@@ -16,8 +16,13 @@ public class TailAttackTestScript : MonoBehaviour
     {
         if (Input.GetKey(KeyCode.DownArrow) && Input.GetKeyDown(KeyCode.Q))
         {
+
             Attack();
             AudioManager.Instance.PlaySound(sound);
+
+            gameObject.GetComponent<Animator>().SetTrigger("tailPunch");
+            //Attack();
+
         }
     }
 
@@ -50,5 +55,10 @@ public class TailAttackTestScript : MonoBehaviour
             transform.parent.position.y + offset.y);
         */
         yield return null;
+    }
+
+    public void Attack2()
+    {
+        Attack();
     }
 }

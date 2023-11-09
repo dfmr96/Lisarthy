@@ -14,7 +14,8 @@ public class HairballTestScript : MonoBehaviour
     {
         if (Input.GetKeyDown(KeyCode.E))
         {
-            Fire();
+            gameObject.GetComponent<Animator>().SetTrigger("furBall");
+            //Fire();
         }
     }
 

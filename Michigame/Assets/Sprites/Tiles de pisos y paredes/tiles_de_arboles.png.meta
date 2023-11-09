@@ -118,7 +118,7 @@ TextureImporter:
         width: 512
         height: 512
       alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -139,7 +139,7 @@ TextureImporter:
         width: 512
         height: 512
       alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -160,7 +160,7 @@ TextureImporter:
         width: 512
         height: 512
       alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -181,14 +181,14 @@ TextureImporter:
         width: 512
         height: 512
       alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: fb3a1c957cceb1844afbd74e6ad2a7e6
-      internalID: 155583078
+      spriteID: 3a915be480d58c54c8d59fd2cc4a8eb0
+      internalID: 1346906383
       vertices: []
       indices: 
       edges: []
@@ -202,14 +202,14 @@ TextureImporter:
         width: 512
         height: 512
       alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 34a105d1d3b35c84f9f1e381c834f237
-      internalID: 1398665765
+      spriteID: bfc226f07c9b35940ae57a54ff127196
+      internalID: -1567341273
       vertices: []
       indices: 
       edges: []
@@ -223,140 +223,98 @@ TextureImporter:
         width: 512
         height: 512
       alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: c8073c434267c634b919452beb6a3f1f
-      internalID: 1064270169
+      spriteID: b30559752bb86bf42bd398c2fa0226a2
+      internalID: -1891594832
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: tiles_de_arboles_24
-      rect:
-        serializedVersion: 2
-        x: 0
-        y: 1024
-        width: 512
-        height: 512
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: ea733e0cf4258504da0747f59b1d0302
-      internalID: 2015538033
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: tiles_de_arboles_25
-      rect:
-        serializedVersion: 2
-        x: 512
-        y: 1024
-        width: 512
-        height: 512
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 355846bf94ceaee4094e21499ec32bf9
-      internalID: -981350377
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: tiles_de_arboles_26
+      name: tiles_de_arboles_17
       rect:
         serializedVersion: 2
         x: 1024
-        y: 1024
+        y: 2560
         width: 512
         height: 512
       alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 2103f7f72b66b68448f8f42a6977a000
-      internalID: -854983846
+      spriteID: 4f1a75b1449e6f349af709e92c9eccfb
+      internalID: -1490097097
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: tiles_de_arboles_29
+      name: tiles_de_arboles_18
       rect:
         serializedVersion: 2
-        x: 2560
-        y: 1024
+        x: 1536
+        y: 2560
         width: 512
         height: 512
       alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 28af02ef9186bd94eae390c8391d263a
-      internalID: 874246630
+      spriteID: 7d62d46c6d4bdb348b715a231433c480
+      internalID: 1836015596
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: tiles_de_arboles_30
+      name: tiles_de_arboles_21
       rect:
         serializedVersion: 2
-        x: 3072
-        y: 1024
+        x: 1024
+        y: 2048
         width: 512
         height: 512
       alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: bdb29fa8c2d41b1469add43dc082387d
-      internalID: -804293759
+      spriteID: f1f992d91cc107946a989f39af6895af
+      internalID: 20867430
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: tiles_de_arboles_31
+      name: tiles_de_arboles_22
       rect:
         serializedVersion: 2
-        x: 3584
-        y: 1024
+        x: 1536
+        y: 2048
         width: 512
         height: 512
       alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: aacdd7be22909d142b77e7af4330d7cf
-      internalID: -1529719874
+      spriteID: 209c49bc4729787458fa6d6e540136eb
+      internalID: 60535858
       vertices: []
       indices: 
       edges: []
@@ -366,18 +324,18 @@ TextureImporter:
       rect:
         serializedVersion: 2
         x: 0
-        y: 512
+        y: 1024
         width: 512
         height: 512
       alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 37c5ae64f507bc1449ce8533bf54b127
-      internalID: -556664521
+      spriteID: 404ee5e90e8226548b0670e6e3cd6267
+      internalID: -292710798
       vertices: []
       indices: 
       edges: []
@@ -387,18 +345,18 @@ TextureImporter:
       rect:
         serializedVersion: 2
         x: 512
-        y: 512
+        y: 1024
         width: 512
         height: 512
       alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 1ac9b1556c280a646a60848fde30ac73
-      internalID: 1617272024
+      spriteID: b9f105af9ac9c704f8fe56734809eda8
+      internalID: -550602695
       vertices: []
       indices: 
       edges: []
@@ -408,18 +366,18 @@ TextureImporter:
       rect:
         serializedVersion: 2
         x: 1024
-        y: 512
+        y: 1024
         width: 512
         height: 512
       alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: e739b6cbcdec4784cacc347ad5faefb5
-      internalID: -1074778341
+      spriteID: a82499c7ddc47a84d87751bed561bf74
+      internalID: 1413229979
       vertices: []
       indices: 
       edges: []
@@ -429,18 +387,18 @@ TextureImporter:
       rect:
         serializedVersion: 2
         x: 2560
-        y: 512
+        y: 1024
         width: 512
         height: 512
       alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 4f1cdeb590b51a945aadf57189d4ab73
-      internalID: -819281884
+      spriteID: 0fc64d067cf5cbe4a92c39e486d2c64f
+      internalID: -886723147
       vertices: []
       indices: 
       edges: []
@@ -450,18 +408,18 @@ TextureImporter:
       rect:
         serializedVersion: 2
         x: 3072
-        y: 512
+        y: 1024
         width: 512
         height: 512
       alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 9e73b5216c13d694886c17015dc7064d
-      internalID: -1338162650
+      spriteID: 2839bb8bdebc7424ea8f27087ba4e914
+      internalID: -1013799210
       vertices: []
       indices: 
       edges: []
@@ -471,18 +429,18 @@ TextureImporter:
       rect:
         serializedVersion: 2
         x: 3584
-        y: 512
+        y: 1024
         width: 512
         height: 512
       alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: dbe94c0663603204cba867382a119bc0
-      internalID: -1021254671
+      spriteID: a18d0c2782f31a54e8a1952d2694921d
+      internalID: 27536622
       vertices: []
       indices: 
       edges: []
@@ -492,18 +450,18 @@ TextureImporter:
       rect:
         serializedVersion: 2
         x: 0
-        y: 0
+        y: 512
         width: 512
         height: 512
       alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: cb01e8cd4c3800a42a1b6ae31092f9fd
-      internalID: -2052600701
+      spriteID: 17e38d5125dadc94bab9deec2bdcd024
+      internalID: -2020612006
       vertices: []
       indices: 
       edges: []
@@ -513,18 +471,18 @@ TextureImporter:
       rect:
         serializedVersion: 2
         x: 512
-        y: 0
+        y: 512
         width: 512
         height: 512
       alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 99482ce42a6761a4493670abb0275a9b
-      internalID: -556504216
+      spriteID: af93be33aaa9ed84f985d148069bf247
+      internalID: -847481701
       vertices: []
       indices: 
       edges: []
@@ -534,18 +492,18 @@ TextureImporter:
       rect:
         serializedVersion: 2
         x: 1024
-        y: 0
+        y: 512
         width: 512
         height: 512
       alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: ea26e61608485124498af656f6ab33c5
-      internalID: -427632851
+      spriteID: c06fd0126754ec44482f757bdf7a9042
+      internalID: 1869378771
       vertices: []
       indices: 
       edges: []
@@ -555,18 +513,18 @@ TextureImporter:
       rect:
         serializedVersion: 2
         x: 2560
-        y: 0
+        y: 512
         width: 512
         height: 512
       alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 25f1dd8ba44518a46b0bda29975a4820
-      internalID: -1652635097
+      spriteID: 0b941259f81466e48b77d3909155a52d
+      internalID: -1717149098
       vertices: []
       indices: 
       edges: []
@@ -576,18 +534,18 @@ TextureImporter:
       rect:
         serializedVersion: 2
         x: 3072
-        y: 0
+        y: 512
         width: 512
         height: 512
       alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 31f6b7e58c599ad46b83431421f1fbcf
-      internalID: 964527187
+      spriteID: 1d22c09a610ca1a459f85d153b63be79
+      internalID: -2110033823
       vertices: []
       indices: 
       edges: []
@@ -597,18 +555,144 @@ TextureImporter:
       rect:
         serializedVersion: 2
         x: 3584
-        y: 0
+        y: 512
         width: 512
         height: 512
       alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: c85eb5dee1dd2eb458a317c1e53d3dfd
-      internalID: 1033943501
+      spriteID: be90b441ff5f98f459c046e3ce094d03
+      internalID: 2097857645
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: tiles_de_arboles_48
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 0
+        width: 512
+        height: 512
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c4c4b95af7938d24d97ccf69fef38592
+      internalID: -431059587
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: tiles_de_arboles_49
+      rect:
+        serializedVersion: 2
+        x: 512
+        y: 0
+        width: 512
+        height: 512
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: adf713067aa27e84cb31beb3ae0b8dd8
+      internalID: -1569149757
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: tiles_de_arboles_50
+      rect:
+        serializedVersion: 2
+        x: 1024
+        y: 0
+        width: 512
+        height: 512
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c1a68dd2e6def97448e710d25e69dbf6
+      internalID: -1537476381
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: tiles_de_arboles_53
+      rect:
+        serializedVersion: 2
+        x: 2560
+        y: 0
+        width: 512
+        height: 512
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f657d8b7f9ff98742a4db1c71ef47a7d
+      internalID: -1158138953
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: tiles_de_arboles_54
+      rect:
+        serializedVersion: 2
+        x: 3072
+        y: 0
+        width: 512
+        height: 512
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 460d2899e55526f489bc4885ad271d0c
+      internalID: -533106616
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: tiles_de_arboles_55
+      rect:
+        serializedVersion: 2
+        x: 3584
+        y: 0
+        width: 512
+        height: 512
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b5ff3c13d81702749b724a66311a7ca5
+      internalID: 586726948
       vertices: []
       indices: 
       edges: []
@@ -626,52 +710,60 @@ TextureImporter:
     nameFileIdTable:
       tiles_de_arboles_0: 384395011
       tiles_de_arboles_1: -306993389
-      tiles_de_arboles_10: -1912518686
-      tiles_de_arboles_11: -225998872
-      tiles_de_arboles_12: -424761735
-      tiles_de_arboles_13: 268405830
-      tiles_de_arboles_14: 1448539075
-      tiles_de_arboles_15: -392503699
-      tiles_de_arboles_16: -1557313313
-      tiles_de_arboles_17: 1440800612
-      tiles_de_arboles_18: -225178859
-      tiles_de_arboles_19: 611514426
+      tiles_de_arboles_10: 4846234
+      tiles_de_arboles_11: 2002903177
+      tiles_de_arboles_12: -375929598
+      tiles_de_arboles_13: 1776759548
+      tiles_de_arboles_14: 65075347
+      tiles_de_arboles_15: -1884958832
+      tiles_de_arboles_16: -1455618697
+      tiles_de_arboles_17: -1490097097
+      tiles_de_arboles_18: 1836015596
+      tiles_de_arboles_19: -2078548292
       tiles_de_arboles_2: 1138155385
-      tiles_de_arboles_20: 972425947
-      tiles_de_arboles_21: 1118757373
-      tiles_de_arboles_22: -1741390038
-      tiles_de_arboles_23: -386670784
-      tiles_de_arboles_24: 2015538033
-      tiles_de_arboles_25: -981350377
-      tiles_de_arboles_26: -854983846
-      tiles_de_arboles_27: -1855781991
-      tiles_de_arboles_28: -778860672
-      tiles_de_arboles_29: 874246630
+      tiles_de_arboles_20: 13483768
+      tiles_de_arboles_21: 20867430
+      tiles_de_arboles_22: 60535858
+      tiles_de_arboles_23: -1641712569
+      tiles_de_arboles_24: -664940666
+      tiles_de_arboles_25: 1429542277
+      tiles_de_arboles_26: 580390218
+      tiles_de_arboles_27: 1812132904
+      tiles_de_arboles_28: -1351049812
+      tiles_de_arboles_29: 1733107568
       tiles_de_arboles_3: 1099882269
-      tiles_de_arboles_30: -804293759
-      tiles_de_arboles_31: -1529719874
-      tiles_de_arboles_32: -556664521
-      tiles_de_arboles_33: 1617272024
-      tiles_de_arboles_34: -1074778341
-      tiles_de_arboles_35: 346874478
-      tiles_de_arboles_36: 1140482490
-      tiles_de_arboles_37: -819281884
-      tiles_de_arboles_38: -1338162650
-      tiles_de_arboles_39: -1021254671
+      tiles_de_arboles_30: -358395165
+      tiles_de_arboles_31: -17879628
+      tiles_de_arboles_32: -292710798
+      tiles_de_arboles_33: -550602695
+      tiles_de_arboles_34: 1413229979
+      tiles_de_arboles_35: 1068366804
+      tiles_de_arboles_36: 1311131313
+      tiles_de_arboles_37: -886723147
+      tiles_de_arboles_38: -1013799210
+      tiles_de_arboles_39: 27536622
       tiles_de_arboles_4: -722185867
-      tiles_de_arboles_40: -2052600701
-      tiles_de_arboles_41: -556504216
-      tiles_de_arboles_42: -427632851
-      tiles_de_arboles_43: 1855984502
-      tiles_de_arboles_44: 1292029361
-      tiles_de_arboles_45: -1652635097
-      tiles_de_arboles_46: 964527187
-      tiles_de_arboles_47: 1033943501
-      tiles_de_arboles_5: 155583078
-      tiles_de_arboles_6: 1398665765
-      tiles_de_arboles_7: 1064270169
-      tiles_de_arboles_8: 1912473689
-      tiles_de_arboles_9: 840719444
+      tiles_de_arboles_40: -2020612006
+      tiles_de_arboles_41: -847481701
+      tiles_de_arboles_42: 1869378771
+      tiles_de_arboles_43: 1041779465
+      tiles_de_arboles_44: 1987997233
+      tiles_de_arboles_45: -1717149098
+      tiles_de_arboles_46: -2110033823
+      tiles_de_arboles_47: 2097857645
+      tiles_de_arboles_48: -431059587
+      tiles_de_arboles_49: -1569149757
+      tiles_de_arboles_5: 1346906383
+      tiles_de_arboles_50: -1537476381
+      tiles_de_arboles_51: 468800920
+      tiles_de_arboles_52: -2055502942
+      tiles_de_arboles_53: -1158138953
+      tiles_de_arboles_54: -533106616
+      tiles_de_arboles_55: 586726948
+      tiles_de_arboles_6: -1567341273
+      tiles_de_arboles_7: -1891594832
+      tiles_de_arboles_8: -1210972484
+      tiles_de_arboles_9: -712294187
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 

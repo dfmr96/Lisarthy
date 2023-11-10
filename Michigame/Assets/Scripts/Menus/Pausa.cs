@@ -26,11 +26,16 @@ public class Pausa : MonoBehaviour
         }
         else if (isPaused &&Input.GetKeyDown(KeyCode.Escape) )
         {
-            canvas.SetActive(false);
+            ClosePauseMenu();
+        }
+    }
+
+    public void ClosePauseMenu()
+    {
+        canvas.SetActive(false);
             Time.timeScale = 1;
             isPaused = false;
             MusicManager.Instance.PlayMusic();
             AudioManager.Instance.PlayMusic();
-        }
     }
 }

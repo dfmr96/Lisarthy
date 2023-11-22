@@ -16,6 +16,7 @@ public class DialogSystem : MonoBehaviour
     {
         playerSpeech = GameObject.Find("PlayerDialog").GetComponent<SpriteRenderer>();
         npcSpeech = this.gameObject.GetComponent<SpriteRenderer>();
+        npcSpeech.sprite = null;
     }
 
     // Update is called once per frame

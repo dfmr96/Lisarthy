@@ -35,6 +35,7 @@ GameObject:
   - component: {fileID: 6894181538490832568}
   - component: {fileID: 3689543713879565444}
   - component: {fileID: 497461490369407076}
+  - component: {fileID: 3774677178488240311}
   m_Layer: 12
   m_Name: CameraBounds
   m_TagString: Untagged
@@ -126,13 +127,13 @@ CompositeCollider2D:
         Y: 180708320
   - m_Collider: {fileID: 54091288612715842}
     m_ColliderPaths:
-    - - X: 1135689984
+    - - X: 1146281984
         Y: 657684032
-      - X: 987621760
+      - X: 967762176
         Y: 657684032
-      - X: 987621760
+      - X: 967762176
         Y: 179264832
-      - X: 1135689984
+      - X: 1146281984
         Y: 179264832
   - m_Collider: {fileID: 5445095780824448325}
     m_ColliderPaths:
@@ -146,13 +147,13 @@ CompositeCollider2D:
         Y: 502880544
   - m_Collider: {fileID: 7609023139999928423}
     m_ColliderPaths:
-    - - X: 2412108544
-        Y: 976196608
+    - - X: 2427909888
+        Y: 975876160
       - X: 1595534976
-        Y: 976196608
+        Y: 975876160
       - X: 1595534976
         Y: 502487808
-      - X: 2412108544
+      - X: 2427909888
         Y: 502487808
   - m_Collider: {fileID: 1035796081104836951}
     m_ColliderPaths:
@@ -186,24 +187,24 @@ CompositeCollider2D:
         Y: 1140916992
   - m_Collider: {fileID: 4448965005702732815}
     m_ColliderPaths:
-    - - X: 2414606080
+    - - X: 2427296512
         Y: 1616762368
-      - X: 2258590464
+      - X: 2243362048
         Y: 1616762368
-      - X: 2258590464
+      - X: 2243362048
         Y: 966212160
-      - X: 2414606080
+      - X: 2427296512
         Y: 966212160
   - m_Collider: {fileID: 8837295689079991574}
     m_ColliderPaths:
     - - X: 2898448896
-        Y: 1616762368
+        Y: 1623373056
       - X: 2407793152
-        Y: 1616762368
+        Y: 1623373056
       - X: 2407793152
-        Y: 1458580608
+        Y: 1450317440
       - X: 2898448896
-        Y: 1458580608
+        Y: 1450317440
   - m_Collider: {fileID: 2336102082713095697}
     m_ColliderPaths:
     - - X: 3375896832
@@ -334,6 +335,16 @@ CompositeCollider2D:
         Y: -141953888
       - X: 835995200
         Y: -141953888
+  - m_Collider: {fileID: 3774677178488240311}
+    m_ColliderPaths:
+    - - X: 2103507328
+        Y: 1289880960
+      - X: 1929107328
+        Y: 1289880960
+      - X: 1929107328
+        Y: 975911552
+      - X: 2103507328
+        Y: 975911552
   m_CompositePaths:
     m_Paths:
     - - {x: 323.1605, y: -46.25363}
@@ -347,10 +358,12 @@ CompositeCollider2D:
       - {x: 337.5897, y: 145.8581}
       - {x: 337.58966, y: 177.87537}
       - {x: 289.58987, y: 177.87534}
-      - {x: 289.58984, y: 161.67624}
-      - {x: 225.85905, y: 161.67621}
-      - {x: 225.85902, y: 97.61966}
-      - {x: 178.71982, y: 97.6197}
+      - {x: 289.58984, y: 162.33731}
+      - {x: 240.77931, y: 162.33728}
+      - {x: 240.7793, y: 161.67624}
+      - {x: 224.33621, y: 161.67621}
+      - {x: 224.33618, y: 97.587616}
+      - {x: 178.71982, y: 97.58765}
       - {x: 178.7198, y: 114.38748}
       - {x: 178.7131, y: 114.38751}
       - {x: 178.71307, y: 130.113}
@@ -361,11 +374,11 @@ CompositeCollider2D:
       - {x: 97.06119, y: 114.091675}
       - {x: 97.061226, y: 113.90396}
       - {x: 159.55667, y: 113.90394}
-      - {x: 159.55666, y: 97.61966}
-      - {x: 159.5535, y: 97.61963}
+      - {x: 159.55666, y: 97.587616}
+      - {x: 159.5535, y: 97.587585}
       - {x: 159.55347, y: 65.7684}
-      - {x: 98.76218, y: 65.76837}
-      - {x: 98.762146, y: 33.59607}
+      - {x: 96.77622, y: 65.76837}
+      - {x: 96.776184, y: 33.59607}
       - {x: 83.59952, y: 33.5961}
       - {x: 83.59949, y: 33.828552}
       - {x: 63.49655, y: 33.828526}
@@ -381,24 +394,28 @@ CompositeCollider2D:
       - {x: 223.73361, y: -15.15576}
       - {x: 223.73363, y: -46.25363}
     - - {x: 303.01755, y: 65.299416}
-      - {x: 241.21086, y: 65.299416}
-      - {x: 241.21088, y: 96.621216}
-      - {x: 241.46062, y: 96.62125}
-      - {x: 241.46063, y: 145.85806}
-      - {x: 287.43808, y: 145.85803}
+      - {x: 242.79099, y: 65.299416}
+      - {x: 242.79097, y: 97.587616}
+      - {x: 242.72966, y: 97.58765}
+      - {x: 242.72968, y: 145.03174}
+      - {x: 287.43808, y: 145.03172}
       - {x: 287.4381, y: 129.87207}
       - {x: 287.49326, y: 129.87204}
       - {x: 287.4933, y: 81.91409}
       - {x: 303.01755, y: 81.91406}
+    - - {x: 210.35071, y: 97.591156}
+      - {x: 210.35071, y: 128.9881}
+      - {x: 192.91074, y: 128.98807}
+      - {x: 192.91077, y: 97.591156}
     - - {x: 159.74973, y: -30.033985}
       - {x: 99.415436, y: -30.033985}
       - {x: 99.415405, y: -13.516709}
       - {x: 83.59952, y: -13.51668}
       - {x: 83.599556, y: 18.070831}
-      - {x: 98.76218, y: 18.070803}
-      - {x: 98.76221, y: 17.926483}
-      - {x: 113.569, y: 17.926512}
-      - {x: 113.56902, y: 50.288055}
+      - {x: 96.77622, y: 18.070803}
+      - {x: 96.77625, y: 17.926483}
+      - {x: 114.6282, y: 17.926512}
+      - {x: 114.62823, y: 50.288055}
       - {x: 159.5535, y: 50.288025}
       - {x: 159.55353, y: 50.248783}
       - {x: 223.73361, y: 50.248753}
@@ -612,7 +629,7 @@ BoxCollider2D:
   m_IsTrigger: 0
   m_UsedByEffector: 0
   m_UsedByComposite: 1
-  m_Offset: {x: 106.16559, y: 41.847443}
+  m_Offset: {x: 105.70221, y: 41.847443}
   m_SpriteTilingProperty:
     border: {x: 0, y: 0, z: 0, w: 0}
     pivot: {x: 0, y: 0}
@@ -623,7 +640,7 @@ BoxCollider2D:
     adaptiveTiling: 0
   m_AutoTiling: 0
   serializedVersion: 2
-  m_Size: {x: 14.806824, y: 47.84192}
+  m_Size: {x: 17.85199, y: 47.84192}
   m_EdgeRadius: 0
 --- !u!61 &5445095780824448325
 BoxCollider2D:
@@ -702,7 +719,7 @@ BoxCollider2D:
   m_IsTrigger: 0
   m_UsedByEffector: 0
   m_UsedByComposite: 1
-  m_Offset: {x: 200.38217, y: 73.93422}
+  m_Offset: {x: 201.17224, y: 73.9182}
   m_SpriteTilingProperty:
     border: {x: 0, y: 0, z: 0, w: 0}
     pivot: {x: 0, y: 0}
@@ -713,7 +730,7 @@ BoxCollider2D:
     adaptiveTiling: 0
   m_AutoTiling: 0
   serializedVersion: 2
-  m_Size: {x: 81.65735, y: 47.37088}
+  m_Size: {x: 83.23749, y: 47.338837}
   m_EdgeRadius: 0
 --- !u!61 &1035796081104836951
 BoxCollider2D:
@@ -882,7 +899,7 @@ BoxCollider2D:
   m_IsTrigger: 0
   m_UsedByEffector: 0
   m_UsedByComposite: 1
-  m_Offset: {x: 233.65982, y: 129.14873}
+  m_Offset: {x: 233.53293, y: 129.14873}
   m_SpriteTilingProperty:
     border: {x: 0, y: 0, z: 0, w: 0}
     pivot: {x: 0, y: 0}
@@ -893,7 +910,7 @@ BoxCollider2D:
     adaptiveTiling: 0
   m_AutoTiling: 0
   serializedVersion: 2
-  m_Size: {x: 15.6015625, y: 65.05502}
+  m_Size: {x: 18.393433, y: 65.05502}
   m_EdgeRadius: 0
 --- !u!61 &8837295689079991574
 BoxCollider2D:
@@ -927,7 +944,7 @@ BoxCollider2D:
   m_IsTrigger: 0
   m_UsedByEffector: 0
   m_UsedByComposite: 1
-  m_Offset: {x: 265.3121, y: 153.76715}
+  m_Offset: {x: 265.3121, y: 153.68452}
   m_SpriteTilingProperty:
     border: {x: 0, y: 0, z: 0, w: 0}
     pivot: {x: 0, y: 0}
@@ -938,7 +955,7 @@ BoxCollider2D:
     adaptiveTiling: 0
   m_AutoTiling: 0
   serializedVersion: 2
-  m_Size: {x: 49.06555, y: 15.818176}
+  m_Size: {x: 49.06555, y: 17.305573}
   m_EdgeRadius: 0
 --- !u!61 &2336102082713095697
 BoxCollider2D:
@@ -1524,4 +1541,49 @@ BoxCollider2D:
   m_AutoTiling: 0
   serializedVersion: 2
   m_Size: {x: 20.102966, y: 48.02394}
+  m_EdgeRadius: 0
+--- !u!61 &3774677178488240311
+BoxCollider2D:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6824712532535706319}
+  m_Enabled: 1
+  m_Density: 1
+  m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_LayerOverridePriority: 0
+  m_ForceSendLayers:
+    serializedVersion: 2
+    m_Bits: 4294967295
+  m_ForceReceiveLayers:
+    serializedVersion: 2
+    m_Bits: 4294967295
+  m_ContactCaptureLayers:
+    serializedVersion: 2
+    m_Bits: 4294967295
+  m_CallbackLayers:
+    serializedVersion: 2
+    m_Bits: 4294967295
+  m_IsTrigger: 0
+  m_UsedByEffector: 0
+  m_UsedByComposite: 1
+  m_Offset: {x: 201.63074, y: 113.28963}
+  m_SpriteTilingProperty:
+    border: {x: 0, y: 0, z: 0, w: 0}
+    pivot: {x: 0, y: 0}
+    oldSize: {x: 0, y: 0}
+    newSize: {x: 0, y: 0}
+    adaptiveTilingThreshold: 0
+    drawMode: 0
+    adaptiveTiling: 0
+  m_AutoTiling: 0
+  serializedVersion: 2
+  m_Size: {x: 17.44, y: 31.396942}
   m_EdgeRadius: 0

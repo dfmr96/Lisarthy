@@ -468,11 +468,6 @@ Transform:
   m_Children: []
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!1 &1372389817 stripped
-GameObject:
-  m_CorrespondingSourceObject: {fileID: 2447597237385981278, guid: 2f84c873b49122f4e9bcc37e23f257b8, type: 3}
-  m_PrefabInstance: {fileID: 2110898699}
-  m_PrefabAsset: {fileID: 0}
 --- !u!1 &1707069677
 GameObject:
   m_ObjectHideFlags: 0
@@ -611,7 +606,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 184cd86379610b34bb74138e8e2f2923, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  playerDialogue: {fileID: 1372389817}
+  playerDialogue: {fileID: 0}
   npcDialogue: {fileID: 1755713080}
 --- !u!4 &1835441637
 Transform:

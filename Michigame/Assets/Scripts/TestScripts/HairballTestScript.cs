@@ -19,7 +19,7 @@ public class HairballTestScript : MonoBehaviour
     {
         if (waitTime <= 0)
         {
-            if (Input.GetKeyDown(KeyCode.E))
+            if (Input.GetButtonDown("Hairball"))
             {
                 gameObject.GetComponent<Animator>().SetTrigger("furBall");
                 waitTime = fireRate;

@@ -189,7 +189,7 @@ public class PlayerJump : MonoBehaviour
         if (currentlyJumping && rb.velocity.y < 0) timeToGroundDebug += Time.deltaTime;
         SetPhysics();
 
-        if (Input.GetKeyDown(KeyCode.Space))
+        if (Input.GetButtonDown("Jump"))
         {
             timeToApexDebug = 0;
             timeToGroundDebug = 0;
@@ -197,7 +197,7 @@ public class PlayerJump : MonoBehaviour
             pressingJump = true;
         }
 
-        if (Input.GetKeyUp(KeyCode.Space)) pressingJump = false;
+        if (Input.GetButtonUp("Jump")) pressingJump = false;
 
         if (!currentlyJumping && !onGround)
         {

@@ -20,7 +20,7 @@ public class TailAttackTestScript : MonoBehaviour
 
     private void Update()
     {
-        if (Input.GetKey(KeyCode.DownArrow) && Input.GetKeyDown(KeyCode.Q))
+        if (Input.GetAxis("Vertical") < 1 && Input.GetButtonDown("Attack"))
         {
             Attack();
             

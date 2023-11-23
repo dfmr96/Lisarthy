@@ -44,7 +44,7 @@ public class PawTestScript : MonoBehaviour
 
     private void Update()
     {
-        if (Input.GetKeyDown(KeyCode.R))
+        if (Input.GetButtonDown("Attack"))
         {
             Debug.Log("Atacó con garra");            
             Attack();

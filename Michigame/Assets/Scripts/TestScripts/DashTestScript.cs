@@ -27,7 +27,7 @@ public class DashTestScript : MonoBehaviour
 
     private void Update()
     {
-        if (Input.GetKeyDown(KeyCode.F))
+        if (Input.GetButtonDown("Dash"))
         {
             Dash();
         }

@@ -43,7 +43,7 @@ TextureImporter:
   nPOTScale: 0
   lightmap: 0
   compressionQuality: 50
-  spriteMode: 1
+  spriteMode: 2
   spriteExtrude: 1
   spriteMeshType: 1
   alignment: 0
@@ -108,7 +108,133 @@ TextureImporter:
     forceMaximumCompressionQuality_BC6H_BC7: 0
   spriteSheet:
     serializedVersion: 2
-    sprites: []
+    sprites:
+    - serializedVersion: 2
+      name: Botones - nuevos_0
+      rect:
+        serializedVersion: 2
+        x: 5
+        y: 403
+        width: 427
+        height: 193
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 002b6ed4f2f25be479336948ba2e7500
+      internalID: 206464847
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Botones - nuevos_1
+      rect:
+        serializedVersion: 2
+        x: 460
+        y: 400
+        width: 427
+        height: 196
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7ed68c5eca4e2604680855279d0d2add
+      internalID: -1218518640
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Botones - nuevos_2
+      rect:
+        serializedVersion: 2
+        x: 914
+        y: 400
+        width: 400
+        height: 196
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e8c53135bc5be9349a623dfe343f65db
+      internalID: 1720564851
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Botones - nuevos_3
+      rect:
+        serializedVersion: 2
+        x: 4
+        y: 209
+        width: 427
+        height: 196
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 48c9d0242a209424ba60282962e6a1fd
+      internalID: 152169623
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Botones - nuevos_4
+      rect:
+        serializedVersion: 2
+        x: 461
+        y: 210
+        width: 427
+        height: 196
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8c98e2be6c0c39f4181c82a80ce42899
+      internalID: -1729635861
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Botones - nuevos_5
+      rect:
+        serializedVersion: 2
+        x: 915
+        y: 214
+        width: 399
+        height: 196
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 161b3465f5739f040bb1e54e66cec89e
+      internalID: 1877714836
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
     outline: []
     physicsShape: []
     bones: []
@@ -119,7 +245,13 @@ TextureImporter:
     edges: []
     weights: []
     secondaryTextures: []
-    nameFileIdTable: {}
+    nameFileIdTable:
+      Botones - nuevos_0: 206464847
+      Botones - nuevos_1: -1218518640
+      Botones - nuevos_2: 1720564851
+      Botones - nuevos_3: 152169623
+      Botones - nuevos_4: -1729635861
+      Botones - nuevos_5: 1877714836
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 

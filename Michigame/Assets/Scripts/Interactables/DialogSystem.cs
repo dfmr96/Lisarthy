@@ -10,6 +10,12 @@ public class DialogSystem : MonoBehaviour
     private GameObject player;
     private SpriteRenderer npcSpeech;
     private int index = 0;
+
+    private bool claws;
+    private bool dash;
+    private bool furBall;
+    private bool tail;
+
     // Start is called before the first frame update
     void Start()
     {        
@@ -19,7 +25,15 @@ public class DialogSystem : MonoBehaviour
 
     // Update is called once per frame
     void Update()
-    {        
+    {
+        if (player != null)
+        {
+            claws = player.GetComponent<PawTestScript>().enabled;
+            dash = player.GetComponent<DashTestScript>().enabled;
+            furBall = player.GetComponent<HairballTestScript>().enabled;
+            tail = player.GetComponent<TailAttackTestScript>().enabled;
+        }
+
         if (active && !finished)
         {
             GroundPlayer(false);
@@ -44,6 +58,7 @@ public class DialogSystem : MonoBehaviour
                 finished = true;
                 active = false;
                 GroundPlayer(true);
+                EnableSkills();
             }
         }
 
@@ -66,10 +81,18 @@ public class DialogSystem : MonoBehaviour
         player.GetComponent<Rigidbody2D>().velocity = Vector2.zero;
         player.GetComponent<Animator>().SetBool("walking", active);
         player.GetComponent<PlayerJump>().enabled = active;
-        player.GetComponent<PawTestScript>().enabled = active;
-        player.GetComponent<DashTestScript>().enabled = active;
-        player.GetComponent<HairballTestScript>().enabled = active;
-        player.GetComponent<TailAttackTestScript>().enabled = active;
+        player.GetComponent<PawTestScript>().enabled = false;
+        player.GetComponent<DashTestScript>().enabled = false;
+        player.GetComponent<HairballTestScript>().enabled = false;
+        player.GetComponent<TailAttackTestScript>().enabled = false;
+    }
+
+    private void EnableSkills()
+    {
+        player.GetComponent<PawTestScript>().enabled = claws;
+        player.GetComponent<DashTestScript>().enabled = dash;
+        player.GetComponent<HairballTestScript>().enabled = furBall;
+        player.GetComponent<TailAttackTestScript>().enabled = tail;
     }
 
 }

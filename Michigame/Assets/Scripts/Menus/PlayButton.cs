@@ -10,9 +10,17 @@ public class PlayButton : MonoBehaviour
     {
         SceneManager.LoadScene(0);
     }
-    public void Play_Level_1()
+
+    public void Continue()
     {
         SceneManager.LoadScene(1);
+    }
+    
+    public void NewGame()
+    {
+        SceneManager.LoadScene(1);
+        PlayerPrefs.DeleteAll();
+        PlayerPrefs.SetInt("GameCreated", 1);
     }
     public void ExitGame()
     {

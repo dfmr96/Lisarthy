@@ -25,6 +25,8 @@ public class PlayerHealth : MonoBehaviour
 
     [SerializeField] private Vector2 lastCheckpoint;
     [SerializeField] private CameraController cameraController;
+
+    public int maxHealth = 5;
     // Start is called before the first frame update
 
     private void Update()
@@ -32,9 +34,19 @@ public class PlayerHealth : MonoBehaviour
         Test();
     }
 
-    private void Start()
+    private void Awake()
     {
-        //Debug.Log($"{PlayerPrefs.GetInt("CheckpointX")}, {PlayerPrefs.GetInt("CheckpointY")}");
+        Debug.Log($"{PlayerPrefs.GetInt("CheckpointX")}, {PlayerPrefs.GetInt("CheckpointY")}");
+        if (PlayerPrefs.HasKey("CheckpointX"))
+        {
+            lastCheckpoint.x = PlayerPrefs.GetInt("CheckpointX");
+        }
+        
+        if (PlayerPrefs.HasKey("CheckpointY"))
+        {
+            lastCheckpoint.y = PlayerPrefs.GetInt("CheckpointY");
+        }
+        if (lastCheckpoint != Vector2.zero) transform.position = lastCheckpoint;
     }
 
     public void SetLastCheckpoint(Vector2 position)
@@ -42,7 +54,7 @@ public class PlayerHealth : MonoBehaviour
         lastCheckpoint = position;
         PlayerPrefs.SetInt("CheckpointX", (int)lastCheckpoint.x);
         PlayerPrefs.SetInt("CheckpointY", (int)lastCheckpoint.y);
-        
+
         Debug.Log($"{PlayerPrefs.GetInt("CheckpointX")}, {PlayerPrefs.GetInt("CheckpointY")}");
             
     }
@@ -50,14 +62,12 @@ public class PlayerHealth : MonoBehaviour
     {
 
         AudioManager.Instance.PlaySound(getdamage);
-        Debug.Log(health);
         
         if (health >= 0)
         {
             
             health -= damage;
             life.UpdateHealth(health);
-            Debug.Log(health);
             
         }
         if (health <= 0)
@@ -80,10 +90,14 @@ public class PlayerHealth : MonoBehaviour
     }
     public void TakeHealth(int heal)
     {
-        AudioManager.Instance.PlaySound(gethealth);
-        health += heal;
-        life.UpdateHealth(health);
-        Debug.Log(health);
+        
+        if (health < maxHealth)
+        {
+            AudioManager.Instance.PlaySound(gethealth);
+            health += heal;
+            life.UpdateHealth(health);
+        }
+        
     }
 
     public void ChangeState(PlayerState newState)
@@ -120,9 +134,15 @@ public class PlayerHealth : MonoBehaviour
         cameraController.Restart();
         ChangeState(PlayerState.Alive);
         transform.position = lastCheckpoint;
-        health = 5;
+        health = maxHealth;
+        life.Restart();
         gameObject.GetComponent<Animator>().SetTrigger("respawn");
         ToggleMovement(true);
         
+    }
+
+    public void IncreaseHealth()
+    {
+        maxHealth++;
     }
 }

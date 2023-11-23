@@ -43,12 +43,12 @@ TextureImporter:
   nPOTScale: 0
   lightmap: 0
   compressionQuality: 50
-  spriteMode: 1
+  spriteMode: 2
   spriteExtrude: 1
   spriteMeshType: 1
   alignment: 0
   spritePivot: {x: 0.5, y: 0.5}
-  spritePixelsToUnits: 100
+  spritePixelsToUnits: 171
   spriteBorder: {x: 0, y: 0, z: 0, w: 0}
   spriteGenerateFallbackPhysicsShape: 1
   alphaUsage: 1
@@ -106,9 +106,271 @@ TextureImporter:
     ignorePlatformSupport: 0
     androidETC2FallbackOverride: 0
     forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: WebGL
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: iPhone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Android
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Windows Store Apps
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
   spriteSheet:
     serializedVersion: 2
-    sprites: []
+    sprites:
+    - serializedVersion: 2
+      name: Vuelo - Boss_0
+      rect:
+        serializedVersion: 2
+        x: 35
+        y: 1453
+        width: 920
+        height: 592
+      alignment: 9
+      pivot: {x: 0.49999997, y: 0.41209474}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c3f5082c98f29ab4d85a048be2d8b868
+      internalID: -1186087566
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Vuelo - Boss_1
+      rect:
+        serializedVersion: 2
+        x: 993
+        y: 1453
+        width: 972
+        height: 518
+      alignment: 9
+      pivot: {x: 0.50948995, y: 0.49406403}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 2743da535eff6004c97a1c37295f8dd2
+      internalID: -2076204703
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Vuelo - Boss_2
+      rect:
+        serializedVersion: 2
+        x: 1041
+        y: 863
+        width: 874
+        height: 594
+      alignment: 9
+      pivot: {x: 0.5140054, y: 0.42444012}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f36feda71a49d5c418b9494427038f30
+      internalID: 896815773
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Vuelo - Boss_3
+      rect:
+        serializedVersion: 2
+        x: 1968
+        y: 1455
+        width: 984
+        height: 500
+      alignment: 9
+      pivot: {x: 0.51249903, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f95c9638845ae1641953d5a06bed634e
+      internalID: -1046289664
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Vuelo - Boss_4
+      rect:
+        serializedVersion: 2
+        x: 2971
+        y: 1453
+        width: 968
+        height: 502
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8c7ce680804a8d449a52f39c277f6be6
+      internalID: -1325490297
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Vuelo - Boss_5
+      rect:
+        serializedVersion: 2
+        x: 29
+        y: 863
+        width: 936
+        height: 526
+      alignment: 9
+      pivot: {x: 0.50435925, y: 0.47672868}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 9bc22bf427f55aa47ab2fb60451199b0
+      internalID: -301905848
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Vuelo - Boss_6
+      rect:
+        serializedVersion: 2
+        x: 1997
+        y: 863
+        width: 938
+        height: 526
+      alignment: 9
+      pivot: {x: 0.5087001, y: 0.46897164}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1550e4f9fbf14dd4ebbe29572c9b47ac
+      internalID: 1829089782
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Vuelo - Boss_7
+      rect:
+        serializedVersion: 2
+        x: 2975
+        y: 863
+        width: 968
+        height: 500
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7d98da0e166669f4a9b7c912e9e50031
+      internalID: 1784087462
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Vuelo - Boss_8
+      rect:
+        serializedVersion: 2
+        x: 1
+        y: 270
+        width: 984
+        height: 501
+      alignment: 9
+      pivot: {x: 0.5124397, y: 0.49185577}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1a12c51626ed0ef43a230d4d4ba07971
+      internalID: 731737492
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Vuelo - Boss_9
+      rect:
+        serializedVersion: 2
+        x: 993
+        y: 269
+        width: 972
+        height: 518
+      alignment: 9
+      pivot: {x: 0.5125933, y: 0.47636926}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: de4d627794735524fbebac6420911d58
+      internalID: -1968975119
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
     outline: []
     physicsShape: []
     bones: []
@@ -119,7 +381,17 @@ TextureImporter:
     edges: []
     weights: []
     secondaryTextures: []
-    nameFileIdTable: {}
+    nameFileIdTable:
+      Vuelo - Boss_0: -1186087566
+      Vuelo - Boss_1: -2076204703
+      Vuelo - Boss_2: 896815773
+      Vuelo - Boss_3: -1046289664
+      Vuelo - Boss_4: -1325490297
+      Vuelo - Boss_5: -301905848
+      Vuelo - Boss_6: 1829089782
+      Vuelo - Boss_7: 1784087462
+      Vuelo - Boss_8: 731737492
+      Vuelo - Boss_9: -1968975119
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 

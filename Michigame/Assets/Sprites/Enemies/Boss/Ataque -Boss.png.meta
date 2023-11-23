@@ -43,12 +43,12 @@ TextureImporter:
   nPOTScale: 0
   lightmap: 0
   compressionQuality: 50
-  spriteMode: 1
+  spriteMode: 2
   spriteExtrude: 1
   spriteMeshType: 1
   alignment: 0
   spritePivot: {x: 0.5, y: 0.5}
-  spritePixelsToUnits: 100
+  spritePixelsToUnits: 171
   spriteBorder: {x: 0, y: 0, z: 0, w: 0}
   spriteGenerateFallbackPhysicsShape: 1
   alphaUsage: 1
@@ -106,9 +106,208 @@ TextureImporter:
     ignorePlatformSupport: 0
     androidETC2FallbackOverride: 0
     forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: WebGL
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: iPhone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Android
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Windows Store Apps
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
   spriteSheet:
     serializedVersion: 2
-    sprites: []
+    sprites:
+    - serializedVersion: 2
+      name: Ataque -Boss_0
+      rect:
+        serializedVersion: 2
+        x: 1
+        y: 1395
+        width: 914
+        height: 500
+      alignment: 9
+      pivot: {x: 0.5100922, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 23ebe5047058c95439c8e1971bc7e91a
+      internalID: 2109333827
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Ataque -Boss_1
+      rect:
+        serializedVersion: 2
+        x: 917
+        y: 1395
+        width: 914
+        height: 506
+      alignment: 9
+      pivot: {x: 0.51345617, y: 0.49392328}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e8a2b46fb4c50064f893f66c723074b1
+      internalID: 138828921
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Ataque -Boss_2
+      rect:
+        serializedVersion: 2
+        x: 1844
+        y: 1393
+        width: 900
+        height: 542
+      alignment: 9
+      pivot: {x: 0.5102493, y: 0.4546162}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e81b440ba293cd44299c255657da21a4
+      internalID: 701419155
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Ataque -Boss_3
+      rect:
+        serializedVersion: 2
+        x: 2769
+        y: 1391
+        width: 878
+        height: 576
+      alignment: 9
+      pivot: {x: 0.5041607, y: 0.43023553}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 68c26cb24d9f8da4ba1ef96e94a44ed5
+      internalID: 349057900
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Ataque -Boss_4
+      rect:
+        serializedVersion: 2
+        x: 45
+        y: 733
+        width: 842
+        height: 606
+      alignment: 9
+      pivot: {x: 0.5043386, y: 0.39751995}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 65ffa74a815877c4e81307fb4c2c64eb
+      internalID: 1506879172
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Ataque -Boss_5
+      rect:
+        serializedVersion: 2
+        x: 984
+        y: 731
+        width: 799
+        height: 634
+      alignment: 9
+      pivot: {x: 0.5, y: 0.3789978}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4ccc60c8829bf9849b78662f5f68bb6b
+      internalID: -627648028
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Ataque -Boss_6
+      rect:
+        serializedVersion: 2
+        x: 1928
+        y: 729
+        width: 745
+        height: 660
+      alignment: 9
+      pivot: {x: 0.50490344, y: 0.36715958}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 32d4272b92765244990701f8910e41f4
+      internalID: 26886490
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
     outline: []
     physicsShape: []
     bones: []
@@ -119,7 +318,14 @@ TextureImporter:
     edges: []
     weights: []
     secondaryTextures: []
-    nameFileIdTable: {}
+    nameFileIdTable:
+      Ataque -Boss_0: 2109333827
+      Ataque -Boss_1: 138828921
+      Ataque -Boss_2: 701419155
+      Ataque -Boss_3: 349057900
+      Ataque -Boss_4: 1506879172
+      Ataque -Boss_5: -627648028
+      Ataque -Boss_6: 26886490
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 

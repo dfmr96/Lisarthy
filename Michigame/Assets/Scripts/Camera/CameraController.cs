@@ -13,8 +13,11 @@ public class CameraController : MonoBehaviour
     [SerializeField] private GameObject ActualBoss;
     [SerializeField] private AudioClip MusicaMapa;
     [SerializeField] private AudioClip MusicaBoss;
+    [SerializeField] private GameObject Flor;
+    [SerializeField] private GameObject map;
 
     private bool setBoss = false;
+    private bool flor = false;
 
     private float timer;
     // Start is called before the first frame update
@@ -33,6 +36,12 @@ public class CameraController : MonoBehaviour
             BossContainer.SetActive(true);
             ActualBoss.SetActive(true);
         }
+
+        if (timer > 5.8 && flor)
+        {
+            Flor.SetActive(false);
+            flor = false;
+        }
     }
 
     private void OnTriggerEnter2D(Collider2D other)
@@ -44,8 +53,10 @@ public class CameraController : MonoBehaviour
             VirtualCamera.SetActive(false);
             if (!setBoss)
             {
+                map.SetActive(false);
                 timer = 0;
                 setBoss = true;
+                flor = true;
                 MusicManager.Instance.PlaySound(MusicaBoss);
             }
             
@@ -66,6 +77,9 @@ public class CameraController : MonoBehaviour
         ActualBoss.SetActive(true);
         BossContainer.SetActive(false);
         MusicManager.Instance.PlaySound(MusicaMapa);
-        
+        flor = true;
+        Flor.SetActive(true);
+        map.SetActive(true);
+
     }
 }

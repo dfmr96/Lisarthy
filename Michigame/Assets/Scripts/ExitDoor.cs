@@ -16,7 +16,7 @@ public class ExitDoor : MonoBehaviour
        if (collision.CompareTag("Player"))
         {
             collision.gameObject.SetActive(false);
-            gameManager.victory = true;
+            //gameManager.victory = true;
         }
     }
 }

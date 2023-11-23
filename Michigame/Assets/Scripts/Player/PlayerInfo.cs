@@ -37,7 +37,7 @@ public class PlayerInfo : MonoBehaviour
 
         if (dead)
         {
-            gameManager.playerDead = true;
+            //gameManager.playerDead = true;
         }
         else if (dying)
         {

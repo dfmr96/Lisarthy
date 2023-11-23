@@ -174,7 +174,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   soundHit: {fileID: 8300000, guid: e9efb9e76f07c4741bd4dc01b5c2cbe0, type: 3}
-  soundDeath: {fileID: 8300000, guid: af8cd7acebffe80469d4466b600f50a0, type: 3}
+  soundDeath: {fileID: 8300000, guid: 2be4d892672c7f34984802dc7ec1952c, type: 3}
   healthOrb: {fileID: 3078618074953080941, guid: 558c542ea4764ad41bca1b64a1c3fe0d, type: 3}
   ammo: {fileID: 3086500108619236249, guid: b855504dcb07edc44a362a6cdb624a5b, type: 3}
   health: 2

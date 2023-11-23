@@ -360,8 +360,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   health: 0
-  getdamage: {fileID: 8300000, guid: 58e51077441aa364ba0e7017b63956aa, type: 3}
-  gethealth: {fileID: 8300000, guid: 64105f00d03cb3c409d5bbf435f0542f, type: 3}
+  getdamage: {fileID: 8300000, guid: 77f5d31e78709894db3357b87a02c472, type: 3}
+  gethealth: {fileID: 8300000, guid: 54655c6c4ffbb07439dfe11ea0bfe454, type: 3}
   life: {fileID: 0}
 --- !u!1 &1946262047217111025
 GameObject:

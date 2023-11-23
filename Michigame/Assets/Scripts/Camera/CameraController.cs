@@ -11,6 +11,8 @@ public class CameraController : MonoBehaviour
     [SerializeField] private GameObject BossContainer;
     [SerializeField] private GameObject BossPrefab;
     [SerializeField] private GameObject ActualBoss;
+    [SerializeField] private AudioClip MusicaMapa;
+    [SerializeField] private AudioClip MusicaBoss;
 
     private bool setBoss = false;
 
@@ -27,6 +29,7 @@ public class CameraController : MonoBehaviour
         timer += Time.deltaTime;
         if (timer > 5 && setBoss)
         {
+            
             BossContainer.SetActive(true);
             ActualBoss.SetActive(true);
         }
@@ -39,8 +42,13 @@ public class CameraController : MonoBehaviour
             Tiles.SetActive(true);
             BossCamera.SetActive(true);
             VirtualCamera.SetActive(false);
-            timer = 0;
-            setBoss = true;
+            if (!setBoss)
+            {
+                timer = 0;
+                setBoss = true;
+                MusicManager.Instance.PlaySound(MusicaBoss);
+            }
+            
             
         }
     }
@@ -57,6 +65,7 @@ public class CameraController : MonoBehaviour
         ActualBoss = Instantiate(BossPrefab, BossContainer.transform);
         ActualBoss.SetActive(true);
         BossContainer.SetActive(false);
+        MusicManager.Instance.PlaySound(MusicaMapa);
         
     }
 }

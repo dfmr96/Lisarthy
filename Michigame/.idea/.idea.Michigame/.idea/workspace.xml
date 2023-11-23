@@ -8,6 +8,15 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="4df7d40f-8887-4bba-9d80-6ae23a8fa518" name="Changes" comment="">
+
+      <change afterPath="$PROJECT_DIR$/Assets/Sprites/Frenetica.mp3" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Sprites/Frenetica.mp3.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Sprites/movilidad.mp3" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Sprites/movilidad.mp3.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/.idea.Michigame/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.Michigame/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Camera/CameraController.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Camera/CameraController.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Player/Vida/LifeController.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Player/Vida/LifeController.cs" afterDir="false" />
+
       <change afterPath="$PROJECT_DIR$/Assets/Audio/Cinemática/Cinematica1.renderTexture" afterDir="false" />
       <change afterPath="$PROJECT_DIR$/Assets/Audio/Cinemática/Cinematica1.renderTexture.meta" afterDir="false" />
       <change afterPath="$PROJECT_DIR$/Assets/Scenes/Cinematica1.unity" afterDir="false" />
@@ -18,6 +27,7 @@
       <change beforePath="$PROJECT_DIR$/Assets/Scripts/Enemies/Boss.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Enemies/Boss.cs" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/ProjectSettings/EditorBuildSettings.asset" beforeDir="false" afterPath="$PROJECT_DIR$/ProjectSettings/EditorBuildSettings.asset" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/ProjectSettings/InputManager.asset" beforeDir="false" afterPath="$PROJECT_DIR$/ProjectSettings/InputManager.asset" afterDir="false" />
+
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -65,7 +75,11 @@
     "RunOnceActivity.ShowReadmeOnStart": "true",
     "SHARE_PROJECT_CONFIGURATION_FILES": "true",
     "WebServerToolWindowFactoryState": "false",
+
+    "git-widget-placeholder": "Facu__ultima",
+
     "git-widget-placeholder": "Development",
+
     "ignore.virus.scanning.warn.message": "true",
     "node.js.detected.package.eslint": "true",
     "node.js.detected.package.tslint": "true",

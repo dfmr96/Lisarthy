@@ -2,6 +2,7 @@ using System;
 using System.Collections;
 using System.Collections.Generic;
 using System.Linq;
+using Unity.VisualScripting;
 using UnityEngine;
 
 public class LifeController : MonoBehaviour
@@ -90,9 +91,16 @@ public class LifeController : MonoBehaviour
     {
         desplazamiento = 0;
         health = playerHealth.health;
+        foreach (var petalo in Petalos)
+        {
+            var petaloDestroy = petalo;
+            Petalos.Remove(petaloDestroy);
+            Destroy(petaloDestroy);
+        }
         Petalos.Clear();
         for (int i = 0; i < health; i++)
         {
+            
             var petaloIsta = Instantiate(petalo, transform.position + new Vector3(desplazamiento,0,0) , Quaternion.identity, padre.transform);
             desplazamiento += 85;
             Petalos.Add(petaloIsta);

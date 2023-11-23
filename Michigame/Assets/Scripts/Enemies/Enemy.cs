@@ -62,15 +62,8 @@ public class Enemy : MonoBehaviour
 
     private void DropItem()
     {
-        int temp = UnityEngine.Random.Range(0, 50);
-        if (temp <= 30)
-        {
             Instantiate(healthOrb, this.transform.position, transform.rotation);
-        }
-        else
-        { 
             Instantiate(ammo, this.transform.position, transform.rotation);
-        }
     }
 
     [ContextMenu("KillEnemy")]

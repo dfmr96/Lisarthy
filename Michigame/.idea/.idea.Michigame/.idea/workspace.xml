@@ -8,19 +8,13 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="4df7d40f-8887-4bba-9d80-6ae23a8fa518" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/Assets/Prefabs/Level_1/Hairball.prefab" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Prefabs/Level_1/Hairball.prefab.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Sprites/Player/Bola_De_pelos.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Sprites/Player/Bola_De_pelos.png.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Sprites/Frenetica.mp3" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Sprites/Frenetica.mp3.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Sprites/movilidad.mp3" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Sprites/movilidad.mp3.meta" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/.idea.Michigame/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.Michigame/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Prefabs/Dropables/Ammo.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Prefabs/Dropables/Ammo.prefab" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Prefabs/Dropables/Health Orb.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Prefabs/Dropables/Health Orb.prefab" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Enemies/Enemy.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Enemies/Enemy.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Player/PlayerHealth.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Player/PlayerHealth.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Player/Vida/Heal.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Player/Vida/Heal.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Camera/CameraController.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Camera/CameraController.cs" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/Scripts/Player/Vida/LifeController.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Player/Vida/LifeController.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/TestScripts/HairballTestScript.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/TestScripts/HairballTestScript.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ProjectSettings/TagManager.asset" beforeDir="false" afterPath="$PROJECT_DIR$/ProjectSettings/TagManager.asset" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -67,7 +61,7 @@
     "RunOnceActivity.ShowReadmeOnStart": "true",
     "SHARE_PROJECT_CONFIGURATION_FILES": "true",
     "WebServerToolWindowFactoryState": "false",
-    "git-widget-placeholder": "Facu__UI__Arreglo",
+    "git-widget-placeholder": "Facu__ultima",
     "ignore.virus.scanning.warn.message": "true",
     "node.js.detected.package.eslint": "true",
     "node.js.detected.package.tslint": "true",

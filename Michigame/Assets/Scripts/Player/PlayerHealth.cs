@@ -32,9 +32,19 @@ public class PlayerHealth : MonoBehaviour
         Test();
     }
 
-    private void Start()
+    private void Awake()
     {
-        //Debug.Log($"{PlayerPrefs.GetInt("CheckpointX")}, {PlayerPrefs.GetInt("CheckpointY")}");
+        Debug.Log($"{PlayerPrefs.GetInt("CheckpointX")}, {PlayerPrefs.GetInt("CheckpointY")}");
+        if (PlayerPrefs.HasKey("CheckpointX"))
+        {
+            lastCheckpoint.x = PlayerPrefs.GetInt("CheckpointX");
+        }
+        
+        if (PlayerPrefs.HasKey("CheckpointY"))
+        {
+            lastCheckpoint.y = PlayerPrefs.GetInt("CheckpointY");
+        }
+        if (lastCheckpoint != Vector2.zero) transform.position = lastCheckpoint;
     }
 
     public void SetLastCheckpoint(Vector2 position)
@@ -42,7 +52,7 @@ public class PlayerHealth : MonoBehaviour
         lastCheckpoint = position;
         PlayerPrefs.SetInt("CheckpointX", (int)lastCheckpoint.x);
         PlayerPrefs.SetInt("CheckpointY", (int)lastCheckpoint.y);
-        
+
         Debug.Log($"{PlayerPrefs.GetInt("CheckpointX")}, {PlayerPrefs.GetInt("CheckpointY")}");
             
     }

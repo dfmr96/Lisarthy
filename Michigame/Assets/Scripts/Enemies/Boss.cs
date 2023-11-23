@@ -252,6 +252,7 @@ public class Boss : Enemy
             {
                 if (GameManager.instance != null) GameManager.instance.GameOver(GameState.Victory);
                 Time.timeScale = 0;
+                PlayerPrefs.DeleteAll();
                 Destroy(gameObject);
             }
 

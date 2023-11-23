@@ -52,12 +52,22 @@ public class AbilityContainer : MonoBehaviour
         }
     }
 
-    private void OnTriggerEnter2D(Collider2D other)
+    //private void OnTriggerEnter2D(Collider2D other)
+    //{
+    //    if (other.gameObject.CompareTag("Player"))
+    //    {
+    //        Debug.Log("Jugador tocado");
+    //        Take(other.gameObject);
+    //        Destroy(gameObject);
+    //    }
+    //}
+
+    private void OnCollisionEnter2D(Collision2D collision)
     {
-        if (other.gameObject.CompareTag("Player"))
+        if (collision.gameObject.CompareTag("Player"))
         {
             Debug.Log("Jugador tocado");
-            Take(other.gameObject);
+            Take(collision.gameObject);
             Destroy(gameObject);
         }
     }

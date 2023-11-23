@@ -98,12 +98,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 3eab9a65187087442bd77e04f843399c, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  active: 0
-  finished: 0
   dialogs:
-  - {fileID: 11400000, guid: c4d28e6c7f4afe548a998165ff443a16, type: 2}
-  - {fileID: 11400000, guid: 858c5ea00821f834d956cd5a3f326d58, type: 2}
-  rayPoint: {fileID: 0}
+  - {fileID: 21300000, guid: 3c2be256bbac3e14abfe8f6bd4b8032a, type: 3}
+  - {fileID: 21300000, guid: 284f6d2a9a5e99746959d1a1eb7a7ab7, type: 3}
 --- !u!61 &3729812946109265665
 BoxCollider2D:
   m_ObjectHideFlags: 0

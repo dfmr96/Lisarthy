@@ -1,6 +1,7 @@
 using System;
 using System.Collections;
 using System.Collections.Generic;
+using Unity.VisualScripting;
 using UnityEngine;
 using UnityEngine.PlayerLoop;
 
@@ -11,6 +12,7 @@ public class HairballTestScript : MonoBehaviour
     [SerializeField] private AudioClip shot;
     [SerializeField] private Transform hairballSpawn;
     [SerializeField] float fireRate;
+    [SerializeField] LifeController Life;
     private float waitTime;
     [SerializeField] int maxAmmo = 5;
     public int ammo = 5;
@@ -42,6 +44,7 @@ public class HairballTestScript : MonoBehaviour
             ammo--;
             hairball.Direction = direction;
             hairball.Speed = speed;
+            Life.UpdateHair(ammo);
         }
         
     }
@@ -51,6 +54,17 @@ public class HairballTestScript : MonoBehaviour
         if (ammo < maxAmmo)
         {
             ammo++;
+            Life.UpdateHair(ammo);
         }        
+    }
+
+    private void OnEnable()
+    {
+        Life.ActivatePadre();
+    }
+
+    private void OnDisable()
+    {
+        Life.DesactivatePadre();
     }
 }

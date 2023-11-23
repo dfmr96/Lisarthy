@@ -17,8 +17,17 @@ public class Heal : MonoBehaviour
     {
         if (other.gameObject.CompareTag("Player"))
         {
-            playerHealth.TakeHealth(1);
-            Destroy(gameObject);
+            if (gameObject.CompareTag("healOnly"))
+            {
+                playerHealth.TakeHealth(1);
+                Destroy(gameObject);
+            }
+            else
+            {
+                playerHealth.IncreaseHealth();
+                playerHealth.TakeHealth(1);
+                Destroy(gameObject);
+            }
         }
     }
 }

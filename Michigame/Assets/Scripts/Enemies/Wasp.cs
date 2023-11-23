@@ -57,6 +57,14 @@ public class Wasp : Enemy
                 rb2d.velocity = Vector2.zero;
                 rb2d.AddForce(dir * (speed * 1.8f), ForceMode2D.Impulse);
             }
+            if (distance.normalized.x < 0)
+            {
+                transform.eulerAngles = new Vector3(0, 180, 0);
+            }
+            else
+            {
+                transform.eulerAngles = new Vector3(0, 0, 0);
+            }
         }
         
     }

@@ -27,18 +27,34 @@ public class Frog : Enemy
         timer += Time.deltaTime;
 
         gameObject.GetComponent<Animator>().SetBool("jumping", !OnGround);
-
         distance = player_transform.position - transform.position;
+      
         if (distance.magnitude < 10 && timer > 3.5 && OnGround)
         {
+            gameObject.GetComponent<Animator>().SetBool("idle", false);
             timer = 0;
             OnGround = false;            
             rb2d.AddForce(transform.up * jumpHeight, ForceMode2D.Impulse);
             var direction = distance.normalized;
+            
+
             rb2d.AddForce(new Vector2(direction.x,0) * speed, ForceMode2D.Impulse);
-                    
         }
-        
+        else
+        {
+            gameObject.GetComponent<Animator>().SetBool("idle", true);
+        }
+        if (distance.normalized.x < 0)
+        {
+            transform.eulerAngles = new Vector3(0, 180, 0);
+        }
+        else
+        {
+            transform.eulerAngles = new Vector3(0, 0, 0);
+        }
+
+
+
     }
 
     void OnCollisionEnter2D(Collision2D other)
@@ -47,7 +63,6 @@ public class Frog : Enemy
         {
             OnGround = true;            
             rb2d.velocity = Vector2.zero;
-            
         }
     }
 }

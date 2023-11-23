@@ -42,6 +42,7 @@ public class Enemy : MonoBehaviour
             {
                 DropItem();
                 gameObject.GetComponent<Animator>().SetBool("isDead", true);
+                //Destroy(gameObject);
             }
             else
             {

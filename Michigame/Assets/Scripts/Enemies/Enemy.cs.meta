@@ -3,7 +3,11 @@ guid: 439eb7ebdf11f0241a316f0a8876064e
 MonoImporter:
   externalObjects: {}
   serializedVersion: 2
-  defaultReferences: []
+  defaultReferences:
+  - soundHit: {instanceID: 0}
+  - soundDeath: {instanceID: 0}
+  - healthOrb: {fileID: 3078618074953080941, guid: 558c542ea4764ad41bca1b64a1c3fe0d, type: 3}
+  - ammo: {fileID: 3086500108619236249, guid: b855504dcb07edc44a362a6cdb624a5b, type: 3}
   executionOrder: 0
   icon: {instanceID: 0}
   userData: 

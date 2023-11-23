@@ -9,7 +9,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 6428169563027462365}
-  m_Layer: 0
+  m_Layer: 13
   m_Name: point3
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -40,7 +40,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 2368886222677882820}
-  m_Layer: 0
+  m_Layer: 13
   m_Name: point2
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -71,7 +71,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 2395618843395320810}
-  m_Layer: 0
+  m_Layer: 13
   m_Name: Fly
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -111,7 +111,7 @@ GameObject:
   - component: {fileID: 1651232471470216596}
   - component: {fileID: 2658741759502475452}
   - component: {fileID: 3514224449266162324}
-  m_Layer: 0
+  m_Layer: 13
   m_Name: Body
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -261,6 +261,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   soundHit: {fileID: 8300000, guid: e9efb9e76f07c4741bd4dc01b5c2cbe0, type: 3}
   soundDeath: {fileID: 8300000, guid: af8cd7acebffe80469d4466b600f50a0, type: 3}
+  healthOrb: {fileID: 3078618074953080941, guid: 558c542ea4764ad41bca1b64a1c3fe0d, type: 3}
+  ammo: {fileID: 3086500108619236249, guid: b855504dcb07edc44a362a6cdb624a5b, type: 3}
   health: 1
   speed: 7
   damage: 1
@@ -299,7 +301,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 5966872137458302461}
-  m_Layer: 0
+  m_Layer: 13
   m_Name: point1
   m_TagString: Untagged
   m_Icon: {fileID: 0}

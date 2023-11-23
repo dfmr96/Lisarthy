@@ -17,18 +17,21 @@ public class Fly : Enemy
 
     // Update is called once per frame
     void Update()
-    {       
-        var vec = points[index].position - transform.position;
-        var norm = vec.normalized;
-        rb2d.velocity = norm * speed;
-        if (vec.magnitude < 0.1)
+    {   
+        if(health > 0)
         {
-            index++;
-            if (index >= pointsQuantity)
+            var vec = points[index].position - transform.position;
+            var norm = vec.normalized;
+            rb2d.velocity = norm * speed;
+            if (vec.magnitude < 0.1)
             {
-                index = 0;
+                index++;
+                if (index >= pointsQuantity)
+                {
+                    index = 0;
+                }
             }
-        }
+        }        
     }
     
 }

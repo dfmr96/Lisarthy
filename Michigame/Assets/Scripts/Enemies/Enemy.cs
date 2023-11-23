@@ -62,20 +62,14 @@ public class Enemy : MonoBehaviour
 
     private void DropItem()
     {
-        float temp = UnityEngine.Random.Range(0, 1);
-        if (temp > 0.5)
+        int temp = UnityEngine.Random.Range(0, 50);
+        if (temp <= 30)
         {
-            Debug.Log("drop health");
             Instantiate(healthOrb, this.transform.position, transform.rotation);
-            Debug.Log(healthOrb);
-            Debug.Log("health dropped");
         }
         else
         { 
-            Debug.Log("drop ammo");
             Instantiate(ammo, this.transform.position, transform.rotation);
-            Debug.Log(ammo);
-            Debug.Log("ammo dropped");
         }
     }
 

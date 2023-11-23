@@ -9,6 +9,7 @@ TagManager:
   - furBall
   - furBall Destructible
   - Door
+  - healOnly
   layers:
   - Default
   - TransparentFX

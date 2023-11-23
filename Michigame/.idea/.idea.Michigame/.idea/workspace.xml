@@ -8,7 +8,8 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="4df7d40f-8887-4bba-9d80-6ae23a8fa518" name="Changes" comment="">
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Enemies/Boss.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Enemies/Boss.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/.idea.Michigame/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.Michigame/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Camera/CinematicController.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Camera/CinematicController.cs" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -142,7 +143,7 @@
       <workItem from="1699563699854" duration="5839000" />
       <workItem from="1700709429502" duration="9292000" />
       <workItem from="1700747270750" duration="4398000" />
-      <workItem from="1700756943328" duration="4573000" />
+      <workItem from="1700756943328" duration="7681000" />
     </task>
     <servers />
   </component>

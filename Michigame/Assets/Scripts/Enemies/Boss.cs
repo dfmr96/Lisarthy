@@ -1,3 +1,4 @@
+using System;
 using System.Collections;
 using System.Collections.Generic;
 using System.Linq.Expressions;
@@ -202,5 +203,11 @@ public class Boss : Enemy
                 impulso = true;
             }
         
+    }
+
+    private void OnDestroy()
+    {
+        if (GameManager.instance != null) GameManager.instance.GameOver(GameState.Victory);
+        Time.timeScale = 0;
     }
 }

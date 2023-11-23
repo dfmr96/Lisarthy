@@ -43,12 +43,12 @@ TextureImporter:
   nPOTScale: 0
   lightmap: 0
   compressionQuality: 50
-  spriteMode: 1
+  spriteMode: 2
   spriteExtrude: 1
   spriteMeshType: 1
   alignment: 0
   spritePivot: {x: 0.5, y: 0.5}
-  spritePixelsToUnits: 100
+  spritePixelsToUnits: 150
   spriteBorder: {x: 0, y: 0, z: 0, w: 0}
   spriteGenerateFallbackPhysicsShape: 1
   alphaUsage: 1
@@ -108,7 +108,301 @@ TextureImporter:
     forceMaximumCompressionQuality_BC6H_BC7: 0
   spriteSheet:
     serializedVersion: 2
-    sprites: []
+    sprites:
+    - serializedVersion: 2
+      name: Flor_Garras_0
+      rect:
+        serializedVersion: 2
+        x: 88
+        y: 1489
+        width: 376
+        height: 514
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d63a4d4baea95b541b2fd72419c5f999
+      internalID: 541349551
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Flor_Garras_1
+      rect:
+        serializedVersion: 2
+        x: 616
+        y: 1488
+        width: 382
+        height: 519
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 54c4282834a350a408eb5fb20353166e
+      internalID: 1213622818
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Flor_Garras_2
+      rect:
+        serializedVersion: 2
+        x: 1144
+        y: 1487
+        width: 388
+        height: 524
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 68737cc925cc2834f9ba7e09526c4128
+      internalID: -1910833038
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Flor_Garras_3
+      rect:
+        serializedVersion: 2
+        x: 1672
+        y: 1487
+        width: 392
+        height: 526
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d0454e5687816764b8de12d4f012f34d
+      internalID: -481750255
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Flor_Garras_4
+      rect:
+        serializedVersion: 2
+        x: 2199
+        y: 1485
+        width: 398
+        height: 529
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a3fe317634ffdf3489db4630b08f5209
+      internalID: 1664446250
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Flor_Garras_5
+      rect:
+        serializedVersion: 2
+        x: 2729
+        y: 1485
+        width: 387
+        height: 526
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0be87ddc597345244ba701a2fd80ceb5
+      internalID: -2031620274
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Flor_Garras_6
+      rect:
+        serializedVersion: 2
+        x: 3256
+        y: 1483
+        width: 378
+        height: 522
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 208ca3b9a12116a48ac3f05632d21378
+      internalID: 957621419
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Flor_Garras_7
+      rect:
+        serializedVersion: 2
+        x: 88
+        y: 919
+        width: 364
+        height: 521
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: af0e853a994947f4dbdfeaa152730b29
+      internalID: -2030519089
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Flor_Garras_8
+      rect:
+        serializedVersion: 2
+        x: 606
+        y: 921
+        width: 360
+        height: 523
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ce988ca553d50c146862996706f72334
+      internalID: -2069408649
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Flor_Garras_9
+      rect:
+        serializedVersion: 2
+        x: 1120
+        y: 921
+        width: 365
+        height: 525
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 36a0880612f1a0647967575acf104cd3
+      internalID: -1543935783
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Flor_Garras_10
+      rect:
+        serializedVersion: 2
+        x: 1634
+        y: 923
+        width: 381
+        height: 521
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 2646ed79524e76b448014412b061077d
+      internalID: 1293284576
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Flor_Garras_11
+      rect:
+        serializedVersion: 2
+        x: 2176
+        y: 923
+        width: 369
+        height: 523
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 184375f68d88215458736d87f6410042
+      internalID: -2030007893
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Flor_Garras_12
+      rect:
+        serializedVersion: 2
+        x: 2718
+        y: 923
+        width: 358
+        height: 521
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7cf5e4d989ea95d4886210cfda32d0b2
+      internalID: -1396811698
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Flor_Garras_13
+      rect:
+        serializedVersion: 2
+        x: 3255
+        y: 923
+        width: 365
+        height: 517
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: abe2b27e5569f9e4899a4cbe230d924b
+      internalID: 2116501813
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
     outline: []
     physicsShape: []
     bones: []
@@ -119,7 +413,21 @@ TextureImporter:
     edges: []
     weights: []
     secondaryTextures: []
-    nameFileIdTable: {}
+    nameFileIdTable:
+      Flor_Garras_0: 541349551
+      Flor_Garras_1: 1213622818
+      Flor_Garras_10: 1293284576
+      Flor_Garras_11: -2030007893
+      Flor_Garras_12: -1396811698
+      Flor_Garras_13: 2116501813
+      Flor_Garras_2: -1910833038
+      Flor_Garras_3: -481750255
+      Flor_Garras_4: 1664446250
+      Flor_Garras_5: -2031620274
+      Flor_Garras_6: 957621419
+      Flor_Garras_7: -2030519089
+      Flor_Garras_8: -2069408649
+      Flor_Garras_9: -1543935783
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 

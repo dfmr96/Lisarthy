@@ -108,7 +108,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!4 &8268142296573676942
 Transform:
   m_ObjectHideFlags: 0
@@ -190,7 +190,7 @@ Transform:
   m_GameObject: {fileID: 4678177705783758700}
   serializedVersion: 2
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: -0.59173584, y: 2.9247131, z: 0.78842753}
+  m_LocalPosition: {x: -8.79, y: 2.9247131, z: 0.78842753}
   m_LocalScale: {x: 3, y: 3, z: 3}
   m_ConstrainProportionsScale: 0
   m_Children:
@@ -263,6 +263,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   soundHit: {fileID: 0}
   soundDeath: {fileID: 0}
+  healthOrb: {fileID: 0}
+  ammo: {fileID: 0}
   health: 18
   speed: 8.5
   damage: 1

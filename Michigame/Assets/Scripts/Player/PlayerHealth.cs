@@ -24,6 +24,7 @@ public class PlayerHealth : MonoBehaviour
     [SerializeField] private PlayerState state;
 
     [SerializeField] private Vector2 lastCheckpoint;
+    [SerializeField] private CameraController cameraController;
     // Start is called before the first frame update
 
     private void Update()
@@ -126,10 +127,12 @@ public class PlayerHealth : MonoBehaviour
     public IEnumerator Respawn()
     {
         yield return new WaitForSeconds(2f);
+        cameraController.Restart();
         ChangeState(PlayerState.Alive);
         transform.position = lastCheckpoint;
         health = 5;
         gameObject.GetComponent<Animator>().SetTrigger("respawn");
         ToggleMovement(true);
+        
     }
 }

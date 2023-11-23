@@ -33,7 +33,7 @@ public class DialogSystem : MonoBehaviour
             }
 
 
-            if (Input.GetMouseButtonDown(0))
+            if (Input.GetMouseButtonDown(0) || Input.GetKeyDown(KeyCode.LeftArrow) || Input.GetKeyDown(KeyCode.RightArrow))
             {
                 npcSpeech.sprite = null;
                 index++;

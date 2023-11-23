@@ -5,8 +5,8 @@ using UnityEngine;
 
 public class Enemy : MonoBehaviour
 {
-    [SerializeField] private AudioClip soundHit;
-    [SerializeField] private AudioClip soundDeath;
+    [SerializeField] protected AudioClip soundHit;
+    [SerializeField] protected AudioClip soundDeath;
 
     [SerializeField] GameObject healthOrb;
     [SerializeField] GameObject ammo;
@@ -30,7 +30,7 @@ public class Enemy : MonoBehaviour
         Die();
     }
 
-    public void Die()
+    public virtual void Die()
     {
         if (health <= 0)
         {

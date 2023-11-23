@@ -43,7 +43,7 @@ TextureImporter:
   nPOTScale: 0
   lightmap: 0
   compressionQuality: 50
-  spriteMode: 1
+  spriteMode: 2
   spriteExtrude: 1
   spriteMeshType: 1
   alignment: 0
@@ -108,7 +108,301 @@ TextureImporter:
     forceMaximumCompressionQuality_BC6H_BC7: 0
   spriteSheet:
     serializedVersion: 2
-    sprites: []
+    sprites:
+    - serializedVersion: 2
+      name: Flor_que_habla_0
+      rect:
+        serializedVersion: 2
+        x: 27
+        y: 1493
+        width: 396
+        height: 511
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e2347416fa42d54478c6aa4d62828146
+      internalID: 1608739612
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Flor_que_habla_1
+      rect:
+        serializedVersion: 2
+        x: 517
+        y: 1491
+        width: 398
+        height: 513
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 583bc14b2c5152d4781eac4c58c76794
+      internalID: 989902501
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Flor_que_habla_2
+      rect:
+        serializedVersion: 2
+        x: 1009
+        y: 1491
+        width: 398
+        height: 513
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 06a32ce47fcbacb4c9deba4c66c8782f
+      internalID: 2036883757
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Flor_que_habla_3
+      rect:
+        serializedVersion: 2
+        x: 1502
+        y: 1491
+        width: 397
+        height: 511
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a35dca2dd73dc074f8b7caffdbb0364b
+      internalID: -644902559
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Flor_que_habla_4
+      rect:
+        serializedVersion: 2
+        x: 1993
+        y: 1489
+        width: 397
+        height: 511
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 3d6e4200743434449936a89655533f6c
+      internalID: -552463680
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Flor_que_habla_5
+      rect:
+        serializedVersion: 2
+        x: 2469
+        y: 1487
+        width: 397
+        height: 513
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 2edea7000ef6d0943b0378e55a01956a
+      internalID: -1296345912
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Flor_que_habla_6
+      rect:
+        serializedVersion: 2
+        x: 2944
+        y: 1487
+        width: 398
+        height: 511
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 9395bd032b8b1ad4a9201c2af6f20e41
+      internalID: 1588715218
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Flor_que_habla_7
+      rect:
+        serializedVersion: 2
+        x: 3418
+        y: 1489
+        width: 398
+        height: 506
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 517005241de70fa4ebacfb30909e98f4
+      internalID: 342292207
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Flor_que_habla_8
+      rect:
+        serializedVersion: 2
+        x: 31
+        y: 926
+        width: 395
+        height: 504
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e33dac6b011342b42b97c0bd8831d394
+      internalID: -1449756396
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Flor_que_habla_9
+      rect:
+        serializedVersion: 2
+        x: 508
+        y: 927
+        width: 393
+        height: 499
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b9af597a9ca17d042b55536988fac908
+      internalID: 1326807732
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Flor_que_habla_10
+      rect:
+        serializedVersion: 2
+        x: 986
+        y: 929
+        width: 395
+        height: 493
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 41736dfbe831a7248bc833a17b0f7a45
+      internalID: -1426203707
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Flor_que_habla_11
+      rect:
+        serializedVersion: 2
+        x: 1470
+        y: 929
+        width: 396
+        height: 499
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8daa29195bbc57d4d94a97119b9c6891
+      internalID: 1166372317
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Flor_que_habla_12
+      rect:
+        serializedVersion: 2
+        x: 1955
+        y: 929
+        width: 397
+        height: 503
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 27e1163b4c3625745b630eaca92344f2
+      internalID: 943957565
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Flor_que_habla_13
+      rect:
+        serializedVersion: 2
+        x: 2440
+        y: 931
+        width: 396
+        height: 507
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4d9ed15456c412948a666d4feb3d9f7d
+      internalID: 152790143
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
     outline: []
     physicsShape: []
     bones: []
@@ -119,7 +413,21 @@ TextureImporter:
     edges: []
     weights: []
     secondaryTextures: []
-    nameFileIdTable: {}
+    nameFileIdTable:
+      Flor_que_habla_0: 1608739612
+      Flor_que_habla_1: 989902501
+      Flor_que_habla_10: -1426203707
+      Flor_que_habla_11: 1166372317
+      Flor_que_habla_12: 943957565
+      Flor_que_habla_13: 152790143
+      Flor_que_habla_2: 2036883757
+      Flor_que_habla_3: -644902559
+      Flor_que_habla_4: -552463680
+      Flor_que_habla_5: -1296345912
+      Flor_que_habla_6: 1588715218
+      Flor_que_habla_7: 342292207
+      Flor_que_habla_8: -1449756396
+      Flor_que_habla_9: 1326807732
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 

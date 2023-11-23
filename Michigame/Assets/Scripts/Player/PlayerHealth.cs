@@ -1,6 +1,17 @@
+using System;
 using System.Collections;
 using System.Collections.Generic;
+using System.Diagnostics;
+using Unity.VisualScripting;
 using UnityEngine;
+using Debug = UnityEngine.Debug;
+
+public enum PlayerState
+{
+    Alive,
+    Dead
+}
+
 
 public class PlayerHealth : MonoBehaviour
 {
@@ -9,11 +20,30 @@ public class PlayerHealth : MonoBehaviour
     [SerializeField] private AudioClip gethealth;
 
     [SerializeField] private LifeController life;
+
+    [SerializeField] private PlayerState state;
+
+    [SerializeField] private Vector2 lastCheckpoint;
     // Start is called before the first frame update
 
     private void Update()
     {
         Test();
+    }
+
+    private void Start()
+    {
+        //Debug.Log($"{PlayerPrefs.GetInt("CheckpointX")}, {PlayerPrefs.GetInt("CheckpointY")}");
+    }
+
+    public void SetLastCheckpoint(Vector2 position)
+    {
+        lastCheckpoint = position;
+        PlayerPrefs.SetInt("CheckpointX", (int)lastCheckpoint.x);
+        PlayerPrefs.SetInt("CheckpointY", (int)lastCheckpoint.y);
+        
+        Debug.Log($"{PlayerPrefs.GetInt("CheckpointX")}, {PlayerPrefs.GetInt("CheckpointY")}");
+            
     }
     public void TakeDamage(int damage)
     {
@@ -21,16 +51,17 @@ public class PlayerHealth : MonoBehaviour
         AudioManager.Instance.PlaySound(getdamage);
         Debug.Log(health);
         
-        if (health > 0)
+        if (health >= 0)
         {
             
             health -= damage;
             life.UpdateHealth(health);
             Debug.Log(health);
-            if (health <= 0)
-            {
-                gameObject.GetComponent<Animator>().SetTrigger("dead");
-            }
+            
+        }
+        if (health <= 0)
+        {
+            ChangeState(PlayerState.Dead);
         }
     }
     public void Death()
@@ -52,5 +83,43 @@ public class PlayerHealth : MonoBehaviour
         health += heal;
         life.UpdateHealth(health);
         Debug.Log(health);
+    }
+
+    public void ChangeState(PlayerState newState)
+    {
+        state = newState;
+        switch (state)
+        {
+            case PlayerState.Alive:
+                break;
+            case PlayerState.Dead:
+                Debug.Log("Cambiar estado a muerto");
+                ToggleMovement(false);
+                gameObject.GetComponent<Animator>().SetTrigger("dead");
+                StartCoroutine(Respawn());
+                break;
+            default:
+                throw new ArgumentOutOfRangeException();
+        }
+    }
+
+    private void ToggleMovement(bool active)
+    {
+        PlayerJump jump = GetComponent<PlayerJump>();
+        PlayerMovement movement = GetComponent<PlayerMovement>();
+        jump.enabled = active;
+        movement.enabled = active;
+        Rigidbody2D rb = GetComponent<Rigidbody2D>();
+        rb.velocity = Vector2.zero;
+    }
+
+    public IEnumerator Respawn()
+    {
+        yield return new WaitForSeconds(2f);
+        ChangeState(PlayerState.Alive);
+        transform.position = lastCheckpoint;
+        health = 5;
+        gameObject.GetComponent<Animator>().SetTrigger("respawn");
+        ToggleMovement(true);
     }
 }

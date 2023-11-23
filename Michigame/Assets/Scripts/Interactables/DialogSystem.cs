@@ -6,15 +6,13 @@ public class DialogSystem : MonoBehaviour
 {
     private bool active = false;
     private bool finished = false;
-    public Dialog[] dialogs;
+    public Sprite[] dialogs;
     private GameObject player;
-    private SpriteRenderer playerSpeech;
     private SpriteRenderer npcSpeech;
     private int index = 0;
     // Start is called before the first frame update
     void Start()
-    {
-        playerSpeech = GameObject.Find("PlayerDialog").GetComponent<SpriteRenderer>();
+    {        
         npcSpeech = this.gameObject.GetComponent<SpriteRenderer>();
         npcSpeech.sprite = null;
     }
@@ -25,16 +23,9 @@ public class DialogSystem : MonoBehaviour
         if (active && !finished)
         {
             GroundPlayer(false);
-            if (dialogs[index].dialog != null)
+            if (dialogs[index] != null)
             {
-                if (dialogs[index].isPlayerDialog)
-                {
-                    playerSpeech.sprite = dialogs[index].dialog;
-                }
-                else
-                {
-                    npcSpeech.sprite = dialogs[index].dialog;
-                }
+                npcSpeech.sprite = dialogs[index];
             }
             else
             {
@@ -44,7 +35,6 @@ public class DialogSystem : MonoBehaviour
 
             if (Input.GetMouseButtonDown(0))
             {
-                playerSpeech.sprite = null;
                 npcSpeech.sprite = null;
                 index++;
             }

@@ -8,8 +8,7 @@ public class DialogTest : MonoBehaviour
     [SerializeField] GameObject npcDialogue;
     // Start is called before the first frame update
     void Start()
-    {
-        playerDialogue.GetComponent<SpriteRenderer>().sprite = null;
+    {        
         npcDialogue.GetComponent<SpriteRenderer>().sprite = null;
     }
 

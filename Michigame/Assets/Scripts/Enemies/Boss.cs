@@ -3,6 +3,7 @@ using System.Collections;
 using System.Collections.Generic;
 using System.Linq.Expressions;
 using UnityEngine;
+using UnityEngine.SceneManagement;
 
 public class Boss : Enemy
 {
@@ -253,6 +254,7 @@ public class Boss : Enemy
                 if (GameManager.instance != null) GameManager.instance.GameOver(GameState.Victory);
                 Time.timeScale = 0;
                 PlayerPrefs.DeleteAll();
+                GameOver();
                 Destroy(gameObject);
             }
 
@@ -261,5 +263,10 @@ public class Boss : Enemy
         {
             AudioManager.Instance.PlaySound(soundHit);
         }
+    }
+
+    public void GameOver()
+    {
+        SceneManager.LoadScene(3);
     }
 }

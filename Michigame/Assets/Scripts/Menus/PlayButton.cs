@@ -13,7 +13,7 @@ public class PlayButton : MonoBehaviour
 
     public void Continue()
     {
-        SceneManager.LoadScene(1);
+        SceneManager.LoadScene(2);
     }
     
     public void NewGame()

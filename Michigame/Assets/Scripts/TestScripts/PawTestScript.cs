@@ -10,7 +10,7 @@ public class PawTestScript : MonoBehaviour
     [SerializeField] private float detectionDistance;
     [FormerlySerializedAs("climbableWall")] [SerializeField] private LayerMask climbableLayer;
     [SerializeField] private float maxFallingSpeedSliding = -2f;
-    [SerializeField] private GameObject pawPrefab;
+    //[SerializeField] private GameObject pawPrefab;
     [SerializeField] private GameObject paw;
     [SerializeField] private float pawDuration;
     [SerializeField] private float pawCooldown;
@@ -103,19 +103,13 @@ public class PawTestScript : MonoBehaviour
 
     public void Attack()
     {
-        if (paw == null)
-        {
-            paw = Instantiate(pawPrefab, transform.position, Quaternion.identity, transform);
-            
-        }
-        else if (!onCooldown)
-        {
+        
             StartCoroutine(Swing());
-        }
     }
 
     public IEnumerator Swing()
     {
+        if (onCooldown) yield break;
         //float inputRaw = Input.GetAxisRaw("Horizontal") == 0 ? 1 : Input.GetAxisRaw("Horizontal");
         gameObject.GetComponent<Animator>().SetTrigger("attack");
         paw.transform.localPosition = new Vector3((1), 0, 0);

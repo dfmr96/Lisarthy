@@ -106,6 +106,11 @@ public class PlayerJump : MonoBehaviour
                            || Physics2D.Raycast(new Vector3(col.bounds.min.x - raycastOffset, transform.position.y, 0),
                                Vector2.down,
                                groundLength, groundLayer);
+            if (raycast)
+            {
+                gameObject.GetComponent<Animator>().SetBool("falling", !raycast);
+            }
+            
             return raycast;
         }
     }
@@ -156,8 +161,20 @@ public class PlayerJump : MonoBehaviour
     {
         if (OnGround && !currentlyJumping) rb.velocity = new Vector2(rb.velocity.x, 0);
 
-        gameObject.GetComponent<Animator>().SetBool("jumping", currentlyJumping);
-        gameObject.GetComponent<Animator>().SetBool("wallClimb", wallJumpBuffer);
+
+
+        if (rb.velocity.y>0) {
+            gameObject.GetComponent<Animator>().SetBool("jumping", currentlyJumping);
+        }
+        if (OnClimb)
+        {
+            gameObject.GetComponent<Animator>().SetBool("wallClimb", true);
+        }
+        else
+        {
+            gameObject.GetComponent<Animator>().SetBool("wallClimb", false);
+        }
+        
         //if (OnGround)
         //{
         //    gameObject.GetComponent<Animator>().SetBool("falling", false);
@@ -221,6 +238,8 @@ public class PlayerJump : MonoBehaviour
     private void FixedUpdate()
     {
         velocity = rb.velocity;
+
+
         /*if (OnClimb) Apply Sliding
         {
             if (rb.velocity.y < pawTest.MaxFallingSpeedSliding) rb.velocity = new Vector2(rb.velocity.x, pawTest.MaxFallingSpeedSliding);
@@ -234,6 +253,11 @@ public class PlayerJump : MonoBehaviour
             rb.velocity = velocity;
 
             return;
+        }
+        if (rb.velocity.y < 0)
+        {
+            gameObject.GetComponent<Animator>().SetBool("falling", true);
+            gameObject.GetComponent<Animator>().SetBool("jumping", false);
         }
 
         CalculateGravity();
@@ -261,6 +285,7 @@ public class PlayerJump : MonoBehaviour
         {
             currentlyJumping = false;
             gravityMultiplier = defaultGravityScale;
+
         }
 
         if (OnClimb)
@@ -286,7 +311,7 @@ public class PlayerJump : MonoBehaviour
                     else
                     {
                         /*Vector2 cutOffVelocity = new Vector2(rb.velocity.x, 0);
-                        rb.velocity = cutOffVelocity;*/                       
+                        rb.velocity = cutOffVelocity;*/
                         gravityMultiplier = jumpCutOffMultiplier;
                     }
 
@@ -297,7 +322,7 @@ public class PlayerJump : MonoBehaviour
             }
         }
 
-        //if (coyoteTimeCounter > 0 && coyoteTimeCounter < coyoteTime) gravityMultiplier = upwardMultiplier;
+        if (coyoteTimeCounter > 0 && coyoteTimeCounter < coyoteTime) gravityMultiplier = upwardMultiplier;
         OnGravityValueChanged?.Invoke(OnGround, isUpwards);
     }
 

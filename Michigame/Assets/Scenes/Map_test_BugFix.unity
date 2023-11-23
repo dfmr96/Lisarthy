@@ -118007,6 +118007,11 @@ PrefabInstance:
     m_AddedGameObjects: []
     m_AddedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: d0aa9587661b9ca428e64e5a39afec79, type: 3}
+--- !u!4 &603924596 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: 3223197897701619650, guid: 2f84c873b49122f4e9bcc37e23f257b8, type: 3}
+  m_PrefabInstance: {fileID: 1380794333}
+  m_PrefabAsset: {fileID: 0}
 --- !u!4 &615230963 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 1229097718684271399, guid: 4ccb806f74edd454c936309d1b742a3e, type: 3}
@@ -119850,6 +119855,14 @@ PrefabInstance:
       propertyPath: m_Name
       value: Player
       objectReference: {fileID: 0}
+    - target: {fileID: 2067636287723500323, guid: 2f84c873b49122f4e9bcc37e23f257b8, type: 3}
+      propertyPath: fireRate
+      value: 1.5
+      objectReference: {fileID: 0}
+    - target: {fileID: 2067636287723500323, guid: 2f84c873b49122f4e9bcc37e23f257b8, type: 3}
+      propertyPath: hairballSpawn
+      value: 
+      objectReference: {fileID: 603924596}
     - target: {fileID: 8232200383610649068, guid: 2f84c873b49122f4e9bcc37e23f257b8, type: 3}
       propertyPath: m_LocalPosition.x
       value: 569.9

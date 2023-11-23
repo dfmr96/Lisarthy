@@ -10,7 +10,7 @@ GameObject:
   m_Component:
   - component: {fileID: 5432488770996139605}
   - component: {fileID: 6951574146921723200}
-  m_Layer: 0
+  m_Layer: 13
   m_Name: GameObject
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -91,7 +91,7 @@ GameObject:
   - component: {fileID: 1885316054641664153}
   - component: {fileID: 4917720704292283513}
   - component: {fileID: 8645886422026605283}
-  m_Layer: 0
+  m_Layer: 13
   m_Name: Wall
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -180,6 +180,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   soundHit: {fileID: 8300000, guid: e9efb9e76f07c4741bd4dc01b5c2cbe0, type: 3}
   soundDeath: {fileID: 8300000, guid: af8cd7acebffe80469d4466b600f50a0, type: 3}
+  healthOrb: {fileID: 3078618074953080941, guid: 558c542ea4764ad41bca1b64a1c3fe0d, type: 3}
+  ammo: {fileID: 3086500108619236249, guid: b855504dcb07edc44a362a6cdb624a5b, type: 3}
   health: 2
   speed: 0
   damage: 1

@@ -25,33 +25,40 @@ public class Wasp : Enemy
     // Update is called once per frame
     void Update()
     {
-        timer += Time.deltaTime;
-        distance = player_transform.position - transform.position;
+        if (health > 0)
+        {
+            timer += Time.deltaTime;
+            distance = player_transform.position - transform.position;
+        }
+        
     }
 
     void FixedUpdate()
     {
+        if (health > 0)
+        {
+            var dir = distance.normalized;
+
+            if (distance.magnitude is > 5 and < 10 && a)
+            {
+                rb2d.velocity = dir * speed;
+                b = true;
+            }
+            else if (b)
+            {
+                a = false;
+                b = false;
+
+            }
+            if (!a && timer > 2)
+            {
+                a = true;
+                timer = 0;
+                rb2d.velocity = Vector2.zero;
+                rb2d.AddForce(dir * (speed * 1.8f), ForceMode2D.Impulse);
+            }
+        }
         
-        var dir = distance.normalized;
-
-        if(distance.magnitude is > 5 and < 10 && a)
-        {
-            rb2d.velocity = dir * speed;
-            b = true;
-        }
-        else if(b)
-        {
-            a = false;
-            b = false;
-
-        }
-        if (!a && timer > 2)
-        {
-            a = true;
-            timer = 0;
-            rb2d.velocity = Vector2.zero;
-            rb2d.AddForce(dir * (speed * 1.8f),ForceMode2D.Impulse);
-        }
     }
 
     public void Death()

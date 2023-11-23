@@ -23,6 +23,7 @@ public class AbilityContainer : MonoBehaviour
                 if (player.TryGetComponent<PawTestScript>(out PawTestScript pawTestScript))
                 {
                     pawTestScript.enabled = true;
+                    PlayerPrefs.SetInt("Paws", 1);
                     Debug.Log("Garras tomadas");
                     if (player.TryGetComponent<PlayerJump>(out PlayerJump playerJump))
                     {
@@ -35,18 +36,21 @@ public class AbilityContainer : MonoBehaviour
                 if (player.TryGetComponent<DashTestScript>(out DashTestScript dashTestScript))
                 {
                     dashTestScript.enabled = true;
+                    PlayerPrefs.SetInt("Dash", 1);
                 }
                 break;
             case AbilityType.Hairball:
                 if (player.TryGetComponent<HairballTestScript>(out HairballTestScript hairball))
                 {
                     hairball.enabled = true;
+                    PlayerPrefs.SetInt("Hairball", 1);
                 }
                 break;
             case AbilityType.Tail:
                 if (player.TryGetComponent<TailAttackTestScript>(out TailAttackTestScript tail))
                 {
                     tail.enabled = true;
+                    PlayerPrefs.SetInt("TailAttack", 1);
                 }
                 break;
         }

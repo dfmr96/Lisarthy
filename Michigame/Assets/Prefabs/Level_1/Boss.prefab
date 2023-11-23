@@ -261,8 +261,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 1372729e8a94e7e41a55ea94b00e7c33, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  soundHit: {fileID: 0}
-  soundDeath: {fileID: 0}
+  soundHit: {fileID: 8300000, guid: cfb3e76e788d66b42bca559bb851ff0f, type: 3}
+  soundDeath: {fileID: 8300000, guid: 4495810468712f84ba919543d431a569, type: 3}
   healthOrb: {fileID: 0}
   ammo: {fileID: 0}
   health: 18

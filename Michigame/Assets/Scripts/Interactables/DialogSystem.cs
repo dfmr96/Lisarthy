@@ -24,6 +24,7 @@ public class DialogSystem : MonoBehaviour
     {        
         if (active && !finished)
         {
+            GroundPlayer(false);
             if (dialogs[index].dialog != null)
             {
                 if (dialogs[index].isPlayerDialog)
@@ -52,6 +53,7 @@ public class DialogSystem : MonoBehaviour
             {
                 finished = true;
                 active = false;
+                GroundPlayer(true);
             }
         }
 
@@ -60,13 +62,24 @@ public class DialogSystem : MonoBehaviour
 
     private void OnTriggerEnter2D(Collider2D collision)
     {
-        if (collision.gameObject.CompareTag("Player") && finished == false)
+        if (collision.gameObject.CompareTag("Player"))
         {
             active = true;
             player = collision.gameObject;
-          
         }
 
-    }   
+    }
+    
+    private void GroundPlayer(bool active)
+    {
+        player.GetComponent<PlayerMovement>().enabled = active;
+        player.GetComponent<Rigidbody2D>().velocity = Vector2.zero;
+        player.GetComponent<Animator>().SetBool("walking", active);
+        player.GetComponent<PlayerJump>().enabled = active;
+        player.GetComponent<PawTestScript>().enabled = active;
+        player.GetComponent<DashTestScript>().enabled = active;
+        player.GetComponent<HairballTestScript>().enabled = active;
+        player.GetComponent<TailAttackTestScript>().enabled = active;
+    }
 
 }

@@ -1,0 +1,330 @@
+fileFormatVersion: 2
+guid: f8b07b439c0cd114081ed32ddb3357f7
+TextureImporter:
+  internalIDToNameTable: []
+  externalObjects: {}
+  serializedVersion: 12
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+    flipGreenChannel: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  vTOnly: 0
+  ignoreMipmapLimit: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: 1
+    aniso: 1
+    mipBias: 0
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 512
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  flipbookRows: 1
+  flipbookColumns: 1
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  ignorePngGamma: 0
+  applyGammaDecoding: 0
+  swizzle: 50462976
+  cookieLightType: 0
+  platformSettings:
+  - serializedVersion: 3
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Server
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: GolpeCola_Lisarthy_0
+      rect:
+        serializedVersion: 2
+        x: 542
+        y: 1440
+        width: 695
+        height: 465
+      alignment: 9
+      pivot: {x: 0.47240895, y: 0.56796217}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: cb4591875d3b1124ea844e4498693391
+      internalID: -1096826458
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: GolpeCola_Lisarthy_1
+      rect:
+        serializedVersion: 2
+        x: 1947
+        y: 1425
+        width: 600
+        height: 500
+      alignment: 9
+      pivot: {x: 0.40609944, y: 0.51795095}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 9123b9ead2f96aa4daf1dd2c4947a8f5
+      internalID: 812325173
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: GolpeCola_Lisarthy_2
+      rect:
+        serializedVersion: 2
+        x: 3117
+        y: 1434
+        width: 578
+        height: 613
+      alignment: 9
+      pivot: {x: 0.3114225, y: 0.43538517}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c30de569a95b2f94293bf126899a6e36
+      internalID: 2097012740
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: GolpeCola_Lisarthy_6
+      rect:
+        serializedVersion: 2
+        x: 581
+        y: 762
+        width: 678
+        height: 614
+      alignment: 9
+      pivot: {x: 0.41704592, y: 0.42360914}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5b534a930752302459df85e89bb280bf
+      internalID: 619236161
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: GolpeCola_Lisarthy_7
+      rect:
+        serializedVersion: 2
+        x: 1659
+        y: 778
+        width: 844
+        height: 513
+      alignment: 9
+      pivot: {x: 0.5175052, y: 0.47794726}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e42a673588382514f8947c7317c0fc2f
+      internalID: 833540644
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: GolpeCola_Lisarthy_10
+      rect:
+        serializedVersion: 2
+        x: 2801
+        y: 757
+        width: 862
+        height: 398
+      alignment: 9
+      pivot: {x: 0.5289281, y: 0.64683676}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 692e93010557fe94fab455b4261a4eab
+      internalID: 523001063
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: GolpeCola_Lisarthy_11
+      rect:
+        serializedVersion: 2
+        x: 459
+        y: 82
+        width: 820
+        height: 425
+      alignment: 9
+      pivot: {x: 0.5162764, y: 0.5793481}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1bf28b840f0d1b742b590a4c640dd1cf
+      internalID: 1873948569
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: GolpeCola_Lisarthy_12
+      rect:
+        serializedVersion: 2
+        x: 1735
+        y: 54
+        width: 754
+        height: 453
+      alignment: 9
+      pivot: {x: 0.47049817, y: 0.5599672}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e886a208ce423de40bc3d3b4ff019378
+      internalID: -1380875835
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: GolpeCola_Lisarthy_13
+      rect:
+        serializedVersion: 2
+        x: 2831
+        y: 18
+        width: 754
+        height: 489
+      alignment: 9
+      pivot: {x: 0.44286138, y: 0.5325715}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0eeebcca284b9434bad334f14f2f66d1
+      internalID: -712880919
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    physicsShape: []
+    bones: []
+    spriteID: 5e97eb03825dee720800000000000000
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+    nameFileIdTable:
+      GolpeCola_Lisarthy_0: -1096826458
+      GolpeCola_Lisarthy_1: 812325173
+      GolpeCola_Lisarthy_10: 523001063
+      GolpeCola_Lisarthy_11: 1873948569
+      GolpeCola_Lisarthy_12: -1380875835
+      GolpeCola_Lisarthy_13: -712880919
+      GolpeCola_Lisarthy_2: 2097012740
+      GolpeCola_Lisarthy_3: 1835854120
+      GolpeCola_Lisarthy_4: -1310215680
+      GolpeCola_Lisarthy_5: 1144117640
+      GolpeCola_Lisarthy_6: 619236161
+      GolpeCola_Lisarthy_7: 833540644
+      GolpeCola_Lisarthy_8: 294509879
+      GolpeCola_Lisarthy_9: -2108972112
+  mipmapLimitGroupName: 
+  pSDRemoveMatte: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

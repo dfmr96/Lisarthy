@@ -1,0 +1,235 @@
+fileFormatVersion: 2
+guid: 7a16e473a722ae942b80e8cb9756b64e
+TextureImporter:
+  internalIDToNameTable: []
+  externalObjects: {}
+  serializedVersion: 12
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+    flipGreenChannel: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  vTOnly: 0
+  ignoreMipmapLimit: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: 1
+    aniso: 1
+    mipBias: 0
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 100
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  flipbookRows: 1
+  flipbookColumns: 1
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  ignorePngGamma: 0
+  applyGammaDecoding: 0
+  swizzle: 50462976
+  cookieLightType: 0
+  platformSettings:
+  - serializedVersion: 3
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Server
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: Palabras menu_0
+      rect:
+        serializedVersion: 2
+        x: 34
+        y: 936
+        width: 681
+        height: 60
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0fa0e9af09f2f804ca3320ed4d6bbd8a
+      internalID: 1478916552
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Palabras menu_15
+      rect:
+        serializedVersion: 2
+        x: 35
+        y: 735
+        width: 682
+        height: 59
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5ac39509316318b41a4915028b338cda
+      internalID: 445977559
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Palabras menu_33
+      rect:
+        serializedVersion: 2
+        x: 37
+        y: 515
+        width: 678
+        height: 61
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 9220b8d10b570fb41b3084c5b3235066
+      internalID: -2135723349
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    physicsShape: []
+    bones: []
+    spriteID: 5e97eb03825dee720800000000000000
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+    nameFileIdTable:
+      Palabras menu_0: 1478916552
+      Palabras menu_1: 1280898748
+      Palabras menu_10: -1941350598
+      Palabras menu_11: 1904043488
+      Palabras menu_12: 1305352048
+      Palabras menu_13: -864752606
+      Palabras menu_14: -1806880650
+      Palabras menu_15: 445977559
+      Palabras menu_16: -1068799826
+      Palabras menu_17: 2052538315
+      Palabras menu_18: 1816643623
+      Palabras menu_19: -80067579
+      Palabras menu_2: -115970342
+      Palabras menu_20: -1427134639
+      Palabras menu_21: 982385450
+      Palabras menu_22: -1893384538
+      Palabras menu_23: 1291307429
+      Palabras menu_24: 1270571259
+      Palabras menu_25: 35628381
+      Palabras menu_26: -771780251
+      Palabras menu_27: 1410864886
+      Palabras menu_28: -1916978619
+      Palabras menu_29: 229009843
+      Palabras menu_3: 181373052
+      Palabras menu_30: 1175996541
+      Palabras menu_31: 15445492
+      Palabras menu_32: 134258848
+      Palabras menu_33: -2135723349
+      Palabras menu_34: -1090644839
+      Palabras menu_35: 1672233069
+      Palabras menu_36: 1833438568
+      Palabras menu_37: -1455960138
+      Palabras menu_38: -62005595
+      Palabras menu_39: -2063792946
+      Palabras menu_4: 1388639010
+      Palabras menu_40: 964001853
+      Palabras menu_41: -1137898128
+      Palabras menu_42: -1190705666
+      Palabras menu_43: 867193918
+      Palabras menu_44: -1971361844
+      Palabras menu_5: -876997937
+      Palabras menu_6: 2142398172
+      Palabras menu_7: 735350482
+      Palabras menu_8: 937764798
+      Palabras menu_9: 1699190884
+  mipmapLimitGroupName: 
+  pSDRemoveMatte: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

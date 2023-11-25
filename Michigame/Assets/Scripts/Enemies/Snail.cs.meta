@@ -1,0 +1,16 @@
+fileFormatVersion: 2
+guid: a0174d2b93a8f1041acf972240430b4c
+MonoImporter:
+  externalObjects: {}
+  serializedVersion: 2
+  defaultReferences:
+  - soundHit: {instanceID: 0}
+  - soundDeath: {instanceID: 0}
+  - healthOrb: {instanceID: 0}
+  - ammo: {instanceID: 0}
+  - point: {instanceID: 0}
+  executionOrder: 0
+  icon: {instanceID: 0}
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

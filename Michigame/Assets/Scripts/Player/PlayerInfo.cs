@@ -22,6 +22,8 @@ public class PlayerInfo : MonoBehaviour
     public bool jumping;
     public bool dying = false;
     public bool dead = false;
+    public bool climbing = false;
+    public bool forceJump = false;
 
     private void Awake()
     {
@@ -35,7 +37,7 @@ public class PlayerInfo : MonoBehaviour
 
         if (dead)
         {
-            gameManager.playerDead = true;
+            //gameManager.playerDead = true;
         }
         else if (dying)
         {

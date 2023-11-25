@@ -4,7 +4,7 @@ using UnityEngine;
 
 public class PlayerPhysics : MonoBehaviour
 {
-    private Rigidbody2D rigidbody;
+    private Rigidbody2D rb;
     private PlayerInfo playerInfo;
     [SerializeField] float dragWhileJumping = 3;
     //[SerializeField] float antiGravityApex;
@@ -12,13 +12,13 @@ public class PlayerPhysics : MonoBehaviour
     // Start is called before the first frame update
     void Awake()
     {
-        rigidbody = GetComponent<Rigidbody2D>();
+        rb = GetComponent<Rigidbody2D>();
         playerInfo = GetComponent<PlayerInfo>();
 
     }
     private void Start()
     {
-        drag = rigidbody.drag;
+        drag = rb.drag;
     }
     private void FixedUpdate()
     {
@@ -32,9 +32,9 @@ public class PlayerPhysics : MonoBehaviour
     {
         if (!playerInfo.CanJump())
         {
-            rigidbody.drag = dragWhileJumping;
+            rb.drag = dragWhileJumping;
         }
-        else { rigidbody.drag = drag; }       
+        else { rb.drag = drag; }       
 
     }
 
@@ -45,22 +45,22 @@ public class PlayerPhysics : MonoBehaviour
 
     public void MoveFoward(float speed, float direction)
     {
-        rigidbody.AddForce(new Vector2(speed * Time.deltaTime * direction, rigidbody.velocity.y));
+        rb.AddForce(new Vector2(speed * Time.deltaTime * direction, rb.velocity.y));
     }
 
     public void Jump(float force)
     {
-        rigidbody.AddForce(transform.up * force * Time.deltaTime, ForceMode2D.Impulse);
+        rb.AddForce(transform.up * force * Time.deltaTime, ForceMode2D.Impulse);
     }
 
     public void SustainedJump(float force, float multiplier = 0.5f)
     {
-        rigidbody.AddForce(transform.up * (force* Time.deltaTime * multiplier), ForceMode2D.Force);
+        rb.AddForce(transform.up * (force* Time.deltaTime * multiplier), ForceMode2D.Force);
     }
 
     public void Fall(float force, float multiplier = 0.5f)
     {
-        rigidbody.AddForce(-transform.up * (force * Time.deltaTime * multiplier), ForceMode2D.Force);
+        rb.AddForce(-transform.up * (force * Time.deltaTime * multiplier), ForceMode2D.Force);
     }
     
 }

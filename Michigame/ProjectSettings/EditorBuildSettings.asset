@@ -5,13 +5,25 @@ EditorBuildSettings:
   m_ObjectHideFlags: 0
   serializedVersion: 2
   m_Scenes:
-  - enabled: 0
+  - enabled: 1
     path: Assets/Scenes/Main Menu.unity
     guid: 88e787af1f32ab54abaf680d21e91f25
   - enabled: 1
+    path: Assets/Scenes/Cinematica1.unity
+    guid: 9401ae6d71cd1614db6420b533505ceb
+  - enabled: 1
+    path: Assets/Scenes/Build Scenes/Level_1.unity
+    guid: 6222b1c6bb3db844eaa54e074dc1c835
+  - enabled: 1
+    path: Assets/Scenes/Cinematica2.unity
+    guid: 24f6205fdb30521419c1a08871cd6589
+  - enabled: 0
     path: Assets/Scenes/MetricsTest.unity
     guid: 2cda990e2423bbf4892e6590ba056729
   - enabled: 0
     path: Assets/Scenes/Movement Test Scene.unity
     guid: 85077546190365f42a037d5e8f04f074
+  - enabled: 0
+    path: Assets/Scenes/Map_test_BugFix.unity
+    guid: 41fdfa682a2296f41aa0501078e75222
   m_configObjects: {}
